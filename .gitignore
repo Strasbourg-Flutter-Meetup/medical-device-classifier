@@ -144,12 +144,12 @@ app.*.map.json
 #.dart_tool/
 #.packages
 #build/
-# If you're building an application, you may want to check-in your pubspec.lock
+# c
 #pubspec.lock
 
 # Directory created by dartdoc
 # If you don't generate documentation locally you can remove this line.
-doc/api/
+doc/
 
 # dotenv environment variables file
 .env*
