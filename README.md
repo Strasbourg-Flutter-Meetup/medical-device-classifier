@@ -448,6 +448,44 @@ check [here](https://docs.flutter.dev/ui/accessibility-and-localization/internat
 ## Conventions
 
 ### Coding Conventions
+### Git Workflow
+
+In order to collaborate within this project we will use the Gitflow workflow. 
+
+#### Develop and main branches
+![alt text](https://wac-cdn.atlassian.com/dam/jcr:a13c18d6-94f3-4fc4-84fb-2b8f1b2fd339/01%20How%20it%20works.svg?cdnVersion=1240)
+
+- The main branch contains the official release history
+- The develop branch is an integration branch for features
+- All commits into the main branch gets tagged with a version number
+- To merge the develop branch to the main branch requires always a pull request and an approval
+
+
+#### Feature branches
+![alt text](https://wac-cdn.atlassian.com/dam/jcr:34c86360-8dea-4be4-92f7-6597d4d5bfae/02%20Feature%20branches.svg?cdnVersion=1240)
+
+- Each new feature gets an own branch
+- The feature branch is always branched off from develop
+- The feature branch is always merged to develop
+- To merge the feature branch to the develop branch requires always a pull request, code review and an approval
+
+#### Release branches
+![alt text](https://wac-cdn.atlassian.com/dam/jcr:8f00f1a4-ef2d-498a-a2c6-8020bb97902f/03%20Release%20branches.svg?cdnVersion=1240)
+
+- A release branch is always a fork of the current develop branch
+- No new features are allowed to add to the release branch
+- Bug fixes, documentation and release oriented tasks are allowed to commit
+- When the release branch is ready, it gets merged into the main branch and tagged with a version number
+- Additionally, the release branch gets merged into develop
+- After merging the release branch into main and develop, the release branch gets deleted
+
+#### Hotfix branches
+![alt text](https://wac-cdn.atlassian.com/dam/jcr:cc0b526e-adb7-4d45-874e-9bcea9898b4a/04%20Hotfix%20branches.svg?cdnVersion=1240)
+
+#### Additional: Private branches
+
+Source: https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow
+
 
 ### Definition of Ready
 
