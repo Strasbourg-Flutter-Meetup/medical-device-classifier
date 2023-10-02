@@ -478,13 +478,69 @@ In order to collaborate within this project we will use the Gitflow workflow.
 - When the release branch is ready, it gets merged into the main branch and tagged with a version number
 - Additionally, the release branch gets merged into develop
 - After merging the release branch into main and develop, the release branch gets deleted
+- A feature branch is named like following: feature/<name of feature_branch>
 
 #### Hotfix branches
 ![alt text](https://wac-cdn.atlassian.com/dam/jcr:cc0b526e-adb7-4d45-874e-9bcea9898b4a/04%20Hotfix%20branches.svg?cdnVersion=1240)
+- Hotfix branches are used to quickly patch production releases
+- Hotfix branches bases on the main branch
+- If a bug it fixed it should be merged into the main and develop branch
+- The main branch should be tagged with a new version
+- A hotfix branch is named like following: hotfix/<name of hotfix_branch>
 
 #### Additional: Private branches
+If you are currently coding and you have to interrupt for a break or end of work then commit your 
+current work into a private branch. 
 
-Source: https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow
+- A private branch branches off from your current feature branch
+- A private branch merges into your current feature branch
+- When merging from private branch to feature branch then squash all commits by using a single commit message
+- A private branch is named like following: private/<your initials>_<name of feature_branch>
+
+#### Structure of a commit message
+
+<type>:<subject> 
+
+<body>
+
+**Types**
+
+- feat: (new feature for the user, not a new feature for build script)
+- fix: (bug fix for the user, not a fix to a build script)
+- docs: (changes to the documentation)
+- style: (formatting, missing semi colons, etc; no production code change)
+- refactor: (refactoring production code, e. g. renaming a variable)
+- test: (adding missing tests, refactoring tests; no production code change)
+- chore: (updating grunt tasks etc; no production code change)
+- ci: (updating the ci configuration, e. g. .gitlab-ci.yml)
+
+**Subject**
+- Maximal 50 characters long
+- Only the first letter is capitalized
+- Don't put a period at the end of the subject line
+- Put a blank between subject and body
+- Use imperative mood
+
+**Body**
+- Wrap lines at 72 characters
+- Use imperative mood
+- Explain only what and why
+- Optional: can contain the specific ticket number for a work in following way [<ticket number>]
+
+**Example**
+
+git commit -v -m "feat: Create the Cart Feature with a Nice Animation
+
+Enhanced the CSS layout of the cart section, addressing text
+alignment issues and refining the layout for improved aesthetics
+and readability [TN-123].
+"
+
+Sources: 
+
+https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow
+https://www.conventionalcommits.org/en/v1.0.0/
+https://medium.com/gitconnected/good-commit-vs-your-commit-how-to-write-a-perfect-git-commit-message-6e96ab6357fa
 
 
 ### Definition of Ready
