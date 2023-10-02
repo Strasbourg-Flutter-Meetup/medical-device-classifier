@@ -71,6 +71,29 @@ the app stores in order to animate the users to download the app.
 ## Architecture Decisions
 ## Conventions
 ### Coding Conventions
+
+1. Classes, enums, typedefs, and extensions name should in ```UpperCamelCase```.
+2. Libraries, packages, directories, and source files name should be in ```snake_case(lowercase_with_underscores)```.
+3. Variables, constants, parameters, and named parameters should be in ```lowerCamelCase```.
+4. Always specify the type of member when its value type is known. Avoid using ```var``` when possible.
+5. Usually, The ```as``` cast operator throws an exception if the cast is not possible. To avoid an exception being thrown use ```is```.
+6. Many times we need to render a widget based on some conditions in Row and Column. If conditional expression return null in any case then we should use if condition only.
+7. Prefer using ?? (if null) and ?. (null aware) operators instead of null checks in conditional expressions.
+8. When existing items are already stored in another collection, spread collection syntax leads to simpler code.
+9. If we want to perform a sequence of operations on the same object then we should use the Cascades(..) operator.
+10. For functions that contain just one expression, you can use an expression function. The ```=>``` (arrow) notation is used for expression function.
+11. Use ```async/await``` overusing futures callback. Asynchronous code is hard to read and debug. The ```async/await``` syntax improves readability.
+12. Split widgets into sub Widgets.
+13. Use ListView.builder for a long list.
+14. Use Const in Widgets. The widget will not change when setState call we should define it as constant. It will prevent the widget to rebuild so it improves performance.
+15. Avoid lines longer than 80 characters.
+16. Do use curly braces for all flow control statements.
+
+For more details:
+
+[Effective Dart](https://dart.dev/effective-dart) 
+[Linter rules](https://dart.dev/tools/linter-rules)
+
 ### Git Workflow
 
 In order to collaborate within this project we will use the Gitflow workflow. 
