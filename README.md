@@ -478,7 +478,7 @@ In order to collaborate within this project we will use the Gitflow workflow.
 - When the release branch is ready, it gets merged into the main branch and tagged with a version number
 - Additionally, the release branch gets merged into develop
 - After merging the release branch into main and develop, the release branch gets deleted
-- A feature branch is named like following: feature/<name of feature_branch>
+- A feature branch is named like following: feature/\<name of feature_branch\>
 
 #### Hotfix branches
 ![alt text](https://wac-cdn.atlassian.com/dam/jcr:cc0b526e-adb7-4d45-874e-9bcea9898b4a/04%20Hotfix%20branches.svg?cdnVersion=1240)
@@ -486,7 +486,7 @@ In order to collaborate within this project we will use the Gitflow workflow.
 - Hotfix branches bases on the main branch
 - If a bug it fixed it should be merged into the main and develop branch
 - The main branch should be tagged with a new version
-- A hotfix branch is named like following: hotfix/<name of hotfix_branch>
+- A hotfix branch is named like following: hotfix/\<name of hotfix_branch\>
 
 #### Additional: Private branches
 If you are currently coding and you have to interrupt for a break or end of work then commit your 
@@ -495,13 +495,13 @@ current work into a private branch.
 - A private branch branches off from your current feature branch
 - A private branch merges into your current feature branch
 - When merging from private branch to feature branch then squash all commits by using a single commit message
-- A private branch is named like following: private/<your initials>_<name of feature_branch>
+- A private branch is named like following: private/\<your initials\>_\<name of feature_branch\>
 
 #### Structure of a commit message
 
-<type>:<subject> 
+\<type\>:\<subject\> 
 
-<body>
+\<body\>
 
 **Types**
 
@@ -525,7 +525,7 @@ current work into a private branch.
 - Wrap lines at 72 characters
 - Use imperative mood
 - Explain only what and why
-- Optional: can contain the specific ticket number for a work in following way [<ticket number>]
+- Optional: can contain the specific ticket number for a work in following way [\<ticket number\>]
 
 **Example**
 
