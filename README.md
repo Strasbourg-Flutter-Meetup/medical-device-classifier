@@ -50,6 +50,27 @@ the app stores in order to animate the users to download the app.
 - [ ] The web site contains a reference to the App Store of Apple
 - [ ] The web site contains a reference to the Play Store of Android
 
+#### R5 About us
+As responsible of the Medical Device Classifier I would like to present the responsible Strasbourg
+Flutter Meetup group and the responsible developers within the application in order to honor them.
+
+- [ ] The application describes the Strasbourg Flutter Meetup Group
+- [ ] The link to the Strasbourg Flutter Meetup is available 
+- [ ] The link to the repository is available, because it is an open source project
+
+#### R6 Data protection
+As responsible of the Medical Device Classifier I would like to be GDPR compliant in order not to 
+get any fee.
+
+- [ ] The application contains a valid data protection statement
+
+
+#### R7 Legal notice
+
+Hint: Not sure if this is necessary, because it is a private project.
+
+- [ ] The application contains a valid legal notice
+
 
 ### Quality Goals
 | Goal          | Description                                                                |
