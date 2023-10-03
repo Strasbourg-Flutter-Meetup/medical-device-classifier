@@ -20,15 +20,30 @@ to know which measures must be taken.
 - [ ] The application is reachable via a web site and via the app stores of Android and Apple
 - [ ] The application is available in English, German and French language
 - [ ] The application allows the user to change a previous made decision
+- [ ] Before the user starts the classification, he has to confirm the he knows the specific definitions regarding to the classification
+- [ ] Before the user starts the classification, he has to confirm the he knows the implementing rules regarding to the classification
+- [ ] Before the user starts the classification, he has to confirm that the device is a medical device
+- [ ] The implementing rule 3.5 is covered by the algorithm 
 
 #### R2 Definitions specific to classification rules
 As a medical device manufacturer, I would like to understand the Annex VIII MDR specific terms to 
 make correct decisions during the classification process.
 
 - [ ] The user can search for specific term within a glossary
-- [ ] The Annex VIII MDR specific terms are available
+- [ ] The Annex VIII MDR specific definitions are available
+- [ ] The MDCG 2021-24 definitions are available
+- [ ] The user can read the definitions before he starts the classifier
+- [ ] The user can read the definitions during the classification process
 
-#### R3 Reference to the app stores
+
+#### R3 Implementing rules
+As application provider, I would like that the user has the chance to read the implementing rules in order to
+ensure that the user is able to make correct decisions during the classification process. 
+
+- [ ] The user can read the implementing rules before he starts the classifier
+- [ ] The user can read the implementing rules during the classification process
+
+#### R4 Reference to the app stores
 As responsible of the Medical Device Classifier I would like to have references on the web site to 
 the app stores in order to animate the users to download the app.
 
@@ -61,14 +76,92 @@ the app stores in order to animate the users to download the app.
 ### Business Context
 ### Technical Context
 ## Design
+### View flow
+![View flow](resources/visual_design/a_view_flow_chart.jpg)
+
+#### Dashboard
+The dashboard is the first screen, which the user will see. It offers some general information about 
+the purpose of this application and allows the user to navigate to each feature.
+
+#### Definitions 
+The definition view exists to provide the user MDR VIII and MDCG 2021-24 specific definitions in order 
+to allow the user to gain understandings about the used terms. Furthermore a separated Defintions view
+can be easily accessed from anywhere within the application, which will satisfy some specific requirements 
+in **R2 Definitions specific to classification rules**. 
+
+#### Implementing Rules
+The implementing rule view exists to provide the user MDR III specific impelementation rules in order 
+to allow  the user to use the classifier correctly. Furthermore a separated Implementing Rules view
+can be easily accessed from anywhere within the application, which will satisfy some specific requirements
+in **R3 Implementing rules**.
+
+#### Data Protection
+Contains a standard data protection statement. Especially that we have to mention our hoster and that we 
+have a GDPR order processing agreement. We also have to mention their data protection and if they collect 
+any data (e. g. IP addresses) we have to mention that. 
+
+#### Legal Notice
+
+Not sure if we really require that, because the website and the application is private.
+
+Nevertheless I mentioned some information, which should be published.
+
+- The identity of the entrepreneur and the name of the company’s corporate name;
+- The contact details of the company’s head office;
+- A contact email address and a telephone number;
+- The registration number in the Trade and Companies Register (RCS) or the Trade Register (RM);
+- The intra-community VAT number;
+- References to the professional rules applicable and to the professional title in the context of a regulated profession;
+- The contact details of the site host (identity, address, telephone number of the host);
+- The General Terms and Conditions of Sale (GTC);
+- The Declaration number of the french Commission Nationale Informatique et des Libertés (CNIL);
+- The law applicable in the event of a dispute;
+- A disclaimer of liability clause;
+- The use of cookies and tracking devices (allowing the collection of personal data);
+- Information on your partnerships (affiliation service);
+- Allow people who register on your site using their contact information to contact you to change or delete this information
+
+[Source](https://www.bonnefous.com/en/blog/what-are-the-mandatory-legal-notices-on-the-internet-in-france/)
+
+#### About Us
+
+At the About Us view we will describe the Strasbourg Flutter Meetup Group and the motivation why we
+developed this classifier.
+
+#### Classifier Introduction
+
+Allows a deeper explanation of the classifier and to make sure that the user is aware of the specific
+definitions, implementing rules and the status of its device. The user shall proof that, by confirming
+the understanding of the definitions, implementing rules and the status of its device. 
+
+#### Classifier
+
+The classifier view allows the user classify its device and to interrupt the process in order to check
+definitions and implementing rules. 
+
+### Wire frame
+![Wire frame](resources/visual_design/b_wire_frame.jpg)
+
+### Final design
+TBD
 ## Solution Strategy
+TBD
 ## C4 Model
+TBD
 ### System Context diagram
+TBD
 ### Container (App) diagram
+TBD
 ### Component diagram
+TBD
 ### Building Block View
+TBD
+### Runtime View
+TBD
 ## Cross-cutting Concepts
+TBD
 ## Architecture Decisions
+TBD
 ## Conventions
 ### Coding Conventions
 
@@ -189,7 +282,12 @@ https://www.conventionalcommits.org/en/v1.0.0/
 https://medium.com/gitconnected/good-commit-vs-your-commit-how-to-write-a-perfect-git-commit-message-6e96ab6357fa
 
 ### Definition of Ready
+TBD
 ### Definition of Done
+TBD
 ## Quality Requirements
+TBD
 ## Risks and Technical Debts
+TBD
 ## Glossary
+TBD
