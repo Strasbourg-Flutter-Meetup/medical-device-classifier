@@ -1,28 +1,140 @@
-# This file configures the analyzer, which statically analyzes Dart code to
-# check for errors, warnings, and lints.
-#
-# The issues identified by the analyzer are surfaced in the UI of Dart-enabled
-# IDEs (https://dart.dev/tools#ides-and-editors). The analyzer can also be
-# invoked from the command line by running `flutter analyze`.
-
-# The following line activates a set of recommended lints for Flutter apps,
-# packages, and plugins designed to encourage good coding practices.
-include: package:flutter_lints/flutter.yaml
-
-linter:
-  # The lint rules applied to this project can be customized in the
-  # section below to disable rules from the `package:flutter_lints/flutter.yaml`
-  # included above or to enable additional rules. A list of all available lints
-  # and their documentation is published at https://dart.dev/lints.
-  #
-  # Instead of disabling a lint rule for the entire project in the
-  # section below, it can also be suppressed for a single line of code
-  # or a specific dart file by using the `// ignore: name_of_lint` and
-  # `// ignore_for_file: name_of_lint` syntax on the line or in the file
-  # producing the lint.
-  rules:
-    # avoid_print: false  # Uncomment to disable the `avoid_print` rule
-    # prefer_single_quotes: true  # Uncomment to enable the `prefer_single_quotes` rule
+include: package:lints/recommended.yaml
 
 # Additional information about this file can be found at
 # https://dart.dev/guides/language/analysis-options
+analyzer:
+  language:
+    strict-casts: true
+    strict-inference: true
+    strict-raw-types: true
+  plugins:
+    - dart_code_metrics
+  errors:
+    # treat missing required parameters as a warning (not a hint)
+    missing_required_param: warning
+    # treat missing returns as an error (not a hint)
+    missing_return: error
+    # allow having TODOs in the code
+    todo: warning
+    # allow self-reference to deprecated members (we do this because otherwise we have
+    # to annotate every member in every test, assert, etc, when we deprecate something)
+    deprecated_member_use_from_same_package: ignore
+    # Ignore analyzer hints for updating pubspecs when using Future or
+    # Stream and not importing dart:async
+    # Please see https://github.com/flutter/flutter/pull/24528 for details.
+    sdk_version_async_exported_from_core: ignore
+    # Static classes are profered for global constants.
+    avoid_classes_with_only_static_members: ignore
+    # Prevents separating pinned transitive dependencies and sorting by topic.
+    sort_pub_dependencies: error
+    # Turned off for now, since it conflicts with async dialog requests and the usage of blocs.
+    use_build_context_synchronously: ignore
+    directives_ordering: ignore # Turned off for now, since it creates overhead of work when refactoring.
+    unawaited_futures: error #Added to avoid hard to find bugs.
+    avoid_void_async: error #Added to avoid hard to find bugs.
+    require_trailing_commas: error #Added to improve formatting.
+    invalid_annotation_target: ignore
+
+dart_code_metrics:
+  formatter:
+    line-length: 80
+    cascading-widget-extensions: true
+  anti-patterns:
+    - long-method
+    - long-parameter-list
+  metrics:
+    cyclomatic-complexity: 7
+    maximum-nesting-level: 3
+    number-of-parameters: 3
+    number-of-methods: 10
+    source-lines-of-code: 25
+    maintainability-index: 50
+    lines-of-code: 25
+    halstead-volume: 150
+    weight-of-class: 0.33
+    technical-debt:
+      threshold: 1
+      todo-cost: 140
+      ignore-cost: 70
+      ignore-for-file-cost: 210
+      as-dynamic-cost: 140
+      deprecated-annotations-cost: 35
+      file-nullsafety-migration-cost: 70
+      unit-type: "EUR"
+  metrics-exclude:
+    - test/**
+    - test/**/*.mocks.dart
+    - lib/open_weather_map/open_weather_map_language_mapping.dart
+    - lib/generated/intl/messages_all.dart
+    - lib/generated/intl/messages_en.dart
+    - lib/generated/I10n.dart
+  pubspec-rules:
+    - avoid-any-version
+    - prefer-semver-version
+  rules:
+    - newline-before-return
+    - list-all-equatable-fields
+    - no-boolean-literal-compare
+    - no-empty-block
+    - prefer-trailing-comma
+    - prefer-conditional-expressions
+    - no-equal-then-else
+    - avoid-collection-methods-with-unrelated-types
+    - avoid-duplicate-exports
+    - avoid-dynamic
+    - avoid-global-state
+    - avoid-late-keyword:
+        severity: error
+    - avoid-missing-enum-constant-in-map
+    - avoid-nested-conditional-expressions:
+        acceptable-level: 2
+    - avoid-non-null-assertion
+    - avoid-throw-in-catch-block
+    - avoid-unnecessary-type-assertions
+    - avoid-unnecessary-type-casts
+    - avoid-unrelated-type-assertions
+    - avoid-unused-parameters
+    - binary-expression-operand-order
+    - double-literal-format
+
+    - prefer-intl-name
+    - prefer-date-format
+    - prefer-number-format
+    - member-ordering:
+        severity: error
+        order:
+          - named-constructors
+          - factory-constructors
+          - public-static-fields
+          - private-static-fields
+          - public-static-methods
+          - private-static-methods
+          - public-fields
+          - private-fields
+          - public-getters
+          - private-getters
+          - public-setters
+          - private-setters
+          - public-methods
+          - private-methods
+        widgets-order:
+          - named-constructors
+          - factory-constructors
+          - public-static-fields
+          - private-static-fields
+          - public-static-methods
+          - private-static-methods
+          - public-fields
+          - private-fields
+          - public-getters
+          - private-getters
+          - public-setters
+          - private-setters
+          - init-state-method
+          - did-change-dependencies-method
+          - build-method
+          - did-update-widget-method
+          - dispose-method
+          - public-methods
+          - private-methods
+
