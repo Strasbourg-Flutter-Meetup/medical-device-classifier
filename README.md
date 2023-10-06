@@ -77,7 +77,7 @@ This will also trigger the ```flutter run``` command.
 
 #### Sources
 
-If you want to know more about L18N in flutter please
+If you want to know more about I18N in flutter please
 check [here](https://docs.flutter.dev/ui/accessibility-and-localization/internationalization).
 
 ## Architecture Decisions
