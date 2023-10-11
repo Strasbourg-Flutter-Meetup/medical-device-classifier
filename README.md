@@ -36,21 +36,71 @@ European Union on 5 April 2017.
 
 ## Cross-cutting Concepts
 
+### Dependency Injection
+
+For the dependency injection we are using the [get_it](https://pub.dev/packages/get_it) package.
+
+Please read the documentation [get_it](https://pub.dev/packages/get_it) before in order to get
+familiar with it.
+
+#### Add a new dependency
+
+Within a injections configuration you can add a dependency like following:
+
+```dart
+void configureGetItInjections() {
+   getIT.registerFactory<ServiceA>(
+              () => ServiceA(),
+   );
+
+   getIt.registerFactory<MyCubit>(
+              () =>
+              DashboardCubit(
+                 serviceA: getIt.get<ServiceA>(),
+              ),
+   );
+}
+```
+
+The example above shows how a cubit gets registered and a ServiceA class injected to the cubit.
+
+#### Use a dependency
+
+Each dependency, when it is registered, gets called like following:
+
+```dart
+MyService myService = getIt.get<MyService>();
+```
+
+You can call each registered dependency anywhere in your code, but we use it only in order to
+inject dependencies into new instantiated classes.
+
+#### Create a new injection configuration
+
+1. Create a file with the pattern 'injection_<type_of_injection>.dart', e. g. '
+   injection_services.dart'
+2. Extend the class from InjectionConfiguration
+3. Add your dependency to your configuration
+4. Add your new injection configuration to the injectionConfigurations within the
+   method ```_configureGetIt``` which you can find in the ```BootstrapImpl``` class
+
 ### Routing
 
 #### General
 
-For navigating throw the application we are using the [go_router](https://pub.dev/packages/go_router) 
+For navigating throw the application we are using
+the [go_router](https://pub.dev/packages/go_router)
 package. Based on the view flow the Dashboard screen is the initial screen which the user will see.
-From here we are using only [child routes](https://pub.dev/documentation/go_router/latest/topics/Configuration-topic.html)
-in order to configure our routing system. 
+From here we are using
+only [child routes](https://pub.dev/documentation/go_router/latest/topics/Configuration-topic.html)
+in order to configure our routing system.
 
-Please read the below documentation and the documentation of [go_router](https://pub.dev/packages/go_router) 
+Please read the below documentation and the documentation
+of [go_router](https://pub.dev/packages/go_router)
 carefully before working with the routing system.
 
-
-
 #### Step 1: Add path
+
 In order to add a path you have to add a path and a name to the [go_router_path.dart] file.
 
 Lets add for example screen with the name "ImplementingRules":
@@ -67,7 +117,7 @@ const String nameToImplementingRules = 'implementingRules'; // new
 ```
 
 If you want to pass an parameter to the new route, then please update the [go_router_path.dart] file
-like following: 
+like following:
 
 ```dart
 // paths
@@ -79,7 +129,8 @@ const String pathToImplementingRules = 'implementingRules/:myParameter'; // new
 const String nameToDefinitions = 'definitions';
 const String nameToImplementingRules = 'implementingRules'; // new
 ```
-Several parameters can be added in a row: 
+
+Several parameters can be added in a row:
 
 ```dart
 // paths
@@ -109,6 +160,7 @@ In the next step you assign a [GoRoute] object to the variable and you configure
 Example:
 
 ```dart
+
 final _toDefinitions = GoRoute(
   path: pathToDefinitions,
   name: nameToDefinitions,
@@ -119,7 +171,7 @@ final _toDefinitions = GoRoute(
               opacity: animation,
               child: child,
             ),
-        child: const Definitions(), // this is the screen to display
+        child: const Definitions(), //screen to display
       ),
 );
 ```
@@ -140,8 +192,9 @@ void routeToDefinitions() {
 ```
 
 #### Step 4: Use router
+
 To use the router method you can call it anywhere in your code. E. g. when a user clicks on a button
-or the state of your app changes and makes a navigation necessary. 
+or the state of your app changes and makes a navigation necessary.
 
 Example
 

@@ -14,7 +14,7 @@ import 'package:medical_device_classifier/dependency_injection/injections/inject
 class InjectionCubits extends InjectionConfiguration {
   @override
   // ignore: long-method
-  configureGetItInjections() {
+  void configureGetItInjections() {
     // Register the factory methods for each Cubit, providing the necessary dependencies.
     // Add the respective imports for each Cubit to ensure correct references.
 
