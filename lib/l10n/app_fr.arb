@@ -1,6 +1,3 @@
 {
-  "helloWorld": "Bonjour le monde !",
-  "@helloWorld": {
-    "description": "The conventional newborn programmer greeting"
-  }
+  "appBarTitle" : "Medical Device Classifier"
 }
