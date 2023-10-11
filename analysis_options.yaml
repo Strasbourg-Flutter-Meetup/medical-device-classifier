@@ -1,4 +1,4 @@
-include: package:lints/recommended.yaml
+include: package:flutter_lints/flutter.yaml
 
 # Additional information about this file can be found at
 # https://dart.dev/guides/language/analysis-options
@@ -36,6 +36,12 @@ analyzer:
     avoid_void_async: error #Added to avoid hard to find bugs.
     require_trailing_commas: error #Added to improve formatting.
     invalid_annotation_target: ignore
+
+linter:
+  rules:
+    - require_trailing_commas
+    - avoid_void_async
+    - unawaited_futures
 
 dart_code_metrics:
   formatter:
@@ -77,6 +83,10 @@ dart_code_metrics:
     - prefer-date-format
     - prefer-number-format
   rules:
+    - prefer-single-widget-per-file:
+        ignore-private-widgets: true
+    - prefer-using-list-view
+    - prefer-declaring-const-constructor
     - newline-before-return
     - list-all-equatable-fields
     - no-boolean-literal-compare
@@ -102,6 +112,7 @@ dart_code_metrics:
     - binary-expression-operand-order
     - double-literal-format
     - prefer-intl-name
+
     - member-ordering:
         severity: error
         order:
