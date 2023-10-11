@@ -15,23 +15,21 @@ class Dashboard extends StatelessWidget {
   const Dashboard({super.key});
 
   @override
-  Widget build(BuildContext context) => ScreenTemplate(
-        appBarTemplate: const AppBarTemplate(
+  Widget build(BuildContext context) => const ScreenTemplate(
+        appBarTemplate: AppBarTemplate(
           isDashboard: true,
         ),
         child: Column(
           children: [
-            const Text(
+            Text(
               'Here will be the dashboard of the Medical Device Classifier application',
             ),
-            const SizedBox(
+            SizedBox(
               height: 96.0,
             ),
             ElevatedButton(
-              onPressed: () {
-                routeToDefinitions();
-              },
-              child: const Text(
+              onPressed: routeToDefinitions,
+              child: Text(
                 'Definitions',
               ),
             ),
