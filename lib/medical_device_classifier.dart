@@ -9,12 +9,16 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:medical_device_classifier/routing/go_router_configuration.dart';
 
 class MedicalDeviceClassifier extends StatelessWidget {
+  const MedicalDeviceClassifier({super.key});
+
   @override
-  Widget build(BuildContext context) => const MaterialApp(
-        title: 'Localizations Sample App',
+  Widget build(BuildContext context) => MaterialApp.router(
+        title: 'Medical Device Classifier',
         localizationsDelegates: AppLocalizations.localizationsDelegates,
         supportedLocales: AppLocalizations.supportedLocales,
+        routerConfig: goRouterConfiguration,
       );
 }
