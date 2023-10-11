@@ -7,12 +7,29 @@
 // ID: 20231011125329
 // 11.10.2023 12:53
 import 'package:flutter/material.dart';
+import 'package:medical_device_classifier/bootstrap.dart';
 import 'package:medical_device_classifier/routing/router.dart';
 import 'package:medical_device_classifier/ui/app_bar_template.dart';
 import 'package:medical_device_classifier/ui/screen_template.dart';
 
-class Dashboard extends StatelessWidget {
-  const Dashboard({super.key});
+class Dashboard extends StatefulWidget {
+  const Dashboard({
+    super.key,
+    required this.bootstrap,
+  });
+
+  final Bootstrap bootstrap;
+
+  @override
+  State<Dashboard> createState() => _DashboardState();
+}
+
+class _DashboardState extends State<Dashboard> {
+  @override
+  void initState() {
+    super.initState();
+    widget.bootstrap.boot();
+  }
 
   @override
   Widget build(BuildContext context) => const ScreenTemplate(

@@ -8,6 +8,7 @@
 // 11.10.2023 12:33
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:medical_device_classifier/bootstrap.dart';
 import 'package:medical_device_classifier/feature/dashboard/presentation/screen/dashboard.dart';
 import 'package:medical_device_classifier/feature/definitions/presentation/screen/defintions.dart';
 import 'package:medical_device_classifier/routing/go_router_path.dart';
@@ -29,15 +30,21 @@ final goRouterConfiguration = GoRouter(
 /// such as [_toDefinitions], that can be accessed from the dashboard.
 final _toDashboard = GoRoute(
   path: pathToDashboard,
-  pageBuilder: (context, state) =>
-      CustomTransitionPage(
-        transitionsBuilder: (context, animation, secondaryAnimation, child,) =>
-            FadeTransition(
-              opacity: animation,
-              child: child,
-            ),
-        child: const Dashboard(),
-      ),
+  pageBuilder: (context, state) => CustomTransitionPage(
+    transitionsBuilder: (
+      context,
+      animation,
+      secondaryAnimation,
+      child,
+    ) =>
+        FadeTransition(
+      opacity: animation,
+      child: child,
+    ),
+    child: Dashboard(
+      bootstrap: BootstrapImpl(),
+    ),
+  ),
   routes: [
     _toDefinitions,
   ],
@@ -50,14 +57,17 @@ final _toDashboard = GoRoute(
 final _toDefinitions = GoRoute(
   path: pathToDefinitions,
   name: nameToDefinitions,
-  pageBuilder: (context, state) =>
-      CustomTransitionPage(
-        transitionsBuilder: (context, animation, secondaryAnimation, child,) =>
-            FadeTransition(
-              opacity: animation,
-              child: child,
-            ),
-        child: const Definitions(),
-      ),
+  pageBuilder: (context, state) => CustomTransitionPage(
+    transitionsBuilder: (
+      context,
+      animation,
+      secondaryAnimation,
+      child,
+    ) =>
+        FadeTransition(
+      opacity: animation,
+      child: child,
+    ),
+    child: const Definitions(),
+  ),
 );
-
