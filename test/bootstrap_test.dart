@@ -7,30 +7,47 @@
 // ID: 20231012132149
 // 12.10.2023 13:21
 import 'package:medical_device_classifier/bootstrap.dart';
+import 'package:medical_device_classifier/supabase/supabase_client.dart';
+import 'package:mockito/annotations.dart';
 import 'package:test/test.dart';
 
+import 'bootstrap_test.mocks.dart';
+
+@GenerateNiceMocks([MockSpec<SupabaseClientImpl>()])
 void main() {
   group('Bootstrap', () {
     test('should define a boot method', () {
-      const bootstrap = BootstrapImpl();
-      expect(bootstrap.boot(), completion(isTrue)); // Check that it returns true
+      final bootstrap = BootstrapImpl(
+        supabaseClient: MockSupabaseClientImpl(),
+      );
+      expect(
+        bootstrap.boot(),
+        completion(isTrue),
+      ); // Check that it returns true
     });
 
-    test('boot method should be overridden in subclasses', ()  {
+    test('boot method should be overridden in subclasses', () {
       const bootstrap = NegativeTestBootstrap();
-      expect(() async => await bootstrap.boot(), throwsA(isA<AssertionError>()));
+      expect(
+        () async => await bootstrap.boot(),
+        throwsA(isA<AssertionError>()),
+      );
     });
   });
 
   group('BootstrapImpl', () {
     test('should initialize a BootstrapImpl instance', () {
       // Remove 'const' as BootstrapImpl does not have a const constructor
-      const bootstrap = BootstrapImpl();
+      final bootstrap = BootstrapImpl(
+        supabaseClient: MockSupabaseClientImpl(),
+      );
       expect(bootstrap, isA<Bootstrap>());
     });
 
     test('boot method should execute load methods', () async {
-      const bootstrap = BootstrapImpl();
+      final bootstrap = BootstrapImpl(
+        supabaseClient: MockSupabaseClientImpl(),
+      );
       final flag = await bootstrap.boot();
 
       // Add assertions based on the behavior of the `boot` method
@@ -45,16 +62,11 @@ void main() {
   });
 }
 
-class NegativeTestBootstrap implements Bootstrap{
-
+class NegativeTestBootstrap implements Bootstrap {
   const NegativeTestBootstrap();
 
   @override
   Future<bool> boot() {
-
     throw AssertionError();
   }
-
 }
-
-

@@ -11,6 +11,7 @@ import 'package:medical_device_classifier/dependency_injection/injections.dart';
 import 'package:medical_device_classifier/dependency_injection/injections/injection_configuration.dart';
 import 'package:medical_device_classifier/features/dashboard/presentation/cubit/dashboard_cubit.dart';
 import 'package:medical_device_classifier/features/dashboard/presentation/cubit/dashboard_state.dart';
+import 'package:medical_device_classifier/supabase/supabase_client.dart';
 
 /// This class is responsible for configuring the dependency injections for various Cubits in the Medical Device Classifier project.
 ///
@@ -27,7 +28,9 @@ class InjectionCubits extends InjectionConfiguration {
     getIt.registerFactory<DashboardCubit>(
       () => DashboardCubit(
         const DashboardState.initial(),
-        bootstrap: const BootstrapImpl(),
+        bootstrap: BootstrapImpl(
+          supabaseClient: getIt.get<SupabaseClientImpl>(),
+        ),
       ),
     );
     //

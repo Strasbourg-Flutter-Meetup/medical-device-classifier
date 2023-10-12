@@ -7,6 +7,10 @@
 // ID: 20231011195457
 // 11.10.2023 19:54
 
+import 'package:medical_device_classifier/supabase/anon_key.dart';
+import 'package:medical_device_classifier/supabase/supabase_client.dart';
+import 'package:medical_device_classifier/supabase/supabase_url.dart';
+
 /// The `Bootstrap` abstract class defines a contract for bootstrapping operations.
 ///
 /// Subclasses that implement this contract should provide an implementation
@@ -61,7 +65,11 @@ abstract class Bootstrap {
 /// ```
 class BootstrapImpl implements Bootstrap {
   /// Creates an instance of `BootstrapImpl`.
-  const BootstrapImpl();
+  const BootstrapImpl({
+    required this.supabaseClient,
+  });
+
+  final ISupabaseClient supabaseClient;
 
   /// Initializes the bootstrapping process.
   ///
@@ -83,12 +91,44 @@ class BootstrapImpl implements Bootstrap {
   /// ```
   @override
   Future<bool> boot() async {
+    await _initSupabaseClient();
     await _loadDecisionTree();
     await _loadDefinitions();
     await _loadImplementingRules();
 
     return true;
   }
+
+  /// Initializes the Supabase client for making authenticated requests to a Supabase database.
+  ///
+  /// This method sets up the Supabase client with the provided Supabase URL and anonymous key.
+  ///
+  /// - [supabaseURL]: The URL of your Supabase project. It typically follows the format
+  ///   `https://your-project-id.supabase.co`.
+  /// - [supabaseAnonKey]: The anonymous key used for authentication with Supabase.
+  ///
+  /// This method must be called before making any requests to the Supabase database.
+  ///
+  /// Example:
+  ///
+  /// ```dart
+  /// await _initSupabaseClient(
+  ///   supabaseURL: 'https://your-project-id.supabase.co',
+  ///   supabaseAnonKey: 'your-anonymous-key',
+  /// );
+  /// ```
+  ///
+  /// Make sure to call this method early in your application initialization to set up
+  /// the Supabase client for authentication and data access.
+  ///
+  /// Throws a [SupabaseException] if the initialization process encounters an error.
+  Future<void> _initSupabaseClient() async {
+    await supabaseClient.initialize(
+      supabaseURL: supabaseURL,
+      supabaseAnonKey: anonKey,
+    );
+  }
+
 
   /// Private method to load a decision tree asynchronously.
   ///
@@ -111,4 +151,3 @@ class BootstrapImpl implements Bootstrap {
     // Implement the logic to load implementing rules here.
   }
 }
-
