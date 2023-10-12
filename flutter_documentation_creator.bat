@@ -12,7 +12,7 @@ call flutter test --machine | tojunit > doc\test_report\junit_test_report.xml
 call junit-viewer --results=doc\test_report\junit_test_report.xml  --save=doc\test_report\junit_test_report.html --minify=false
 del doc\machine.log
 echo Starting code metrics
-call dart run dart_code_metrics:metrics analyze --reporter=html --no-fatal-warnings --output-directory=doc\code_metrics_report lib
+call dcm calculate-metrics lib --reporter=html --output-directory=doc/code_metrics-report
 echo Starting code duplication detection
 call jscpd -o doc\jscpd --reporters html lib\
 echo Create documentation

@@ -7,7 +7,7 @@
 // ID: 20231011124442
 // 11.10.2023 12:44
 import 'package:go_router/go_router.dart';
-import 'package:medical_device_classifier/feature/definitions/presentation/screen/defintions.dart';
+import 'package:medical_device_classifier/features/definitions/presentation/screen/definitions.dart';
 import 'package:medical_device_classifier/routing/go_router_context.dart';
 import 'package:medical_device_classifier/routing/go_router_path.dart';
 
@@ -15,6 +15,6 @@ import 'package:medical_device_classifier/routing/go_router_path.dart';
 /// [Definitions] screen.
 void routeToDefinitions() {
   goRouterContext?.goNamed(
-    pathToDefinitions,
+    nameToDefinitions,
   );
 }
