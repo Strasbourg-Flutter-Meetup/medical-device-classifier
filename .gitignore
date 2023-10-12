@@ -144,7 +144,7 @@ app.*.map.json
 #.dart_tool/
 #.packages
 #build/
-# If you're building an application, you may want to check-in your pubspec.lock
+# c
 #pubspec.lock
 
 # Directory created by dartdoc
@@ -861,3 +861,4 @@ Temporary Items
 # Archives         - https://github.com/github/gitignore/blob/main/Global/Archives.gitignore
 # Backup           - https://github.com/github/gitignore/blob/main/Global/Backup.gitignore
 # JEnv             - https://github.com/github/gitignore/blob/main/Global/JEnv.gitignore
+/resources/documentation_guidelines/~$c42-template-EN.docx
