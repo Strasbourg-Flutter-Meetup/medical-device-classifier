@@ -8,9 +8,8 @@
 // 11.10.2023 12:33
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:medical_device_classifier/bootstrap.dart';
-import 'package:medical_device_classifier/feature/dashboard/presentation/screen/dashboard.dart';
-import 'package:medical_device_classifier/feature/definitions/presentation/screen/defintions.dart';
+import 'package:medical_device_classifier/features/dashboard/presentation/screen/dashboard.dart';
+import 'package:medical_device_classifier/features/definitions/presentation/screen/definitions.dart';
 import 'package:medical_device_classifier/routing/go_router_path.dart';
 
 /// The [goRouterConfiguration] instance is used to configure and manage the
@@ -41,9 +40,7 @@ final _toDashboard = GoRoute(
       opacity: animation,
       child: child,
     ),
-    child: Dashboard(
-      bootstrap: BootstrapImpl(),
-    ),
+    child: const Dashboard(),
   ),
   routes: [
     _toDefinitions,

@@ -6,7 +6,11 @@
 // Copyright: Strasbourg Flutter Meetup Group 2023
 // ID: 20231011195042
 // 11.10.2023 19:50
+import 'package:medical_device_classifier/bootstrap.dart';
+import 'package:medical_device_classifier/dependency_injection/injections.dart';
 import 'package:medical_device_classifier/dependency_injection/injections/injection_configuration.dart';
+import 'package:medical_device_classifier/features/dashboard/presentation/cubit/dashboard_cubit.dart';
+import 'package:medical_device_classifier/features/dashboard/presentation/cubit/dashboard_state.dart';
 
 /// This class is responsible for configuring the dependency injections for various Cubits in the Medical Device Classifier project.
 ///
@@ -20,16 +24,15 @@ class InjectionCubits extends InjectionConfiguration {
 
     // Example registration:
     //
-    //    getIt.registerFactory<DashboardCubit>(
-    //            () => DashboardCubit(
-    //            serviceA: getIt.get<ServiceA>(),
-    //        ),
-    //      );
+    getIt.registerFactory<DashboardCubit>(
+      () => DashboardCubit(
+        const DashboardState.initial(),
+        bootstrap: const BootstrapImpl(),
+      ),
+    );
     //
     // Add registrations for other Cubits in a similar manner.
 
     // It is important to ensure that the necessary dependencies are registered and injected correctly for each Cubit.
-
-
   }
 }
