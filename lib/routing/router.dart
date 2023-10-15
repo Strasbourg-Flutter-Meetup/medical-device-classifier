@@ -18,3 +18,11 @@ void routeToDefinitions() {
     nameToDefinitions,
   );
 }
+
+/// The [routeToClassifier] method is responsible for navigating to
+/// the [Classifier] screen.
+void routeToClassifier() {}
+
+/// The [routeToImplementingRules] method is responsible for navigating to
+/// the [ImplementingRules] screen.
+void routeToImplementingRules() {}

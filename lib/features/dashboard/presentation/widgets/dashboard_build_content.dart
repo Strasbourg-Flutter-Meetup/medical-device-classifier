@@ -6,6 +6,7 @@
 // Copyright: Strasbourg Flutter Meetup Group 2023
 // ID: 20231012112227
 // 12.10.2023 11:22
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:medical_device_classifier/routing/router.dart';
 
@@ -32,16 +33,91 @@ class DashboardBuildContent extends StatelessWidget {
 
     return const Column(
       children: [
-        Text(
-          'Here will be the dashboard of the Medical Device Classifier application',
+        Center(
+          child: Text(
+            'The purpose of the MDR Annex VIII Classifier is to assist you in the classification of your medical device',
+          ),
         ),
         SizedBox(
           height: 96.0,
         ),
-        ElevatedButton(
-          onPressed: routeToDefinitions,
-          child: Text(
-            'Definitions',
+        SizedBox(
+          width: 600,
+          child: ElevatedButton(
+            onPressed: routeToClassifier,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                Center(
+                  child: Icon(Icons.account_tree),
+                ),
+                Column(
+                  children: [
+                    Text(
+                      'Classifier',
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
+                    Text(
+                      'The Classifier helps you to classify your medical device.',
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ),
+        ),
+        SizedBox(
+          height: 96.0,
+        ),
+        SizedBox(
+          width: 600,
+          child: ElevatedButton(
+            onPressed: routeToDefinitions,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                Center(
+                  child: Icon(CupertinoIcons.book_solid),
+                ),
+                Column(
+                  children: [
+                    Text(
+                      'Definitions',
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
+                    Text("Definitions specific to the classification rules"),
+                  ],
+                ),
+              ],
+            ),
+          ),
+        ),
+        SizedBox(
+          height: 96.0,
+        ),
+        SizedBox(
+          width: 600,
+          child: ElevatedButton(
+            onPressed: routeToImplementingRules,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                Center(
+                  child: Icon(Icons.gavel),
+                ),
+                Column(
+                  children: [
+                    Text(
+                      'Implementing rules',
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
+                    Text(
+                      "Rules which have to be taken into account during classification",
+                    ),
+                  ],
+                ),
+              ],
+            ),
           ),
         ),
       ],

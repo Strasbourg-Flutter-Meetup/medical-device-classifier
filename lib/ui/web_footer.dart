@@ -12,5 +12,22 @@ class WebFooter extends StatelessWidget {
   const WebFooter({super.key});
 
   @override
-  Widget build(BuildContext context) => const Text('I am a footer');
+  Widget build(BuildContext context) => const BottomAppBar(
+        color: Colors.amberAccent,
+        child: SizedBox(
+          child: Expanded(
+            flex: 1,
+            child: Padding(
+              padding: EdgeInsets.all(8.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Text("Legal Notice"),
+                  Text("Privacy Protection"),
+                ],
+              ),
+            ),
+          ),
+        ),
+      );
 }
