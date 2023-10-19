@@ -8,7 +8,6 @@
 // 11.10.2023 20:59
 import 'package:flutter/material.dart';
 
-
 /// The [ErrorMessage] widget is a Flutter `StatelessWidget` used to display
 /// error messages with an error icon (a red exclamation mark) and a text message.
 class ErrorMessage extends StatelessWidget {
@@ -42,4 +41,3 @@ class ErrorMessage extends StatelessWidget {
     );
   }
 }
-

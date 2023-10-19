@@ -44,6 +44,15 @@ class DashboardBuildContent extends StatelessWidget {
             'Definitions',
           ),
         ),
+        SizedBox(
+          height: 96.0,
+        ),
+        ElevatedButton(
+          onPressed: routeToGeneralExplanationOfRules,
+          child: Text(
+            'General explanation of rules',
+          ),
+        ),
       ],
     );
   }

@@ -23,7 +23,6 @@ void _configureGetIt() {
 }
 
 void main() {
-
   setUp(() {
     _configureGetIt();
   });
@@ -32,7 +31,6 @@ void main() {
     // Build our widget and trigger a frame.
     await tester.pumpWidget(
       MaterialApp.router(
-
         routerConfig: goRouterConfiguration,
       ),
     );

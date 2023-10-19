@@ -13,8 +13,7 @@ void main() {
   group('DashboardState', () {
     test('creates an instance of DashboardStateData', () {
       // Create a DashboardState instance.
-      const dashboardState =
-          DashboardState.loaded(data: DashboardStateData());
+      const dashboardState = DashboardState.loaded(data: DashboardStateData());
 
       // Verify that the associated data is of type DashboardStateData.
       expect(dashboardState.data, isA<DashboardStateData>());

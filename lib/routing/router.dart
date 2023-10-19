@@ -18,3 +18,9 @@ void routeToDefinitions() {
     nameToDefinitions,
   );
 }
+
+void routeToGeneralExplanationOfRules() {
+  goRouterContext?.goNamed(
+    nameToGeneralExplanationOfRules,
+  );
+}

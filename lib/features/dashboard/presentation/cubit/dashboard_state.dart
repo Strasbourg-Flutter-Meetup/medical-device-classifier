@@ -12,7 +12,6 @@ import 'package:medical_device_classifier/state_management/states.dart';
 /// The [DashboardStateData] class represents the specific data associated with the [DashboardState].
 /// It extends [Equatable], allowing for easy comparison and equality checks.
 class DashboardStateData extends Equatable {
-
   const DashboardStateData();
 
   @override

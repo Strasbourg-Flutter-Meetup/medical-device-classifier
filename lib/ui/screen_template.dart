@@ -51,21 +51,16 @@ class ScreenTemplate extends StatelessWidget {
           children: [
             Expanded(
               child: SingleChildScrollView(
-                child: SizedBox(
-                  height: MediaQuery.of(context).size.height -
-                      appBarTemplate.preferredSize.height,
-                  width: MediaQuery.of(context).size.width,
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      // The main content of the screen.
-                      child,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    // The main content of the screen.
+                    child,
 
-                      // Display the web footer for web-based views (if applicable).
-                      if (kIsWeb) const WebFooter(),
-                    ],
-                  ),
+                    // Display the web footer for web-based views (if applicable).
+                    if (kIsWeb) const WebFooter(),
+                  ],
                 ),
               ),
             ),

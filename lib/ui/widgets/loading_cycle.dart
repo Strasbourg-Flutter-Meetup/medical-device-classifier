@@ -23,8 +23,8 @@ class LoadingCycle extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Padding(
-    padding: EdgeInsets.all(MediaQuery.of(context).size.width * 0.4),
-    child: LoadingIndicator(
+        padding: EdgeInsets.all(MediaQuery.of(context).size.width * 0.4),
+        child: LoadingIndicator(
           indicatorType: Indicator.ballGridPulse,
           backgroundColor:
               SchedulerBinding.instance.platformDispatcher.platformBrightness ==
@@ -35,5 +35,5 @@ class LoadingCycle extends StatelessWidget {
             Colors.blueGrey,
           ],
         ),
-  );
+      );
 }

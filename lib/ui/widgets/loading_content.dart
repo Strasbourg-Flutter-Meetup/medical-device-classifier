@@ -20,7 +20,7 @@ class LoadingBuildContent extends StatelessWidget {
 
   const LoadingBuildContent({
     super.key,
-  }) ;
+  });
 
   @override
   Widget build(BuildContext context) {

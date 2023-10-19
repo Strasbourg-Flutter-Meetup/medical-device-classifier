@@ -10,6 +10,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:medical_device_classifier/features/dashboard/presentation/screen/dashboard.dart';
 import 'package:medical_device_classifier/features/definitions/presentation/screen/definitions.dart';
+import 'package:medical_device_classifier/features/general_explanation_of_rules/presentation/screen/general_explanation_of_rules.dart';
 import 'package:medical_device_classifier/routing/go_router_path.dart';
 
 /// The [goRouterConfiguration] instance is used to configure and manage the
@@ -44,6 +45,7 @@ final _toDashboard = GoRoute(
   ),
   routes: [
     _toDefinitions,
+    _toGeneralExplanationsOfRules,
   ],
 );
 
@@ -66,5 +68,23 @@ final _toDefinitions = GoRoute(
       child: child,
     ),
     child: const Definitions(),
+  ),
+);
+
+final _toGeneralExplanationsOfRules = GoRoute(
+  path: pathToGeneralExplanationOfRules,
+  name: nameToGeneralExplanationOfRules,
+  pageBuilder: (context, state) => CustomTransitionPage(
+    transitionsBuilder: (
+      context,
+      animation,
+      secondaryAnimation,
+      child,
+    ) =>
+        FadeTransition(
+      opacity: animation,
+      child: child,
+    ),
+    child: const GeneralExplanationOfRules(),
   ),
 );

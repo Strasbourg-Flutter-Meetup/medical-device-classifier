@@ -9,6 +9,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:medical_device_classifier/ui/widgets/error_message.dart';
+
 /// In the below code, we have two test cases:
 ///
 /// ErrorMessage widget displays error message and icon: This test case checks
@@ -20,10 +21,13 @@ import 'package:medical_device_classifier/ui/widgets/error_message.dart';
 /// error message as a prop.
 
 void main() {
-  testWidgets('ErrorMessage widget displays error message and icon', (WidgetTester tester) async {
+  testWidgets('ErrorMessage widget displays error message and icon',
+      (WidgetTester tester) async {
     await tester.pumpWidget(
-      const MaterialApp( // Wrap with MaterialApp
-        home: Scaffold( // Scaffold provides a Material ancestor
+      const MaterialApp(
+        // Wrap with MaterialApp
+        home: Scaffold(
+          // Scaffold provides a Material ancestor
           body: ErrorMessage(
             errorMessage: 'Sample Error Message',
           ),
@@ -35,10 +39,13 @@ void main() {
     expect(find.text('Sample Error Message'), findsOneWidget);
   });
 
-  testWidgets('ErrorMessage widget displays correct error message', (WidgetTester tester) async {
+  testWidgets('ErrorMessage widget displays correct error message',
+      (WidgetTester tester) async {
     await tester.pumpWidget(
-      const MaterialApp( // Wrap with MaterialApp
-        home: Scaffold( // Scaffold provides a Material ancestor
+      const MaterialApp(
+        // Wrap with MaterialApp
+        home: Scaffold(
+          // Scaffold provides a Material ancestor
           body: ErrorMessage(
             errorMessage: 'Another Error Message',
           ),
@@ -49,4 +56,3 @@ void main() {
     expect(find.text('Another Error Message'), findsOneWidget);
   });
 }
-
