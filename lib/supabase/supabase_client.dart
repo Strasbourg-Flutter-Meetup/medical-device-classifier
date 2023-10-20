@@ -22,7 +22,7 @@ import 'package:supabase_flutter/supabase_flutter.dart';
 /// before any interactions with the Supabase backend.
 abstract class ISupabaseClient {
   /// The Supabase client instance.
-  ISupabaseClient? supabaseClient;
+  SupabaseClient? supabaseClient;
 
   /// Initialize the Supabase client.
   ///

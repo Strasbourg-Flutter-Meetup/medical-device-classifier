@@ -44,6 +44,7 @@ dependencies:
   leoml_parser:
     path: D:\workspace_walnut_it\leoml_parser
   loading_indicator: ^3.1.1
+  supabase_flutter: ^1.10.22
 
 
 
