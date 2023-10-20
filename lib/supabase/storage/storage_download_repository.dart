@@ -10,7 +10,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:medical_device_classifier/supabase/backend_repository.dart';
 import 'package:medical_device_classifier/supabase/exceptions/repsonse_is_null_exception.dart';
-import 'package:supabase_flutter/supabase_flutter.dart';
 
 /// An abstract class representing a storage download repository.
 ///

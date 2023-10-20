@@ -7,6 +7,9 @@
 // ID: 20231011195457
 // 11.10.2023 19:54
 
+import 'dart:async';
+import 'dart:core';
+
 import 'package:medical_device_classifier/content_files/general_explanation_rule_loader.dart';
 import 'package:medical_device_classifier/shared_preferences/mdc_shared_preferences.dart';
 import 'package:medical_device_classifier/supabase/anon_key.dart';

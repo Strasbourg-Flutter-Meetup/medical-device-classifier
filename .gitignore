@@ -834,7 +834,8 @@ Temporary Items
 ### ------------------------- Project Specific ------------------------- ###
 
 # Include any specific files here.
-
+lib/supabase/anon_key.dart
+lib/supabase/supabase_url.dart
 
 ### ---------------------------- References ---------------------------- ###
 
@@ -862,3 +863,4 @@ Temporary Items
 # Backup           - https://github.com/github/gitignore/blob/main/Global/Backup.gitignore
 # JEnv             - https://github.com/github/gitignore/blob/main/Global/JEnv.gitignore
 /resources/documentation_guidelines/~$c42-template-EN.docx
+

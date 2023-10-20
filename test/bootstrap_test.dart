@@ -22,6 +22,7 @@ import 'bootstrap_test.mocks.dart';
   MockSpec<MDCSharedPreferences>(),
   MockSpec<GeneralExplanationRuleLoader>(),
 ])
+@GenerateNiceMocks([MockSpec<SupabaseClientImpl>()])
 void main() {
   final bootstrap = BootstrapImpl(
     supabaseClient: MockSupabaseClientImpl(),
@@ -31,16 +32,22 @@ void main() {
 
   group('Bootstrap', () {
     test('should define a boot method', () {
-      expect(bootstrap.boot(), completion(isTrue)); // Check that it returns true
+      expect(
+        bootstrap.boot(),
+        completion(isTrue),
+      ); // Check that it returns true
       expect(
         bootstrap.boot(),
         completion(isTrue),
       ); // Check that it returns true
     });
 
-    test('boot method should be overridden in subclasses', ()  {
+    test('boot method should be overridden in subclasses', () {
       const bootstrap = NegativeTestBootstrap();
-      expect(() async => await bootstrap.boot(), throwsA(isA<AssertionError>()));
+      expect(
+        () async => await bootstrap.boot(),
+        throwsA(isA<AssertionError>()),
+      );
     });
   });
 
@@ -65,16 +72,11 @@ void main() {
   });
 }
 
-class NegativeTestBootstrap implements Bootstrap{
-
+class NegativeTestBootstrap implements Bootstrap {
   const NegativeTestBootstrap();
 
   @override
   Future<bool> boot() {
-
     throw AssertionError();
   }
-
 }
-
-
