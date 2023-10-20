@@ -13,14 +13,11 @@ import 'package:medical_device_classifier/dependency_injection/injections.dart';
 import 'package:medical_device_classifier/dependency_injection/injections/injection_configuration.dart';
 import 'package:medical_device_classifier/features/dashboard/presentation/cubit/dashboard_cubit.dart';
 import 'package:medical_device_classifier/features/dashboard/presentation/cubit/dashboard_state.dart';
-<<<<<<< Updated upstream
-=======
 import 'package:medical_device_classifier/features/general_explanation_of_rules/presentation/cubits/general_explanation_of_rules_cubit.dart';
 import 'package:medical_device_classifier/features/general_explanation_of_rules/presentation/cubits/general_explanation_of_rules_state.dart';
 import 'package:medical_device_classifier/shared_preferences/mdc_shared_preferences.dart';
 import 'package:medical_device_classifier/shared_preferences/shared_preferences_repository.dart';
 import 'package:medical_device_classifier/supabase/supabase_client.dart';
->>>>>>> Stashed changes
 
 /// This class is responsible for configuring the dependency injections for various Cubits in the Medical Device Classifier project.
 ///
@@ -36,16 +33,12 @@ class InjectionCubits extends InjectionConfiguration {
     getIt.registerFactory<DashboardCubit>(
       () => DashboardCubit(
         const DashboardState.initial(),
-<<<<<<< Updated upstream
-        bootstrap: const BootstrapImpl(),
-=======
         bootstrap: BootstrapImpl(
           supabaseClient: getIt.get<SupabaseClientImpl>(),
           mdcSharedPreferences: getIt.get<MDCSharedPreferences>(),
           generalExplanationRuleLoader:
               getIt.get<GeneralExplanationRuleLoader>(),
         ),
->>>>>>> Stashed changes
       ),
     );
     // Add registrations for other Cubits in a similar manner.

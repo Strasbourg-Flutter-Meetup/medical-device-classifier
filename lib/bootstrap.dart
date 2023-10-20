@@ -7,25 +7,12 @@
 // ID: 20231011195457
 // 11.10.2023 19:54
 
-<<<<<<< Updated upstream
-=======
-import 'dart:convert';
-
 import 'package:medical_device_classifier/content_files/general_explanation_rule_loader.dart';
-import 'package:medical_device_classifier/routing/go_router_context.dart';
 import 'package:medical_device_classifier/shared_preferences/mdc_shared_preferences.dart';
-import 'package:medical_device_classifier/shared_preferences/shared_preferences_keys.dart';
-import 'package:medical_device_classifier/shared_preferences/shared_preferences_repository.dart';
 import 'package:medical_device_classifier/supabase/anon_key.dart';
-import 'package:medical_device_classifier/supabase/database/database_fetch_data_repository.dart';
-import 'package:medical_device_classifier/supabase/database/supabase_database_constants.dart';
-import 'package:medical_device_classifier/supabase/storage/storage_download_repository.dart';
-import 'package:medical_device_classifier/supabase/storage/supabase_storage_constants.dart';
 import 'package:medical_device_classifier/supabase/supabase_client.dart';
 import 'package:medical_device_classifier/supabase/supabase_url.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
->>>>>>> Stashed changes
 /// The `Bootstrap` abstract class defines a contract for bootstrapping operations.
 ///
 /// Subclasses that implement this contract should provide an implementation
@@ -80,9 +67,6 @@ abstract class Bootstrap {
 /// ```
 class BootstrapImpl implements Bootstrap {
   /// Creates an instance of `BootstrapImpl`.
-<<<<<<< Updated upstream
-  const BootstrapImpl();
-=======
   const BootstrapImpl({
     required this.supabaseClient,
     required this.mdcSharedPreferences,
@@ -92,7 +76,6 @@ class BootstrapImpl implements Bootstrap {
   final ISupabaseClient supabaseClient;
   final MDCSharedPreferences mdcSharedPreferences;
   final GeneralExplanationRuleLoader generalExplanationRuleLoader;
->>>>>>> Stashed changes
 
   /// Initializes the bootstrapping process.
   ///
@@ -114,11 +97,8 @@ class BootstrapImpl implements Bootstrap {
   /// ```
   @override
   Future<bool> boot() async {
-<<<<<<< Updated upstream
-=======
     await _initSupabaseClient();
     await _initSharedPreferences();
->>>>>>> Stashed changes
     await _loadDecisionTree();
     await _loadDefinitions();
     await _loadImplementingRules();
@@ -127,8 +107,6 @@ class BootstrapImpl implements Bootstrap {
     return true;
   }
 
-<<<<<<< Updated upstream
-=======
   /// Initializes the Supabase client for making authenticated requests to a Supabase database.
   ///
   /// This method sets up the Supabase client with the provided Supabase URL and anonymous key.
@@ -163,7 +141,6 @@ class BootstrapImpl implements Bootstrap {
     await mdcSharedPreferences.initializeSharedPreferences();
   }
 
->>>>>>> Stashed changes
   /// Private method to load a decision tree asynchronously.
   Future<void> _loadDecisionTree() async {
     // Implement the logic to load the decision tree here.
@@ -184,4 +161,3 @@ class BootstrapImpl implements Bootstrap {
     await generalExplanationRuleLoader.load();
   }
 }
-
