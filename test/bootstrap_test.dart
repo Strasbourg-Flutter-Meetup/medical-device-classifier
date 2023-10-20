@@ -7,19 +7,35 @@
 // ID: 20231012132149
 // 12.10.2023 13:21
 import 'package:medical_device_classifier/bootstrap.dart';
+import 'package:medical_device_classifier/content_files/general_explanation_rule_loader.dart';
+import 'package:medical_device_classifier/shared_preferences/mdc_shared_preferences.dart';
+import 'package:medical_device_classifier/shared_preferences/shared_preferences_repository.dart';
 import 'package:medical_device_classifier/supabase/supabase_client.dart';
 import 'package:mockito/annotations.dart';
 import 'package:test/test.dart';
 
 import 'bootstrap_test.mocks.dart';
 
+@GenerateNiceMocks([
+  MockSpec<SupabaseClientImpl>(),
+  MockSpec<SharedPreferencesRepository>(),
+  MockSpec<MDCSharedPreferences>(),
+  MockSpec<GeneralExplanationRuleLoader>(),
+])
 @GenerateNiceMocks([MockSpec<SupabaseClientImpl>()])
 void main() {
+  final bootstrap = BootstrapImpl(
+    supabaseClient: MockSupabaseClientImpl(),
+    mdcSharedPreferences: MockMDCSharedPreferences(),
+    generalExplanationRuleLoader: MockGeneralExplanationRuleLoader(),
+  );
+
   group('Bootstrap', () {
     test('should define a boot method', () {
-      final bootstrap = BootstrapImpl(
-        supabaseClient: MockSupabaseClientImpl(),
-      );
+      expect(
+        bootstrap.boot(),
+        completion(isTrue),
+      ); // Check that it returns true
       expect(
         bootstrap.boot(),
         completion(isTrue),
@@ -38,16 +54,10 @@ void main() {
   group('BootstrapImpl', () {
     test('should initialize a BootstrapImpl instance', () {
       // Remove 'const' as BootstrapImpl does not have a const constructor
-      final bootstrap = BootstrapImpl(
-        supabaseClient: MockSupabaseClientImpl(),
-      );
       expect(bootstrap, isA<Bootstrap>());
     });
 
     test('boot method should execute load methods', () async {
-      final bootstrap = BootstrapImpl(
-        supabaseClient: MockSupabaseClientImpl(),
-      );
       final flag = await bootstrap.boot();
 
       // Add assertions based on the behavior of the `boot` method

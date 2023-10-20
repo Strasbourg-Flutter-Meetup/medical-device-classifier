@@ -10,6 +10,8 @@
 // paths
 const String pathToDashboard = '/';
 const String pathToDefinitions = 'definitions';
+const String pathToGeneralExplanationOfRules = 'generalRulesOfExplanation';
 
 // names
 const String nameToDefinitions = 'definitions';
+const String nameToGeneralExplanationOfRules = 'generalRulesOfExplanation';

@@ -9,6 +9,7 @@
 
 import 'package:medical_device_classifier/dependency_injection/injections.dart';
 import 'package:medical_device_classifier/dependency_injection/injections/injection_configuration.dart';
+import 'package:medical_device_classifier/shared_preferences/mdc_shared_preferences.dart';
 import 'package:medical_device_classifier/supabase/supabase_client.dart';
 import 'package:medical_device_classifier/supabase/supabase_wrapper.dart';
 
@@ -33,5 +34,8 @@ class InjectionSingletons extends InjectionConfiguration {
     // Add registrations for other singleton dependencies in a similar manner.
 
     // It is important to ensure that the necessary dependencies are registered and injected correctly for each singleton dependency.
+
+    getIt
+        .registerSingleton<MDCSharedPreferences>(MDCSharedPreferences.instance);
   }
 }

@@ -22,7 +22,12 @@ void main() {
     );
 
     // Verify that the "Here will be the dashboard..." text is displayed.
-    expect(find.text('Here will be the dashboard of the Medical Device Classifier application'), findsOneWidget);
+    expect(
+      find.text(
+        'Here will be the dashboard of the Medical Device Classifier application',
+      ),
+      findsOneWidget,
+    );
 
     // Verify that the "Definitions" button is displayed.
     expect(find.text('Definitions'), findsOneWidget);

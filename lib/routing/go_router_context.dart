@@ -20,4 +20,3 @@ import 'package:medical_device_classifier/routing/go_router_configuration.dart';
 /// or `null` if it's unavailable.
 BuildContext? get goRouterContext =>
     goRouterConfiguration.routerDelegate.navigatorKey.currentContext;
-

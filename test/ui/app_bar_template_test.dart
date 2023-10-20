@@ -23,10 +23,18 @@ void main() {
     );
 
     // Verify that the title text is displayed.
-    expect(find.text(AppLocalizations.of(tester.element(find.byType(AppBarTemplate)))?.appBarTitle ?? 'Medical Device Identifier'), findsOneWidget);
+    expect(
+      find.text(
+        AppLocalizations.of(tester.element(find.byType(AppBarTemplate)))
+                ?.appBarTitle ??
+            'Medical Device Identifier',
+      ),
+      findsOneWidget,
+    );
   });
 
-  testWidgets('AppBarTemplate displays back button on mobile', (WidgetTester tester) async {
+  testWidgets('AppBarTemplate displays back button on mobile',
+      (WidgetTester tester) async {
     // Build our widget with isDashboard as false (mobile view) and trigger a frame.
     await tester.pumpWidget(
       const MaterialApp(
@@ -40,7 +48,8 @@ void main() {
     expect(find.byType(BackButton), findsOneWidget);
   });
 
-  testWidgets('AppBarTemplate displays account tree icon on web', (WidgetTester tester) async {
+  testWidgets('AppBarTemplate displays account tree icon on web',
+      (WidgetTester tester) async {
     // Build our widget with isDashboard as true (web view) and trigger a frame.
     await tester.pumpWidget(
       const MaterialApp(

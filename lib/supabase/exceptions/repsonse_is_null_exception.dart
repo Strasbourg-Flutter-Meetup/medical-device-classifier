@@ -4,10 +4,12 @@
 // Dev Environment: Android Studio
 // Platform: Windows 11
 // Copyright: Strasbourg Flutter Meetup Group 2023
-// ID: 20231012222804
-// 12.10.2023 22:28
+// ID: 20231013223029
+// 13.10.2023 22:30
 import 'package:medical_device_classifier/supabase/exceptions/supabase_exception.dart';
 
-class DatabaseFetchDataException extends SupabaseException {
-  DatabaseFetchDataException({required String msg}) : super(msg: msg);
+class ResponseIsNullException extends SupabaseException {
+  ResponseIsNullException({
+    String msg = 'The response from the server is null!',
+  }) : super(msg: msg);
 }

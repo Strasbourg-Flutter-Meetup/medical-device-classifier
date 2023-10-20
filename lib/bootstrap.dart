@@ -7,6 +7,11 @@
 // ID: 20231011195457
 // 11.10.2023 19:54
 
+import 'dart:async';
+import 'dart:core';
+
+import 'package:medical_device_classifier/content_files/general_explanation_rule_loader.dart';
+import 'package:medical_device_classifier/shared_preferences/mdc_shared_preferences.dart';
 import 'package:medical_device_classifier/supabase/anon_key.dart';
 import 'package:medical_device_classifier/supabase/supabase_client.dart';
 import 'package:medical_device_classifier/supabase/supabase_url.dart';
@@ -67,9 +72,13 @@ class BootstrapImpl implements Bootstrap {
   /// Creates an instance of `BootstrapImpl`.
   const BootstrapImpl({
     required this.supabaseClient,
+    required this.mdcSharedPreferences,
+    required this.generalExplanationRuleLoader,
   });
 
   final ISupabaseClient supabaseClient;
+  final MDCSharedPreferences mdcSharedPreferences;
+  final GeneralExplanationRuleLoader generalExplanationRuleLoader;
 
   /// Initializes the bootstrapping process.
   ///
@@ -92,9 +101,11 @@ class BootstrapImpl implements Bootstrap {
   @override
   Future<bool> boot() async {
     await _initSupabaseClient();
+    await _initSharedPreferences();
     await _loadDecisionTree();
     await _loadDefinitions();
     await _loadImplementingRules();
+    await _loadGeneralExplanationOfRules();
 
     return true;
   }
@@ -129,25 +140,27 @@ class BootstrapImpl implements Bootstrap {
     );
   }
 
+  Future<void> _initSharedPreferences() async {
+    await mdcSharedPreferences.initializeSharedPreferences();
+  }
 
   /// Private method to load a decision tree asynchronously.
-  ///
-  /// This method loads the decision tree data asynchronously.
   Future<void> _loadDecisionTree() async {
     // Implement the logic to load the decision tree here.
   }
 
   /// Private method to load definitions asynchronously.
-  ///
-  /// This method loads definitions asynchronously.
   Future<void> _loadDefinitions() async {
     // Implement the logic to load definitions here.
   }
 
   /// Private method to load implementing rules asynchronously.
-  ///
-  /// This method loads implementing rules asynchronously.
   Future<void> _loadImplementingRules() async {
     // Implement the logic to load implementing rules here.
+  }
+
+  /// Private method to load general explanation of rules asynchronously.
+  Future<void> _loadGeneralExplanationOfRules() async {
+    await generalExplanationRuleLoader.load();
   }
 }

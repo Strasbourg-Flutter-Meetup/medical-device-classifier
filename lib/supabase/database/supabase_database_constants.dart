@@ -37,4 +37,12 @@ class SupabaseDatabaseConstants {
   static const String attributeMetaDataImplementingRulesFileName = 'file_name';
   static const String attributeMetaDataImplementingRulesLanguageCode =
       'language_code';
+
+  // meta_data_implementing_rules
+  static const String tableNameMetaDataRules = 'meta_data_rules';
+  static const String attributeMetaDataRulesId = 'id';
+  static const String attributeMetaDataRulesCreatedAt = 'created_at';
+  static const String attributeMetaDataRulesUpdatedAt = 'updated_at';
+  static const String attributeMetaDataRulesFileName = 'file_name';
+  static const String attributeMetaDataRulesLanguageCode = 'language_code';
 }

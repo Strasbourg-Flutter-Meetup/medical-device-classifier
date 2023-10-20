@@ -25,7 +25,6 @@ class AppBarTemplate extends StatelessWidget implements PreferredSizeWidget {
   const AppBarTemplate({
     super.key,
     this.isDashboard = false,
-
   });
 
   /// Indicates whether this AppBar is being used in the dashboard view.
@@ -51,4 +50,3 @@ class AppBarTemplate extends StatelessWidget implements PreferredSizeWidget {
     );
   }
 }
-
