@@ -7,7 +7,6 @@
 // ID: 20231013214743
 // 13.10.2023 21:47
 
-import 'package:get_it/get_it.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 /// A singleton class for managing shared preferences in the Medical Device Classifier (MDC) application.

@@ -1,0 +1,363 @@
+[
+  {
+    "type": "expansion_tile_1"
+  },
+  {
+    "headline": "Grundbegriffe und Definitionen"
+  },
+  {
+    "citation": "Alle hier veröffentlichten Definitionen stammen direkt und unverändert aus der MDCG 2021-24 Leitlinie zur Klassifizierung von Medizinprodukten (Oktober 2021)."
+  },
+  {
+    "section": "Relevante Definitionen in Bezug auf die Klassifizierung von Geräten sind in Artikel 2 und Kapitel I des Anhangs VIII der MDR festgelegt, aber die Verordnung enthält auch Erläuterungen zu weiteren Begriffen. Diese relevanten Begriffe und Definitionen für diese Leitlinie sind unten aufgeführt."
+  },
+  [
+    {
+      "header": {
+        "headline": "Spezifischer medizinischer Zweck"
+      }
+    },
+    {
+      "content": [
+        {
+          "section": "Der spezifische medizinische Zweck wird vom Hersteller aus denen in den Absätzen des Artikels 2(1) MDR aufgelisteten festgelegt."
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "header": {
+        "headline": "Dauer der Anwendung"
+      }
+    },
+    {
+      "content": [
+        {
+          "sectionHeadline": "Kurzzeitig"
+        },
+        {
+          "section": "Normalerweise für eine ununterbrochene Anwendung von weniger als 60 Minuten vorgesehen."
+        },
+        {
+          "sectionHeadline": "Kurzfristig"
+        },
+        {
+          "section": "Normalerweise für eine ununterbrochene Anwendung zwischen 60 Minuten und 30 Tagen vorgesehen."
+        },
+        {
+          "sectionHeadline": "Langfristig"
+        },
+        {
+          "section": "Normalerweise für eine ununterbrochene Anwendung von mehr als 30 Tagen vorgesehen."
+        },
+        {
+          "section": "In bestimmten Fällen muss die Anwendungsdauer eines Produkts als Wirkungsdauer betrachtet werden. Zum Beispiel kann die Anwendung einer Creme auf die Haut nur wenige Sekunden dauern, aber die Creme kann viele Stunden an Ort und Stelle bleiben. Die Anwendungsdauer sollte daher nicht als die Zeit zum Auftragen des Produkts betrachtet werden, sondern eher als die Dauer, für die das Produkt im oder auf dem Körper verbleibt."
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "header": {
+        "headline": "Dauerhafte Nutzung"
+      }
+    },
+    {
+      "content": [
+        {
+          "section": "Bei der Berechnung der in Abschnitt 1 des Kapitels I des Anhangs VIII der MDR genannten Dauer bedeutet dauerhafte Nutzung: '(a) Die gesamte Nutzungsdauer desselben Geräts ohne Rücksicht auf eine vorübergehende Unterbrechung der Nutzung während eines Verfahrens oder vorübergehende Entfernung zum Zwecke der Reinigung oder Desinfektion des Geräts. Ob die Unterbrechung der Nutzung oder die Entfernung vorübergehend ist, wird in Bezug auf die Nutzungsdauer vor und nach dem Zeitraum, in dem die Nutzung unterbrochen oder das Gerät entfernt wird, festgestellt; und (b) die kumulierte Nutzung eines Geräts, das vom Hersteller vorgesehen ist, sofort durch ein anderes gleichen Typs ersetzt zu werden.'"
+        },
+        {
+          "section": "Ein Skalpell kann beispielsweise während einer Operation, die mehrere Stunden dauern kann, am selben Patienten verwendet werden. Die ununterbrochene Verwendung für den vorgesehenen Zweck, d.h. das Schneiden von Gewebe, dauert normalerweise nicht länger als einige Sekunden. Daher ist ein Skalpell ein Gerät für den kurzzeitigen Gebrauch. Wenn jedoch die Nutzung eines Geräts eingestellt wird, um das Gerät sofort durch dasselbe oder ein identisches Gerät zu ersetzen (z.B. Ersetzen eines Ureterkatheters), wird dies als Verlängerung der kontinuierlichen Nutzung des Geräts betrachtet."
+        },
+        {
+          "section": "Als weiteres Beispiel wird der Übernachtungszeitraum, in dem Kontaktlinsen gereinigt und desinfiziert werden, als Unterbrechung der Gerätenutzung betrachtet. Für die Bestimmung der Nutzungsdauer muss nur der angegebene Zeitraum der ununterbrochenen Tragezeit der Linse (z.B. 16 Stunden) berücksichtigt werden."
+        },
+        {
+          "section": "Wenn nicht nachgewiesen werden kann, dass Komponenten des Geräts in dem Intervall zwischen den Nutzungen vollständig eingestellt sind, wird dies auch als sofortiger Ersatz und als Verlängerung der kontinuierlichen Nutzung des Geräts betrachtet."
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "header": {
+        "headline": "Invasivität"
+      }
+    },
+    {
+      "content": [
+        {
+          "sectionHeadline": "Invasives Gerät"
+        },
+        {
+          "section": "Jedes Gerät, das ganz oder teilweise in den Körper eindringt, sei es durch eine Körperöffnung oder durch die Körperoberfläche. Ein Gerät, das dem Körper Energie zuführt, sollte nicht als invasiv betrachtet werden, wenn nur die von ihm abgegebene Energie in den Körper eindringt und nicht das Gerät selbst."
+        },
+        {
+          "sectionHeadline": "Körperöffnung"
+        },
+        {
+          "section": "Jede natürliche Öffnung im Körper sowie die äußere Oberfläche des Augapfels oder jede dauerhafte künstliche Öffnung, wie z.B. ein Stoma."
+        },
+        {
+          "sectionHeadline": "Verletzte Haut oder Schleimhaut"
+        },
+        {
+          "section": "Ein Bereich der Haut oder einer Schleimhaut, der eine pathologische Veränderung oder eine Veränderung nach einer Krankheit, einer Wunde oder einer Narbe aufweist."
+        },
+        {
+          "sectionHeadline": "Chirurgisch invasives Gerät"
+        },
+        {
+          "section": "Ein invasives Gerät, das durch die Körperoberfläche in den Körper eindringt, einschließlich durch die Schleimhäute der Körperöffnungen mit Hilfe oder im Kontext einer chirurgischen Operation; und ein Gerät, das anders als durch eine Körperöffnung eindringt."
+        },
+        {
+          "section": "Der Begriff 'chirurgischer Eingriff' in dieser Definition umfasst alle klinischen Interventionen, bei denen ein Gerät durch die Körperoberfläche in den Körper eingebracht wird. Ein chirurgisch invasives Gerät impliziert immer, dass es durch eine künstlich geschaffene Öffnung eintritt. Dies kann eine große Öffnung, wie ein chirurgischer Schnitt, oder eine winzige Öffnung sein, die durch eine Nadel gemacht wird. Daher sind chirurgische Handschuhe und Nadeln, die mit Spritzen verwendet werden, chirurgisch invasiv."
+        },
+        {
+          "section": "In diesem Zusammenhang sollte folgendes beachtet werden:"
+        },
+        {
+          "list": [
+            "ein chirurgisch angelegtes Stoma, das bei Urostomie, Kolostomie und Ileostomie oder permanenter Tracheostomie verwendet wird, gilt als Körperöffnung; daher gelten Geräte, die in ein solches Stoma eingeführt werden, nicht als chirurgisch invasiv.",
+            "im Gegensatz dazu sollte eine chirurgisch geschaffene Öffnung, die den Zugang zum Kreislaufsystem ermöglicht, nicht als Körperöffnung betrachtet werden. Geräte, die in eine solche Öffnung eingeführt werden, sind chirurgisch invasiv."
+          ]
+        },
+        {
+          "section": "Das Konzept des chirurgisch Invasiven sollte auch Flüssigkeiten umfassen, die invasiven Kontakt mit Organen, Geweben oder anderen Körperteilen haben, wenn der Zugang für solche Flüssigkeiten durch eine chirurgisch geschaffene Öffnung erfolgt."
+        },
+        {
+          "section": "Für ein Gerät, das eine Substanz verabreicht, muss eine solche Substanz eigenständig bewertet werden (z.B. Substanzen, die mit einem Strahlinjektor verabreicht werden)."
+        },
+        {
+          "sectionHeadline": "Wiederverwendbares chirurgisches Instrument"
+        },
+        {
+          "section": "Ein Instrument, das für chirurgische Zwecke zum Schneiden, Bohren, Sägen, Kratzen, Schaben, Klemmen, Zurückziehen, Klammern oder ähnliche Verfahren vorgesehen ist, ohne Verbindung zu einem aktiven Gerät und das vom Hersteller nach geeigneten Verfahren wie Reinigung, Desinfektion und Sterilisation wieder verwendet werden soll."
+        },
+        {
+          "sectionHeadline": "Implantierbares Gerät"
+        },
+        {
+          "section": "Jedes Gerät, einschließlich solcher, die teilweise oder vollständig absorbiert werden, das vorgesehen ist:"
+        },
+        {
+          "list": [
+            "vollständig in den menschlichen Körper eingeführt zu werden, oder",
+            "eine epitheliale Oberfläche oder die Oberfläche des Auges durch klinischen Eingriff zu ersetzen und nach dem Verfahren an Ort und Stelle zu bleiben."
+          ]
+        },
+        {
+          "section": "Jedes Gerät, das beabsichtigt ist, teilweise durch einen klinischen Eingriff in den menschlichen Körper eingeführt zu werden und nach dem Verfahren für mindestens 30 Tage an Ort und Stelle zu bleiben, gilt ebenfalls als implantierbares Gerät."
+        },
+        {
+          "section": "Ein 'Verfahren' muss in diesem Zusammenhang als das chirurgische Verfahren verstanden werden, bei dem das Implantat in den Körper eingesetzt wird, sowie die unmittelbare postoperative Versorgung, die mit dem Verfahren verbunden ist. Das 'Verfahren' erstreckt sich nicht auf den Abschluss der therapeutischen Behandlung, z.B. muss das Entfernen eines Implantats als ein weiteres 'Verfahren' betrachtet werden. So ist eine Platte, die zur Fixierung eines gebrochenen Knochens verwendet wird und nach dem Verfahren mindestens 30 Tage an Ort und Stelle bleibt, ein Implantat, auch wenn sie herausgenommen wird, nachdem der Bruch verheilt ist. In diesem Fall sind das Einsetzen der Platte und ihre Explantation zwei verschiedene chirurgische Verfahren."
+        },
+        {
+          "section": "Manchmal werden teilweise implantierte Geräte als Implantate betrachtet. Beispielsweise wäre ein Infusionsport, der speziell in den Körper eingesetzt wird und nach dem Eingriff mindestens 30 Tage an Ort und Stelle bleibt, ein Implantat. Ein nicht getunnelter zentraler Venenkatheter, der für den vorübergehenden Gefäßzugang vorgesehen ist und nach 7 – 10 Tagen entfernt werden soll, ist jedoch kein implantierbares Gerät. Auch eine Naht zur Hautwundverschluss, die vor 30 Tagen entfernt werden soll, wird nicht als Implantat betrachtet."
+        },
+        {
+          "sectionHeadline": "Kritische anatomische Orte"
+        },
+        {
+          "paragraphHeadline": "Zentrales Kreislaufsystem"
+        },
+        {
+          "section": "Für die Zwecke der MDR bedeutet 'Zentrales Kreislaufsystem' die folgenden Blutgefäße: arteriae pulmonales, aorta ascendens, arcus aortae, aorta descendens bis zur bifurcatio aortae, arteriae coronariae, arteria carotis communis, arteria carotis externa, arteria carotis interna, arteriae cerebrales, truncus brachiocephalicus, venae cordis, venae pulmonales, vena cava superior und vena cava inferior."
+        },
+        {
+          "paragraphHeadline": "Zentrales Nervensystem"
+        },
+        {
+          "section": "Für die Zwecke der MDR bedeutet 'Zentrales Nervensystem' das Gehirn, die Hirnhäute und das Rückenmark."
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "header": {
+        "headline": "Aktive Medizinprodukte"
+      }
+    },
+    {
+      "content": [
+        {
+          "sectionHeadline": "Aktives Gerät"
+        },
+        {
+          "section": "Ein aktives Gerät ist jedes Gerät, dessen Betrieb von einer Energiequelle abhängt, die nicht vom menschlichen Körper zu diesem Zweck erzeugt wird oder von der Schwerkraft, und das durch Änderung der Dichte oder Umwandlung dieser Energie wirkt. Geräte, die dazu bestimmt sind, Energie, Substanzen oder andere Elemente zwischen einem aktiven Gerät und dem Patienten zu übertragen, ohne eine wesentliche Änderung, gelten nicht als aktive Geräte."
+        },
+        {
+          "sectionHeadline": "Energieumwandlung"
+        },
+        {
+          "section": "Das Konzept der Energieumwandlung beinhaltet die Energieumwandlung im Gerät und/oder an der Schnittstelle zwischen dem Gerät und dem Gewebe oder im Gewebe. Elektroden für EKG oder EEG gelten normalerweise nicht als aktive Geräte, da sie normalerweise nicht durch Energieumwandlung wirken."
+        },
+        {
+          "section": "Die Anwendung von Energie aus dem menschlichen Körper zum Betrieb eines Geräts macht das Gerät nicht 'aktiv', es sei denn, diese Energie wird im Gerät zur späteren Freisetzung gespeichert. Zum Beispiel macht die von menschlichen Muskeln erzeugte Energie, die auf den Kolben einer Spritze angewendet wird (und so eine Substanz an einen Patienten abgibt), diese Spritze nicht zu einem aktiven Gerät. Wenn jedoch ein Medikamentenabgabesystem von Hand aufgezogen wird, um eine Feder vorzuladen, die anschließend freigesetzt wird, um eine Substanz abzugeben, dann ist das Gerät, das die Feder enthält, ein aktives Gerät. Ein weiteres Beispiel für ein aktives Gerät sind elastomere Pumpen, bei denen die Energie aus dem menschlichen Körper in der gedehnten Elastomerschicht gespeichert wird."
+        },
+        {
+          "sectionHeadline": "Medizinprodukte, die vorgespeicherte Gase und/oder Vakuum als Energiequelle nutzen"
+        },
+        {
+          "section": "Medizinprodukte, die vorgespeicherte Gase und/oder Vakuum als Energiequelle nutzen, gelten als aktive Geräte, solange sie beide Kriterien unter der Definition erfüllen, z.B. Gas-Mischer mit Anästhesiemaschinen, Aerosol-Schmerzlinderungssprays mit einer vorgespeicherten Treibgasversorgung und gasbetriebene Saugpumpen."
+        },
+        {
+          "section": "Heiz-/Kühlkissen, die nur dazu bestimmt sind, gespeicherte thermische Energie freizusetzen, sind keine aktiven Geräte, weil sie nicht durch Energieumwandlung wirken. Heiz-/Kühlkissen, die durch chemische Reaktion wirken (z.B. exotherme oder endotherme Reaktion), sind jedoch aktive Geräte, da sie chemische Energie in Wärme und/oder umgekehrt umwandeln."
+        },
+        {
+          "sectionHeadline": "Wesentliche Änderung"
+        },
+        {
+          "section": "Das Konzept der wesentlichen Änderung in Bezug auf Energie beinhaltet Änderungen in der Art, dem Level und der Dichte von Energie (siehe Regel 9). Das bedeutet, dass zum Beispiel eine Elektrode nicht als aktives Gerät nach diesem Klassifizierungssystem betrachtet wird, solange die Eingabeenergie beabsichtigt ist, dieselbe zu sein wie die Ausgabeenergie. Widerstand in einem Draht, der geringfügige Änderungen zwischen Eingabe und Ausgabe verursacht, kann nicht als 'wesentliche Änderung' betrachtet werden. Elektroden, die in der Elektrochirurgie zum Schneiden von Geweben oder Kauterisation verwendet werden, sind jedoch aktive Geräte, da ihr Betrieb von der Energie eines Generators abhängt und ihre Wirkung durch Umwandlung von Energie an der Schnittstelle zwischen dem Gerät und dem Gewebe oder im Gewebe erreicht wird."
+        },
+        {
+          "sectionHeadline": "Software"
+        },
+        {
+          "section": "Software ist auch ein aktives Gerät. Software sollte nicht nur im Kontext von Regel 11 überprüft werden."
+        },
+        {
+          "sectionHeadline": "Aktives therapeutisches Gerät"
+        },
+        {
+          "section": "Ein aktives therapeutisches Gerät ist jedes aktive Gerät, das verwendet wird, alleine oder in Kombination mit anderen Geräten, um biologische Funktionen oder Strukturen zu unterstützen, zu modifizieren, zu ersetzen oder wiederherzustellen, mit dem Ziel der Behandlung oder Linderung einer Krankheit, Verletzung oder Behinderung."
+        },
+        {
+          "sectionHeadline": "Aktives Gerät für Diagnose und Überwachung"
+        },
+        {
+          "section": "Ein aktives Gerät für Diagnose und Überwachung ist jedes aktive Gerät, das verwendet wird, alleine oder in Kombination mit anderen Geräten, um Informationen für das Erkennen, Diagnostizieren, Überwachen oder Behandeln von physiologischen Zuständen, Gesundheitszuständen, Krankheiten oder angeborenen Deformationen zu liefern. Ein Gerät gilt als direkte Diagnose, wenn es die Diagnose der betreffenden Krankheit oder des Zustands selbst liefert oder wenn es entscheidende Informationen für die Diagnose liefert."
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "header": {
+        "headline": "Geräte mit einer Messfunktion"
+      }
+    },
+    {
+      "content": [
+        {
+          "section": "Die folgenden Kriterien, wenn sie zusammen erfüllt sind, zeigen an, dass ein Gerät eine Messfunktion hat:"
+        },
+        {
+          "section": "a) Das Gerät ist vom Hersteller dafür vorgesehen zu messen:"
+        },
+        {
+          "list": [
+            "quantitativ einen physiologischen oder anatomischen Parameter oder",
+            "eine Menge oder eine quantifizierbare Eigenschaft von Energie oder von Stoffen (einschließlich Arzneimitteln), die dem menschlichen Körper zugeführt oder aus ihm entfernt werden. Löffel oder Kunststoffspritzen, die mit Arzneimitteln zusammen verpackt sind und dazu verwendet werden, eine Menge dieses Arzneimittels zu messen, das dem Patienten verabreicht werden soll, gehören zu dieser Kategorie. Geräte zur Abgabe von Flüssigkeit an den menschlichen Körper ohne Skala oder Anzeige von Messwerten (z. B. Medizinschalen, Becher, Tropfer ohne Skala oder Anzeige von Messwerten) gehören nicht zu dieser Kategorie."
+          ]
+        },
+        {
+          "section": "b) Das Ergebnis der Messung:"
+        },
+        {
+          "list": [
+            "wird in gesetzlichen Einheiten oder in anderen im Sinne der Richtlinie 80/181/EWG akzeptablen Einheiten angezeigt oder",
+            "wird mit mindestens einem in gesetzlichen Einheiten oder in anderen im Sinne der genannten Richtlinie akzeptablen Einheiten angegebenen Referenzpunkt verglichen."
+          ]
+        },
+        {
+          "section": "c) Der beabsichtigte Zweck impliziert eine Genauigkeit, die ausdrücklich oder implizit angegeben ist, wobei eine Nichteinhaltung der impliziten Genauigkeit einen erheblichen negativen Einfluss auf die Gesundheit und Sicherheit des Patienten haben könnte."
+        },
+        {
+          "section": "Der Ausdruck 'implizit behauptet' umfasst Fälle, in denen der Benutzer aufgrund der Bezeichnung des Geräts oder seiner Begleitdokumente oder aufgrund der üblichen Verwendung berechtigt ist, eine Genauigkeit zu erwarten, bei der die Genauigkeit der Messung Auswirkungen auf die Diagnose oder Therapie des Patienten hat."
+        },
+        {
+          "section": "Messaktivitäten während des Herstellungsprozesses, einschließlich solcher zu Kalibrierzwecken, sind nicht abgedeckt und implizieren keine Messfunktion des hergestellten Geräts."
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "header": {
+        "headline": "Systeme und Verfahrenspakete"
+      }
+    },
+    {
+      "content": [
+        {
+          "section": "Systeme und Verfahrenspakete werden im MDR Artikel 22 beschrieben. Sie können Medizinprodukte, in-vitro-diagnostische Medizinprodukte und andere Produkte kombinieren, die den für diese Produkte geltenden Gesetzen entsprechen, nur wenn sie im Rahmen eines medizinischen Verfahrens verwendet werden oder ihre Anwesenheit im System oder Verfahrenspaket anderweitig gerechtfertigt ist. Im Fall einer nachgewiesenen rechtlichen Konformität jeder Komponente müssen die Systeme oder Verfahrenspakete nicht selbst eine zusätzliche CE-Kennzeichnung tragen, müssen jedoch den Namen, den eingetragenen Handelsnamen oder die eingetragene Marke der Person tragen, die die Produkte kombiniert, sowie die Adresse, unter der diese Person kontaktiert werden kann."
+        },
+        {
+          "sectionHeadline": "Verfahrenspaket"
+        },
+        {
+          "section": "Ein Verfahrenspaket ist eine Kombination von Produkten, die zusammen verpackt und auf den Markt gebracht werden, um für einen bestimmten medizinischen Zweck verwendet zu werden."
+        },
+        {
+          "sectionHeadline": "System"
+        },
+        {
+          "section": "Ein System ist eine Kombination von Produkten, die entweder zusammen verpackt sind oder nicht, und die dazu bestimmt sind, miteinander verbunden oder kombiniert zu werden, um einen bestimmten medizinischen Zweck zu erreichen."
+        },
+        {
+          "section": "Wenn das System oder Verfahrenspaket Geräte enthält, die nicht mit der CE-Kennzeichnung versehen sind, oder wenn die gewählte Kombination von Geräten im Hinblick auf ihren ursprünglich vorgesehenen Zweck nicht kompatibel ist, oder wenn die Sterilisation nicht gemäß den Anweisungen des Herstellers durchgeführt wurde, wird das System oder Verfahrenspaket als eigenständiges Gerät behandelt und unterliegt dem entsprechenden Konformitätsbewertungsverfahren gemäß MDR Artikel 52. Die Klassifizierung wird durch den vorgesehenen Gebrauch des Systems oder Verfahrenspakets bestimmt. Die natürliche oder juristische Person, die die Geräte kombiniert, muss die Pflichten übernehmen, die den Herstellern obliegen."
+        },
+        {
+          "section": "Für solche Kombinationen, einschließlich verschiedener Geräte, wird die Klassifizierung normalerweise durch den vorgesehenen Gebrauch bestimmt. In Fällen, in denen der vorgesehene Gebrauch des Endgeräts nicht spezifisch genug ist, um die Klassifizierung zu bestimmen, erfolgt die Klassifizierung des Geräts auf dem Niveau des am höchsten klassifizierten enthaltenen Geräts, wobei der neue vorgesehene Gebrauch des Geräts berücksichtigt wird."
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "header": {
+        "headline": "Andere Begriffe"
+      }
+    },
+    {
+      "content": [
+        {
+          "sectionHeadline": "Systemische Aufnahme"
+        },
+        {
+          "section": "Der Prozess, durch den Stoffe oder ihre Metaboliten in den Körper gelangen (z. B. durch Überqueren von Schleimhäuten) und über das Blut- und/oder Lymphsystem im Körper verteilt werden."
+        },
+        {
+          "sectionHeadline": "Vollständig oder hauptsächlich aufgenommen"
+        },
+        {
+          "section": "Der Begriff 'Absorption' im Kontext von implantierbaren Geräten bezieht sich auf den Abbau eines Materials im Körper und die metabolische Eliminierung der resultierenden Abbauprodukte aus dem Körper. Er gilt nicht für Substanzen, die unverändert aus dem Körper ausgeschieden werden, z.B. Insufflationsgase für die Bauchhöhle oder laparoskopische und endoskopische Verfahren."
+        },
+        {
+          "sectionHeadline": "Lokale Dispersion"
+        },
+        {
+          "section": "Der Zustand, bei dem Substanzen an einem bestimmten Ort verbleiben, ohne über das Blut- und/oder Lymphsystem im Körper verteilt zu werden."
+        },
+        {
+          "sectionHeadline": "Medizin / Arzneimittel"
+        },
+        {
+          "section": "Gemäß der Definition in der Richtlinie 2001/83/EG:"
+        },
+        {
+          "section": "(a) Jeder Stoff oder jede Kombination von Stoffen, der bzw. die als Eigenschaften zur Behandlung oder Vorbeugung von Krankheiten beim Menschen angeboten wird; oder"
+        },
+        {
+          "section": "(b) Jeder Stoff oder jede Kombination von Stoffen, die beim Menschen verwendet oder ihm verabreicht werden können, um physiologische Funktionen durch Ausübung einer pharmakologischen, immunologischen oder metabolischen Wirkung wiederherzustellen, zu korrigieren oder zu modifizieren oder eine medizinische Diagnose zu stellen."
+        },
+        {
+          "sectionHeadline": "Nanomaterial"
+        },
+        {
+          "section": "Ein 'Nanomaterial' ist ein natürliches, zufälliges oder hergestelltes Material, das Partikel in ungebundenem Zustand oder als Aggregat oder Agglomerat enthält und bei dem bei 50% oder mehr der Partikel in der Größenverteilung nach Anzahl eine oder mehrere äußere Abmessungen im Größenbereich von 1-100 nm liegen; Fullerenes, Graphenflocken und einwandige Kohlenstoffnanoröhren mit einer oder mehreren äußeren Abmessungen unter 1 nm gelten ebenfalls gemäß MDR, Artikel 2(18) als Nanomaterialien. Zugehörige Definitionen zu 'Partikel', 'Agglomerat' und 'Aggregat' sind ebenfalls im MDR Artikel 2(19-21) enthalten. Die Definitionen zu Nanomaterial und den zugehörigen Begriffen stammen aus der Empfehlung der Kommission 2011/696/EU zur Definition von Nanomaterialien. Eine Anleitung zu den in der Definition verwendeten Begriffen und Konzepten finden Sie in einem Bericht des Gemeinsamen Forschungszentrums der Europäischen Kommission."
+        },
+        {
+          "sectionHeadline": "Derivat"
+        },
+        {
+          "section": "Derivat bezeichnet eine nicht zelluläre Substanz, die durch einen Herstellungsprozess aus menschlichem oder tierischem Gewebe oder Zellen extrahiert wurde. Die in diesem Fall für die Herstellung des Geräts verwendete Endsubstanz enthält keine Zellen oder Gewebe."
+        }
+      ]
+    }
+  ]
+]

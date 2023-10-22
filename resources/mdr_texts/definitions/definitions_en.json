@@ -1,0 +1,363 @@
+[
+  {
+    "type": "expansion_tile_1"
+  },
+  {
+    "headline": "Basic terms and definitions"
+  },
+  {
+    "citation": "All definitions published here is taken directly and unchanged from MDCG 2021-24 Guidance on classification of medical devices (October 2021). "
+  },
+  {
+    "section": "Relevant definitions in respect to the classification of devices are set out in Article 2 and Chapter I of Annex VIII of the MDR but the Regulation also contains explanation of further terms. These relevant terms and definitions for this guidance are collected below."
+  },
+  [
+    {
+      "header": {
+        "headline": "Specific medical purpose"
+      }
+    },
+    {
+      "content": [
+        {
+          "section": "The specific medical purpose is specified by the manufacturer from those listed in the indents of Article 2(1) MDR."
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "header": {
+        "headline": "Duration of use"
+      }
+    },
+    {
+      "content": [
+        {
+          "sectionHeadline": "Transient"
+        },
+        {
+          "section": "Normally intended for continuous use for less than 60 minutes."
+        },
+        {
+          "sectionHeadline": "Short term"
+        },
+        {
+          "section": "Normally intended for continuous use for between 60 minutes and 30 days."
+        },
+        {
+          "sectionHeadline": "Long term"
+        },
+        {
+          "section": "Normally intended for continuous use for more than 30 days."
+        },
+        {
+          "section": "In certain instances the duration of use for a product needs to be considered as the duration of effect. For instance, application of a topical cream to the skin may only take seconds to apply but the cream may remain in situ for many hours. The duration of use should therefore not be considered as the time taken to apply the product but rather the duration for which the product remains in or on the body."
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "header": {
+        "headline": "Continuous use"
+      }
+    },
+    {
+      "content": [
+        {
+          "section": "In calculating the duration referred to in Section 1 of Chapter I of Annex VIII of MDR, continuous use means: ‘(a) The entire duration of use of the same device without regard to temporary interruption of use during a procedure or temporary removal for purposes such as cleaning or disinfection of the device. Whether the interruption of use or the removal is temporary shall be established in relation to the duration of the use prior to and after the period when the use is interrupted or the device removed; and (b) the accumulated use of a device that is intended by the manufacturer to be replaced immediately with another of the same type.’"
+        },
+        {
+          "section": "For example, a scalpel may be used on the same patient throughout an operation that may last for several hours. The uninterrupted use for an intended purpose, i.e. cutting tissue, will normally not last for more than a few seconds at a time. Therefore a scalpel is a transient use device. However, where usage of a device is discontinued in order for the device to be replaced immediately by the same or an identical device (e.g. replacement of a ureteric catheter) this shall be considered an extension of the continuous use of the device."
+        },
+        {
+          "section": "As another example, the overnight period when contact lenses are cleaned and disinfected is considered as a discontinuation of the device use. For the determination of the duration of use, only the specified time period of uninterrupted wear of the lens (e.g. 16 hours) needs to be taken into account."
+        },
+        {
+          "section": "If it cannot be demonstrated that components of the device are totally discontinued in the interval between uses, this is also considered as an immediate replacement and an extension of the continuous use of the device."
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "header": {
+        "headline": "Invasiveness"
+      }
+    },
+    {
+      "content": [
+        {
+          "sectionHeadline": "Invasive device"
+        },
+        {
+          "section": "Any device which, in whole or in part, penetrates inside the body, either through a body orifice or through the surface of the body. A device that administers energy to the body should not be considered as invasive if only energy it emits penetrates the body and not the device itself."
+        },
+        {
+          "sectionHeadline": "Body orifice"
+        },
+        {
+          "section": "Any natural opening in the body, as well as the external surface of the eyeball, or any permanent artificial opening, such as a stoma."
+        },
+        {
+          "sectionHeadline": "Injured skin or mucous membrane"
+        },
+        {
+          "section": "An area of skin or a mucous membrane presenting a pathological change or change following disease, a wound or a scar."
+        },
+        {
+          "sectionHeadline": "Surgically invasive device"
+        },
+        {
+          "section": "An invasive device which penetrates inside the body through the surface of the body, including through mucous membranes of body orifices with the aid or in the context of a surgical operation; and a device which produces penetration other than through a body orifice."
+        },
+        {
+          "section": "The term surgical operation used in this definition includes all clinical interventional procedures in which a device is placed into the body through the surface of the body. A surgically invasive device always implies that it enters through an artificially created opening. This can be a large opening, such as a surgical incision, or it can be a pinprick opening made by a needle. Therefore surgical gloves and needles used with syringes are surgically invasive."
+        },
+        {
+          "section": "In this context the following should be noted:"
+        },
+        {
+          "list": [
+            "a surgically created stoma used in urostomy, colostomy and ileostomy or permanent tracheostomy is considered to be a body orifice; therefore devices introduced into such a stoma are not surgically invasive.",
+            "n contrast, a surgically created opening to allow access to the circulatory system should not be considered to be a body orifice. Devices introduced into such an opening are surgically invasive."
+          ]
+        },
+        {
+          "section": "The concept of surgically invasive should be understood to cover also liquids that are in invasive contact with organs, tissues or other parts of the body if the access for such liquids is through a surgically created opening."
+        },
+        {
+          "section": "For a device that administers a substance, such a substance must be assessed in its own right (e.g. substances administered by a jet injector)."
+        },
+        {
+          "sectionHeadline": "Reusable surgical instrument"
+        },
+        {
+          "section": "An instrument intended for surgical use in cutting, drilling, sawing, scratching, scraping, clamping, retracting, clipping or similar procedures, without a connection to an active device and which is intended by the manufacturer to be reused after appropriate procedures such as cleaning, disinfection and sterilisation have been carried out."
+        },
+        {
+          "sectionHeadline": "Implantable device"
+        },
+        {
+          "section": "Any device, including those that are partially or wholly absorbed, which is intended:"
+        },
+        {
+          "list": [
+            "to be totally introduced into the human body, or",
+            "to replace an epithelial surface or the surface of the eye, by clinical intervention and which is intended to remain in place after the procedure."
+          ]
+        },
+        {
+          "section": "Any device intended to be partially introduced into the human body by clinical intervention and intended to remain in place after the procedure for at least 30 days shall also be deemed to be an implantable device."
+        },
+        {
+          "section": "A ‘procedure’ must be understood in this context to include the surgical procedure during which the implant is placed into the body and the immediate post-operative care that is associated with the procedure. The ‘procedure’ does not extend to the conclusion of the therapeutic treatment, e.g. the removal of an implant must be considered to be another ‘procedure’. Thus a plate used to fix a fractured bone and which remains in place after the procedure for at least 30 days is an implant even if it is taken out after the fracture has healed. In this case the placing of the plate and its explantation are two different surgical procedures."
+        },
+        {
+          "section": "Sometimes partially implanted devices are deemed to be implants. For instance, if an operation is carried out specifically to place an infusion port into the body which would remain in place for at least 30 days after the procedure, such an infusion port would be an implant. However, a non-tunnelled central venous catheter which is intended for use for temporary vascular access and intended to be removed after 7 – 10 days is not an implantable device. Nor would a suture used for skin wound closure that is intended to be taken out prior to 30 days be considered an implant."
+        },
+        {
+          "sectionHeadline": "Critical anatomical locations"
+        },
+        {
+          "paragraphHeadline": "Central circulatory system"
+        },
+        {
+          "section": "For the purposes of the MDR, ‘Central circulatory system’12 means the following blood vessels: arteriae pulmonales, aorta ascendens, arcus aortae, aorta descendens to the bifurcatio aortae, arteriae coronariae, arteria carotis communis, arteria carotis externa, arteria carotis interna, arteriae cerebrales, truncus brachiocephalicus, venae cordis, venae pulmonales, vena cava superior and vena cava inferior."
+        },
+        {
+          "paragraphHeadline": "Central nervous system"
+        },
+        {
+          "section": "For the purposes of the MDR, ‘Central nervous system’13 means the brain, meninges and spinal cord."
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "header": {
+        "headline": "Active medical devices"
+      }
+    },
+    {
+      "content": [
+        {
+          "sectionHeadline": "Active device"
+        },
+        {
+          "section": "Active device means any device, the operation of which depends on a source of energy other than that generated by the human body for that purpose, or by gravity, and which acts by changing the density of or converting that energy. Devices intended to transmit energy, substances or other elements between an active device and the patient, without any significant change, shall not be deemed to be active devices."
+        },
+        {
+          "sectionHeadline": "Act by converting energy"
+        },
+        {
+          "section": "The concept act by converting energy includes conversion of energy in the device and/or conversion at the interface between the device and the tissues or in the tissues. Electrodes intended for E.C.G. or E.E.G are normally not considered active devices because they do not normally act by conversion of energy."
+        },
+        {
+          "section": "The application of energy from the human body for the purpose of operating a device does not make the device ‘active’ unless that energy is stored within the device for subsequent release. For instance, energy generated by human muscle and applied to the plunger of a syringe (thus causing a substance to be delivered to a patient) does not make this syringe an active device. However, if a drug delivery system depends upon manual winding to preload a spring which is subsequently released to deliver a substance, then the device incorporating the spring is an active device. Another example of an active device are elastomeric pumps, where the energy from the human body is stored in the stretched elastomer layer."
+        },
+        {
+          "sectionHeadline": "Medical devices using prestored gases and/or vacuum as a power source "
+        },
+        {
+          "section": "Medical devices using prestored gases and/or vacuum as a power source are regarded as active devices, as long as they fulfil both the criteria under the definition e.g. gas mixers with anaesthesia machines, aerosol pain relief sprays with a pre-stored propellant gas supply and gas-powered suction pumps."
+        },
+        {
+          "section": "Heating/cooling pads intended only to release stored thermal energy are not active devices because they do not act by conversion of energy. However, heating/cooling pads which act by chemical action (e.g. exothermic or endothermic reaction) are active devices as they are converting chemical energy into heat and/or vice versa."
+        },
+        {
+          "sectionHeadline": "Significant change"
+        },
+        {
+          "section": "The concept of significant change for energy includes changes in the nature, level and density of energy (see Rule 9). This means that for instance an electrode is not considered an active device under this classification system as long as the energy input is intended to be the same as the energy output. Resistance in a wire that causes minor changes between input and output cannot be considered to constitute ‘significant change’. However, electrodes used in electrosurgery for cutting tissues or cauterisation are active devices because their operation depends on energy provided by a generator and their action is achieved by conversion of energy at the interface between the device and the tissue or in the tissue."
+        },
+        {
+          "sectionHeadline": "Software"
+        },
+        {
+          "section": "Software is also an active device13. Software should be reviewed not only in the context of Rule 11."
+        },
+        {
+          "sectionHeadline": "Active therapeutic device"
+        },
+        {
+          "section": "Active therapeutic device means any active device used, whether alone or in combination with other devices, to support, modify, replace or restore biological functions or structures with a view to treatment or alleviation of an illness, injury or disability."
+        },
+        {
+          "sectionHeadline": "Active device intended for diagnosis and monitoring "
+        },
+        {
+          "section": "Active device intended for diagnosis and monitoring means any active device used, whether alone or in combination with other devices, to supply information for detecting, diagnosing, monitoring or treating physiological conditions, states of health, illnesses or congenital deformities17. A device is considered to allow direct diagnosis when it provides the diagnosis of the disease or condition in question itself or when it provides decisive information for the diagnosis."
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "header": {
+        "headline": "Devices with a measuring function"
+      }
+    },
+    {
+      "content": [
+        {
+          "section": "The following criteria, if fulfilled together, indicate that a device has a measuring function:"
+        },
+        {
+          "section": "a) The device is intended by the manufacturer to measure:"
+        },
+        {
+          "list": [
+            "quantitatively a physiological or anatomical parameter, or",
+            "a quantity or a quantifiable characteristic of energy or of substances (including medicinal products) delivered to or removed from the human body. Spoons or plastic syringes co-packed with medicinal products and used to measure a quantity of that medicinal product to be administered to the patient are in this category. Devices for the delivery of liquid to the human body without graduation or scale (e.g. medicine spoons, cups, droppers without graduation or scale or display of measuring unit) are not in this category."
+          ]
+        },
+        {
+          "section": "b) The result of the measurement:"
+        },
+        {
+          "list": [
+            "is displayed in legal units or other acceptable units within the meaning of Directive 80/181/ECC, or",
+            "is compared to at least one point of reference indicated in legal units or other acceptable units in compliance with the mentioned directive."
+          ]
+        },
+        {
+          "section": "c) The intended purpose implies accuracy, claimed explicitly or implicitly, where a non-compliance with the implied accuracy could result in a significant adverse effect on the patient’s health and safety."
+        },
+        {
+          "section": "The expression ‘claimed implicitly’ covers cases where the user, on the basis of the designation of the device or of its accompanying documents, or on the basis of the common use, is entitled to expect accuracy where the accuracy of the measurement has an impact on the diagnosis or therapy of the patient."
+        },
+        {
+          "section": "Measuring activities during the manufacturing process including those for calibration purposes are not covered and do not imply a measuring function of the manufactured device."
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "header": {
+        "headline": "Systems and procedure packs"
+      }
+    },
+    {
+      "content": [
+        {
+          "section": "System and procedure packs is described in MDR Article 22. They can combine medical devices, in vitro diagnostic medical devices, and other products which are in conformity with legislation that applies to those products, only where they are used within a medical procedure or their presence in the system or procedure pack is otherwise justified. In this case of demonstrated legal conformity of each component, the systems or procedure packs no not need to bear themselves an additional CE marking but they must bear the name, registered trade name or registered trade mark of the person who combines the products as well as the address at which that person can be contacted."
+        },
+        {
+          "sectionHeadline": "Procedure pack"
+        },
+        {
+          "section": "A procedure pack means a combination of products packaged together and placed on the market with the purpose of being used for a specific medical purpose."
+        },
+        {
+          "sectionHeadline": "System"
+        },
+        {
+          "section": "A system means a combination of products, either packaged together or not, which are intended to be interconnected or combined to achieve a specific medical purpose."
+        },
+        {
+          "section": "Where the system or procedure pack incorporates devices which do not bear the CE marking or where the chosen combination of devices is not compatible in view of their original intended purpose, or where the sterilisation has not been carried out in accordance with the manufacturer's instructions the system or procedure pack shall be treated as a device in its own right and shall be subject to the relevant conformity assessment procedure pursuant to MDR Article 52. The classification is determined by the intended use of the system or procedure pack. The natural or legal person that combines the devices must assume the obligations incumbent on manufacturers."
+        },
+        {
+          "section": "For such combinations, including different devices, the classification is normally determined by the intended use. In those cases where the intended use of the final device is not specific enough to determine the classification, the classification of the device is at the level of the highest classified device included, taking into account the new intended use of the device."
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "header": {
+        "headline": "Other terms"
+      }
+    },
+    {
+      "content": [
+        {
+          "sectionHeadline": "Systemic absorption"
+        },
+        {
+          "section": "The process by which substances or their metabolites enter the body (e.g. by crossing mucous membranes) and are distributed into the body via the blood and/or lymphatic system."
+        },
+        {
+          "sectionHeadline": "Wholly or mainly absorbed"
+        },
+        {
+          "section": "The term ‘absorption’ in the context of implantable devices refers to the degradation of a material within the body and the metabolic elimination of the resulting degradation products from the body. It does not apply to those substances that are excreted without modification from the body, e.g. insufflation gases for the abdominal cavity or laparoscopic and endoscopic procedures."
+        },
+        {
+          "sectionHeadline": "Local dispersion"
+        },
+        {
+          "section": "The condition by which substances remain in a specific site without being distributed into the body via the blood and/or lymphatic system."
+        },
+        {
+          "sectionHeadline": "Medicine / medicinal product"
+        },
+        {
+          "section": "According to the definition given in Directive 2001/83/EC:"
+        },
+        {
+          "section": "(a) Any substance or combination of substances presented as having properties for treating or preventing disease in human beings; or"
+        },
+        {
+          "section": "(b) Any substance or combination of substances which may be used in or administered to human beings either with a view to restoring, correcting or modifying physiological functions by exerting a pharmacological, immunological or metabolic action, or to making a medical diagnosis."
+        },
+        {
+          "sectionHeadline": "Nanomaterial"
+        },
+        {
+          "section": "A ‘nanomaterial’ means a natural, incidental or manufactured material containing particles in an unbound state or as an aggregate or as an agglomerate and where, for 50% or more of the particles in the number size distribution, one or more external dimensions is in the size range 1-100 nm; Fullerenes, graphene flakes and single-wall carbon nanotubes with one or more external dimensions below 1 nm shall also be deemed to be nanomaterials according to MDR, Article 2(18). Related definitions on ‘particle’, ‘agglomerate’ and ‘aggregate’ are also included in the MDR Article 2(19-21). The definitions on nanomaterial and the related terms were taken from Commission Recommendation 2011/696/EU on the definition of nanomaterials. Guidance on terms and concepts used in the definition can be found in a report from the European Commission’s Joint Research Centre."
+        },
+        {
+          "sectionHeadline": "Derivative"
+        },
+        {
+          "section": "Derivative means a non-cellular substance extracted from human or animal tissue or cells through a manufacturing process. The final substance used for manufacturing of the device in this case does not contain any cells or tissues."
+        }
+      ]
+    }
+  ]
+]

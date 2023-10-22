@@ -7,9 +7,8 @@
 // ID: 20231016111636
 // 16.10.2023 11:16
 import 'package:flutter/material.dart';
-import 'package:medical_device_classifier/dependency_injection/injections.dart';
+import 'package:medical_device_classifier/content_files/content_loader_impl.dart';
 import 'package:medical_device_classifier/routing/go_router_context.dart';
-import 'package:medical_device_classifier/shared_preferences/mdc_shared_preferences.dart';
 import 'package:medical_device_classifier/shared_preferences/shared_preferences_repository.dart';
 import 'package:medical_device_classifier/supabase/database/database_fetch_data_repository.dart';
 import 'package:medical_device_classifier/supabase/storage/storage_download_repository.dart';
@@ -53,5 +52,5 @@ abstract class ContentLoader {
   /// - [sharedPreferencesLanguageCode]: The language code stored in shared preferences.
   ///
   /// Throws an exception if an error occurs during content retrieval or storage.
-  Future<void> load();
+  Future<void> load({required ContentLoaderType contentLoaderType});
 }

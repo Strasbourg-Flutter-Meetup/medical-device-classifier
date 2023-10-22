@@ -48,6 +48,15 @@ class DashboardBuildContent extends StatelessWidget {
           height: 96.0,
         ),
         ElevatedButton(
+          onPressed: routeToImplementingRules,
+          child: Text(
+            'Annex VIII Chapter 2: Implementing Rule',
+          ),
+        ),
+        SizedBox(
+          height: 96.0,
+        ),
+        ElevatedButton(
           onPressed: routeToGeneralExplanationOfRules,
           child: Text(
             'General explanation of rules',

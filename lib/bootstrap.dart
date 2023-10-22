@@ -7,10 +7,10 @@
 // ID: 20231011195457
 // 11.10.2023 19:54
 
-import 'dart:async';
 import 'dart:core';
 
-import 'package:medical_device_classifier/content_files/general_explanation_rule_loader.dart';
+import 'package:medical_device_classifier/content_files/content_loader.dart';
+import 'package:medical_device_classifier/content_files/content_loader_impl.dart';
 import 'package:medical_device_classifier/shared_preferences/mdc_shared_preferences.dart';
 import 'package:medical_device_classifier/supabase/anon_key.dart';
 import 'package:medical_device_classifier/supabase/supabase_client.dart';
@@ -73,28 +73,32 @@ class BootstrapImpl implements Bootstrap {
   const BootstrapImpl({
     required this.supabaseClient,
     required this.mdcSharedPreferences,
-    required this.generalExplanationRuleLoader,
+    required this.contentLoaderImpl,
   });
 
   final ISupabaseClient supabaseClient;
   final MDCSharedPreferences mdcSharedPreferences;
-  final GeneralExplanationRuleLoader generalExplanationRuleLoader;
+  final ContentLoader contentLoaderImpl;
 
   /// Initializes the bootstrapping process.
   ///
   /// This method is responsible for performing asynchronous operations to
   /// initialize components or data during the bootstrapping process.
   ///
-  /// It loads a decision tree, definitions, and implementing rules.
+  /// It loads a decision tree, definitions, implementing rules, and
+  /// general explanations of rules.
   ///
   /// Example:
   ///
   /// ```dart
   /// @override
   /// Future<bool> boot() async {
+  ///   await _initSupabaseClient();
+  ///   await _initSharedPreferences();
   ///   await _loadDecisionTree();
   ///   await _loadDefinitions();
   ///   await _loadImplementingRules();
+  ///   await _loadGeneralExplanationOfRules();
   ///   return true; // Return true if bootstrapping succeeds.
   /// }
   /// ```
@@ -144,23 +148,25 @@ class BootstrapImpl implements Bootstrap {
     await mdcSharedPreferences.initializeSharedPreferences();
   }
 
-  /// Private method to load a decision tree asynchronously.
   Future<void> _loadDecisionTree() async {
     // Implement the logic to load the decision tree here.
   }
 
-  /// Private method to load definitions asynchronously.
   Future<void> _loadDefinitions() async {
-    // Implement the logic to load definitions here.
+    await contentLoaderImpl.load(
+      contentLoaderType: ContentLoaderType.definitions,
+    );
   }
 
-  /// Private method to load implementing rules asynchronously.
   Future<void> _loadImplementingRules() async {
-    // Implement the logic to load implementing rules here.
+    await contentLoaderImpl.load(
+      contentLoaderType: ContentLoaderType.implementingRules,
+    );
   }
 
-  /// Private method to load general explanation of rules asynchronously.
   Future<void> _loadGeneralExplanationOfRules() async {
-    await generalExplanationRuleLoader.load();
+    await contentLoaderImpl.load(
+      contentLoaderType: ContentLoaderType.generalExplanationRules,
+    );
   }
 }

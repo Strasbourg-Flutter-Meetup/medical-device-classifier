@@ -7,7 +7,7 @@
 // ID: 20231012132149
 // 12.10.2023 13:21
 import 'package:medical_device_classifier/bootstrap.dart';
-import 'package:medical_device_classifier/content_files/general_explanation_rule_loader.dart';
+import 'package:medical_device_classifier/content_files/content_loader_impl.dart';
 import 'package:medical_device_classifier/shared_preferences/mdc_shared_preferences.dart';
 import 'package:medical_device_classifier/shared_preferences/shared_preferences_repository.dart';
 import 'package:medical_device_classifier/supabase/supabase_client.dart';
@@ -20,14 +20,13 @@ import 'bootstrap_test.mocks.dart';
   MockSpec<SupabaseClientImpl>(),
   MockSpec<SharedPreferencesRepository>(),
   MockSpec<MDCSharedPreferences>(),
-  MockSpec<GeneralExplanationRuleLoader>(),
+  MockSpec<ContentLoaderImpl>(),
 ])
-@GenerateNiceMocks([MockSpec<SupabaseClientImpl>()])
 void main() {
   final bootstrap = BootstrapImpl(
     supabaseClient: MockSupabaseClientImpl(),
     mdcSharedPreferences: MockMDCSharedPreferences(),
-    generalExplanationRuleLoader: MockGeneralExplanationRuleLoader(),
+    contentLoaderImpl: MockContentLoaderImpl(),
   );
 
   group('Bootstrap', () {

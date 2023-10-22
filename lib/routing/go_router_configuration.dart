@@ -11,6 +11,7 @@ import 'package:go_router/go_router.dart';
 import 'package:medical_device_classifier/features/dashboard/presentation/screen/dashboard.dart';
 import 'package:medical_device_classifier/features/definitions/presentation/screen/definitions.dart';
 import 'package:medical_device_classifier/features/general_explanation_of_rules/presentation/screen/general_explanation_of_rules.dart';
+import 'package:medical_device_classifier/features/implementing_rules/screen/implementing_rules.dart';
 import 'package:medical_device_classifier/routing/go_router_path.dart';
 
 /// The [goRouterConfiguration] instance is used to configure and manage the
@@ -46,6 +47,7 @@ final _toDashboard = GoRoute(
   routes: [
     _toDefinitions,
     _toGeneralExplanationsOfRules,
+    _toImplementingRules,
   ],
 );
 
@@ -71,20 +73,51 @@ final _toDefinitions = GoRoute(
   ),
 );
 
+/// A [GoRoute] representing navigation to the general explanations of rules page.
+///
+/// The [_toGeneralExplanationsOfRules] variable defines a [GoRoute] that can be
+/// used to navigate to the page that displays general explanations of rules.
+/// It specifies the path, name, and the page builder function for creating
+/// the page with a custom transition.
 final _toGeneralExplanationsOfRules = GoRoute(
   path: pathToGeneralExplanationOfRules,
   name: nameToGeneralExplanationOfRules,
   pageBuilder: (context, state) => CustomTransitionPage(
     transitionsBuilder: (
-      context,
-      animation,
-      secondaryAnimation,
-      child,
-    ) =>
+        context,
+        animation,
+        secondaryAnimation,
+        child,
+        ) =>
         FadeTransition(
-      opacity: animation,
-      child: child,
-    ),
+          opacity: animation,
+          child: child,
+        ),
     child: const GeneralExplanationOfRules(),
   ),
 );
+
+/// A [GoRoute] representing navigation to the implementing rules page.
+///
+/// The [_toImplementingRules] variable defines a [GoRoute] that can be
+/// used to navigate to the page that displays implementing rules.
+/// It specifies the path, name, and the page builder function for creating
+/// the page with a custom transition.
+final _toImplementingRules = GoRoute(
+  path: pathToImplementingRules,
+  name: nameToImplementingRules,
+  pageBuilder: (context, state) => CustomTransitionPage(
+    transitionsBuilder: (
+        context,
+        animation,
+        secondaryAnimation,
+        child,
+        ) =>
+        FadeTransition(
+          opacity: animation,
+          child: child,
+        ),
+    child: const ImplementingRules(),
+  ),
+);
+

@@ -1,0 +1,41 @@
+[
+  {
+    "type": "article"
+  },
+  {
+    "headline": "Durchführungsvorschriften"
+  },
+  {
+    "citation": "Alle hier veröffentlichten Durchführungsvorschriften werden direkt und unverändert aus der Verordnung EU 2017/745 (5. April 2017) Anhang VIII Kapitel II entnommen."
+  },
+  {
+    "section": "1. Die Anwendung der Klassifikationsregeln richtet sich nach dem vorgesehenen Zweck der Geräte."
+  },
+  {
+    "section": "2. Wenn das betreffende Gerät in Kombination mit einem anderen Gerät verwendet werden soll, gelten die Klassifikationsregeln getrennt für jedes der Geräte. Zubehörteile für ein Medizinprodukt und für ein in Anhang XVI aufgeführtes Produkt werden unabhängig von dem Gerät, mit dem sie verwendet werden, einzeln klassifiziert."
+  },
+  {
+    "section": "3. Software, die ein Gerät steuert oder die Verwendung eines Geräts beeinflusst, fällt in dieselbe Klasse wie das Gerät."
+  },
+  {
+    "section": "Ist die Software unabhängig von einem anderen Gerät, wird sie eigenständig klassifiziert."
+  },
+  {
+    "section": "4. Wenn das Gerät nicht ausschließlich oder hauptsächlich für einen bestimmten Körperteil bestimmt ist, wird es auf der Grundlage des kritischsten angegebenen Einsatzes betrachtet und klassifiziert."
+  },
+  {
+    "section": "5. Wenn mehrere Regeln oder, innerhalb derselben Regel, mehrere Unterregeln auf dasselbe Gerät aufgrund des vorgesehenen Zwecks des Geräts anwendbar sind, gilt die strengste Regel und Unterregel, die zu einer höheren Klassifikation führt."
+  },
+  {
+    "section": "6. Bei der Berechnung der in Abschnitt 1 genannten Dauer bedeutet 'kontinuierliche Verwendung':"
+  },
+  {
+    "list": [
+      "(a) die gesamte Verwendungsdauer desselben Geräts unabhängig von einer vorübergehenden Unterbrechung der Verwendung während eines Verfahrens oder einer vorübergehenden Entfernung zu Zwecken wie Reinigung oder Desinfektion des Geräts. Ob die Verwendung unterbrochen oder das Gerät vorübergehend entfernt wird, wird im Verhältnis zur Verwendungsdauer vor und nach dem Zeitraum bestimmt, in dem die Verwendung unterbrochen oder das Gerät entfernt wird; und",
+      "(b) die kumulative Verwendung eines Geräts, das vom Hersteller dazu bestimmt ist, sofort durch ein anderes desselben Typs ersetzt zu werden."
+    ]
+  },
+  {
+    "section": "7. Ein Gerät wird als direktes Diagnosemittel betrachtet, wenn es entweder selbstständig die Diagnose der betreffenden Krankheit oder des Zustands stellt oder wenn es entscheidende Informationen für die Diagnosestellung liefert."
+  }
+]

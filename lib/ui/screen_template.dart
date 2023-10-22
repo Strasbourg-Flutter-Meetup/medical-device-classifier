@@ -8,6 +8,8 @@
 // 11.10.2023 12:52
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
+import 'package:footer/footer.dart';
+import 'package:footer/footer_view.dart';
 import 'package:medical_device_classifier/ui/app_bar_template.dart';
 import 'package:medical_device_classifier/ui/web_footer.dart';
 
@@ -47,21 +49,23 @@ class ScreenTemplate extends StatelessWidget {
         // The custom `AppBarTemplate` widget at the top of the screen.
         appBar: appBarTemplate,
 
-        body: Column(
+        body: FooterView(
+          flex: 1,
+          footer: Footer(
+            backgroundColor: kIsWeb ? Colors.amber : Colors.transparent,
+            alignment: Alignment.bottomCenter,
+            child: kIsWeb
+                ? const WebFooter()
+                : const SizedBox(
+                    height: 0.0,
+                  ),
+          ),
           children: [
-            Expanded(
-              child: SingleChildScrollView(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    // The main content of the screen.
-                    child,
-
-                    // Display the web footer for web-based views (if applicable).
-                    if (kIsWeb) const WebFooter(),
-                  ],
-                ),
+            SingleChildScrollView(
+              child: Column(
+                children: [
+                  child,
+                ],
               ),
             ),
           ],

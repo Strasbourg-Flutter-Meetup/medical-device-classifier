@@ -7,7 +7,7 @@
 // ID: 20231011195334
 // 11.10.2023 19:53
 import 'package:leoml_parser/leoml_parser.dart';
-import 'package:medical_device_classifier/content_files/general_explanation_rule_loader.dart';
+import 'package:medical_device_classifier/content_files/content_loader_impl.dart';
 import 'package:medical_device_classifier/dependency_injection/injections.dart';
 import 'package:medical_device_classifier/dependency_injection/injections/injection_configuration.dart';
 import 'package:medical_device_classifier/shared_preferences/shared_preferences_repository.dart';
@@ -25,8 +25,8 @@ class InjectionServices extends InjectionConfiguration {
     // Add the respective imports for each service to ensure correct references.
 
     // Example registration:
-    getIt.registerFactory<GeneralExplanationRuleLoader>(
-      () => GeneralExplanationRuleLoader(
+    getIt.registerFactory<ContentLoaderImpl>(
+      () => ContentLoaderImpl(
         databaseFetchDataRepository: getIt.get<DatabaseFetchDataRepository>(),
         storageDownloadRepository: getIt.get<StorageDownloadRepository>(),
         sharedPreferencesRepository: getIt.get<SharedPreferencesRepository>(),

@@ -2,11 +2,17 @@
   {
     "type": "expansion_tile_1"
   },
+  {
+    "headline": "Non-invasive devices"
+  },
+  {
+    "citation": "All rules, descriptions, and examples published here are taken directly and unchanged from the MDCG 2021-24 guideline for the classification of medical devices (October 2021)."
+  },
   [
     {
       "header": {
         "headline": "Rule 1",
-        "subHeadline": "Devices that eiter do not come in direct contact with the patient or contact intact skin only"
+        "subHeadline": "Devices that either do not come in direct contact with the patient or contact intact skin only"
       }
     },
     {
@@ -137,14 +143,15 @@
           "section": "I"
         },
         {
-          "section": "- except for blood bags; blood bags are classified as class IIb."
+          "section": "In all other cases, such devices are classified as class I"
         },
         {
           "paragraphHeadline": "Examples"
         },
         {
           "list": [
-            "Non-invasive devices that provide a simple channelling function, with gravity providing the force to transport the liquid, e.g. administration sets for infusion"
+            "Non-invasive devices that provide a simple channelling function, with gravity providing the force to transport the liquid, e.g. administration sets for infusion",
+            "Devices intended to be used for a temporary\ncontainment or storage function, e.g. cups and\nspoons specifically intended for administering\nmedicines2 Empty syringes without needles"
           ]
         },
         {

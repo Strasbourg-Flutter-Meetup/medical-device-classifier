@@ -1,0 +1,41 @@
+[
+  {
+    "type": "article"
+  },
+  {
+    "headline": "Implementing rules"
+  },
+  {
+    "citation": "All implementing rules published here is taken directly and unchanged from the regulation EU 2017/745 (5th April 2017) annex VIII chapter II."
+  },
+  {
+    "section": "1. Application of the classification rules shall be governed by the intended purpose of the devices."
+  },
+  {
+    "section": "2. If the device in question is intended to be used in combination with another device, the classification rules shall apply separately to each of the devices. Accessories for a medical device and for a product listed in Annex XVI shall be classified in their own right separately from the device with which they are used."
+  },
+  {
+    "section": "3. Software, which drives a device or influences the use of a device, shall fall within the same class as the device."
+  },
+  {
+    "section": "If the software is independent of any other device, it shall be classified in its own right."
+  },
+  {
+    "section": "4. If the device is not intended to be used solely or principally in a specific part of the body, it shall be considered and classified on the basis of the most critical specified use."
+  },
+  {
+    "section": "5. If several rules, or if, within the same rule, several sub-rules, apply to the same device based on the device's intended purpose, the strictest rule and sub-rule resulting in the higher classification shall apply."
+  },
+  {
+    "section": "6. In calculating the duration referred to in Section 1, continuous use shall mean:"
+  },
+  {
+    "list": [
+      "(a) the entire duration of use of the same device without regard to temporary interruption of use during a procedure or temporary removal for purposes such as cleaning or disinfection of the device. Whether the interruption of use or the removal is temporary shall be established in relation to the duration of the use prior to and after the period when the use is interrupted or the device removed; and",
+      "(b) the accumulated use of a device that is intended by the manufacturer to be replaced immediately with another of the same type."
+    ]
+  },
+  {
+    "section": "7. A device is considered to allow direct diagnosis when it provides the diagnosis of the disease or condition in question by itself or when it provides decisive information for the diagnosis"
+  }
+]

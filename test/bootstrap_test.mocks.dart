@@ -6,7 +6,7 @@
 import 'dart:async' as _i10;
 import 'dart:ui' as _i6;
 
-import 'package:medical_device_classifier/content_files/general_explanation_rule_loader.dart'
+import 'package:medical_device_classifier/content_files/content_loader_impl.dart'
     as _i12;
 import 'package:medical_device_classifier/shared_preferences/mdc_shared_preferences.dart'
     as _i2;
@@ -226,11 +226,10 @@ class MockMDCSharedPreferences extends _i1.Mock
       ) as _i10.Future<void>);
 }
 
-/// A class which mocks [GeneralExplanationRuleLoader].
+/// A class which mocks [ContentLoaderImpl].
 ///
 /// See the documentation for Mockito's code generation for more information.
-class MockGeneralExplanationRuleLoader extends _i1.Mock
-    implements _i12.GeneralExplanationRuleLoader {
+class MockContentLoaderImpl extends _i1.Mock implements _i12.ContentLoaderImpl {
   @override
   _i3.IDatabaseFetchDataRepository get databaseFetchDataRepository =>
       (super.noSuchMethod(
@@ -287,10 +286,13 @@ class MockGeneralExplanationRuleLoader extends _i1.Mock
       ) as _i6.Locale);
 
   @override
-  _i10.Future<void> load() => (super.noSuchMethod(
+  _i10.Future<void> load(
+          {required _i12.ContentLoaderType? contentLoaderType}) =>
+      (super.noSuchMethod(
         Invocation.method(
           #load,
           [],
+          {#contentLoaderType: contentLoaderType},
         ),
         returnValue: _i10.Future<void>.value(),
         returnValueForMissingStub: _i10.Future<void>.value(),

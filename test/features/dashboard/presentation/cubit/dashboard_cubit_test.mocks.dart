@@ -6,7 +6,7 @@
 import 'dart:async' as _i6;
 
 import 'package:medical_device_classifier/bootstrap.dart' as _i5;
-import 'package:medical_device_classifier/content_files/general_explanation_rule_loader.dart'
+import 'package:medical_device_classifier/content_files/content_loader.dart'
     as _i4;
 import 'package:medical_device_classifier/shared_preferences/mdc_shared_preferences.dart'
     as _i3;
@@ -46,9 +46,8 @@ class _FakeMDCSharedPreferences_1 extends _i1.SmartFake
         );
 }
 
-class _FakeGeneralExplanationRuleLoader_2 extends _i1.SmartFake
-    implements _i4.GeneralExplanationRuleLoader {
-  _FakeGeneralExplanationRuleLoader_2(
+class _FakeContentLoader_2 extends _i1.SmartFake implements _i4.ContentLoader {
+  _FakeContentLoader_2(
     Object parent,
     Invocation parentInvocation,
   ) : super(
@@ -88,18 +87,17 @@ class MockBootstrapImpl extends _i1.Mock implements _i5.BootstrapImpl {
       ) as _i3.MDCSharedPreferences);
 
   @override
-  _i4.GeneralExplanationRuleLoader get generalExplanationRuleLoader =>
-      (super.noSuchMethod(
-        Invocation.getter(#generalExplanationRuleLoader),
-        returnValue: _FakeGeneralExplanationRuleLoader_2(
+  _i4.ContentLoader get contentLoaderImpl => (super.noSuchMethod(
+        Invocation.getter(#contentLoaderImpl),
+        returnValue: _FakeContentLoader_2(
           this,
-          Invocation.getter(#generalExplanationRuleLoader),
+          Invocation.getter(#contentLoaderImpl),
         ),
-        returnValueForMissingStub: _FakeGeneralExplanationRuleLoader_2(
+        returnValueForMissingStub: _FakeContentLoader_2(
           this,
-          Invocation.getter(#generalExplanationRuleLoader),
+          Invocation.getter(#contentLoaderImpl),
         ),
-      ) as _i4.GeneralExplanationRuleLoader);
+      ) as _i4.ContentLoader);
 
   @override
   _i6.Future<bool> boot() => (super.noSuchMethod(

@@ -8,13 +8,15 @@
 // 11.10.2023 19:50
 import 'package:leoml_parser/leoml_parser.dart';
 import 'package:medical_device_classifier/bootstrap.dart';
-import 'package:medical_device_classifier/content_files/general_explanation_rule_loader.dart';
+import 'package:medical_device_classifier/content_files/content_loader_impl.dart';
 import 'package:medical_device_classifier/dependency_injection/injections.dart';
 import 'package:medical_device_classifier/dependency_injection/injections/injection_configuration.dart';
 import 'package:medical_device_classifier/features/dashboard/presentation/cubit/dashboard_cubit.dart';
 import 'package:medical_device_classifier/features/dashboard/presentation/cubit/dashboard_state.dart';
 import 'package:medical_device_classifier/features/general_explanation_of_rules/presentation/cubits/general_explanation_of_rules_cubit.dart';
 import 'package:medical_device_classifier/features/general_explanation_of_rules/presentation/cubits/general_explanation_of_rules_state.dart';
+import 'package:medical_device_classifier/features/implementing_rules/cubits/implementing_rules_cubit.dart';
+import 'package:medical_device_classifier/features/implementing_rules/cubits/implementing_rules_state.dart';
 import 'package:medical_device_classifier/shared_preferences/mdc_shared_preferences.dart';
 import 'package:medical_device_classifier/shared_preferences/shared_preferences_repository.dart';
 import 'package:medical_device_classifier/supabase/supabase_client.dart';
@@ -36,8 +38,7 @@ class InjectionCubits extends InjectionConfiguration {
         bootstrap: BootstrapImpl(
           supabaseClient: getIt.get<SupabaseClientImpl>(),
           mdcSharedPreferences: getIt.get<MDCSharedPreferences>(),
-          generalExplanationRuleLoader:
-              getIt.get<GeneralExplanationRuleLoader>(),
+          contentLoaderImpl: getIt.get<ContentLoaderImpl>(),
         ),
       ),
     );
@@ -49,8 +50,17 @@ class InjectionCubits extends InjectionConfiguration {
       () => GeneralExplanationOfRulesCubit(
         const GeneralExplanationOfRulesState.initial(),
         leoMLDocumentParser: getIt.get<LeoMLDocumentParser>(),
-        sharedPreferencesRepository:
-            getIt.get<SharedPreferencesRepository>(),
+        sharedPreferencesRepository: getIt.get<SharedPreferencesRepository>(),
+        expansionTile1Template: getIt.get<ExpansionTile1>(),
+      ),
+    );
+
+    getIt.registerFactory<ImplementingRulesCubit>(
+      () => ImplementingRulesCubit(
+        const ImplementingRulesState.initial(),
+        leoMLDocumentParser: getIt.get<LeoMLDocumentParser>(),
+        sharedPreferencesRepository: getIt.get<SharedPreferencesRepository>(),
+        articleTemplate: getIt.get<Article>(),
       ),
     );
   }
