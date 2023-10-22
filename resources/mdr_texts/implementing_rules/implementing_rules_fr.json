@@ -1,0 +1,42 @@
+[
+  {
+    "type": "article"
+  },
+  {
+    "headline": "Règles d'application"
+  },
+  {
+    "citation": "Toutes les règles d'application publiées ici sont reprises directement et sans modification du règlement UE 2017/745 (5 avril 2017) annexe VIII chapitre II."
+  },
+  {
+    "section": "1. L'application des règles de classification sera déterminée par l'objectif prévu des dispositifs."
+  },
+  {
+    "section": "2. Si le dispositif concerné est destiné à être utilisé en combinaison avec un autre dispositif, les règles de classification s'appliqueront séparément à chacun des dispositifs. Les accessoires pour un dispositif médical et pour un produit listé dans l'Annexe XVI seront classés à part, séparément du dispositif avec lequel ils sont utilisés."
+  },
+  {
+    "section": "3. Un logiciel, qui pilote un dispositif ou influence l'utilisation d'un dispositif, relèvera de la même classe que le dispositif."
+  },
+  {
+    "section": "4. Si le logiciel est indépendant de tout autre dispositif, il sera classé en tant que tel."
+  },
+  {
+    "section": "Si le dispositif n'est pas destiné à être utilisé uniquement ou principalement dans une partie spécifique du corps, il sera considéré et classé sur la base de l'utilisation spécifiée la plus critique."
+  },
+  {
+    "section": "5. Si plusieurs règles, ou si, au sein de la même règle, plusieurs sous-règles, s'appliquent au même dispositif en fonction de l'objectif prévu du dispositif, la règle et la sous-règle les plus strictes conduisant à la classification la plus élevée s'appliqueront."
+  },
+  {
+    "section": "6. Dans le calcul de la durée mentionnée à la Section 1, l'utilisation continue signifie :"
+  },
+  {
+    "list": [
+      "(a) la durée totale d'utilisation du même dispositif sans tenir compte de l'interruption temporaire de l'utilisation pendant une procédure ou de la suppression temporaire à des fins telles que le nettoyage ou la désinfection du dispositif. Si l'interruption ou le retrait est temporaire sera déterminé par rapport à la durée d'utilisation avant et après la période d'interruption ou de retrait du dispositif; et",
+      "(b) l'utilisation cumulée d'un dispositif qui est destiné par le fabricant à être immédiatement remplacé par un autre du même type."
+    ]
+  },
+  {
+    "section": "7. Un dispositif est considéré comme permettant un diagnostic direct lorsqu'il fournit par lui-même le diagnostic de la maladie ou de l'affection en question ou lorsqu'il fournit des informations déterminantes pour le diagnostic."
+  }
+]
+

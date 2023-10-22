@@ -20,9 +20,9 @@ class DashboardCubit extends Cubit<DashboardState> {
   /// [bootstrap] is a required parameter representing the bootstrap logic for initializing the dashboard.
 
   DashboardCubit(
-      super.initialState, {
-        required this.bootstrap,
-      });
+    super.initialState, {
+    required this.bootstrap,
+  });
 
   /// An instance of [Bootstrap] used for initializing the dashboard.
   Bootstrap bootstrap;
@@ -35,9 +35,9 @@ class DashboardCubit extends Cubit<DashboardState> {
   /// This method sets the state to [StateTemplateType.loading], triggers the bootstrap process,
   /// updates the state data, and then transitions to [StateTemplateType.loaded] when initialization is complete.
 
-  void initialize() {
-    emit(DashboardState.loading(previousData: _stateData));
-    bootstrap.boot();
+  Future<void> initialize() async {
+    emit(const DashboardState.loading());
+    await bootstrap.boot();
     _updateStateData();
     emit(DashboardState.loaded(data: _stateData));
   }
@@ -50,4 +50,3 @@ class DashboardCubit extends Cubit<DashboardState> {
     _stateData = const DashboardStateData();
   }
 }
-

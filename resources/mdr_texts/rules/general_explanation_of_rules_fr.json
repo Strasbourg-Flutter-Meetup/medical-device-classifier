@@ -1,0 +1,178 @@
+[
+  {
+    "type": "expansion_tile_1"
+  },
+  {
+    "headline": "Dispositifs non-invasifs"
+  },
+  {
+    "citation": "Toutes les règles, descriptions et exemples publiés ici sont repris directement et sans modification du guide MDCG 2021-24 sur la classification des dispositifs médicaux (octobre 2021)."
+  },
+  [
+    {
+      "header": {
+        "headline": "Règle 1",
+        "subHeadline": "Appareils qui ne sont soit pas en contact direct avec le patient, soit en contact uniquement avec la peau intacte"
+      }
+    },
+    {
+      "content": [
+        {
+          "sectionHeadline": "Explication générale de la règle"
+        },
+        {
+          "section": "Il s'agit d'une règle générale qui s'applique à tous les appareils non couverts par une règle plus spécifique. Cette règle concerne principalement les appareils qui ne sont en contact qu'avec la peau intacte ou qui ne sont pas en contact direct avec le patient."
+        },
+        {
+          "paragraphHeadline": "Classe"
+        },
+        {
+          "section": "I"
+        },
+        {
+          "section": "Tous les dispositifs non invasifs sont classés dans la classe I, à moins qu'une des règles suivantes ne s'applique."
+        },
+        {
+          "paragraphHeadline": "Exemples"
+        },
+        {
+          "list": [
+            "Appareils généralement destinés à assister le patient de manière externe (ex. lits d'hôpital, lève-patients, déambulateurs, fauteuils roulants, brancards, fauteuils dentaires)",
+            "Appareils pour la collecte de fluides corporels, lorsque le reflux est improbable (ex. collecteurs d'urine, coussinets d'incontinence ou collecteurs utilisés avec des appareils de drainage de plaies). Ils peuvent être connectés au patient par des cathéters et des tubes",
+            "Appareils pour l'immobilisation des parties du corps et/ou l'application de force ou de compression (ex. pansements non stériles pour aider à la guérison d'une entorse, plâtre, colliers cervicaux, dispositifs de traction par gravité, bas de compression)",
+            "Verres correcteurs et lentilles montées dans des montures",
+            "Stéthoscopes",
+            "Patches pour les yeux",
+            "Chiffons de coupe",
+            "Gels conducteurs non invasifs, c'est-à-dire gels échographiques",
+            "Électrodes non invasives (électrodes pour EEG ou ECG)",
+            "Aimants permanents pour retirer les corps étrangers des yeux",
+            "Fauteuils roulants poussés manuellement"
+          ]
+        },
+        {
+          "sectionHeadline": "Questions pratiques de classification"
+        },
+        {
+          "section": "Certains dispositifs non invasifs sont indirectement en contact avec le corps et peuvent influencer les processus physiologiques internes en stockant, en conduisant ou en traitant le sang, d'autres liquides corporels ou des liquides qui sont réintroduits ou infusés dans le corps, ou en produisant de l'énergie qui est introduite dans le corps. Ceux-ci sont traités par d'autres règles en raison des dangers inhérents à une telle influence indirecte sur le corps."
+        },
+        {
+          "paragraphHeadline": "Remarque 1"
+        },
+        {
+          "paragraph": "La peau intacte inclut la peau autour d'une stomie établie, à moins que la peau ne soit percée. Les signes de peau percée incluent les fissures, les rougeurs, les gonflements, les pleurs et les infections. La définition de la peau intacte doit s'appliquer à l'utilisation continue de l'appareil."
+        },
+        {
+          "paragraphHeadline": "Remarque 2"
+        },
+        {
+          "paragraph": "Les gels échographiques ne doivent pas être absorbés ou distribués localement dans le corps au site d'action pour atteindre leur objectif prévu."
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "header": {
+        "headline": "Règle 2",
+        "subHeadline": "Canalisation ou stockage pour une administration éventuelle"
+      }
+    },
+    {
+      "content": [
+        {
+          "sectionHeadline": "Explication générale de la règle"
+        },
+        {
+          "section": "Cette règle s'applique aux dispositifs non invasifs destinés à canaliser ou à stocker le sang, les liquides corporels, les cellules ou les tissus, les liquides ou les gaz à des fins spécifiques. Les dispositifs invasifs, autres que ceux chirurgicalement invasifs destinés à administrer des médicaments par inhalation, relèvent de la Règle 20"
+        },
+        {
+          "section": "Ces types de dispositifs devraient être considérés séparément des dispositifs sans contact de la Règle 1 car ils peuvent être indirectement invasifs. Ils canalisent ou stockent des substances qui seront éventuellement administrées au corps. Typiquement, ces dispositifs sont utilisés pour la transfusion, l'infusion, la circulation extracorporelle et l'administration de gaz anesthésiants et d'oxygène."
+        },
+        {
+          "section": "Dans certains cas, les dispositifs couverts par cette règle sont de très simples dispositifs de livraison qui dépendent de la gravité."
+        },
+        {
+          "paragraphHeadline": "Classe"
+        },
+        {
+          "section": "IIa"
+        },
+        {
+          "section": "Tous les dispositifs non invasifs destinés à canaliser ou à stocker le sang, les liquides corporels, les cellules ou les tissus, les liquides ou les gaz dans le but d'une éventuelle infusion, administration ou introduction dans le corps sont classés en classe IIa :"
+        },
+        {
+          "section": "- s'ils peuvent être connectés à un dispositif actif de classe IIa, IIb ou III ; ou s'ils sont destinés à canaliser ou stocker le sang ou d'autres liquides corporels ou à stocker des organes, des parties d'organes ou des cellules et tissus corporels,"
+        },
+        {
+          "paragraphHeadline": "Exemples"
+        },
+        {
+          "list": [
+            "Dispositifs destinés à être utilisés comme canaux dans les systèmes actifs d'administration de médicaments, par exemple les tubulures destinées à être utilisées avec une pompe à perfusion",
+            "Dispositifs utilisés pour canaliser les gaz, par exemple des tubulures antistatiques pour l'anesthésie, des circuits respiratoires pour l'anesthésie",
+            "Seringues pour pompes à perfusion",
+            "Dispositifs destinés à canaliser le sang (par exemple pour la transfusion, la circulation extracorporelle)",
+            "Dispositifs destinés au stockage et au transport temporaires d'organes pour la transplantation (c'est-à-dire conteneurs, sacs)",
+            "Dispositifs destinés au stockage à long terme de substances biologiques et de tissus tels que les cornées, le sperme, les embryons humains, etc. (c'est-à-dire conteneurs, sacs)",
+            "Réfrigérateurs/congélateurs spécialement destinés au stockage du sang, des tissus, etc.",
+            "Tubulures/lignes sanguines pour le traitement extracorporel (dialyse et thérapies d'aphérèse)"
+          ]
+        },
+        {
+          "paragraphHeadline": "Classe"
+        },
+        {
+          "section": "IIb"
+        },
+        {
+          "section": "- sauf pour les poches de sang ; les poches de sang sont classées en classe IIb."
+        },
+        {
+          "paragraphHeadline": "Exemples"
+        },
+        {
+          "list": [
+            "Poches de sang sans substance qui, si elle est utilisée séparément, peut être considérée comme un produit médicinal"
+          ]
+        },
+        {
+          "paragraphHeadline": "Classe"
+        },
+        {
+          "section": "I"
+        },
+        {
+          "section": "Dans tous les autres cas, ces dispositifs sont classés en classe I"
+        },
+        {
+          "paragraphHeadline": "Exemples"
+        },
+        {
+          "list": [
+            "Dispositifs non invasifs fournissant une simple fonction de canalisation, la gravité fournissant la force pour transporter le liquide, par exemple des sets d'administration pour l'infusion",
+            "Dispositifs destinés à être utilisés pour une fonction de confinement ou de stockage temporaire, par exemple des gobelets et des cuillères spécifiquement destinés à l'administration de médicaments. Seringues vides sans aiguilles"
+          ]
+        },
+        {
+          "sectionHeadline": "Problèmes pratiques de classification"
+        },
+        {
+          "section": "Si un dispositif, par exemple une tubulure, est destiné à être utilisé pour une fonction qui nécessiterait qu'il soit connecté à un dispositif actif, un tel dispositif sera automatiquement en classe IIa, à moins que le fabricant ne déclare clairement qu'il ne devrait pas être connecté à un dispositif actif de classe IIa ou supérieure."
+        },
+        {
+          "paragraphHeadline": "Note 1"
+        },
+        {
+          "paragraph": "‘Peut être connecté à un dispositif actif’ - une telle connexion est considérée comme existant entre un dispositif non actif et un dispositif actif lorsque le dispositif non actif forme un lien dans le transfert de la substance entre le patient et le dispositif actif et la sécurité et les performances de l'un des dispositifs sont influencées par l'autre dispositif. Par exemple, cela s'applique aux tubulures d'un système de circulation extracorporelle qui est en aval d'une pompe à sang et dans le même circuit de circulation sanguine, mais non directement connecté à la pompe."
+        },
+        {
+          "paragraphHeadline": "Note 2"
+        },
+        {
+          "paragraph": "Voir MDCG 2021-24 chapitre 3.1.6 'Dispositifs avec une fonction de mesure' concernant la possible fonction de mesure."
+        }
+      ]
+    }
+  ]
+]

@@ -26,7 +26,8 @@ void main() {
       expect(state.props, [StateTemplateType.loading, 42]);
     });
 
-    test('props should return a list containing type and null previousData', () {
+    test('props should return a list containing type and null previousData',
+        () {
       const state = StateTemplate<int>.loading();
       expect(state.props, [StateTemplateType.loading, null]);
     });
@@ -52,4 +53,3 @@ void main() {
     });
   });
 }
-

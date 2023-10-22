@@ -1,0 +1,363 @@
+[
+  {
+    "type": "expansion_tile_1"
+  },
+  {
+    "headline": "Termes de base et définitions"
+  },
+  {
+    "citation": "Toutes les définitions publiées ici sont prises directement et sans modification du Guide MDCG 2021-24 sur la classification des dispositifs médicaux (octobre 2021)."
+  },
+  {
+    "section": "Les définitions pertinentes concernant la classification des dispositifs sont énoncées à l'article 2 et au chapitre I de l'annexe VIII du RMD, mais le règlement contient également des explications sur d'autres termes. Ces termes et définitions pertinents pour ce guide sont rassemblés ci-dessous."
+  },
+  [
+    {
+      "header": {
+        "headline": "Objectif médical spécifique"
+      }
+    },
+    {
+      "content": [
+        {
+          "section": "L'objectif médical spécifique est précisé par le fabricant parmi ceux énumérés à l'article 2(1) du MDR."
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "header": {
+        "headline": "Durée d'utilisation"
+      }
+    },
+    {
+      "content": [
+        {
+          "sectionHeadline": "Transient"
+        },
+        {
+          "section": "Normalement destiné à une utilisation continue de moins de 60 minutes."
+        },
+        {
+          "sectionHeadline": "Court terme"
+        },
+        {
+          "section": "Normalement destiné à une utilisation continue entre 60 minutes et 30 jours."
+        },
+        {
+          "sectionHeadline": "Long terme"
+        },
+        {
+          "section": "Normalement destiné à une utilisation continue de plus de 30 jours."
+        },
+        {
+          "section": "Dans certains cas, la durée d'utilisation d'un produit doit être considérée comme la durée de l'effet. Par exemple, l'application d'une crème topique sur la peau peut ne prendre que quelques secondes, mais la crème peut rester en place pendant de nombreuses heures. La durée d'utilisation ne doit donc pas être considérée comme le temps nécessaire pour appliquer le produit, mais plutôt comme la durée pendant laquelle le produit reste dans ou sur le corps."
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "header": {
+        "headline": "Utilisation continue"
+      }
+    },
+    {
+      "content": [
+        {
+          "section": "Lors du calcul de la durée mentionnée dans la Section 1 du Chapitre I de l'Annexe VIII du RMD, l'utilisation continue signifie : '(a) La totalité de la durée d'utilisation du même dispositif, sans tenir compte de l'interruption temporaire de l'utilisation lors d'une procédure ou du retrait temporaire à des fins telles que le nettoyage ou la désinfection du dispositif. Si l'interruption de l'utilisation ou le retrait est temporaire est établi en relation avec la durée d'utilisation avant et après la période où l'utilisation est interrompue ou le dispositif retiré ; et (b) l'utilisation cumulée d'un dispositif que le fabricant a l'intention de remplacer immédiatement par un autre du même type.'"
+        },
+        {
+          "section": "Par exemple, un scalpel peut être utilisé sur le même patient pendant toute une opération qui peut durer plusieurs heures. L'utilisation ininterrompue dans le but prévu, c'est-à-dire la coupe des tissus, ne durera normalement que quelques secondes à la fois. Un scalpel est donc un dispositif d'utilisation transitoire. Cependant, lorsque l'utilisation d'un dispositif est interrompue afin que le dispositif soit immédiatement remplacé par le même ou un dispositif identique (par exemple, remplacement d'un cathéter urétéral), cela doit être considéré comme une prolongation de l'utilisation continue du dispositif."
+        },
+        {
+          "section": "Comme autre exemple, la période nocturne pendant laquelle les lentilles de contact sont nettoyées et désinfectées est considérée comme une interruption de l'utilisation du dispositif. Pour la détermination de la durée d'utilisation, seule la période spécifiée de port ininterrompu de la lentille (par exemple, 16 heures) doit être prise en compte."
+        },
+        {
+          "section": "S'il ne peut être démontré que les composants du dispositif sont totalement discontinués dans l'intervalle entre les utilisations, cela est également considéré comme un remplacement immédiat et une prolongation de l'utilisation continue du dispositif."
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "header": {
+        "headline": "Invasivité"
+      }
+    },
+    {
+      "content": [
+        {
+          "sectionHeadline": "Dispositif invasif"
+        },
+        {
+          "section": "Tout dispositif qui pénètre partiellement ou totalement dans le corps, que ce soit par un orifice corporel ou par la surface du corps. Un dispositif qui transmet de l'énergie au corps ne devrait pas être considéré comme invasif si seule l'énergie qu'il émet pénètre dans le corps et non le dispositif lui-même."
+        },
+        {
+          "sectionHeadline": "Orifice corporel"
+        },
+        {
+          "section": "Toute ouverture naturelle du corps ainsi que la surface externe du globe oculaire ou toute ouverture artificielle permanente, comme un stoma."
+        },
+        {
+          "sectionHeadline": "Peau ou muqueuse blessée"
+        },
+        {
+          "section": "Une zone de la peau ou d'une muqueuse présentant une altération pathologique ou une modification suite à une maladie, une blessure ou une cicatrice."
+        },
+        {
+          "sectionHeadline": "Dispositif invasif chirurgical"
+        },
+        {
+          "section": "Un dispositif invasif qui pénètre dans le corps à travers la surface du corps, y compris à travers les muqueuses des orifices corporels avec l'aide ou dans le contexte d'une intervention chirurgicale; et un dispositif qui pénètre autrement que par un orifice corporel."
+        },
+        {
+          "section": "Le terme 'intervention chirurgicale' dans cette définition englobe toutes les interventions cliniques où un dispositif est introduit dans le corps à travers la surface du corps. Un dispositif invasif chirurgical implique toujours qu'il pénètre par une ouverture créée artificiellement. Cela peut être une grande ouverture, comme une incision chirurgicale, ou une minuscule ouverture faite par une aiguille. Par conséquent, les gants chirurgicaux et les aiguilles utilisées avec les seringues sont considérés comme invasifs chirurgicalement."
+        },
+        {
+          "section": "Dans ce contexte, il convient de noter que :"
+        },
+        {
+          "list": [
+            "un stoma chirurgicalement créé, utilisé pour l'urostomie, la colostomie et l'iléostomie ou la trachéostomie permanente, est considéré comme un orifice corporel; par conséquent, les dispositifs insérés dans un tel stoma ne sont pas considérés comme invasifs chirurgicalement.",
+            "à l'inverse, une ouverture chirurgicalement créée permettant l'accès au système circulatoire ne devrait pas être considérée comme un orifice corporel. Les dispositifs introduits dans une telle ouverture sont invasifs chirurgicalement."
+          ]
+        },
+        {
+          "section": "Le concept d'invasivité chirurgicale devrait également inclure les liquides qui ont un contact invasif avec les organes, les tissus ou d'autres parties du corps lorsque l'accès à ces liquides se fait par une ouverture chirurgicalement créée."
+        },
+        {
+          "section": "Pour un dispositif administrant une substance, cette substance doit être évaluée indépendamment (par exemple, substances administrées avec un injecteur à jet)."
+        },
+        {
+          "sectionHeadline": "Instrument chirurgical réutilisable"
+        },
+        {
+          "section": "Un instrument destiné à des fins chirurgicales pour couper, percer, scier, gratter, racler, pincer, rétracter, agrafer ou similaires, sans être connecté à un dispositif actif et qui est destiné par le fabricant à être réutilisé après des procédures appropriées telles que le nettoyage, la désinfection et la stérilisation."
+        },
+        {
+          "sectionHeadline": "Dispositif implantable"
+        },
+        {
+          "section": "Tout dispositif, y compris ceux qui sont partiellement ou totalement absorbés, qui est destiné à :"
+        },
+        {
+          "list": [
+            "être entièrement introduit dans le corps humain, ou",
+            "remplacer une surface épithéliale ou la surface de l'œil par une intervention clinique et rester en place après la procédure."
+          ]
+        },
+        {
+          "section": "Tout dispositif destiné à être partiellement introduit dans le corps humain par une intervention clinique et à rester en place après la procédure pendant au moins 30 jours est également considéré comme un dispositif implantable."
+        },
+        {
+          "section": "Une 'procédure' doit être comprise dans ce contexte comme l'intervention chirurgicale au cours de laquelle l'implant est inséré dans le corps, ainsi que les soins postopératoires immédiats associés à la procédure. La 'procédure' ne s'étend pas à la fin du traitement thérapeutique, par exemple, le retrait d'un implant doit être considéré comme une autre 'procédure'. Ainsi, une plaque utilisée pour fixer un os fracturé et restant en place après la procédure pendant au moins 30 jours est un implant, même si elle est retirée une fois la fracture guérie. Dans ce cas, l'insertion de la plaque et son explantation sont deux interventions chirurgicales distinctes."
+        },
+        {
+          "section": "Parfois, les dispositifs partiellement implantés sont considérés comme des implants. Par exemple, un port d'infusion spécifiquement inséré dans le corps et restant en place après l'intervention pendant au moins 30 jours serait un implant. Toutefois, un cathéter veineux central non tunnelisé destiné à un accès vasculaire temporaire et destiné à être retiré après 7 à 10 jours n'est pas un dispositif implantable. De même, une suture pour la fermeture d'une plaie cutanée devant être retirée avant 30 jours n'est pas considérée comme un implant."
+        },
+        {
+          "sectionHeadline": "Sites anatomiques critiques"
+        },
+        {
+          "paragraphHeadline": "Système circulatoire central"
+        },
+        {
+          "section": "Aux fins du RDM, 'système circulatoire central' désigne les vaisseaux sanguins suivants : artères pulmonaires, aorte ascendante, arc aortique, aorte descendante jusqu'à la bifurcation aortique, artères coronaires, artère carotide commune, artère carotide externe, artère carotide interne, artères cérébrales, tronc brachio-céphalique, veines du cœur, veines pulmonaires, veine cave supérieure et veine cave inférieure."
+        },
+        {
+          "paragraphHeadline": "Système nerveux central"
+        },
+        {
+          "section": "Aux fins du RDM, 'système nerveux central' désigne le cerveau, les méninges et la moelle épinière."
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "header": {
+        "headline": "Dispositifs médicaux actifs"
+      }
+    },
+    {
+      "content": [
+        {
+          "sectionHeadline": "Dispositif actif"
+        },
+        {
+          "section": "Un dispositif actif désigne tout dispositif dont le fonctionnement dépend d'une source d'énergie autre que celle générée par le corps humain à cette fin, ou par la gravité, et qui agit en modifiant la densité de cette énergie ou en la convertissant. Les dispositifs destinés à transmettre de l'énergie, des substances ou d'autres éléments entre un dispositif actif et le patient, sans changement significatif, ne sont pas considérés comme des dispositifs actifs."
+        },
+        {
+          "sectionHeadline": "Acte de conversion d'énergie"
+        },
+        {
+          "section": "Le concept d'acte de conversion d'énergie comprend la conversion de l'énergie dans le dispositif et/ou la conversion à l'interface entre le dispositif et les tissus ou dans les tissus. Les électrodes destinées à l'ECG ou à l'EEG ne sont normalement pas considérées comme des dispositifs actifs car elles n'agissent généralement pas par conversion d'énergie."
+        },
+        {
+          "section": "L'application d'énergie provenant du corps humain pour faire fonctionner un dispositif ne rend pas le dispositif 'actif' à moins que cette énergie ne soit stockée dans le dispositif pour une libération ultérieure. Par exemple, l'énergie générée par un muscle humain et appliquée sur le piston d'une seringue (ce qui provoque l'administration d'une substance à un patient) ne rend pas cette seringue active. Cependant, si un système d'administration de médicaments dépend de l'enroulement manuel pour précharger un ressort qui est ensuite relâché pour administrer une substance, alors le dispositif incorporant le ressort est un dispositif actif. Un autre exemple de dispositif actif est les pompes élastomères, où l'énergie du corps humain est stockée dans la couche d'élastomère étirée."
+        },
+        {
+          "sectionHeadline": "Dispositifs médicaux utilisant des gaz préstockés et/ou du vide comme source d'énergie"
+        },
+        {
+          "section": "Les dispositifs médicaux utilisant des gaz préstockés et/ou du vide comme source d'énergie sont considérés comme des dispositifs actifs, tant qu'ils remplissent les deux critères sous la définition, par exemple les mélangeurs de gaz avec des machines d'anesthésie, les sprays analgésiques en aérosol avec une alimentation en gaz propulseur préstocké et les pompes d'aspiration alimentées au gaz."
+        },
+        {
+          "section": "Les coussins chauffants/refroidissants destinés uniquement à libérer de l'énergie thermique stockée ne sont pas des dispositifs actifs car ils n'agissent pas par conversion d'énergie. Cependant, les coussins chauffants/refroidissants qui agissent par action chimique (par exemple, réaction exothermique ou endothermique) sont des dispositifs actifs car ils convertissent l'énergie chimique en chaleur et/ou inversement."
+        },
+        {
+          "sectionHeadline": "Changement significatif"
+        },
+        {
+          "section": "Le concept de changement significatif pour l'énergie comprend les changements dans la nature, le niveau et la densité de l'énergie (voir la Règle 9). Cela signifie que, par exemple, une électrode n'est pas considérée comme un dispositif actif selon ce système de classification tant que l'entrée d'énergie est destinée à être la même que la sortie d'énergie. Une résistance dans un fil qui provoque de légers changements entre l'entrée et la sortie ne peut être considérée comme constituant un ‘changement significatif’. Cependant, les électrodes utilisées en électrochirurgie pour couper les tissus ou pour la cautérisation sont des dispositifs actifs car leur fonctionnement dépend de l'énergie fournie par un générateur et leur action est obtenue par conversion d'énergie à l'interface entre le dispositif et le tissu ou dans le tissu."
+        },
+        {
+          "sectionHeadline": "Logiciel"
+        },
+        {
+          "section": "Le logiciel est également un dispositif actif. Le logiciel doit être examiné non seulement dans le contexte de la Règle 11."
+        },
+        {
+          "sectionHeadline": "Dispositif thérapeutique actif"
+        },
+        {
+          "section": "Un dispositif thérapeutique actif désigne tout dispositif actif utilisé, seul ou en combinaison avec d'autres dispositifs, pour soutenir, modifier, remplacer ou restaurer des fonctions ou des structures biologiques en vue du traitement ou de l'atténuation d'une maladie, d'une blessure ou d'un handicap."
+        },
+        {
+          "sectionHeadline": "Dispositif actif destiné au diagnostic et à la surveillance"
+        },
+        {
+          "section": "Un dispositif actif destiné au diagnostic et à la surveillance désigne tout dispositif actif utilisé, seul ou en combinaison avec d'autres dispositifs, pour fournir des informations permettant de détecter, de diagnostiquer, de surveiller ou de traiter des conditions physiologiques, des états de santé, des maladies ou des malformations congénitales. Un dispositif est considéré comme permettant un diagnostic direct lorsqu'il fournit le diagnostic de la maladie ou de la condition en question lui-même ou lorsqu'il fournit des informations décisives pour le diagnostic."
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "header": {
+        "headline": "Dispositifs ayant une fonction de mesure"
+      }
+    },
+    {
+      "content": [
+        {
+          "section": "Les critères suivants, s'ils sont remplis conjointement, indiquent qu'un dispositif a une fonction de mesure:"
+        },
+        {
+          "section": "a) Le dispositif est conçu par le fabricant pour mesurer :"
+        },
+        {
+          "list": [
+            "quantitativement un paramètre physiologique ou anatomique, ou",
+            "une quantité ou une caractéristique quantifiable de l'énergie ou des substances (y compris les médicaments) délivrées ou retirées du corps humain. Les cuillères ou seringues en plastique emballées avec des médicaments et utilisées pour mesurer une quantité de ce médicament à administrer au patient appartiennent à cette catégorie. Les dispositifs permettant de délivrer un liquide au corps humain sans graduation ou échelle (par exemple, cuillères à médicament, gobelets, compte-gouttes sans graduation ou échelle ou affichage d'une unité de mesure) ne sont pas dans cette catégorie."
+          ]
+        },
+        {
+          "section": "b) Le résultat de la mesure :"
+        },
+        {
+          "list": [
+            "est affiché en unités légales ou autres unités acceptables au sens de la directive 80/181/CEE, ou",
+            "est comparé à au moins un point de référence indiqué en unités légales ou autres unités acceptables conformément à la directive mentionnée."
+          ]
+        },
+        {
+          "section": "c) L'objectif visé implique une précision, revendiquée explicitement ou implicitement, où une non-conformité avec la précision implicite pourrait avoir un effet négatif significatif sur la santé et la sécurité du patient."
+        },
+        {
+          "section": "L'expression 'revendiquée implicitement' couvre les cas où l'utilisateur, sur la base de la désignation du dispositif ou de ses documents d'accompagnement, ou sur la base de l'usage courant, est en droit d'attendre une précision où la précision de la mesure a un impact sur le diagnostic ou le traitement du patient."
+        },
+        {
+          "section": "Les activités de mesure lors du processus de fabrication, y compris celles à des fins d'étalonnage, ne sont pas couvertes et n'impliquent pas une fonction de mesure du dispositif fabriqué."
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "header": {
+        "headline": "Systèmes et trousses de procédure"
+      }
+    },
+    {
+      "content": [
+        {
+          "section": "Les systèmes et trousses de procédure sont décrits dans l'article 22 du RDM. Ils peuvent combiner des dispositifs médicaux, des dispositifs médicaux de diagnostic in vitro et d'autres produits conformes à la législation applicable à ces produits, uniquement lorsqu'ils sont utilisés dans le cadre d'une procédure médicale ou lorsque leur présence dans le système ou la trousse de procédure est justifiée. Dans ce cas de conformité légale démontrée de chaque composant, les systèmes ou trousses de procédure n'ont pas besoin de porter eux-mêmes un marquage CE supplémentaire, mais ils doivent porter le nom, la marque commerciale enregistrée ou la marque déposée de la personne qui combine les produits ainsi que l'adresse à laquelle cette personne peut être contactée."
+        },
+        {
+          "sectionHeadline": "Trousse de procédure"
+        },
+        {
+          "section": "Une trousse de procédure désigne une combinaison de produits emballés ensemble et mis sur le marché dans le but d'être utilisés pour une finalité médicale spécifique."
+        },
+        {
+          "sectionHeadline": "Système"
+        },
+        {
+          "section": "Un système désigne une combinaison de produits, emballés ensemble ou non, destinés à être interconnectés ou combinés pour atteindre une finalité médicale spécifique."
+        },
+        {
+          "section": "Lorsque le système ou la trousse de procédure intègre des dispositifs qui ne portent pas le marquage CE, ou lorsque la combinaison choisie de dispositifs n'est pas compatible compte tenu de leur finalité d'origine, ou lorsque la stérilisation n'a pas été réalisée conformément aux instructions du fabricant, le système ou la trousse de procédure est considéré comme un dispositif à part entière et est soumis à la procédure d'évaluation de la conformité pertinente conformément à l'article 52 du RDM. La classification est déterminée par l'utilisation prévue du système ou de la trousse de procédure. La personne physique ou morale qui combine les dispositifs doit assumer les obligations incombant aux fabricants."
+        },
+        {
+          "section": "Pour de telles combinaisons, incluant différents dispositifs, la classification est normalement déterminée par l'utilisation prévue. Dans les cas où l'utilisation prévue du dispositif final n'est pas assez spécifique pour déterminer la classification, la classification du dispositif est au niveau du dispositif le plus hautement classé inclus, en tenant compte de la nouvelle utilisation prévue du dispositif."
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "header": {
+        "headline": "Autres termes"
+      }
+    },
+    {
+      "content": [
+        {
+          "sectionHeadline": "Absorption systémique"
+        },
+        {
+          "section": "Le processus par lequel des substances ou leurs métabolites pénètrent dans l'organisme (p. ex. en traversant les membranes muqueuses) et sont distribués dans l'organisme via le sang et/ou le système lymphatique."
+        },
+        {
+          "sectionHeadline": "Entièrement ou principalement absorbé"
+        },
+        {
+          "section": "Le terme 'absorption' dans le contexte des dispositifs implantables fait référence à la dégradation d'un matériau dans l'organisme et à l'élimination métabolique des produits de dégradation résultants de l'organisme. Il ne s'applique pas aux substances qui sont excrétées sans modification de l'organisme, par exemple les gaz d'insufflation pour la cavité abdominale ou les procédures laparoscopiques et endoscopiques."
+        },
+        {
+          "sectionHeadline": "Dispersion locale"
+        },
+        {
+          "section": "La condition par laquelle des substances restent à un site spécifique sans être distribuées dans l'organisme via le sang et/ou le système lymphatique."
+        },
+        {
+          "sectionHeadline": "Médicament / produit médicinal"
+        },
+        {
+          "section": "Selon la définition donnée dans la Directive 2001/83/CE :"
+        },
+        {
+          "section": "(a) Toute substance ou combinaison de substances présentée comme ayant des propriétés pour traiter ou prévenir une maladie chez l'homme ; ou"
+        },
+        {
+          "section": "(b) Toute substance ou combinaison de substances qui peut être utilisée chez l'homme ou administrée à l'homme en vue de restaurer, corriger ou modifier les fonctions physiologiques en exerçant une action pharmacologique, immunologique ou métabolique, ou pour établir un diagnostic médical."
+        },
+        {
+          "sectionHeadline": "Nanomatériau"
+        },
+        {
+          "section": "Un ‘nanomatériau’ désigne un matériau naturel, incidentel ou fabriqué contenant des particules à l'état non lié ou sous forme d'agrégat ou d'agglomérat et où, pour 50 % ou plus des particules dans la distribution en nombre de taille, une ou plusieurs dimensions extérieures se situent dans la plage de taille de 1 à 100 nm; les fullerènes, les flocons de graphène et les nanotubes de carbone à paroi unique ayant une ou plusieurs dimensions extérieures inférieures à 1 nm sont également considérés comme des nanomatériaux selon le MDR, article 2(18). Les définitions connexes sur ‘particule’, ‘agglomérat’ et ‘agrégat’ sont également incluses dans le MDR Article 2(19-21). Les définitions sur le nanomatériau et les termes connexes proviennent de la Recommandation de la Commission 2011/696/UE sur la définition des nanomatériaux. Des orientations sur les termes et concepts utilisés dans la définition peuvent être trouvées dans un rapport du Centre commun de recherche de la Commission européenne."
+        },
+        {
+          "sectionHeadline": "Dérivé"
+        },
+        {
+          "section": "Dérivé signifie une substance non cellulaire extraite de tissus ou de cellules humains ou animaux par un processus de fabrication. La substance finale utilisée pour la fabrication du dispositif dans ce cas ne contient pas de cellules ou de tissus."
+        }
+      ]
+    }
+  ]
+]

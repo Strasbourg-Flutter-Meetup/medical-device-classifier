@@ -9,6 +9,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:medical_device_classifier/ui/widgets/error_building_content.dart';
+
 /// These widget tests cover two scenarios:
 ///
 /// The first test verifies that the ErrorBuildingContent widget displays the
@@ -21,7 +22,8 @@ import 'package:medical_device_classifier/ui/widgets/error_building_content.dart
 /// your project for these tests to work correctly.
 
 void main() {
-  testWidgets('ErrorBuildingContent displays default error message', (WidgetTester tester) async {
+  testWidgets('ErrorBuildingContent displays default error message',
+      (WidgetTester tester) async {
     // Build our widget and trigger a frame.
     await tester.pumpWidget(
       const MaterialApp(
@@ -32,10 +34,14 @@ void main() {
     );
 
     // Verify that the default error message is displayed.
-    expect(find.text('Something went wrong. Please try again later.'), findsOneWidget);
+    expect(
+      find.text('Something went wrong. Please try again later.'),
+      findsOneWidget,
+    );
   });
 
-  testWidgets('ErrorBuildingContent displays custom error message', (WidgetTester tester) async {
+  testWidgets('ErrorBuildingContent displays custom error message',
+      (WidgetTester tester) async {
     // Custom error message to be displayed.
     const customErrorMessage = 'Custom error message';
 

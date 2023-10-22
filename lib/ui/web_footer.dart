@@ -12,5 +12,13 @@ class WebFooter extends StatelessWidget {
   const WebFooter({super.key});
 
   @override
-  Widget build(BuildContext context) => const Text('I am a footer');
+  Widget build(BuildContext context) => const SizedBox(
+        height: 96.0,
+        child: Text(
+          'I am a footer',
+          style: TextStyle(
+            color: Colors.black,
+          ),
+        ),
+      );
 }

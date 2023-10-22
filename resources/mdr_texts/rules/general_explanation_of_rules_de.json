@@ -1,0 +1,178 @@
+[
+  {
+    "type": "expansion_tile_1"
+  },
+  {
+    "headline": "Nicht-invasive Geräte"
+  },
+  {
+    "citation": "Alle hier veröffentlichten Regel, Beschreibungen und Beispiele stammen direkt und unverändert aus der MDCG 2021-24 Leitlinie zur Klassifizierung von Medizinprodukten (Oktober 2021)."
+  },
+  [
+    {
+      "header": {
+        "headline": "Regel 1",
+        "subHeadline": "Geräte, die entweder nicht direkt mit dem Patienten in Kontakt kommen oder nur mit intakter Haut in Kontakt kommen"
+      }
+    },
+    {
+      "content": [
+        {
+          "sectionHeadline": "Allgemeine Erläuterung der Regel"
+        },
+        {
+          "section": "Dies ist eine Auffangregel, die für alle Geräte gilt, die nicht von einer spezifischeren Regel erfasst werden. Diese Regel gilt allgemein für Geräte, die nur mit intakter Haut in Kontakt kommen oder nicht direkt mit dem Patienten in Kontakt kommen."
+        },
+        {
+          "paragraphHeadline": "Klasse"
+        },
+        {
+          "section": "I"
+        },
+        {
+          "section": "Alle nicht-invasiven Geräte werden als Klasse I klassifiziert, es sei denn, eine der nachstehenden Regeln findet Anwendung."
+        },
+        {
+          "paragraphHeadline": "Beispiele"
+        },
+        {
+          "list": [
+            "Geräte, die allgemein zur externen Patientenunterstützung bestimmt sind (z. B. Krankenhausbetten, Patientenlifte, Gehhilfen, Rollstühle, Tragen, zahnärztliche Patientenstühle)",
+            "Geräte zur Sammlung von Körperflüssigkeiten, bei denen ein Rückfluss unwahrscheinlich ist (z. B. zur Sammlung von Körperabfällen wie Urinsammelflaschen, Inkontinenzauflagen oder Sammlern, die mit Wunddrainagegeräten verwendet werden). Sie können mittels Kathetern und Schläuchen mit dem Patienten verbunden sein",
+            "Geräte zur Immobilisierung von Körperteilen und/oder zur Anwendung von Kraft oder Kompression auf diese (z. B. nicht sterile Verbände zur Unterstützung der Heilung einer Verstauchung, Gips, Halskrausen, Schwerkraft-Zugvorrichtungen, Kompressionsstrümpfe)",
+            "Korrekturfassungen für Brillen (d.h. Brillen) und in Fassungen eingesetzte Linsen",
+            "Stethoskope",
+            "Augenabdeckpflaster",
+            "Schnitttücher",
+            "Nicht-invasive leitende Gele, d.h. Ultraschallgele",
+            "Nicht-invasive Elektroden (Elektroden für EEG oder EKG)",
+            "Dauermagnete zur Entfernung von Augenfremdkörpern",
+            "Von Hand geschobene Rollstühle"
+          ]
+        },
+        {
+          "sectionHeadline": "Praktische Fragen der Klassifizierung"
+        },
+        {
+          "section": "Einige nicht-invasive Geräte sind indirekt mit dem Körper in Kontakt und können interne physiologische Prozesse beeinflussen, indem sie Blut, andere Körperflüssigkeiten oder Flüssigkeiten speichern, leiten oder behandeln, die in den Körper zurückgeführt oder infundiert werden, oder indem sie Energie erzeugen, die dem Körper zugeführt wird. Diese werden aufgrund der Gefahren, die durch einen solchen indirekten Einfluss auf den Körper inhärent sind, durch andere Regeln behandelt."
+        },
+        {
+          "paragraphHeadline": "Hinweis 1"
+        },
+        {
+          "paragraph": "Intakte Haut schließt die Haut um ein etabliertes Stoma ein, es sei denn, die Haut ist durchbrochen. Anzeichen für durchbrochene Haut sind u.a. Risse, Rötungen, Schwellungen, Weinen und Infektionen. Die Definition von intakter Haut muss für die kontinuierliche Verwendung des Geräts gelten."
+        },
+        {
+          "paragraphHeadline": "Hinweis 2"
+        },
+        {
+          "paragraph": "Ultraschallgele dürfen nicht absorbiert oder lokal im Körper am Wirkungsort verteilt werden, um ihren beabsichtigten Zweck zu erreichen."
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "header": {
+        "headline": "Regel 2",
+        "subHeadline": "Kanalisation oder Speicherung für die spätere Verabreichung"
+      }
+    },
+    {
+      "content": [
+        {
+          "sectionHeadline": "Allgemeine Erläuterung der Regel"
+        },
+        {
+          "section": "Diese Regel gilt für nicht-invasive Geräte zum Leiten oder Lagern von Blut, Körperflüssigkeiten, Zellen oder Gewebe, Flüssigkeiten oder Gasen zu bestimmten Zwecken. Invasive Geräte, mit Ausnahme von chirurgisch invasiven Geräten, die zur Verabreichung von Arzneimitteln durch Inhalation bestimmt sind, fallen unter die Regel 20."
+        },
+        {
+          "section": "Diese Art von Geräten sollte getrennt von den kontaktlosen Geräten der Regel 1 betrachtet werden, da sie indirekt invasiv sein können. Sie leiten oder speichern Substanzen, die schließlich dem Körper zugeführt werden. Typischerweise werden diese Geräte bei Transfusionen, Infusionen, extrakorporalen Zirkulationen und der Abgabe von Anästhesiegasen und Sauerstoff verwendet."
+        },
+        {
+          "section": "In einigen Fällen handelt es sich bei den nach dieser Regel erfassten Geräten um sehr einfache Abgabegeräte, die sich auf die Schwerkraft verlassen."
+        },
+        {
+          "paragraphHeadline": "Klasse"
+        },
+        {
+          "section": "IIa"
+        },
+        {
+          "section": "Alle nicht-invasiven Geräte zum Leiten oder Lagern von Blut, Körperflüssigkeiten, Zellen oder Gewebe, Flüssigkeiten oder Gasen zum Zwecke der späteren Infusion, Verabreichung oder Einführung in den Körper werden als Klasse IIa eingestuft: "
+        },
+        {
+          "section": "- wenn sie mit einem aktiven Gerät der Klasse IIa, IIb oder III verbunden werden können; oder wenn sie zum Leiten oder Lagern von Blut oder anderen Körperflüssigkeiten oder zum Lagern von Organen, Organteilen oder Körperzellen und -geweben bestimmt sind."
+        },
+        {
+          "paragraphHeadline": "Beispiele"
+        },
+        {
+          "list": [
+            "Geräte, die als Kanäle in aktiven Medikamentenabgabesystemen verwendet werden sollen, z. B. Schläuche für Infusionspumpen",
+            "Geräte zum Leiten von Gasen, z. B. antistatische Schläuche für Anästhesie, Anästhesie-Atemkreisläufe",
+            "Spritzen für Infusionspumpen",
+            "Geräte zum Leiten von Blut (z. B. bei Transfusion, extrakorporaler Zirkulation)",
+            "Geräte zur vorübergehenden Lagerung und zum Transport von Organen für Transplantationen (z. B. Behälter, Beutel)",
+            "Geräte zur langfristigen Lagerung von biologischen Substanzen und Geweben wie Hornhäuten, Spermien, menschlichen Embryonen usw. (z. B. Behälter, Beutel)",
+            "Kühlschränke/Gefriergeräte, die speziell zur Lagerung von Blut, Gewebe usw. bestimmt sind.",
+            "Schläuche/Blutleitungen für extrakorporale Behandlungen (Dialyse- und Apherese-Therapien)"
+          ]
+        },
+        {
+          "paragraphHeadline": "Klasse"
+        },
+        {
+          "section": "IIb"
+        },
+        {
+          "section": "- mit Ausnahme von Blutbeuteln; Blutbeutel werden als Klasse IIb eingestuft."
+        },
+        {
+          "paragraphHeadline": "Beispiele"
+        },
+        {
+          "list": [
+            "Blutbeutel ohne einen Stoff, der, wenn er separat verwendet wird, als Arzneimittel betrachtet werden kann"
+          ]
+        },
+        {
+          "paragraphHeadline": "Klasse"
+        },
+        {
+          "section": "I"
+        },
+        {
+          "section": "In allen anderen Fällen werden solche Geräte als Klasse I eingestuft."
+        },
+        {
+          "paragraphHeadline": "Beispiele"
+        },
+        {
+          "list": [
+            "Nicht-invasive Geräte, die eine einfache Leitfunktion bieten, wobei die Schwerkraft die Kraft zur Beförderung der Flüssigkeit liefert, z. B. Verabreichungssätze für Infusionen",
+            "Geräte, die für eine vorübergehende Aufbewahrungs- oder Lagerfunktion bestimmt sind, z. B. Becher und Löffel, die speziell für die Verabreichung von Medikamenten vorgesehen sind. Leere Spritzen ohne Nadeln."
+          ]
+        },
+        {
+          "sectionHeadline": "Praktische Fragen der Klassifizierung"
+        },
+        {
+          "section": "Wenn ein Gerät, z. B. ein Schlauch, für einen Zweck verwendet werden soll, der es erfordert, mit einem aktiven Gerät verbunden zu werden, wird dieses Gerät automatisch in Klasse IIa eingestuft, es sei denn, der Hersteller gibt eindeutig an, dass es nicht mit einem aktiven Gerät der Klasse IIa oder höher verbunden werden sollte."
+        },
+        {
+          "paragraphHeadline": "Anmerkung 1"
+        },
+        {
+          "paragraph": "‘Kann mit einem aktiven Gerät verbunden werden’ - eine solche Verbindung wird zwischen einem nicht-aktiven Gerät und einem aktiven Gerät als gegeben angesehen, wenn das nicht-aktive Gerät eine Verbindung bei der Übertragung der Substanz zwischen dem Patienten und dem aktiven Gerät bildet und die Sicherheit und Leistung eines der Geräte durch das andere Gerät beeinflusst wird. Dies gilt beispielsweise für Schläuche in einem extrakorporalen Zirkulationssystem, die stromabwärts von einer Blutpumpe liegen und im selben Blutflusskreislauf sind, aber nicht direkt mit der Pumpe verbunden sind."
+        },
+        {
+          "paragraphHeadline": "Anmerkung 2"
+        },
+        {
+          "paragraph": "Siehe MDCG 2021-24 Kapitel 3.1.6 'Geräte mit Messfunktion' bezüglich der möglichen Messfunktion."
+        }
+      ]
+    }
+  ]
+]
