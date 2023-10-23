@@ -1,3 +1,15 @@
 {
-  "appBarTitle" : "Medical Device Classifier"
+  "appBarTitle" : "Medical Device Classifier",
+  "classificationStarter1": "the classification tool can be used to assess the risk classification of your medical device under the EU Medical Device Regulation (MDR) 2017/745.",
+  "classificationStarter2": "It is based on the classification rules detailed in Annex VIII of the MDR, along with the information included in MDCG guidance 2021-24 (\"Guidance on classification of medical devices\")",
+  "classificationStarterStartButtonText": "Start",
+  "dashboardExplanationText": "The purpose of the MDR Annex VIII Classifier is to assist you in the classification of your medical device.",
+  "dashboardClassifierTitle": "Classifier",
+  "dashboardClassifierSubtitle":"This classifier helps you to classify your medical device.",
+  "dashboardDefinitionsTitle": "Definitions",
+  "dashboardDefinitionsSubtitle":"Classification rules-specific definitions",
+  "dashboardImplementingRulesTitle": "Annex VIII Chapter 2: Implementing Rule",
+  "dashboardImplementingRulesSubtitle":"Rules, which have to be taken into account during classification",
+  "dashboardGeneralExplanationTitle": "General explanation of rules",
+  "dashboardGeneralExplanationSubtitle":"You can find here a general explanation of rules, practical issues and examples."
 }

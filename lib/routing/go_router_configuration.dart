@@ -8,6 +8,7 @@
 // 11.10.2023 12:33
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:medical_device_classifier/features/classification/classification_starter/screen/classification_starter.dart';
 import 'package:medical_device_classifier/features/dashboard/presentation/screen/dashboard.dart';
 import 'package:medical_device_classifier/features/definitions/presentation/screen/definitions.dart';
 import 'package:medical_device_classifier/features/general_explanation_of_rules/presentation/screen/general_explanation_of_rules.dart';
@@ -48,6 +49,7 @@ final _toDashboard = GoRoute(
     _toDefinitions,
     _toGeneralExplanationsOfRules,
     _toImplementingRules,
+    _toClassificationStarter,
   ],
 );
 
@@ -118,6 +120,30 @@ final _toImplementingRules = GoRoute(
           child: child,
         ),
     child: const ImplementingRules(),
+  ),
+);
+
+/// A route for navigating to the classification starter screen.
+///
+/// The [_toClassificationStarter] route represents a navigation route that
+/// leads to the classification starter screen. It specifies the route's path,
+/// name, and the page builder function responsible for creating the screen
+/// with transition animations.
+final _toClassificationStarter = GoRoute(
+  path: pathToClassificationStarter,
+  name: nameToClassificationStarter,
+  pageBuilder: (context, state) => CustomTransitionPage(
+    transitionsBuilder: (
+        context,
+        animation,
+        secondaryAnimation,
+        child,
+        ) =>
+        FadeTransition(
+          opacity: animation,
+          child: child,
+        ),
+    child: const ClassificationStarter(),
   ),
 );
 

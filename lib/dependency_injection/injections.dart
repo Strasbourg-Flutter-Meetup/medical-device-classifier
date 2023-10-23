@@ -6,9 +6,6 @@
 // Copyright: Strasbourg Flutter Meetup Group 2023
 // ID: 20231011194845
 // 11.10.2023 19:48
-/// This class is responsible for configuring the dependency injections using GetIt library.
-/// It provides a global instance of GetIt and a function to configure the injections.
-/// To use this class, call `configureGetItInjections()` with a list of [InjectionConfiguration] instances.
 import 'package:get_it/get_it.dart';
 import 'package:medical_device_classifier/dependency_injection/injections/injection_configuration.dart';
 
