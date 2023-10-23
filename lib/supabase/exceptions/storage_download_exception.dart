@@ -9,5 +9,5 @@
 import 'package:medical_device_classifier/supabase/exceptions/supabase_exception.dart';
 
 class StorageDownloadException extends SupabaseException {
-  StorageDownloadException({required String msg}) : super(msg: msg);
+  StorageDownloadException({required super.msg});
 }

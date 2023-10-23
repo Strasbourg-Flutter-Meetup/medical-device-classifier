@@ -20,7 +20,6 @@ import 'package:medical_device_classifier/ui/screen_template.dart';
 /// This widget sets up a `BlocProvider` for `GeneralExplanationOfRulesCubit` and
 /// displays the content using the `_GeneralExplanationOfRulesContent` widget.
 class GeneralExplanationOfRules extends StatelessWidget {
-
   /// Constructs a `GeneralExplanationOfRules` widget.
   const GeneralExplanationOfRules({super.key});
 
@@ -30,10 +29,10 @@ class GeneralExplanationOfRules extends StatelessWidget {
   /// returns the `_GeneralExplanationOfRulesContent` widget.
   @override
   Widget build(BuildContext context) => BlocProvider(
-    create: (context) =>
-    getIt.get<GeneralExplanationOfRulesCubit>()..initialize(),
-    child: _GeneralExplanationOfRulesContent(),
-  );
+        create: (context) =>
+            getIt.get<GeneralExplanationOfRulesCubit>()..initialize(),
+        child: _GeneralExplanationOfRulesContent(),
+      );
 }
 
 /// A widget that displays the content for the `GeneralExplanationOfRules`.
@@ -42,7 +41,6 @@ class GeneralExplanationOfRules extends StatelessWidget {
 /// renders the content accordingly.
 class _GeneralExplanationOfRulesContent extends StatelessWidget
     with ContentBuilder<GeneralExplanationOfRulesStateData> {
-
   /// Describes the part of the user interface represented by this widget.
   ///
   /// Uses the `ScreenTemplate` to structure the UI and utilizes the `ContentBuilder`
@@ -58,8 +56,7 @@ class _GeneralExplanationOfRulesContent extends StatelessWidget
         widget: ConstrainedBox(
           constraints: const BoxConstraints(maxWidth: 600.0),
           child: state.data?.column,
-        ) ??
-            const Column(),
+        ),
       ),
     );
   }

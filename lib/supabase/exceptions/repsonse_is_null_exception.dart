@@ -10,6 +10,6 @@ import 'package:medical_device_classifier/supabase/exceptions/supabase_exception
 
 class ResponseIsNullException extends SupabaseException {
   ResponseIsNullException({
-    String msg = 'The response from the server is null!',
-  }) : super(msg: msg);
+    super.msg = 'The response from the server is null!',
+  });
 }

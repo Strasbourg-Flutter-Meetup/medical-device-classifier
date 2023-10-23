@@ -12,8 +12,10 @@ const String pathToDashboard = '/';
 const String pathToDefinitions = 'definitions';
 const String pathToGeneralExplanationOfRules = 'generalRulesOfExplanation';
 const String pathToImplementingRules = 'implementingRules';
+const String pathToClassificationStarter = 'classificationStarter';
 
 // names
 const String nameToDefinitions = 'definitions';
 const String nameToGeneralExplanationOfRules = 'generalRulesOfExplanation';
 const String nameToImplementingRules = 'implementingRules';
+const String nameToClassificationStarter = 'classificationStarter';

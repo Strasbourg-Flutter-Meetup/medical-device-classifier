@@ -1,3 +1,15 @@
 {
-  "appBarTitle" : "Medical Device Classifier"
+  "appBarTitle" : "Medical Device Classifier",
+  "classificationStarter1": "L'outil de classification peut être utilisé pour évaluer la classification des risques de votre dispositif médical selon le Règlement sur les Dispositifs Médicaux (RDM) de l'UE 2017/745.",
+  "classificationStarter2": "Il est basé sur les règles de classification détaillées à l'Annexe VIII du RDM, ainsi que sur les informations incluses dans les directives MDCG 2021-24 (\"Guide sur la classification des dispositifs médicaux\").",
+  "classificationStarterStartButtonText": "Démarrer",
+  "dashboardExplanationText" : "L'objectif du classificateur de l'annexe VIII du RIM est de vous aider à classer votre dispositif médical.",
+  "dashboardClassifierTitle": "Classifier",
+  "dashboardClassifierSubtitle": "Ce Classifier vous aide à classer votre dispositif médical.",
+  "dashboardDefinitionsTitle": "Définitions",
+  "dashboardDefinitionsSubtitle": "Définitions spécifiques aux règles de classification",
+  "dashboardImplementingRulesTitle": "Annexe VIII Chapitre 2: Règle d'application",
+  "dashboardImplementingRulesSubtitle": "Règles à prendre en compte lors de la classification",
+  "dashboardGeneralExplanationTitle": "Explication générale des règles",
+  "dashboardGeneralExplanationSubtitle": "Vous pouvez trouver ici une explication générale des règles, des questions pratiques et des exemples."
 }

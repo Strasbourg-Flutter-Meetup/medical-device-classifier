@@ -10,7 +10,6 @@ import 'package:go_router/go_router.dart';
 import 'package:medical_device_classifier/routing/go_router_context.dart';
 import 'package:medical_device_classifier/routing/go_router_path.dart';
 
-
 /// Navigates to the definitions page.
 ///
 /// The [routeToDefinitions] function uses the [goRouterContext]
@@ -21,7 +20,6 @@ void routeToDefinitions() {
     nameToDefinitions,
   );
 }
-
 
 /// Navigates to the general explanations of rules page.
 ///
@@ -46,3 +44,14 @@ void routeToImplementingRules() {
     nameToImplementingRules,
   );
 }
+
+/// Navigates to the classification starter screen using the GoRouter.
+///
+/// The [routeToClassificationStarter] function utilizes the GoRouter to
+/// navigate to the classification starter screen by specifying the name of the
+/// route associated with that screen. It is typically called when an action
+/// or event triggers the navigation to the classification starter screen.
+void routeToClassificationStarter() {
+  goRouterContext?.goNamed(nameToClassificationStarter);
+}
+

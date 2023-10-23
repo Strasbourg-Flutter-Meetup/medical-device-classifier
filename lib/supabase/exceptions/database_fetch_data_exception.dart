@@ -9,5 +9,5 @@
 import 'package:medical_device_classifier/supabase/exceptions/supabase_exception.dart';
 
 class DatabaseFetchDataException extends SupabaseException {
-  DatabaseFetchDataException({required String msg}) : super(msg: msg);
+  DatabaseFetchDataException({required super.msg});
 }
