@@ -11,5 +11,9 @@
   "dashboardImplementingRulesTitle": "Anhang VIII Kapitel 2: Durchführungsregel",
   "dashboardImplementingRulesSubtitle": "Regeln, die bei der Klassifikation berücksichtigt werden müssen",
   "dashboardGeneralExplanationTitle": "Allgemeine Erläuterung der Regeln",
-  "dashboardGeneralExplanationSubtitle": "Hier finden Sie eine allgemeine Erklärung der Regeln, praktische Fragen und Beispiele."
+  "dashboardGeneralExplanationSubtitle": "Hier finden Sie eine allgemeine Erklärung der Regeln, praktische Fragen und Beispiele.",
+  "classificationPreconditionsIsMedicalTitle": "Ist Ihr Produkt nach Definition ein Medizinprodukt?",
+  "classificationPreconditionsKnowsAboutDefinitionsTitle": "Kennen Sie die Definitionen der Klassifikationsregeln?",
+  "classificationPreconditionsKnowsAboutImplementingRulesTitle": "Kennen Sie die Umsetzungsregeln in Bezug auf Klassifikationsregeln?",
+  "classificationPreconditionsContinueButton":"Weiter"
 }

@@ -7,7 +7,7 @@
 // ID: 20231023134839
 // 23.10.2023 13:48
 import 'package:flutter/material.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:medical_device_classifier/extensions/app_localization_extension.dart';
 
 /// A widget representing the build content section of the classification starter screen.
 ///
@@ -41,13 +41,13 @@ class ClassificationStarterBuildContent extends StatelessWidget {
             child: Column(
               children: [
                 Text(
-                  AppLocalizations.of(context)?.classificationStarter1 ?? '',
+                  context.appLocalizations?.classificationStarter1 ?? '',
                 ),
                 const SizedBox(
                   height: 32.0,
                 ),
                 Text(
-                  AppLocalizations.of(context)?.classificationStarter2 ?? '',
+                  context.appLocalizations?.classificationStarter2 ?? '',
                 ),
               ],
             ),

@@ -8,6 +8,7 @@
 // 11.10.2023 12:33
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:medical_device_classifier/features/classification/classification_preconditions_checker/presentation/screen/classification_preconditions.dart';
 import 'package:medical_device_classifier/features/classification/classification_starter/screen/classification_starter.dart';
 import 'package:medical_device_classifier/features/dashboard/presentation/screen/dashboard.dart';
 import 'package:medical_device_classifier/features/definitions/presentation/screen/definitions.dart';
@@ -86,15 +87,15 @@ final _toGeneralExplanationsOfRules = GoRoute(
   name: nameToGeneralExplanationOfRules,
   pageBuilder: (context, state) => CustomTransitionPage(
     transitionsBuilder: (
-        context,
-        animation,
-        secondaryAnimation,
-        child,
-        ) =>
+      context,
+      animation,
+      secondaryAnimation,
+      child,
+    ) =>
         FadeTransition(
-          opacity: animation,
-          child: child,
-        ),
+      opacity: animation,
+      child: child,
+    ),
     child: const GeneralExplanationOfRules(),
   ),
 );
@@ -110,15 +111,15 @@ final _toImplementingRules = GoRoute(
   name: nameToImplementingRules,
   pageBuilder: (context, state) => CustomTransitionPage(
     transitionsBuilder: (
-        context,
-        animation,
-        secondaryAnimation,
-        child,
-        ) =>
+      context,
+      animation,
+      secondaryAnimation,
+      child,
+    ) =>
         FadeTransition(
-          opacity: animation,
-          child: child,
-        ),
+      opacity: animation,
+      child: child,
+    ),
     child: const ImplementingRules(),
   ),
 );
@@ -134,16 +135,41 @@ final _toClassificationStarter = GoRoute(
   name: nameToClassificationStarter,
   pageBuilder: (context, state) => CustomTransitionPage(
     transitionsBuilder: (
-        context,
-        animation,
-        secondaryAnimation,
-        child,
-        ) =>
+      context,
+      animation,
+      secondaryAnimation,
+      child,
+    ) =>
         FadeTransition(
-          opacity: animation,
-          child: child,
-        ),
+      opacity: animation,
+      child: child,
+    ),
     child: const ClassificationStarter(),
   ),
+  routes: [
+    _toClassificationPrecondition,
+  ],
 );
 
+/// A [GoRoute] used for navigating to the classification preconditions screen.
+///
+/// The [_toClassificationPrecondition] route represents the navigation route
+/// to the classification preconditions screen. It includes the path, name, and
+/// page builder to define how the screen is presented.
+final _toClassificationPrecondition = GoRoute(
+  path: pathToClassificationPreconditions,
+  name: nameToClassificationPreconditions,
+  pageBuilder: (context, state) => CustomTransitionPage(
+    transitionsBuilder: (
+      context,
+      animation,
+      secondaryAnimation,
+      child,
+    ) =>
+        FadeTransition(
+      opacity: animation,
+      child: child,
+    ),
+    child: const ClassificationPrecondition(),
+  ),
+);

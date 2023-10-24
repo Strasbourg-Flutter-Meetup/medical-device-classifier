@@ -11,5 +11,9 @@
   "dashboardImplementingRulesTitle": "Annex VIII Chapter 2: Implementing Rule",
   "dashboardImplementingRulesSubtitle":"Rules, which have to be taken into account during classification",
   "dashboardGeneralExplanationTitle": "General explanation of rules",
-  "dashboardGeneralExplanationSubtitle":"You can find here a general explanation of rules, practical issues and examples."
+  "dashboardGeneralExplanationSubtitle":"You can find here a general explanation of rules, practical issues and examples.",
+  "classificationPreconditionsIsMedicalTitle":"Is your product a medical device by definition?",
+  "classificationPreconditionsKnowsAboutDefinitionsTitle":"Do you know the definitions of the classification rules?",
+  "classificationPreconditionsKnowsAboutImplementingRulesTitle":"Are you familiar with the implementation rules regarding classification rules?",
+  "classificationPreconditionsContinueButton":"Continue"
 }

@@ -7,7 +7,8 @@
 // ID: 20231023134705
 // 23.10.2023 13:47
 import 'package:flutter/material.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:medical_device_classifier/extensions/app_localization_extension.dart';
+import 'package:medical_device_classifier/routing/router.dart';
 
 /// A widget representing the start button for the classification starter screen.
 ///
@@ -29,12 +30,9 @@ class StartButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
-      onPressed: () {
-        // Define the action to perform when the button is pressed.
-      },
+      onPressed: routeToClassificationPreconditions,
       child: Text(
-        AppLocalizations.of(context)?.classificationStarterStartButtonText ??
-            '',
+        context.appLocalizations?.classificationStarterStartButtonText ?? '',
       ),
     );
   }

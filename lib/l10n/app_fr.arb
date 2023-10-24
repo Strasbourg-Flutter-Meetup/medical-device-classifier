@@ -11,5 +11,9 @@
   "dashboardImplementingRulesTitle": "Annexe VIII Chapitre 2: Règle d'application",
   "dashboardImplementingRulesSubtitle": "Règles à prendre en compte lors de la classification",
   "dashboardGeneralExplanationTitle": "Explication générale des règles",
-  "dashboardGeneralExplanationSubtitle": "Vous pouvez trouver ici une explication générale des règles, des questions pratiques et des exemples."
+  "dashboardGeneralExplanationSubtitle": "Vous pouvez trouver ici une explication générale des règles, des questions pratiques et des exemples.",
+  "classificationPreconditionsIsMedicalTitle": "Votre produit est-il un dispositif médical par définition ?",
+  "classificationPreconditionsKnowsAboutDefinitionsTitle": "Connaissez-vous les définitions des règles de classification ?",
+  "classificationPreconditionsKnowsAboutImplementingRulesTitle": "Êtes-vous familier avec les règles de mise en œuvre concernant les règles de classification ?",
+  "classificationPreconditionsContinueButton":"Continuer"
 }
