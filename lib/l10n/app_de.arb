@@ -14,6 +14,6 @@
   "dashboardGeneralExplanationSubtitle": "Hier finden Sie eine allgemeine Erklärung der Regeln, praktische Fragen und Beispiele.",
   "classificationPreconditionsIsMedicalTitle": "Ist Ihr Produkt nach Definition ein Medizinprodukt?",
   "classificationPreconditionsKnowsAboutDefinitionsTitle": "Kennen Sie die Definitionen der Klassifikationsregeln?",
-  "classificationPreconditionsKnowsAboutImplementingRulesTitle": "Kennen Sie die Umsetzungsregeln in Bezug auf Klassifikationsregeln?",
+  "classificationPreconditionsKnowsAboutImplementingRulesTitle": "Kennen Sie die Umsetzungsregeln in Bezug auf die Klassifikationsregeln?",
   "classificationPreconditionsContinueButton":"Weiter"
 }

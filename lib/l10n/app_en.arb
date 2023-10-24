@@ -14,6 +14,6 @@
   "dashboardGeneralExplanationSubtitle":"You can find here a general explanation of rules, practical issues and examples.",
   "classificationPreconditionsIsMedicalTitle":"Is your product a medical device by definition?",
   "classificationPreconditionsKnowsAboutDefinitionsTitle":"Do you know the definitions of the classification rules?",
-  "classificationPreconditionsKnowsAboutImplementingRulesTitle":"Are you familiar with the implementation rules regarding classification rules?",
+  "classificationPreconditionsKnowsAboutImplementingRulesTitle":"Are you familiar with the implementation rules related to the classification rules?",
   "classificationPreconditionsContinueButton":"Continue"
 }
