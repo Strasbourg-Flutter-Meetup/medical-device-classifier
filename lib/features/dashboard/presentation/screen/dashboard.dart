@@ -46,7 +46,7 @@ class Dashboard extends StatelessWidget {
 /// of the dashboard screen.
 
 class _DashboardContent extends StatelessWidget
-    with ContentBuilder<DashboardStateData> {
+    with ContentBuilderMixin<DashboardStateData> {
   const _DashboardContent();
 
   @override

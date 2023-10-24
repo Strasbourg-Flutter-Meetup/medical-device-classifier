@@ -40,7 +40,7 @@ class GeneralExplanationOfRules extends StatelessWidget {
 /// This widget listens to the `GeneralExplanationOfRulesCubit` state and
 /// renders the content accordingly.
 class _GeneralExplanationOfRulesContent extends StatelessWidget
-    with ContentBuilder<GeneralExplanationOfRulesStateData> {
+    with ContentBuilderMixin<GeneralExplanationOfRulesStateData> {
   /// Describes the part of the user interface represented by this widget.
   ///
   /// Uses the `ScreenTemplate` to structure the UI and utilizes the `ContentBuilder`

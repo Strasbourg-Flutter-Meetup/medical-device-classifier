@@ -52,6 +52,20 @@ void routeToImplementingRules() {
 /// route associated with that screen. It is typically called when an action
 /// or event triggers the navigation to the classification starter screen.
 void routeToClassificationStarter() {
-  goRouterContext?.goNamed(nameToClassificationStarter);
+  goRouterContext?.goNamed(
+    nameToClassificationStarter,
+  );
+}
+
+/// Navigates to the classification preconditions screen.
+///
+/// The `routeToClassificationPreconditions` function is used to initiate
+/// navigation to the classification preconditions screen. It utilizes the
+/// [GoRouterContext] to perform the navigation based on the predefined name
+/// for the classification preconditions route.
+void routeToClassificationPreconditions() {
+  goRouterContext?.goNamed(
+    nameToClassificationPreconditions,
+  );
 }
 

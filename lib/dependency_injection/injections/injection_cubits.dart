@@ -11,6 +11,8 @@ import 'package:medical_device_classifier/bootstrap.dart';
 import 'package:medical_device_classifier/content_files/content_loader_impl.dart';
 import 'package:medical_device_classifier/dependency_injection/injections.dart';
 import 'package:medical_device_classifier/dependency_injection/injections/injection_configuration.dart';
+import 'package:medical_device_classifier/features/classification/classification_preconditions_checker/presentation/cubits/classification_preconditions_cubit.dart';
+import 'package:medical_device_classifier/features/classification/classification_preconditions_checker/presentation/cubits/classification_precondition_checker_state.dart';
 import 'package:medical_device_classifier/features/dashboard/presentation/cubit/dashboard_cubit.dart';
 import 'package:medical_device_classifier/features/dashboard/presentation/cubit/dashboard_state.dart';
 import 'package:medical_device_classifier/features/general_explanation_of_rules/presentation/cubits/general_explanation_of_rules_cubit.dart';
@@ -61,6 +63,12 @@ class InjectionCubits extends InjectionConfiguration {
         leoMLDocumentParser: getIt.get<LeoMLDocumentParser>(),
         sharedPreferencesRepository: getIt.get<SharedPreferencesRepository>(),
         articleTemplate: getIt.get<Article>(),
+      ),
+    );
+
+    getIt.registerFactory<ClassificationPreconditionsCubit>(
+      () => ClassificationPreconditionsCubit(
+        const ClassificationPreconditionsState.initial(),
       ),
     );
   }

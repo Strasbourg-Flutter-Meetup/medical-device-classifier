@@ -43,7 +43,7 @@ class ImplementingRules extends StatelessWidget {
 /// fetched and processed by `ImplementingRulesCubit`. It uses a content builder
 /// pattern to determine the visual representation of the implementing rules.
 class _ImplementingRulesContent extends StatelessWidget
-    with ContentBuilder<ImplementingRulesStateData> {
+    with ContentBuilderMixin<ImplementingRulesStateData> {
 
   @override
 
