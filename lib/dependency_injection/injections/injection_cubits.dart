@@ -9,16 +9,19 @@
 import 'package:leoml_parser/leoml_parser.dart';
 import 'package:medical_device_classifier/bootstrap.dart';
 import 'package:medical_device_classifier/content_files/content_loader_impl.dart';
+import 'package:medical_device_classifier/decision_tree/decision_tree.dart';
 import 'package:medical_device_classifier/dependency_injection/injections.dart';
 import 'package:medical_device_classifier/dependency_injection/injections/injection_configuration.dart';
+import 'package:medical_device_classifier/features/classification/classification/presentation/cubits/classification_cubit.dart';
+import 'package:medical_device_classifier/features/classification/classification/presentation/cubits/classification_state.dart';
 import 'package:medical_device_classifier/features/classification/classification_preconditions_checker/presentation/cubits/classification_preconditions_cubit.dart';
 import 'package:medical_device_classifier/features/classification/classification_preconditions_checker/presentation/cubits/classification_precondition_checker_state.dart';
 import 'package:medical_device_classifier/features/dashboard/presentation/cubit/dashboard_cubit.dart';
 import 'package:medical_device_classifier/features/dashboard/presentation/cubit/dashboard_state.dart';
 import 'package:medical_device_classifier/features/general_explanation_of_rules/presentation/cubits/general_explanation_of_rules_cubit.dart';
 import 'package:medical_device_classifier/features/general_explanation_of_rules/presentation/cubits/general_explanation_of_rules_state.dart';
-import 'package:medical_device_classifier/features/implementing_rules/cubits/implementing_rules_cubit.dart';
-import 'package:medical_device_classifier/features/implementing_rules/cubits/implementing_rules_state.dart';
+import 'package:medical_device_classifier/features/implementing_rules/presentation/cubits/implementing_rules_cubit.dart';
+import 'package:medical_device_classifier/features/implementing_rules/presentation/cubits/implementing_rules_state.dart';
 import 'package:medical_device_classifier/shared_preferences/mdc_shared_preferences.dart';
 import 'package:medical_device_classifier/shared_preferences/shared_preferences_repository.dart';
 import 'package:medical_device_classifier/supabase/supabase_client.dart';
@@ -69,6 +72,14 @@ class InjectionCubits extends InjectionConfiguration {
     getIt.registerFactory<ClassificationPreconditionsCubit>(
       () => ClassificationPreconditionsCubit(
         const ClassificationPreconditionsState.initial(),
+      ),
+    );
+
+    getIt.registerFactory<ClassificationCubit>(
+      () => ClassificationCubit(
+        const ClassificationState.initial(),
+        decisionTree: getIt.get<DecisionTreeImpl>(),
+        sharedPreferencesRepository: getIt.get<SharedPreferencesRepository>(),
       ),
     );
   }

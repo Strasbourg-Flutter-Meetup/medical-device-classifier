@@ -14,6 +14,7 @@ const String pathToGeneralExplanationOfRules = 'generalRulesOfExplanation';
 const String pathToImplementingRules = 'implementingRules';
 const String pathToClassificationStarter = 'classificationStarter';
 const String pathToClassificationPreconditions = 'classificationPreconditions';
+const String pathToClassification = 'classification';
 
 // names
 const String nameToDefinitions = 'definitions';
@@ -21,3 +22,4 @@ const String nameToGeneralExplanationOfRules = 'generalRulesOfExplanation';
 const String nameToImplementingRules = 'implementingRules';
 const String nameToClassificationStarter = 'classificationStarter';
 const String nameToClassificationPreconditions = 'classificationPreconditions';
+const String nameToClassification = 'classification';

@@ -15,5 +15,24 @@
   "classificationPreconditionsIsMedicalTitle": "Ist Ihr Produkt nach Definition ein Medizinprodukt?",
   "classificationPreconditionsKnowsAboutDefinitionsTitle": "Kennen Sie die Definitionen der Klassifikationsregeln?",
   "classificationPreconditionsKnowsAboutImplementingRulesTitle": "Kennen Sie die Umsetzungsregeln in Bezug auf die Klassifikationsregeln?",
-  "classificationPreconditionsContinueButton":"Weiter"
+  "classificationPreconditionsContinueButton":"Weiter",
+  "classificationText": "Basierend auf {rule} wird Ihr Medizinprodukt als {classification} eingestuft.",
+  "@classificationText": {
+    "description": "Stellt dem Benutzer die endgültige Klassifizierung vor",
+    "placeholders": {
+        "rule":{
+            "type": "String",
+            "example": "Regel 2"
+         },
+        "classification": {
+            "Typ": "String",
+            "example": "IIa"
+        }
+    }
+  },
+  "classificationInformation": "Information",
+  "classificationHint": "Hinweis",
+  "classificationBack": "Zurück",
+  "classificationRestart": "Neustart",
+  "classificationCancel": "Beenden"
 }

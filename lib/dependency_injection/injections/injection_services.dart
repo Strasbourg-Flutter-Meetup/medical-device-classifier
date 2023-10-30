@@ -8,6 +8,7 @@
 // 11.10.2023 19:53
 import 'package:leoml_parser/leoml_parser.dart';
 import 'package:medical_device_classifier/content_files/content_loader_impl.dart';
+import 'package:medical_device_classifier/decision_tree/decision_tree.dart';
 import 'package:medical_device_classifier/dependency_injection/injections.dart';
 import 'package:medical_device_classifier/dependency_injection/injections/injection_configuration.dart';
 import 'package:medical_device_classifier/shared_preferences/shared_preferences_repository.dart';
@@ -39,6 +40,10 @@ class InjectionServices extends InjectionConfiguration {
 
     getIt.registerFactory<LeoMLDocumentParser>(
       () => LeoMLDocumentParser(),
+    );
+
+    getIt.registerFactory<DecisionTreeImpl>(
+      () => DecisionTreeImpl(),
     );
   }
 }

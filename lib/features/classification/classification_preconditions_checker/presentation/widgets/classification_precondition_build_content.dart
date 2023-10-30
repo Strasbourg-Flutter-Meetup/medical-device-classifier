@@ -14,6 +14,7 @@ import 'package:medical_device_classifier/features/classification/classification
 import 'package:medical_device_classifier/features/classification/classification_preconditions_checker/presentation/widgets/classification_preconditions_checkbox.dart';
 import 'package:medical_device_classifier/features/classification/classification_preconditions_checker/presentation/widgets/continue_button.dart';
 import 'package:medical_device_classifier/ui/content_builder.dart';
+import 'package:medical_device_classifier/ui/ui_constants.dart';
 
 /// A content builder for the classification preconditions screen.
 ///
@@ -62,7 +63,7 @@ class ClassificationPreconditionsBuildContent extends StatelessWidget {
     final cubit = context.read<ClassificationPreconditionsCubit>();
 
     return ConstrainedBox(
-      constraints: const BoxConstraints(maxWidth: 600.0),
+      constraints: const BoxConstraints(maxWidth: UIConstants.maxWidth),
       child: Column(
         children: [
           const SizedBox(

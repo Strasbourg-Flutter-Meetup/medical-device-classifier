@@ -1,0 +1,1328 @@
+[
+  {
+    "id": "1",
+    "isRoot": true,
+    "decision": "Do any of the following apply to your device?",
+    "options": [
+      {
+        "id": "1.1",
+        "when": "The device incorporates an integral medicinal substance and that has an action ancillary to that of the device",
+        "then": "2"
+      },
+      {
+        "id": "1.2",
+        "when": "The device is used for contraception or prevention of sexually transmitted diseases",
+        "then": "3"
+      },
+      {
+        "id": "1.3",
+        "when": "The device is intended specifically to be used for disinfecting or sterilizing medical devices",
+        "then": "6"
+      },
+      {
+        "id": "1.4",
+        "when": "None of these apply to my device",
+        "then": "10"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "isLeaf": true,
+    "result": "Class III, Rule 14"
+  },
+  {
+    "id": "3",
+    "decision": "(a). Is the device implantable or long-term invasive?",
+    "options": [
+      {
+        "id": "3.1",
+        "when": "Yes",
+        "then": "4"
+      },
+      {
+        "id": "3.2",
+        "when": "No",
+        "then": "5"
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "isLeaf": true,
+    "result": "Class III, Rule 15"
+  },
+  {
+    "id": "5",
+    "isLeaf": true,
+    "result": "Class IIb, Rule 15"
+  },
+  {
+    "id": "6",
+    "decision": "(b). Do either of the following apply to your device?",
+    "options": [
+      {
+        "id": "6.1",
+        "when": "The device is intended specifically for disinfecting, cleaning, rinsing or hydrating contact lenses",
+        "then": "7"
+      },
+      {
+        "id": "6.2",
+        "when": "The device is a disinfecting solution or washer solution specifically intended to be used for disinfecting invasive devices, as the end point of processing",
+        "then": "8"
+      },
+      {
+        "id": "6.3",
+        "when": "Neither of these options apply to my device",
+        "then": "9"
+      }
+    ]
+  },
+  {
+    "id": "7",
+    "isLeaf": true,
+    "result": "Class IIb, Rule 16"
+  },
+  {
+    "id": "8",
+    "isLeaf": true,
+    "result": "Class IIb, Rule 16"
+  },
+  {
+    "id": "9",
+    "isLeaf": true,
+    "result": "Class IIa, Rule 16"
+  },
+  {
+    "id": "10",
+    "decision": "Do any of the following apply to your device",
+    "information": "A ‘nanomaterial’ means a natural, incidental or manufactured material containing particles in an unbound state or as an aggregate or as an agglomerate and where, for 50% or more of the particles in the number size distribution, one or more external dimensions is in the size range 1-100 nm; Fullerenes, graphene flakes and single-wall carbon nanotubes with one or more external dimensions below 1 nm shall also be deemed to be nanomaterials according to MDR, Article 2(18). Examples of devices with nanomaterials include and intravascular catheter made of non-degradable polymer with nano-coating and dental filling materials.",
+    "hint": "Examples of devices intended for recording of X-ray diagnostic images are X-ray films or a digital X-ray detectors for recording images, and not an X-ray machine itself.",
+    "options": [
+      {
+        "id": "10.1",
+        "when": "The device is intended for recording X-Ray diagnostic images",
+        "then": "11"
+      },
+      {
+        "id": "10.2",
+        "when": "The device utilizes non-viable human or animal tissues, cells or their derivatives",
+        "then": "12"
+      },
+      {
+        "id": "10.3",
+        "when": "The device is intended specifically to be used for disinfecting or sterilizing medical devices",
+        "then": "15"
+      },
+      {
+        "id": "10.4",
+        "when": "None of these apply to my device",
+        "then": "19"
+      }
+    ]
+  },
+  {
+    "id": "11",
+    "isLeaf": true,
+    "result": "Class IIa, Rule 17"
+  },
+  {
+    "id": "12",
+    "decision": "(a). Is the device intended to come into contact with intact skin only?",
+    "options": [
+      {
+        "id": "12.1",
+        "when": "Yes",
+        "then": "13"
+      },
+      {
+        "id": "12.2",
+        "when": "No",
+        "then": "14"
+      }
+    ]
+  },
+  {
+    "id": "13",
+    "isLeaf": true,
+    "result": "Class I, Rule 18"
+  },
+  {
+    "id": "14",
+    "isLeaf": true,
+    "result": "Class III, Rule 18"
+  },
+  {
+    "id": "15",
+    "decision": "(b). Does the use of nanomaterials result in",
+    "information": "The high, medium, low or negligible potential of internal exposure is based on the combination of different factors such as the application site of a medical device, type of contact (e.g. tissue, cells or body fluids), contact time and the type of incorporation of the nanomaterial(s) (free, fixed, embedded). When the nanomaterial is applied as coating on the surface of the device, it is important to consider the type of interaction with the material (chemisorption versus physisorption). When the nanomaterial is embedded in a matrix it will be important to consider the degradability of the material.",
+    "hint": "Here are some examples with devices that fall into each of the described risk level - a bone filler with nanomaterials in its formulation presents a high or medium potential for internal exposure; bone fixation screws/plates with a strongly bound nano-coating present a low potential for internal exposure; and, dental fillers present a negligible potential for internal exposure.",
+    "options": [
+      {
+        "id": "15.1",
+        "when": "Negligible potential for internal exposure",
+        "then": "16"
+      },
+      {
+        "id": "15.2",
+        "when": "Low potential for internal exposure",
+        "then": "17"
+      },
+      {
+        "id": 15.3,
+        "when": "High or medium potential for internal exposure",
+        "then": "18"
+      }
+    ]
+  },
+  {
+    "id": "16",
+    "isLeaf": true,
+    "result": "Class IIa, Rule 19"
+  },
+  {
+    "id": "17",
+    "isLeaf": true,
+    "result": "Class IIb, Rule 19"
+  },
+  {
+    "id": "18",
+    "isLeaf": true,
+    "result": "Class III, Rule 19"
+  },
+  {
+    "id": "19",
+    "decision": "Do any of the following apply to your device?",
+    "information": "A body orifice is an natural opening in the body, as well as the external surface of the eyeball, or any permanent artificial opening, such as a stoma.",
+    "hint": "Administration of medicinal product by inhalation refers to inhalation of the medicine into the respiratory system. For example, spacers intended for metered dose inhalers and oxygen delivery systems with nasal cannulas.",
+    "options": [
+      {
+        "id": "19.1",
+        "when": "It is invasive via body orifices (not surgically invasive) to administer medicinal product by inhalation",
+        "then": "21"
+      },
+      {
+        "id": "19.2",
+        "when": "It is composed of substances to be introduced into the body via a body orifice or applied to the skin and absorbed by or locally dispersed in the body",
+        "then": "24"
+      },
+      {
+        "id": "19.3",
+        "when": "None of these apply to my device",
+        "then": "29"
+      }
+    ]
+  },
+  {
+    "id": "21",
+    "decision": "(a).  Does your device’s mode of action have an essential impact on the efficacy and safety of the administered medicinal product AND/OR the is the device intended to treat life-threatening conditions?",
+    "options": [
+      {
+        "id": "21.1",
+        "when": "Yes",
+        "then": "22"
+      },
+      {
+        "id": "21.2",
+        "when": "No",
+        "then": "23"
+      }
+    ]
+  },
+  {
+    "id": "22",
+    "isLeaf": true,
+    "result": "Class IIb, Rule 20"
+  },
+  {
+    "id": "23",
+    "isLeaf": true,
+    "result": "Class IIa, Rule 20"
+  },
+  {
+    "id": "24",
+    "decision": "D(b). Do any of the following apply to your device?",
+    "options": [
+      {
+        "id": "24.1",
+        "when": "The substances are applied to the skin, the nasal or oral cavity as far as the pharynx and achieves their intended purpose on those cavities",
+        "then": "25"
+      },
+      {
+        "id": "24.2",
+        "when": "The substances are systematically absorbed by the human body in order to achieve the intended purpose",
+        "then": "26"
+      },
+      {
+        "id": "24.3",
+        "when": "The substances achieve their intended purpose in the stomach or lower gastrointestinal tract and are systematically absorbed by the human body",
+        "then": "27"
+      },
+      {
+        "id": "24.4",
+        "when": "None of these apply to my device",
+        "then": "28"
+      }
+    ]
+  },
+  {
+    "id": "25",
+    "isLeaf": true,
+    "result": "Class IIa, Rule 21"
+  },
+  {
+    "id": "26",
+    "isLeaf": true,
+    "result": "Class III, Rule 21"
+  },
+  {
+    "id": "27",
+    "isLeaf": true,
+    "result": "Class III, Rule 21"
+  },
+  {
+    "id": "28",
+    "isLeaf": true,
+    "result": "Class IIb, Rule 21"
+  },
+  {
+    "id": "29",
+    "decision": "Is your device an active therapeutic device with an integrated or incorporated diagnostic function, which significantly determines the patient management by the device?",
+    "information": "An active therapeutic device is any active device used, whether alone or in combination with other devices, to support, modify, replace or restore biological functions or structures with a view to treatment or alleviation of an illness, injury or disability. Examples of devices that fall under this question are closed loop systems or automated external defibrillators.",
+    "hint": "Additional questions related to other types of active devices (i.e., rules 9 to 13 in the MDR) appear later in this questionnaire.",
+    "options": [
+      {
+        "id": "29.1",
+        "when": "Yes",
+        "then": "30"
+      },
+      {
+        "id": "29.2",
+        "when": "No",
+        "then": "31"
+      }
+    ]
+  },
+  {
+    "id": "30",
+    "isLeaf": true,
+    "result": "Class III, Rule 22"
+  },
+  {
+    "id": "31",
+    "decision": "Is your device intended to be invasive?",
+    "information": "Invasive: Any device which, in whole or in part, penetrates inside the body, either through a body orifice or through the surface of the body. A device that administers energy to the body should not be considered as invasive if the only energy it emits penetrates the body and not the device itself.",
+    "hint": "If your device only comes into contact with injured skin or mucous membrane, please select \"no\" to this question.",
+    "options": [
+      {
+        "id": "31.1",
+        "when": "Yes",
+        "then": "32"
+      },
+      {
+        "id": "31.2",
+        "when": "No",
+        "then": "74"
+      }
+    ]
+  },
+  {
+    "id": "32",
+    "decision": "(a). Is the device intended to be invasive in a body orifice or stoma or is it intended to be surgically invasive?",
+    "information": "Surgically invasive: an invasive device which penetrates the body through the surface of the body, including through mucous membranes of body orifices with the aid or in the context of a surgical operation; and a device which produces penetration other than through a body orifice. The term surgical operation includes all clinical interventional procedures in which a device is placed into the body through the surface of the body. A surgically invasive device always implies that it enters through an artificially created opening.",
+    "hint": "A surgically created stoma used in urostomy, colostomy and ileostomy or permanent tracheostomy is considered to be a body orifice; therefore devices introduced into such a stoma are not surgically invasive. In contrast, a surgically created opening to allow access to the circulatory system should not be considered to be a body orifice. Devices introduced into such an opening are surgically invasive.\n\nExamples of devices that are invasive via body orifices are corrective contact lenses, tracheal tubes, urethral stents and examination gloves (not surgical gloves). The surgically invasive definition can also apply to certain devices used in dental surgery, such as dental alloys or ceramics.",
+    "options": [
+      {
+        "id": "32.1",
+        "when": "Invasive in a body orifice or stoma",
+        "then": "33"
+      },
+      {
+        "id": "32.2",
+        "when": "Surgically invasive",
+        "then": "45"
+      }
+    ]
+  },
+  {
+    "id": "33",
+    "decision": "(b). What is the duration of use?",
+    "options": [
+      {
+        "id": "33.1",
+        "when": "Transient use - continuous use for less than 60 minutes",
+        "then": "34"
+      },
+      {
+        "id": "33.2",
+        "when": "Short term use - continuous use for between 60 minutes and 30 days",
+        "then": "37"
+      },
+      {
+        "id": "33.3",
+        "when": "Long term use - continuous use for more than 30 days",
+        "then": "42"
+      }
+    ]
+  },
+  {
+    "id": "34",
+    "decision": "(c). Is your device connected to an active medical device that is class IIa or higher?",
+    "options": [
+      {
+        "id": "34.1",
+        "when": "Yes",
+        "then": "35"
+      },
+      {
+        "id": "34.2",
+        "when": "No",
+        "then": "36"
+      }
+    ]
+  },
+  {
+    "id": "35",
+    "isLeaf": true,
+    "result": "Class IIa, Rule 5"
+  },
+  {
+    "id": "36",
+    "isLeaf": true,
+    "result": "Class I, Rule 5"
+  },
+  {
+    "id": "37",
+    "decision": "(c). Is your device connected to an active medical device that is class IIa or higher?",
+    "options": [
+      {
+        "id": "37.1",
+        "when": "Yes",
+        "then": "38"
+      },
+      {
+        "id": "37.2",
+        "when": "No",
+        "then": "39"
+      }
+    ]
+  },
+  {
+    "id": "38",
+    "isLeaf": true,
+    "result": "Class IIa, Rule 5"
+  },
+  {
+    "id": "39",
+    "decision": "(d). Is it only for use in the oral cavity as far as the pharynx, in an ear canal up to the ear drum or in the nasal cavity?",
+    "options": [
+      {
+        "id": "39.1",
+        "when": "Yes",
+        "then": "40"
+      },
+      {
+        "id": "39.2",
+        "when": "No",
+        "then": "41"
+      }
+    ]
+  },
+  {
+    "id": "40",
+    "isLeaf": true,
+    "result": "Class I, Rule 5"
+  },
+  {
+    "id": "41",
+    "isLeaf": true,
+    "result": "Class IIa, Rule 5"
+  },
+  {
+    "id": "42",
+    "decision": "(e). Is your device only for use in an oral cavity, ear canal, or in a nasal cavity and not liable to be absorbed by the mucous membrane?",
+    "information": "For additional reference, this refers to devices used in the oral cavity as far as the pharynx, in an ear canal up to the ear drum or in the nasal cavity.",
+    "options": [
+      {
+        "id": "42.1",
+        "when": "Yes",
+        "then": "43"
+      },
+      {
+        "id": "42.2",
+        "when": "No",
+        "then": "44"
+      }
+    ]
+  },
+  {
+    "id": "43",
+    "isLeaf": true,
+    "result": "Class IIa, Rule 5"
+  },
+  {
+    "id": "44",
+    "isLeaf": true,
+    "result": "Class IIb, Rule 5"
+  },
+  {
+    "id": "45",
+    "decision": "What is the duration of use?",
+    "options": [
+      {
+        "id": "45.1",
+        "when": "Transient use - continuous use for less than 60 minutes",
+        "then": "46"
+      },
+      {
+        "id": "45.2",
+        "when": "Short term use - continuous use for between 60 minutes and 30 days",
+        "then": "54"
+      },
+      {
+        "id": "45.3",
+        "when": "Long term use - continuous use for more than 30 days",
+        "then": "62"
+      }
+    ]
+  },
+  {
+    "id": "46",
+    "decision": "(g). Which of the following applies to your device?",
+    "information": "Reusable surgical instrument: An instrument intended for surgical use in cutting, drilling, sawing, scratching, scraping, clamping, retracting, clipping or similar procedures, without a connection to an active device and which is intended by the manufacturer to be reused after appropriate procedures such as cleaning, disinfection and sterilization have been carried out.",
+    "options": [
+      {
+        "id": "46.1",
+        "when": "It is a reusable surgical instrument",
+        "then": "47"
+      },
+      {
+        "id": "46.2",
+        "when": "It is intended to administer medicines in a potentially hazardous manner",
+        "then": "48"
+      },
+      {
+        "id": "46.3",
+        "when": "It is intended to supply energy/ionizing radiation",
+        "then": "49"
+      },
+      {
+        "id": "46.4",
+        "when": "It has a biological effect-mainly or wholly absorbed",
+        "then": "50"
+      },
+      {
+        "id": "46.5",
+        "when": "It is intended specifically for use in direct contact with the heart, central circulatory system or central nervous system",
+        "then": "51"
+      },
+      {
+        "id": "46.6",
+        "when": "It is intended specifically to control, diagnose monitor and/or correct a defect, the heart or central circulatory system through direct contact",
+        "then": "52"
+      },
+      {
+        "id": "46.7",
+        "when": "The device is surgically invasive for transient use, but none of these additional criteria apply",
+        "then": "53"
+      }
+    ]
+  },
+  {
+    "id": "47",
+    "isLeaf": true,
+    "result": "Class I, Rule 6"
+  },
+  {
+    "id": "48",
+    "isLeaf": true,
+    "result": "Class IIb, Rule 6"
+  },
+  {
+    "id": "49",
+    "isLeaf": true,
+    "result": "Class IIb, Rule 6"
+  },
+  {
+    "id": "50",
+    "isLeaf": true,
+    "result": "Class IIb, Rule 6"
+  },
+  {
+    "id": "51",
+    "isLeaf": true,
+    "result": "Class III, Rule 6"
+  },
+  {
+    "id": "52",
+    "isLeaf": true,
+    "result": "Class III, Rule 6"
+  },
+  {
+    "id": "53",
+    "isLeaf": true,
+    "result": "Class IIa, Rule 6"
+  },
+  {
+    "id": "54",
+    "decision": "(g). Which of the following applies to your device?",
+    "information": "Wholly or mainly absorbed: ‘absorption’ in the context of implantable devices refers to the degradation of a material within the body and the metabolic elimination of the resulting degradation products from the body. It does not apply to those substances that are excreted without modification from the body, e.g. insufflation gases for the abdominal cavity or laparoscopic and endoscopic procedures.",
+    "options": [
+      {
+        "id": "54.1",
+        "when": "It is intended to undergo a chemical change in the body (not in the teeth)",
+        "then": "55"
+      },
+      {
+        "id": "54.2",
+        "when": "It is intended to administer medicines (not in the teeth)",
+        "then": "56"
+      },
+      {
+        "id": "54.3",
+        "when": "It is intended to supply energy/ionizing radiation",
+        "then": "57"
+      },
+      {
+        "id": "54.4",
+        "when": "It has a biological effect-mainly or wholly absorbed",
+        "then": "58"
+      },
+      {
+        "id": "54.5",
+        "when": "It is intended specifically to monitor, control, diagnose or correct defects of the heart or central circulatory system by direct contact",
+        "then": "59"
+      },
+      {
+        "id": "54.6",
+        "when": "It is intended for use in direct contact with the central nervous system, the heart or the central circulatory system",
+        "then": "60"
+      },
+      {
+        "id": "54.7",
+        "when": "The device is surgically invasive for short term use, but none of these additional criteria apply",
+        "then": "61"
+      }
+    ]
+  },
+  {
+    "id": "55",
+    "isLeaf": true,
+    "result": "Class IIb, Rule 7"
+  },
+  {
+    "id": "56",
+    "isLeaf": true,
+    "result": "Class IIb, Rule 7"
+  },
+  {
+    "id": "57",
+    "isLeaf": true,
+    "result": "Class IIb, Rule 7"
+  },
+  {
+    "id": "58",
+    "isLeaf": true,
+    "result": "Class III, Rule 7"
+  },
+  {
+    "id": "59",
+    "isLeaf": true,
+    "result": "Class III, Rule 7"
+  },
+  {
+    "id": "60",
+    "isLeaf": true,
+    "result": "Class III, Rule 7"
+  },
+  {
+    "id": "61",
+    "isLeaf": true,
+    "result": "Class IIa, Rule 7"
+  },
+  {
+    "id": "62",
+    "decision": "(g). Which of the following applies to your device?",
+    "information": "Wholly or mainly absorbed: ‘absorption’ in the context of implantable devices refers to the degradation of a material within the body and the metabolic elimination of the resulting degradation products from the body. It does not apply to those substances that are excreted without modification from the body, e.g. insufflation gases for the abdominal cavity or laparoscopic and endoscopic procedures.",
+    "options": [
+      {
+        "id": "62.1",
+        "when": "It is intended to be placed in the teeth",
+        "then": "63"
+      },
+      {
+        "id": "62.2",
+        "when": "It is intended to be used in direct contact with the heart or central circulatory/nervous system",
+        "then": "64"
+      },
+      {
+        "id": "62.3",
+        "when": "It has biological effect-mainly or wholly absorbed",
+        "then": "65"
+      },
+      {
+        "id": "62.4",
+        "when": "It is intended to undergo a chemical change in the body (not in the teeth)",
+        "then": "66"
+      },
+      {
+        "id": "62.5",
+        "when": "It is intended to administer medicinal products",
+        "then": "67"
+      },
+      {
+        "id": "62.6",
+        "when": "It is an active implantable device or an accessory to an active implantable device",
+        "then": "68"
+      },
+      {
+        "id": "62.7",
+        "when": "It is a breast implant or surgical mesh",
+        "then": "69"
+      },
+      {
+        "id": "62.8",
+        "when": "It is a total or partial joint replacement, spinal disc replacement or an implant that comes into contact with the spinal column",
+        "then": "70"
+      },
+      {
+        "id": "62.9",
+        "when": "The device is surgically invasive for long term use, but none of these additional criteria apply",
+        "then": "73"
+      }
+    ]
+  },
+  {
+    "id": "63",
+    "isLeaf": true,
+    "result": "Class IIb, Rule 8"
+  },
+  {
+    "id": "64",
+    "isLeaf": true,
+    "result": "Class III, Rule 8"
+  },
+  {
+    "id": "65",
+    "isLeaf": true,
+    "result": "Class III, Rule 8"
+  },
+  {
+    "id": "66",
+    "isLeaf": true,
+    "result": "Class III, Rule 8"
+  },
+  {
+    "id": "67",
+    "isLeaf": true,
+    "result": "Class III, Rule 8"
+  },
+  {
+    "id": "68",
+    "isLeaf": true,
+    "result": "Class III, Rule 8"
+  },
+  {
+    "id": "69",
+    "isLeaf": true,
+    "result": "Class III, Rule 8"
+  },
+  {
+    "id": "70",
+    "decision": "(h). Is it a component, such as a screw, wedge plate or instrument?",
+    "options": [
+      {
+        "id": "70.1",
+        "when": "Yes",
+        "then": 73
+      },
+      {
+        "id": "70.2",
+        "when": "No",
+        "then": 74
+      }
+    ]
+  },
+  {
+    "id": "71",
+    "isLeaf": true,
+    "result": "Class IIb, Rule 8"
+  },
+  {
+    "id": "72",
+    "isLeaf": true,
+    "result": "Class III, Rule 8"
+  },
+  {
+    "id": "73",
+    "isLeaf": true,
+    "result": "Class IIb, Rule 8"
+  },
+  {
+    "id": "74",
+    "decision": "Is it an active medical device?",
+    "hint": " Software is considered an active device. Medical devices using prestored gases and/or vacuum as a power source are also generally considered an active device if they meet the criteria in definition (detailed in the 'i' symbol). Devices that achieve their purpose through filtration and centrifugation (e.g., a hemodialyzer) are not considered active devices as they work exclusively through mechanical methods.\n\nIf your device is intended for channeling or storing blood, body liquids, cells or tissues, liquids or gases for the eventual purpose of infusion, administration or introduction into the body please select \"No\" to this question, as these devices are addressed later in the questionnaire. An example of this type of device is a fridge/freezer for storing blood and tissues.",
+    "information": "Active medical device: Any device where the operation depends on a source of energy other than that generated by the human body for that purpose, or by gravity, and which acts by changing the density of or converting that energy. Devices intended to transmit energy, substances or other elements between an active device and the patient, without any significant change, are not considered active devices.",
+    "options": [
+      {
+        "id": "74.1",
+        "when": "Yes",
+        "then": "75"
+      },
+      {
+        "id": "74.2",
+        "when": "No",
+        "then": "107"
+      }
+    ]
+  },
+  {
+    "id": 75,
+    "decision": "(a). Which of the following applies to your device?",
+    "hint": "If the product is a medical device software (MDSW), that does not mean that the software rule (Rule 11) automatically applies. Rules 9-13, 15 and 22 can all apply to software devices. Therefore, if you have a software device, we strongly recommend reviewing the guidance on medical device software classification (MDCG 2019-11) to best ensure the correct rule is selected. The strictest rule or sub-rule will apply.",
+    "information": "Before proceeding with the next set of questions, please confirm that rule 22 does not apply to your device. If this rule applies, please review your response to question four. Rule 22: active therapeutic devices with an integrated or incorporated diagnostic function which significantly determines the patient management by the device, such as closed loop systems or automated external defibrillators.",
+    "options": [
+      {
+        "id": "75.1",
+        "when": "It is a therapeutic device intended to administer or exchange energy",
+        "then": "76"
+      },
+      {
+        "id": "75.2",
+        "when": "It is intended to diagnose and monitor or supply energy absorbed by the body or allow direct diagnosis or monitoring of vital physiological processes",
+        "then": "82"
+      },
+      {
+        "id": "75.3",
+        "when": "It is intended to image in vivo distribution of radiopharmaceuticals",
+        "then": "88"
+      },
+      {
+        "id": "75.4",
+        "when": "It is a software device",
+        "then": "94"
+      },
+      {
+        "id": "75.5",
+        "when": "It is intended to administer and/or remove medicines and other substances from the body",
+        "then": "103"
+      },
+      {
+        "id": "75.6",
+        "when": "It is an active device, but none of these other criteria apply",
+        "then": "106"
+      }
+    ]
+  },
+  {
+    "id": "76",
+    "decision": "(b). Which of the following applies to your device?",
+    "information": "According to MDCG 2021-24, the determination of if a device administers or exchanges energy to and from the human body in a potentially hazardous way is based on the type of technology involved and the intended application of the device to the patient. It is not based on the measures adopted by the manufacturer, e.g., use of technical standards, risk analysis. For example, all devices intended to emit ionizing radiation and all lung ventilators are considered to administer energy in a potentially hazardous way.",
+    "options": [
+      {
+        "id": "76.1",
+        "when": "It is intended to directly control, monitor or influence the performance of a class IIb active therapeutic device",
+        "then": "77"
+      },
+      {
+        "id": "76.2",
+        "when": "It administers or exchanges energy in a potentially hazardous way",
+        "then": "78"
+      },
+      {
+        "id": "76.3",
+        "when": "It is intended to emit ionizing radiation for therapeutic purposes, or it controls, monitors or directly influences the performance of devices that emit ionizing radiation for therapeutic purposes",
+        "then": "79"
+      },
+      {
+        "id": "76.4",
+        "when": "It is intended for controlling, monitoring or directly influencing the performance of active implantable devices",
+        "then": "80"
+      },
+      {
+        "id": "76.5",
+        "when": "None of these options apply to my device",
+        "then": "81"
+      }
+    ]
+  },
+  {
+    "id": "77",
+    "isLeaf": true,
+    "result": "Class IIb, Rule 9"
+  },
+  {
+    "id": "78",
+    "isLeaf": true,
+    "result": "Class IIb, Rule 9"
+  },
+  {
+    "id": "79",
+    "isLeaf": true,
+    "result": "Class IIb, Rule 9"
+  },
+  {
+    "id": "80",
+    "isLeaf": true,
+    "result": "Class III, Rule 9"
+  },
+  {
+    "id": "81",
+    "isLeaf": true,
+    "result": "Class IIa, Rule 9"
+  },
+  {
+    "id": "82",
+    "decision": "(b). Which of the following applies to your device?",
+    "options": [
+      {
+        "id": "82.1",
+        "when": "It is intended to illuminate the patient's body, in the visible spectrum",
+        "then": "83"
+      },
+      {
+        "id": "82.2",
+        "when": "It emits ionizing radiation for diagnostic or therapeutic radiology, including interventional radiology devices and devices which control or monitor such devices",
+        "then": "84"
+      },
+      {
+        "id": "82.3",
+        "when": "It is specifically intended to monitor vital physiological parameters where variations could result in immediate danger to patient",
+        "then": "85"
+      },
+      {
+        "id": "82.4",
+        "when": "It is intended for diagnosis in clinical situations where the patient is in immediate danger",
+        "then": "86"
+      },
+      {
+        "id": "82.5",
+        "when": "None of these options apply to my device",
+        "then": "87"
+      }
+    ]
+  },
+  {
+    "id": "83",
+    "isLeaf": true,
+    "result": "Class I, Rule 10"
+  },
+  {
+    "id": "84",
+    "isLeaf": true,
+    "result": "Class IIb, Rule 10"
+  },
+  {
+    "id": "85",
+    "isLeaf": true,
+    "result": "Class IIb, Rule 10"
+  },
+  {
+    "id": "86",
+    "isLeaf": true,
+    "result": "Class IIb, Rule 10"
+  },
+  {
+    "id": "87",
+    "isLeaf": true,
+    "result": "Class IIa, Rule 10"
+  },
+  {
+    "id": "88",
+    "decision": "(b). Which of the following applies to your device?",
+    "options": [
+      {
+        "id": "88.1",
+        "when": "It is intended to illuminate the patient's body, in the visible spectrum",
+        "then": "89"
+      },
+      {
+        "id": "88.2",
+        "when": "It emits ionizing radiation for diagnostic or therapeutic radiology, including interventional radiology devices and devices which control or monitor such devices",
+        "then": "90"
+      },
+      {
+        "id": "88.3",
+        "when": "It is specifically intended to monitor vital physiological parameters where variations could result in immediate danger to the patient",
+        "then": "91"
+      },
+      {
+        "id": "88.4",
+        "when": "It is intended for diagnosis in clinical situations where the patient is in immediate danger",
+        "then": "92"
+      },
+      {
+        "id": "88.5",
+        "when": "None of these options apply to my device",
+        "then": "93"
+      }
+    ]
+  },
+  {
+    "id": "89",
+    "isLeaf": true,
+    "result": "Class I, Rule 10"
+  },
+  {
+    "id": "90",
+    "isLeaf": true,
+    "result": "Class IIb, Rule 10"
+  },
+  {
+    "id": "91",
+    "isLeaf": true,
+    "result": "Class IIb, Rule 10"
+  },
+  {
+    "id": "92",
+    "isLeaf": true,
+    "result": "Class IIb, Rule 10"
+  },
+  {
+    "id": "93",
+    "isLeaf": true,
+    "result": "Class IIa, Rule 10"
+  },
+  {
+    "id": "94",
+    "decision": "(b). Which of the following applies to your device?",
+    "options": [
+      {
+        "id": "94.1",
+        "when": "It is intended to provide information used to make decisions for diagnosis or therapeutic purposes",
+        "then": "95"
+      },
+      {
+        "id": "94.2",
+        "when": "It is intended to monitor physiological processes",
+        "then": "99"
+      },
+      {
+        "id": "94.3",
+        "when": "Neither of these options apply to my device",
+        "then": "102"
+      }
+    ]
+  },
+  {
+    "id": "95",
+    "decision": "(c). Which of the following applies to your device?",
+    "information": "An example of a device where the decision's impact may cause 'death or irreversible deterioration of health' is a device intended to make treatment decisions in patients with acute stroke. An example of a device where the decision's impact may cause 'serious deterioration in health or surgical intervention' is a mobile app intended to analyze a user’s heartbeat, detect abnormalities and inform a physician accordingly.",
+    "options": [
+      {
+        "id": "95.1",
+        "when": "The decision's impact can cause serious deterioration in health or surgical intervention",
+        "then": "96"
+      },
+      {
+        "id": "95.2",
+        "when": "The decision's impact can cause death or irreversible deterioration of health",
+        "then": "97"
+      },
+      {
+        "id": "95.3",
+        "when": "Neither of these options apply to my device",
+        "then": "98"
+      }
+    ]
+  },
+  {
+    "id": "96",
+    "isLeaf": true,
+    "result": "Class IIb, Rule 11"
+  },
+  {
+    "id": "97",
+    "isLeaf": true,
+    "result": "Class III, Rule 11"
+  },
+  {
+    "id": "98",
+    "isLeaf": true,
+    "result": "Class IIa, Rule 11"
+  },
+  {
+    "id": "99",
+    "decision": "(d). Is it intended to monitor vital physiological parameters, where the nature of parameter variations could result in immediate danger to the patient?",
+    "options": [
+      {
+        "id": "99.1",
+        "when": "Yes",
+        "then": "100"
+      },
+      {
+        "id": "99.2",
+        "when": "No",
+        "then": "101"
+      }
+    ]
+  },
+  {
+    "id": "100",
+    "isLeaf": true,
+    "result": "Class IIb, Rule 11"
+  },
+  {
+    "id": "101",
+    "isLeaf": true,
+    "result": "Class IIa, Rule 11"
+  },
+  {
+    "id": "102",
+    "isLeaf": true,
+    "result": "Class I, Rule 11"
+  },
+  {
+    "id": "103",
+    "decision": "(b). Is the administration or removal of medicines or other substances from the body executed in a potentially hazardous way?",
+    "information": "Whether it is executed in a potentially hazardous way should take into account of the nature of the substances involved, of the part of the body concerned and of the mode of application.",
+    "options": [
+      {
+        "id": "103.1",
+        "when": "Yes",
+        "then": "104"
+      },
+      {
+        "id": "103.2",
+        "when": "No",
+        "then": "105"
+      }
+    ]
+  },
+  {
+    "id": "104",
+    "isLeaf": true,
+    "result": "Class IIb, Rule 12"
+  },
+  {
+    "id": "105",
+    "isLeaf": true,
+    "result": "Class IIa, Rule 12"
+  },
+  {
+    "id": "106",
+    "isLeaf": true,
+    "result": "Class I, Rule 13"
+  },
+  {
+    "id": "107",
+    "decision": "The device is non-invasive and non-active - which of the following applies to your device?",
+    "information": "Before proceeding with the next set of questions, please confirm that neither rule 14 nor rule 22 applies to your device. If one of these rules apply, please review your responses to questions one and four. Rule 14: devices incorporating integral medicinal substance and that has an action ancillary to that of the devices. Rule 22: active therapeutic devices with an integrated or incorporated diagnostic function which significantly determines the patient management by the device, such as closed loop systems or automated external defibrillators.",
+    "options": [
+      {
+        "id": "107.1",
+        "when": "The device does not touch the patient or it only comes into contact with intact skin",
+        "then": "108"
+      },
+      {
+        "id": "107.2",
+        "when": "It is intended for channeling or storing blood, body liquids, cells or tissues, liquids or gases for eventual infusion administration or introduction into the body",
+        "then": "109"
+      },
+      {
+        "id": "107.3",
+        "when": "It is intended for modifying the biological or chemical composition of human tissues or cells for implantation or administration into the body",
+        "then": "114"
+      },
+      {
+        "id": "107.4",
+        "when": "It is intended for modifying the biological or chemical composition of blood, other body liquids or other liquids for implantation or administration into the body",
+        "then": "119"
+      },
+      {
+        "id": "107.5",
+        "when": "The device comes into contact with injured skin or mucous membrane",
+        "then": "124"
+      }
+    ]
+  },
+  {
+    "id": "108",
+    "isLeaf": true,
+    "result": "Class I, Rule 1"
+  },
+  {
+    "id": "109",
+    "decision": "(a). Do any of the following apply to your device?",
+    "options": [
+      {
+        "id": "109.1",
+        "when": "The device is for use with blood, other body fluids, organs, tissues, cells",
+        "then": "110"
+      },
+      {
+        "id": "109.2",
+        "when": "The device is connected to an active device that is class IIa or higher",
+        "then": "111"
+      },
+      {
+        "id": "109.3",
+        "when": "The device is a blood bag",
+        "then": "112"
+      },
+      {
+        "id": "109.4",
+        "when": "None of these additional criteria apply",
+        "then": "113"
+      }
+    ]
+  },
+  {
+    "id": "110",
+    "isLeaf": true,
+    "result": "Class IIa, Rule 2"
+  },
+  {
+    "id": "111",
+    "isLeaf": true,
+    "result": "Class IIa, Rule 2"
+  },
+  {
+    "id": "112",
+    "isLeaf": true,
+    "result": "Class IIb, Rule 2"
+  },
+  {
+    "id": "113",
+    "isLeaf": true,
+    "result": "Class I, Rule 2"
+  },
+  {
+    "id": "114",
+    "decision": "(a). Do any of the following apply to your device?",
+    "options": [
+      {
+        "id": "114.1",
+        "when": "The treatment for which the device is used consists of filtration, centrifugation or exchanges of gas or heat",
+        "then": "115"
+      },
+      {
+        "id": "114.2",
+        "when": "It consists of substances to be used in vitro in direct contact with human cells, tissues or organs taken from the human body",
+        "then": "116"
+      },
+      {
+        "id": "114.3",
+        "when": "It consists of substances to be used in vitro with human embryos before implantation or administration into the body",
+        "then": "117"
+      },
+      {
+        "id": "114.4",
+        "when": "None of these additional criteria apply",
+        "then": "118"
+      }
+    ]
+  },
+  {
+    "id": "115",
+    "isLeaf": true,
+    "result": "Class IIa, Rule 3"
+  },
+  {
+    "id": "116",
+    "isLeaf": true,
+    "result": "Class III, Rule 3"
+  },
+  {
+    "id": "117",
+    "isLeaf": true,
+    "result": "Class III, Rule 3"
+  },
+  {
+    "id": "118",
+    "isLeaf": true,
+    "result": "Class IIb, Rule 3"
+  },
+  {
+    "id": "119",
+    "decision": "(a). Do any of the following apply to your device?",
+    "options": [
+      {
+        "id": "119.1",
+        "when": "The treatment for which the device is used consists of filtration, centrifugation or exchange of gas or heat",
+        "then": "120"
+      },
+      {
+        "id": "119.2",
+        "when": "It consists of substances to be used in vitro in direct contact with human cells, tissues or organs taken from the human body",
+        "then": "121"
+      },
+      {
+        "id": "119.3",
+        "when": "It consists of substances to be used in vitro with human embryos before implantation or administration into the body",
+        "then": "122"
+      },
+      {
+        "id": "119.4",
+        "when": "None of these additional criteria apply",
+        "then": "123"
+      }
+    ]
+  },
+  {
+    "id": "120",
+    "isLeaf": true,
+    "result": "Class IIa, Rule 3"
+  },
+  {
+    "id": "121",
+    "isLeaf": true,
+    "result": "Class III, Rule 3"
+  },
+  {
+    "id": "122",
+    "isLeaf": true,
+    "result": "Class III, Rule 3"
+  },
+  {
+    "id": "123",
+    "isLeaf": true,
+    "result": "Class IIb, Rule 3"
+  },
+  {
+    "id": "124",
+    "decision": "(a) Do any of the following apply to your device?",
+    "options": [
+      {
+        "id": "124.1",
+        "when": "The device is used as a mechanical barrier for compression or for absorption of exudates",
+        "then": "125"
+      },
+      {
+        "id": "124.2",
+        "when": "The device is intended to manage the micro-environment of injured skin or mucous membrane",
+        "then": "126"
+      },
+      {
+        "id": "124.3",
+        "when": "The device is intended for wounds which breach the dermis or mucous membrane and can heal only by secondary intent",
+        "then": "127"
+      },
+      {
+        "id": "124.4",
+        "when": "None of these additional criteria apply",
+        "then": "128"
+      }
+    ]
+  },
+  {
+    "id": "125",
+    "isLeaf": true,
+    "result": "Class I, Rule 4"
+  },
+  {
+    "id": "126",
+    "isLeaf": true,
+    "result": "Class IIa, Rule 4"
+  },
+  {
+    "id": "127",
+    "isLeaf": true,
+    "result": "Class IIb, Rule 4"
+  },
+  {
+    "id": "128",
+    "isLeaf": true,
+    "result": "Class IIa, Rule 4"
+  }
+]

@@ -1,0 +1,1328 @@
+[
+  {
+    "id": "1",
+    "isRoot": true,
+    "decision": "Gilt eine der folgenden Angaben für Ihr Gerät?",
+    "options": [
+      {
+        "id": "1.1",
+        "when": "Das Gerät enthält einen integralen Arzneistoff und hat eine Wirkung, die der des Geräts dient",
+        "then": "2"
+      },
+      {
+        "id": "1.2",
+        "when": "Das Gerät wird zur Empfängnisverhütung oder zur Vorbeugung sexuell übertragbarer Krankheiten verwendet",
+        "then": "3"
+      },
+      {
+        "id": "1.3",
+        "when": "Das Gerät ist speziell zur Desinfektion oder Sterilisation von Medizinprodukten vorgesehen",
+        "then": "6"
+      },
+      {
+        "id": "1.4",
+        "when": "Keines davon trifft auf mein Gerät zu",
+        "then": "10"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "isLeaf": true,
+    "result": "Klasse III, Regel 14"
+  },
+  {
+    "id": "3",
+    "decision": "(a). Ist das Gerät implantierbar oder langfristig invasiv?",
+    "options": [
+      {
+        "id": "3.1",
+        "when": "Ja",
+        "then": "4"
+      },
+      {
+        "id": "3.2",
+        "when": "Nein",
+        "then": "5"
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "isLeaf": true,
+    "result": "Klasse III, Regel 15"
+  },
+  {
+    "id": "5",
+    "isLeaf": true,
+    "result": "Klasse IIb, Regel 15"
+  },
+  {
+    "id": "6",
+    "decision": "(b). Gilt eine der folgenden Angaben für Ihr Gerät?",
+    "options": [
+      {
+        "id": "6.1",
+        "when": "Das Gerät ist speziell zur Desinfektion, Reinigung, Spülung oder Hydratisierung von Kontaktlinsen vorgesehen",
+        "then": "7"
+      },
+      {
+        "id": "6.2",
+        "when": "Das Gerät ist eine Desinfektionslösung oder Waschlösung, die speziell zur Desinfektion invasiver Geräte bestimmt ist und als Endpunkt der Verarbeitung dient",
+        "then": "8"
+      },
+      {
+        "id": "6.3",
+        "when": "Keine dieser Optionen trifft auf mein Gerät zu",
+        "then": "9"
+      }
+    ]
+  },
+  {
+    "id": "7",
+    "isLeaf": true,
+    "result": "Klasse IIb, Regel 16"
+  },
+  {
+    "id": "8",
+    "isLeaf": true,
+    "result": "Klasse IIb, Regel 16"
+  },
+  {
+    "id": "9",
+    "isLeaf": true,
+    "result": "Klasse IIa, Regel 16"
+  },
+  {
+    "id": "10",
+    "decision": "Gilt eine der folgenden Angaben für Ihr Gerät?",
+    "information": "Ein 'Nanomaterial' bezeichnet ein natürliches, zufälliges oder hergestelltes Material, das Partikel in ungebundener Form oder als Aggregat oder als Agglomerat enthält und bei dem bei 50 % oder mehr der Partikel in der Anzahlgrößenverteilung eine oder mehrere externe Dimensionen im Bereich von 1-100 nm liegen; Fullerenes, Graphenflocken und eindimensionale Kohlenstoffnanoröhren mit einer oder mehreren externen Dimensionen unter 1 nm gelten gemäß MDR, Artikel 2 (18) ebenfalls als Nanomaterialien. Beispiele für Geräte mit Nanomaterialien sind ein intravaskulärer Katheter aus nicht abbaubarem Polymer mit Nanobeschichtung und zahnärztliche Füllungsmaterialien.",
+    "hint": "Beispiele für Geräte zur Aufzeichnung von Röntgendiagnostikbildern sind Röntgenfilme oder digitale Röntgendetektoren zur Aufzeichnung von Bildern und nicht ein Röntgengerät selbst.",
+    "options": [
+      {
+        "id": "10.1",
+        "when": "Das Gerät ist zur Aufzeichnung von Röntgendiagnostikbildern vorgesehen",
+        "then": "11"
+      },
+      {
+        "id": "10.2",
+        "when": "Das Gerät verwendet nicht lebendes menschliches oder tierisches Gewebe, Zellen oder deren Derivate",
+        "then": "12"
+      },
+      {
+        "id": "10.3",
+        "when": "Das Gerät ist speziell zur Desinfektion oder Sterilisation von Medizinprodukten vorgesehen",
+        "then": "15"
+      },
+      {
+        "id": "10.4",
+        "when": "Keines davon trifft auf mein Gerät zu",
+        "then": "19"
+      }
+    ]
+  },
+  {
+    "id": "11",
+    "isLeaf": true,
+    "result": "Klasse IIa, Regel 17"
+  },
+  {
+    "id": "12",
+    "decision": "(a). Ist das Gerät nur zur Anwendung auf intakter Haut vorgesehen?",
+    "options": [
+      {
+        "id": "12.1",
+        "when": "Ja",
+        "then": "13"
+      },
+      {
+        "id": "12.2",
+        "when": "Nein",
+        "then": "14"
+      }
+    ]
+  },
+  {
+    "id": "13",
+    "isLeaf": true,
+    "result": "Klasse I, Regel 18"
+  },
+  {
+    "id": "14",
+    "isLeaf": true,
+    "result": "Klasse III, Regel 18"
+  },
+  {
+    "id": "15",
+    "decision": "(b). Führt die Verwendung von Nanomaterialien zu",
+    "information": "Das hohe, mittlere, niedrige oder vernachlässigbare Potenzial für eine interne Exposition basiert auf der Kombination verschiedener Faktoren wie dem Anwendungsort eines Medizinprodukts, dem Typ des Kontakts (z. B. Gewebe, Zellen oder Körperflüssigkeiten), der Kontaktzeit und der Art der Einbindung der Nanomaterialien (frei, fest, eingebettet). Wenn das Nanomaterial als Beschichtung auf der Oberfläche des Geräts aufgebracht wird, ist es wichtig, die Art der Wechselwirkung mit dem Material (Chemisorption gegenüber Physisorption) zu berücksichtigen. Wenn das Nanomaterial in einer Matrix eingebettet ist, ist die Abbaubarkeit des Materials wichtig.",
+    "hint": "Hier sind einige Beispiele für Geräte, die jeweils in die beschriebenen Risikostufen fallen - ein Knochenfüller mit Nanomaterialien in seiner Formulierung weist ein hohes oder mittleres Potenzial für eine interne Exposition auf; Knochenfixationsschrauben/Platten mit stark gebundener Nano-Beschichtung weisen ein niedriges Potenzial für eine interne Exposition auf; und Zahnfüllstoffe weisen ein vernachlässigbares Potenzial für eine interne Exposition auf.",
+    "options": [
+      {
+        "id": "15.1",
+        "when": "Vernachlässigbares Potenzial für eine interne Exposition",
+        "then": "16"
+      },
+      {
+        "id": "15.2",
+        "when": "Niedriges Potenzial für eine interne Exposition",
+        "then": "17"
+      },
+      {
+        "id": "15.3",
+        "when": "Hohes oder mittleres Potenzial für eine interne Exposition",
+        "then": "18"
+      }
+    ]
+  },
+  {
+    "id": "16",
+    "isLeaf": true,
+    "result": "Klasse IIa, Regel 19"
+  },
+  {
+    "id": "17",
+    "isLeaf": true,
+    "result": "Klasse IIb, Regel 19"
+  },
+  {
+    "id": "18",
+    "isLeaf": true,
+    "result": "Klasse III, Regel 19"
+  },
+  {
+    "id": "19",
+    "decision": "Gilt eine der folgenden Angaben für Ihr Gerät?",
+    "information": "Ein Körperöffnung ist eine natürliche Öffnung im Körper sowie die äußere Oberfläche des Augapfels oder eine dauerhafte künstliche Öffnung wie ein Stoma.",
+    "hint": "Die Verabreichung eines Arzneimittels durch Inhalation bezieht sich auf die Inhalation des Arzneimittels in das Atmungssystem. Beispiele hierfür sind Spacer, die für Dosieraerosole und Sauerstoffversorgungssysteme mit Nasenkanülen vorgesehen sind.",
+    "options": [
+      {
+        "id": "19.1",
+        "when": "Es erfolgt eine nicht chirurgisch invasive Verabreichung von Arzneimitteln durch Körperöffnungen (nicht chirurgisch invasiv) zur Inhalation",
+        "then": "21"
+      },
+      {
+        "id": "19.2",
+        "when": "Es besteht aus Stoffen, die in den Körper durch eine Körperöffnung eingebracht oder auf die Haut aufgetragen und im Körper aufgenommen oder lokal verteilt werden",
+        "then": "24"
+      },
+      {
+        "id": "19.3",
+        "when": "Keines davon trifft auf mein Gerät zu",
+        "then": "29"
+      }
+    ]
+  },
+  {
+    "id": "21",
+    "decision": "(a). Hat die Funktionsweise Ihres Geräts einen wesentlichen Einfluss auf die Wirksamkeit und Sicherheit des verabreichten Arzneimittels UND/ODER ist das Gerät zur Behandlung lebensbedrohlicher Erkrankungen vorgesehen?",
+    "options": [
+      {
+        "id": "21.1",
+        "when": "Ja",
+        "then": "22"
+      },
+      {
+        "id": "21.2",
+        "when": "Nein",
+        "then": "23"
+      }
+    ]
+  },
+  {
+    "id": "22",
+    "isLeaf": true,
+    "result": "Klasse IIb, Regel 20"
+  },
+  {
+    "id": "23",
+    "isLeaf": true,
+    "result": "Klasse IIa, Regel 20"
+  },
+  {
+    "id": "24",
+    "decision": "D(b). Gilt eine der folgenden Angaben für Ihr Gerät?",
+    "options": [
+      {
+        "id": "24.1",
+        "when": "Die Stoffe werden auf die Haut, die Nasen- oder Mundhöhle bis zum Rachen aufgetragen und erreichen dort ihren beabsichtigten Zweck",
+        "then": "25"
+      },
+      {
+        "id": "24.2",
+        "when": "Die Stoffe werden systematisch vom menschlichen Körper aufgenommen, um den beabsichtigten Zweck zu erreichen",
+        "then": "26"
+      },
+      {
+        "id": "24.3",
+        "when": "Die Stoffe erreichen ihren beabsichtigten Zweck im Magen oder im unteren Magen-Darm-Trakt und werden systemisch vom menschlichen Körper aufgenommen",
+        "then": "27"
+      },
+      {
+        "id": "24.4",
+        "when": "Keine dieser Optionen trifft auf mein Gerät zu",
+        "then": "28"
+      }
+    ]
+  },
+  {
+    "id": "25",
+    "isLeaf": true,
+    "result": "Klasse IIa, Regel 21"
+  },
+  {
+    "id": "26",
+    "isLeaf": true,
+    "result": "Klasse III, Regel 21"
+  },
+  {
+    "id": "27",
+    "isLeaf": true,
+    "result": "Klasse III, Regel 21"
+  },
+  {
+    "id": "28",
+    "isLeaf": true,
+    "result": "Klasse IIb, Regel 21"
+  },
+  {
+    "id": "29",
+    "decision": "Ist Ihr Gerät ein aktives therapeutisches Gerät mit einer integrierten oder eingebauten diagnostischen Funktion, das die Patientenbetreuung wesentlich bestimmt?",
+    "information": "Ein aktives therapeutisches Gerät ist ein aktives Gerät, das allein oder in Kombination mit anderen Geräten verwendet wird, um biologische Funktionen oder Strukturen zur Behandlung oder Linderung einer Krankheit, Verletzung oder Behinderung zu unterstützen, zu ändern, zu ersetzen oder wiederherzustellen. Beispiele für Geräte, die unter diese Frage fallen, sind Closed-Loop-Systeme oder automatisierte externe Defibrillatoren.",
+    "hint": "Zusätzliche Fragen zu anderen Arten von aktiven Geräten (z. B. Regeln 9 bis 13 in der MDR) erscheinen später in diesem Fragebogen.",
+    "options": [
+      {
+        "id": "29.1",
+        "when": "Ja",
+        "then": "30"
+      },
+      {
+        "id": "29.2",
+        "when": "Nein",
+        "then": "31"
+      }
+    ]
+  },
+  {
+    "id": "30",
+    "isLeaf": true,
+    "result": "Klasse III, Regel 22"
+  },
+  {
+    "id": "31",
+    "decision": "Ist Ihr Gerät invasiv vorgesehen?",
+    "information": "Invasiv: Jedes Gerät, das ganz oder teilweise in den Körper eindringt, entweder durch eine Körperöffnung oder durch die Oberfläche des Körpers. Ein Gerät, das Energie an den Körper abgibt, sollte nicht als invasiv betrachtet werden, wenn die abgegebene Energie nur den Körper durchdringt und nicht das Gerät selbst.",
+    "hint": "Wenn Ihr Gerät nur mit verletzter Haut oder Schleimhaut in Kontakt kommt, wählen Sie bitte 'nein' für diese Frage.",
+    "options": [
+      {
+        "id": "31.1",
+        "when": "Ja",
+        "then": "32"
+      },
+      {
+        "id": "31.2",
+        "when": "Nein",
+        "then": "74"
+      }
+    ]
+  },
+  {
+    "id": "32",
+    "decision": "(a). Ist das Gerät zur Anwendung in einer Körperöffnung, einem Stoma vorgesehen oder ist es zur chirurgischen Invasion vorgesehen?",
+    "information": "Chirurgisch invasiv: Ein invasives Gerät, das den Körper durch die Oberfläche des Körpers durchdringt, einschließlich durch Schleimhäute von Körperöffnungen mit Hilfe oder im Zusammenhang mit einem chirurgischen Eingriff; und ein Gerät, das eine Durchdringung anders als durch eine Körperöffnung erzeugt. Der Begriff chirurgischer Eingriff umfasst alle klinischen Interventionen, bei denen ein Gerät in den Körper durch die Oberfläche des Körpers eingeführt wird. Ein chirurgisch invasives Gerät impliziert immer, dass es durch eine künstlich geschaffene Öffnung eindringt.",
+    "hint": "Ein chirurgisch angelegtes Stoma, das bei Urostomie, Kolostomie und Ileostomie oder permanentem Tracheostomie verwendet wird, gilt als Körperöffnung; daher sind Geräte, die in ein solches Stoma eingeführt werden, nicht chirurgisch invasiv. Im Gegensatz dazu sollte eine chirurgisch geschaffene Öffnung, die den Zugang zum Kreislaufsystem ermöglicht, nicht als Körperöffnung betrachtet werden. Geräte, die in eine solche Öffnung eingeführt werden, sind chirurgisch invasiv.\n\nBeispiele für Geräte, die über Körperöffnungen invasiv sind, sind korrigierende Kontaktlinsen, Trachealtuben, Harnröhrenstents und Untersuchungshandschuhe (nicht chirurgische Handschuhe). Die Definition der chirurgischen Invasivität kann auch auf bestimmte Geräte angewendet werden, die in der zahnärztlichen Chirurgie verwendet werden, wie zahnärztliche Legierungen oder Keramiken.",
+    "options": [
+      {
+        "id": "32.1",
+        "when": "Invasiv in einer Körperöffnung oder einem Stoma",
+        "then": "33"
+      },
+      {
+        "id": "32.2",
+        "when": "Chirurgisch invasiv",
+        "then": "45"
+      }
+    ]
+  },
+  {
+    "id": "33",
+    "decision": "(b). Welche Nutzungsdauer hat Ihr Gerät?",
+    "options": [
+      {
+        "id": "33.1",
+        "when": "Kurzzeitige Nutzung - kontinuierliche Nutzung für weniger als 60 Minuten",
+        "then": "34"
+      },
+      {
+        "id": "33.2",
+        "when": "Kurzzeitige Nutzung - kontinuierliche Nutzung zwischen 60 Minuten und 30 Tagen",
+        "then": "37"
+      },
+      {
+        "id": "33.3",
+        "when": "Langzeitige Nutzung - kontinuierliche Nutzung für mehr als 30 Tage",
+        "then": "42"
+      }
+    ]
+  },
+  {
+    "id": "34",
+    "decision": "(c). Ist Ihr Gerät mit einem aktiven Medizinprodukt der Klasse IIa oder höher verbunden?",
+    "options": [
+      {
+        "id": "34.1",
+        "when": "Ja",
+        "then": "35"
+      },
+      {
+        "id": "34.2",
+        "when": "Nein",
+        "then": "36"
+      }
+    ]
+  },
+  {
+    "id": "35",
+    "isLeaf": true,
+    "result": "Klasse IIa, Regel 5"
+  },
+  {
+    "id": "36",
+    "isLeaf": true,
+    "result": "Klasse I, Regel 5"
+  },
+  {
+    "id": "37",
+    "decision": "(c). Ist Ihr Gerät mit einem aktiven Medizinprodukt der Klasse IIa oder höher verbunden?",
+    "options": [
+      {
+        "id": "37.1",
+        "when": "Ja",
+        "then": "38"
+      },
+      {
+        "id": "37.2",
+        "when": "Nein",
+        "then": "39"
+      }
+    ]
+  },
+  {
+    "id": "38",
+    "isLeaf": true,
+    "result": "Klasse IIa, Regel 5"
+  },
+  {
+    "id": "39",
+    "decision": "(d). Ist es nur für die Anwendung in der Mundhöhle bis zum Rachen, im Gehörgang bis zum Trommelfell oder in der Nasenhöhle vorgesehen?",
+    "options": [
+      {
+        "id": "39.1",
+        "when": "Ja",
+        "then": "40"
+      },
+      {
+        "id": "39.2",
+        "when": "Nein",
+        "then": "41"
+      }
+    ]
+  },
+  {
+    "id": "40",
+    "isLeaf": true,
+    "result": "Klasse I, Regel 5"
+  },
+  {
+    "id": "41",
+    "isLeaf": true,
+    "result": "Klasse IIa, Regel 5"
+  },
+  {
+    "id": "42",
+    "decision": "(e). Ist Ihr Gerät nur für die Anwendung in der Mundhöhle, im Gehörgang oder in der Nasenhöhle vorgesehen und nicht in der Schleimhaut absorbierbar?",
+    "information": "Für zusätzliche Informationen bezieht sich dies auf Geräte, die in der Mundhöhle bis zum Rachen, im Gehörgang bis zum Trommelfell oder in der Nasenhöhle verwendet werden.",
+    "options": [
+      {
+        "id": "42.1",
+        "when": "Ja",
+        "then": "43"
+      },
+      {
+        "id": "42.2",
+        "when": "Nein",
+        "then": "44"
+      }
+    ]
+  },
+  {
+    "id": "43",
+    "isLeaf": true,
+    "result": "Klasse IIa, Regel 5"
+  },
+  {
+    "id": "44",
+    "isLeaf": true,
+    "result": "Klasse IIb, Regel 5"
+  },
+  {
+    "id": "45",
+    "decision": "Welche Nutzungsdauer hat Ihr Gerät?",
+    "options": [
+      {
+        "id": "45.1",
+        "when": "Kurzzeitige Nutzung - kontinuierliche Nutzung für weniger als 60 Minuten",
+        "then": "46"
+      },
+      {
+        "id": "45.2",
+        "when": "Kurzzeitige Nutzung - kontinuierliche Nutzung zwischen 60 Minuten und 30 Tagen",
+        "then": "54"
+      },
+      {
+        "id": "45.3",
+        "when": "Langzeitige Nutzung - kontinuierliche Nutzung für mehr als 30 Tage",
+        "then": "62"
+      }
+    ]
+  },
+  {
+    "id": "46",
+    "decision": "(g). Welche der folgenden Punkte trifft auf Ihr Gerät zu?",
+    "information": "Wiederverwendbares chirurgisches Instrument: Ein Instrument, das für den chirurgischen Einsatz beim Schneiden, Bohren, Sägen, Kratzen, Schaben, Klemmen, Zurückziehen, Klammern oder ähnlichen Verfahren vorgesehen ist, ohne Verbindung zu einem aktiven Gerät und das vom Hersteller vorgesehen ist, nachdem geeignete Verfahren wie Reinigung, Desinfektion und Sterilisation durchgeführt wurden, wiederverwendet zu werden.",
+    "options": [
+      {
+        "id": "46.1",
+        "when": "Es handelt sich um ein wiederverwendbares chirurgisches Instrument",
+        "then": "47"
+      },
+      {
+        "id": "46.2",
+        "when": "Es ist dazu vorgesehen, Medikamente in potenziell gefährlicher Weise zu verabreichen",
+        "then": "48"
+      },
+      {
+        "id": "46.3",
+        "when": "Es ist dazu vorgesehen, Energie/ionisierende Strahlung bereitzustellen",
+        "then": "49"
+      },
+      {
+        "id": "46.4",
+        "when": "Es hat eine biologische Wirkung, die hauptsächlich oder vollständig absorbiert wird",
+        "then": "50"
+      },
+      {
+        "id": "46.5",
+        "when": "Es ist speziell für die Verwendung im direkten Kontakt mit dem Herzen, dem zentralen Kreislaufsystem oder dem zentralen Nervensystem vorgesehen",
+        "then": "51"
+      },
+      {
+        "id": "46.6",
+        "when": "Es ist speziell zur Kontrolle, Diagnose, Überwachung und/oder Korrektur eines Defekts am Herzen oder im zentralen Kreislaufsystem durch direkten Kontakt vorgesehen",
+        "then": "52"
+      },
+      {
+        "id": "46.7",
+        "when": "Das Gerät ist chirurgisch invasiv für kurzzeitige Nutzung, aber keine dieser zusätzlichen Kriterien trifft zu",
+        "then": "53"
+      }
+    ]
+  },
+  {
+    "id": "47",
+    "isLeaf": true,
+    "result": "Klasse I, Regel 6"
+  },
+  {
+    "id": "48",
+    "isLeaf": true,
+    "result": "Klasse IIb, Regel 6"
+  },
+  {
+    "id": "49",
+    "isLeaf": true,
+    "result": "Klasse IIb, Regel 6"
+  },
+  {
+    "id": "50",
+    "isLeaf": true,
+    "result": "Klasse IIb, Regel 6"
+  },
+  {
+    "id": "51",
+    "isLeaf": true,
+    "result": "Klasse III, Regel 6"
+  },
+  {
+    "id": "52",
+    "isLeaf": true,
+    "result": "Klasse III, Regel 6"
+  },
+  {
+    "id": "53",
+    "isLeaf": true,
+    "result": "Klasse IIa, Regel 6"
+  },
+  {
+    "id": "54",
+    "decision": "(g). Welche der folgenden Punkte trifft auf Ihr Gerät zu?",
+    "information": "Vollständig oder hauptsächlich absorbiert: 'Absorption' im Zusammenhang mit implantierbaren Geräten bezieht sich auf den Abbau eines Materials im Körper und die Stoffwechselausscheidung der resultierenden Abbauprodukte aus dem Körper. Es gilt nicht für Substanzen, die unverändert aus dem Körper ausgeschieden werden, z. B. Insufflationsgase für die Bauchhöhle oder laparoskopische und endoskopische Verfahren.",
+    "options": [
+      {
+        "id": "54.1",
+        "when": "Es ist beabsichtigt, im Körper (nicht in den Zähnen) eine chemische Veränderung zu durchlaufen",
+        "then": "55"
+      },
+      {
+        "id": "54.2",
+        "when": "Es ist beabsichtigt, Medikamente zu verabreichen (nicht in den Zähnen)",
+        "then": "56"
+      },
+      {
+        "id": "54.3",
+        "when": "Es ist beabsichtigt, Energie/ionisierende Strahlung bereitzustellen",
+        "then": "57"
+      },
+      {
+        "id": "54.4",
+        "when": "Es hat eine biologische Wirkung, die hauptsächlich oder vollständig absorbiert wird",
+        "then": "58"
+      },
+      {
+        "id": "54.5",
+        "when": "Es ist speziell zur Überwachung, Steuerung, Diagnose oder Korrektur von Herzmängeln oder Mängeln im zentralen Kreislaufsystem durch direkten Kontakt vorgesehen",
+        "then": "59"
+      },
+      {
+        "id": "54.6",
+        "when": "Es ist zur Verwendung im direkten Kontakt mit dem zentralen Nervensystem, dem Herzen oder dem zentralen Kreislaufsystem vorgesehen",
+        "then": "60"
+      },
+      {
+        "id": "54.7",
+        "when": "Das Gerät ist chirurgisch invasiv für kurzzeitige Nutzung, aber keine dieser zusätzlichen Kriterien treffen zu",
+        "then": "61"
+      }
+    ]
+  },
+  {
+    "id": "55",
+    "isLeaf": true,
+    "result": "Klasse IIb, Regel 7"
+  },
+  {
+    "id": "56",
+    "isLeaf": true,
+    "result": "Klasse IIb, Regel 7"
+  },
+  {
+    "id": "57",
+    "isLeaf": true,
+    "result": "Klasse IIb, Regel 7"
+  },
+  {
+    "id": "58",
+    "isLeaf": true,
+    "result": "Klasse III, Regel 7"
+  },
+  {
+    "id": "59",
+    "isLeaf": true,
+    "result": "Klasse III, Regel 7"
+  },
+  {
+    "id": "60",
+    "isLeaf": true,
+    "result": "Klasse III, Regel 7"
+  },
+  {
+    "id": "61",
+    "isLeaf": true,
+    "result": "Klasse IIa, Regel 7"
+  },
+  {
+    "id": "62",
+    "decision": "(g). Welche der folgenden Punkte trifft auf Ihr Gerät zu?",
+    "information": "Vollständig oder hauptsächlich absorbiert: 'Absorption' im Zusammenhang mit implantierbaren Geräten bezieht sich auf den Abbau eines Materials im Körper und die Stoffwechselausscheidung der resultierenden Abbauprodukte aus dem Körper. Es gilt nicht für Substanzen, die unverändert aus dem Körper ausgeschieden werden, z. B. Insufflationsgase für die Bauchhöhle oder laparoskopische und endoskopische Verfahren.",
+    "options": [
+      {
+        "id": "62.1",
+        "when": "Es ist beabsichtigt, in den Zähnen platziert zu werden",
+        "then": "63"
+      },
+      {
+        "id": "62.2",
+        "when": "Es ist beabsichtigt, im direkten Kontakt mit dem Herzen oder dem zentralen Kreislauf-/Nervensystem verwendet zu werden",
+        "then": "64"
+      },
+      {
+        "id": "62.3",
+        "when": "Es hat eine biologische Wirkung, die hauptsächlich oder vollständig absorbiert wird",
+        "then": "65"
+      },
+      {
+        "id": "62.4",
+        "when": "Es ist beabsichtigt, im Körper (nicht in den Zähnen) eine chemische Veränderung zu durchlaufen",
+        "then": "66"
+      },
+      {
+        "id": "62.5",
+        "when": "Es ist beabsichtigt, Arzneimittel zu verabreichen",
+        "then": "67"
+      },
+      {
+        "id": "62.6",
+        "when": "Es handelt sich um ein aktives implantierbares Gerät oder ein Zubehör zu einem aktiven implantierbaren Gerät",
+        "then": "68"
+      },
+      {
+        "id": "62.7",
+        "when": "Es handelt sich um eine Brustimplantat oder ein chirurgisches Netz",
+        "then": "69"
+      },
+      {
+        "id": "62.8",
+        "when": "Es handelt sich um einen vollständigen oder teilweisen Gelenkersatz, einen Bandscheibenersatz oder ein Implantat, das mit der Wirbelsäule in Kontakt kommt",
+        "then": "70"
+      },
+      {
+        "id": "62.9",
+        "when": "Das Gerät ist chirurgisch invasiv für langzeitige Nutzung, aber keine dieser zusätzlichen Kriterien treffen zu",
+        "then": "73"
+      }
+    ]
+  },
+  {
+    "id": "63",
+    "isLeaf": true,
+    "result": "Klasse IIb, Regel 8"
+  },
+  {
+    "id": "64",
+    "isLeaf": true,
+    "result": "Klasse III, Regel 8"
+  },
+  {
+    "id": "65",
+    "isLeaf": true,
+    "result": "Klasse III, Regel 8"
+  },
+  {
+    "id": "66",
+    "isLeaf": true,
+    "result": "Klasse III, Regel 8"
+  },
+  {
+    "id": "67",
+    "isLeaf": true,
+    "result": "Klasse III, Regel 8"
+  },
+  {
+    "id": "68",
+    "isLeaf": true,
+    "result": "Klasse III, Regel 8"
+  },
+  {
+    "id": "69",
+    "isLeaf": true,
+    "result": "Klasse III, Regel 8"
+  },
+  {
+    "id": "70",
+    "decision": "(h). Handelt es sich um einen Bestandteil, wie z. B. eine Schraube, eine Keilplatte oder ein Instrument?",
+    "options": [
+      {
+        "id": "70.1",
+        "when": "Ja",
+        "then": "73"
+      },
+      {
+        "id": "70.2",
+        "when": "Nein",
+        "then": "74"
+      }
+    ]
+  },
+  {
+    "id": "71",
+    "isLeaf": true,
+    "result": "Klasse IIb, Regel 8"
+  },
+  {
+    "id": "72",
+    "isLeaf": true,
+    "result": "Klasse III, Regel 8"
+  },
+  {
+    "id": "73",
+    "isLeaf": true,
+    "result": "Klasse IIb, Regel 8"
+  },
+  {
+    "id": "74",
+    "decision": "Ist es ein aktives Medizinprodukt?",
+    "hint": "Software wird als aktives Gerät betrachtet. Medizinische Geräte, die vorgespeicherte Gase und/oder Vakuum als Energiequelle verwenden, werden ebenfalls im Allgemeinen als aktive Geräte betrachtet, wenn sie die Kriterien in der Definition erfüllen (ausführlich im 'i'-Symbol beschrieben). Geräte, die ihren Zweck durch Filtration und Zentrifugation erreichen (z. B. ein Hämodialysator), gelten nicht als aktive Geräte, da sie ausschließlich durch mechanische Methoden arbeiten.\n\nWenn Ihr Gerät dazu bestimmt ist, Blut, Körperflüssigkeiten, Zellen oder Gewebe, Flüssigkeiten oder Gase zum späteren Zweck der Infusion, Verabreichung oder Einführung in den Körper zu leiten oder zu speichern, wählen Sie bitte 'Nein' zu dieser Frage, da diese Geräte später im Fragebogen behandelt werden. Ein Beispiel für diese Art von Gerät ist ein Kühlschrank/Gefrierschrank zur Lagerung von Blut und Gewebe.",
+    "information": "Aktives Medizinprodukt: Ein Gerät, bei dem der Betrieb von einer Energiequelle abhängt, die nicht vom menschlichen Körper für diesen Zweck erzeugt wird, oder von der Schwerkraft, und das durch Änderung der Dichte dieser Energie wirkt oder diese umwandelt. Geräte, die dazu bestimmt sind, Energie, Substanzen oder andere Elemente zwischen einem aktiven Gerät und dem Patienten zu übertragen, ohne dass sich wesentlich etwas ändert, gelten nicht als aktive Geräte.",
+    "options": [
+      {
+        "id": "74.1",
+        "when": "Ja",
+        "then": "75"
+      },
+      {
+        "id": "74.2",
+        "when": "Nein",
+        "then": "107"
+      }
+    ]
+  },
+  {
+    "id": "75",
+    "decision": "(a). Was trifft auf Ihr Gerät zu?",
+    "hint": "Wenn es sich um ein Medizinproduktsoftware (MDSW) handelt, bedeutet dies nicht automatisch, dass die Software-Regel (Regel 11) automatisch gilt. Die Regeln 9-13, 15 und 22 können alle auf Softwaregeräte zutreffen. Daher empfehlen wir dringend, die Richtlinien zur Klassifizierung von Medizinproduktsoftware (MDCG 2019-11) zu überprüfen, um sicherzustellen, dass die richtige Regel ausgewählt wird. Die strengste Regel oder Unterregel wird angewendet.",
+    "information": "Bevor Sie mit dem nächsten Satz von Fragen fortfahren, bestätigen Sie bitte, dass Regel 22 nicht auf Ihr Gerät zutrifft. Wenn diese Regel zutrifft, überprüfen Sie bitte Ihre Antwort auf Frage vier. Regel 22: Aktive therapeutische Geräte mit einer integrierten oder eingebauten diagnostischen Funktion, die wesentlich die Patientenbehandlung durch das Gerät bestimmt, wie geschlossene Schleifensysteme oder automatisierte externe Defibrillatoren.",
+    "options": [
+      {
+        "id": "75.1",
+        "when": "Es handelt sich um ein therapeutisches Gerät zur Verabreichung oder zum Austausch von Energie",
+        "then": "76"
+      },
+      {
+        "id": "75.2",
+        "when": "Es ist zur Diagnose und Überwachung oder zur Bereitstellung von vom Körper aufgenommener Energie oder zur direkten Diagnose oder Überwachung lebenswichtiger physiologischer Prozesse vorgesehen",
+        "then": "82"
+      },
+      {
+        "id": "75.3",
+        "when": "Es ist zur in-vivo-Verteilung von Radiopharmaka vorgesehen",
+        "then": "88"
+      },
+      {
+        "id": "75.4",
+        "when": "Es handelt sich um eine Softwareanwendung",
+        "then": "94"
+      },
+      {
+        "id": "75.5",
+        "when": "Es ist zur Verabreichung und/oder Entfernung von Arzneimitteln und anderen Substanzen aus dem Körper vorgesehen",
+        "then": "103"
+      },
+      {
+        "id": "75.6",
+        "when": "Es handelt sich um ein aktives Gerät, aber keines dieser anderen Kriterien trifft zu",
+        "then": "106"
+      }
+    ]
+  },
+  {
+    "id": "76",
+    "decision": "(b). Was trifft auf Ihr Gerät zu?",
+    "information": "Gemäß MDCG 2021-24 basiert die Feststellung, ob ein Gerät auf potenziell gefährliche Weise Energie an den menschlichen Körper abgibt oder von ihm aufnimmt, auf der Art der verwendeten Technologie und der beabsichtigten Anwendung des Geräts am Patienten. Sie basiert nicht auf den Maßnahmen, die vom Hersteller ergriffen wurden, wie z. B. die Verwendung von technischen Standards oder Risikoanalysen. Alle Geräte, die dazu bestimmt sind, ionisierende Strahlung abzugeben, und alle Lungengeräte werden als solche betrachtet, die Energie potenziell gefährlich abgeben.",
+    "options": [
+      {
+        "id": "76.1",
+        "when": "Es ist zur direkten Steuerung, Überwachung oder Beeinflussung eines aktiven therapeutischen Geräts der Klasse IIb vorgesehen",
+        "then": "77"
+      },
+      {
+        "id": "76.2",
+        "when": "Es gibt Energie auf potenziell gefährliche Weise ab oder nimmt sie auf",
+        "then": "78"
+      },
+      {
+        "id": "76.3",
+        "when": "Es ist zur Abgabe von ionisierender Strahlung zu therapeutischen Zwecken vorgesehen oder steuert, überwacht oder beeinflusst direkt Geräte, die ionisierende Strahlung zu therapeutischen Zwecken abgeben",
+        "then": "79"
+      },
+      {
+        "id": "76.4",
+        "when": "Es ist zur Steuerung, Überwachung oder direkten Beeinflussung von aktiven implantierbaren Geräten vorgesehen",
+        "then": "80"
+      },
+      {
+        "id": "76.5",
+        "when": "Keine dieser Optionen trifft auf mein Gerät zu",
+        "then": "81"
+      }
+    ]
+  },
+  {
+    "id": "77",
+    "isLeaf": true,
+    "result": "Klasse IIb, Regel 9"
+  },
+  {
+    "id": "78",
+    "isLeaf": true,
+    "result": "Klasse IIb, Regel 9"
+  },
+  {
+    "id": "79",
+    "isLeaf": true,
+    "result": "Klasse IIb, Regel 9"
+  },
+  {
+    "id": "80",
+    "isLeaf": true,
+    "result": "Klasse III, Regel 9"
+  },
+  {
+    "id": "81",
+    "isLeaf": true,
+    "result": "Klasse IIa, Regel 9"
+  },
+  {
+    "id": "82",
+    "decision": "(b). Was trifft auf Ihr Gerät zu?",
+    "options": [
+      {
+        "id": "82.1",
+        "when": "Es ist dazu vorgesehen, den Körper des Patienten im sichtbaren Spektrum zu beleuchten",
+        "then": "83"
+      },
+      {
+        "id": "82.2",
+        "when": "Es gibt ionisierende Strahlung für die diagnostische oder therapeutische Radiologie ab, einschließlich interventioneller Radiologiegeräte und Geräte, die solche Geräte steuern oder überwachen",
+        "then": "84"
+      },
+      {
+        "id": "82.3",
+        "when": "Es ist speziell dazu vorgesehen, lebenswichtige physiologische Parameter zu überwachen, bei deren Variationen sofortige Gefahr für den Patienten besteht",
+        "then": "85"
+      },
+      {
+        "id": "82.4",
+        "when": "Es ist für die Diagnose in klinischen Situationen vorgesehen, in denen der Patient in unmittelbarer Gefahr ist",
+        "then": "86"
+      },
+      {
+        "id": "82.5",
+        "when": "Keine dieser Optionen trifft auf mein Gerät zu",
+        "then": "87"
+      }
+    ]
+  },
+  {
+    "id": "83",
+    "isLeaf": true,
+    "result": "Klasse I, Regel 10"
+  },
+  {
+    "id": "84",
+    "isLeaf": true,
+    "result": "Klasse IIb, Regel 10"
+  },
+  {
+    "id": "85",
+    "isLeaf": true,
+    "result": "Klasse IIb, Regel 10"
+  },
+  {
+    "id": "86",
+    "isLeaf": true,
+    "result": "Klasse IIb, Regel 10"
+  },
+  {
+    "id": "87",
+    "isLeaf": true,
+    "result": "Klasse IIa, Regel 10"
+  },
+  {
+    "id": "88",
+    "decision": "(b). Was trifft auf Ihr Gerät zu?",
+    "options": [
+      {
+        "id": "88.1",
+        "when": "Es ist dazu vorgesehen, den Körper des Patienten im sichtbaren Spektrum zu beleuchten",
+        "then": "89"
+      },
+      {
+        "id": "88.2",
+        "when": "Es gibt ionisierende Strahlung für die diagnostische oder therapeutische Radiologie ab, einschließlich interventioneller Radiologiegeräte und Geräte, die solche Geräte steuern oder überwachen",
+        "then": "90"
+      },
+      {
+        "id": "88.3",
+        "when": "Es ist speziell dazu vorgesehen, lebenswichtige physiologische Parameter zu überwachen, bei deren Variationen sofortige Gefahr für den Patienten besteht",
+        "then": "91"
+      },
+      {
+        "id": "88.4",
+        "when": "Es ist für die Diagnose in klinischen Situationen vorgesehen, in denen der Patient in unmittelbarer Gefahr ist",
+        "then": "92"
+      },
+      {
+        "id": "88.5",
+        "when": "Keine dieser Optionen trifft auf mein Gerät zu",
+        "then": "93"
+      }
+    ]
+  },
+  {
+    "id": "89",
+    "isLeaf": true,
+    "result": "Klasse I, Regel 10"
+  },
+  {
+    "id": "90",
+    "isLeaf": true,
+    "result": "Klasse IIb, Regel 10"
+  },
+  {
+    "id": "91",
+    "isLeaf": true,
+    "result": "Klasse IIb, Regel 10"
+  },
+  {
+    "id": "92",
+    "isLeaf": true,
+    "result": "Klasse IIb, Regel 10"
+  },
+  {
+    "id": "93",
+    "isLeaf": true,
+    "result": "Klasse IIa, Regel 10"
+  },
+  {
+    "id": "94",
+    "decision": "(b). Was trifft auf Ihr Gerät zu?",
+    "options": [
+      {
+        "id": "94.1",
+        "when": "Es ist dazu bestimmt, Informationen bereitzustellen, die zur Entscheidungsfindung für Diagnose- oder Therapiezwecke verwendet werden",
+        "then": "95"
+      },
+      {
+        "id": "94.2",
+        "when": "Es ist dazu bestimmt, physiologische Prozesse zu überwachen",
+        "then": "99"
+      },
+      {
+        "id": "94.3",
+        "when": "Keine dieser Optionen trifft auf mein Gerät zu",
+        "then": "102"
+      }
+    ]
+  },
+  {
+    "id": "95",
+    "decision": "(c). Welche der folgenden Aussagen trifft auf Ihr Gerät zu?",
+    "information": "Ein Beispiel für ein Gerät, bei dem die Auswirkungen der Entscheidung 'Tod oder irreversible Verschlechterung des Gesundheitszustands' verursachen können, ist ein Gerät, das dazu bestimmt ist, Behandlungsentscheidungen bei Patienten mit akutem Schlaganfall zu treffen. Ein Beispiel für ein Gerät, bei dem die Auswirkungen der Entscheidung 'schwere Verschlechterung des Gesundheitszustands oder chirurgischer Eingriff' verursachen können, ist eine mobile App, die dazu dient, den Herzschlag eines Benutzers zu analysieren, Abnormalitäten zu erkennen und einen Arzt entsprechend zu informieren.",
+    "options": [
+      {
+        "id": "95.1",
+        "when": "Die Auswirkungen der Entscheidung können zu schwerer Verschlechterung des Gesundheitszustands oder chirurgischem Eingriff führen",
+        "then": "96"
+      },
+      {
+        "id": "95.2",
+        "when": "Die Auswirkungen der Entscheidung können den Tod oder eine irreversible Verschlechterung des Gesundheitszustands verursachen",
+        "then": "97"
+      },
+      {
+        "id": "95.3",
+        "when": "Keine dieser Optionen trifft auf mein Gerät zu",
+        "then": "98"
+      }
+    ]
+  },
+  {
+    "id": "96",
+    "isLeaf": true,
+    "result": "Klasse IIb, Regel 11"
+  },
+  {
+    "id": "97",
+    "isLeaf": true,
+    "result": "Klasse III, Regel 11"
+  },
+  {
+    "id": "98",
+    "isLeaf": true,
+    "result": "Klasse IIa, Regel 11"
+  },
+  {
+    "id": "99",
+    "decision": "(d). Ist es dazu bestimmt, vitale physiologische Parameter zu überwachen, bei denen Variationen sofortige Gefahr für den Patienten verursachen könnten?",
+    "options": [
+      {
+        "id": "99.1",
+        "when": "Ja",
+        "then": "100"
+      },
+      {
+        "id": "99.2",
+        "when": "Nein",
+        "then": "101"
+      }
+    ]
+  },
+  {
+    "id": "100",
+    "isLeaf": true,
+    "result": "Klasse IIb, Regel 11"
+  },
+  {
+    "id": "101",
+    "isLeaf": true,
+    "result": "Klasse IIa, Regel 11"
+  },
+  {
+    "id": "102",
+    "isLeaf": true,
+    "result": "Klasse I, Regel 11"
+  },
+  {
+    "id": "103",
+    "decision": "(b). Wird die Verabreichung oder Entfernung von Arzneimitteln oder anderen Substanzen aus dem Körper auf potenziell gefährliche Weise durchgeführt?",
+    "information": "Ob sie auf potenziell gefährliche Weise durchgeführt wird, sollte die Art der beteiligten Substanzen, des betroffenen Körperteils und der Anwendungsmodus berücksichtigen.",
+    "options": [
+      {
+        "id": "103.1",
+        "when": "Ja",
+        "then": "104"
+      },
+      {
+        "id": "103.2",
+        "when": "Nein",
+        "then": "105"
+      }
+    ]
+  },
+  {
+    "id": "104",
+    "isLeaf": true,
+    "result": "Klasse IIb, Regel 12"
+  },
+  {
+    "id": "105",
+    "isLeaf": true,
+    "result": "Klasse IIa, Regel 12"
+  },
+  {
+    "id": "106",
+    "isLeaf": true,
+    "result": "Klasse I, Regel 13"
+  },
+  {
+    "id": "107",
+    "decision": "Das Gerät ist nicht invasiv und nicht aktiv - welche der folgenden Aussagen trifft auf Ihr Gerät zu?",
+    "information": "Bevor Sie mit dem nächsten Satz von Fragen fortfahren, bestätigen Sie bitte, dass weder Regel 14 noch Regel 22 auf Ihr Gerät zutrifft. Wenn eine dieser Regeln zutrifft, überprüfen Sie bitte Ihre Antworten auf die Fragen eins und vier. Regel 14: Geräte, die einen integralen Arzneistoff enthalten und eine Wirkung haben, die ancillär zu der der Geräte ist. Regel 22: Aktive therapeutische Geräte mit einer integrierten oder eingebauten diagnostischen Funktion, die wesentlich die Patientenbehandlung durch das Gerät bestimmt, wie geschlossene Schleifensysteme oder automatisierte externe Defibrillatoren.",
+    "options": [
+      {
+        "id": "107.1",
+        "when": "Das Gerät berührt den Patienten nicht oder kommt nur mit intakter Haut in Kontakt",
+        "then": "108"
+      },
+      {
+        "id": "107.2",
+        "when": "Es ist dazu bestimmt, Blut, Körperflüssigkeiten, Organe, Gewebe, Zellen oder Gase für eine spätere Infusion, Verabreichung oder Einführung in den Körper zu leiten oder zu speichern",
+        "then": "109"
+      },
+      {
+        "id": "107.3",
+        "when": "Es ist dazu bestimmt, die biologische oder chemische Zusammensetzung von menschlichem Gewebe oder Zellen zur Implantation oder Verabreichung in den Körper zu verändern",
+        "then": "114"
+      },
+      {
+        "id": "107.4",
+        "when": "Es ist dazu bestimmt, die biologische oder chemische Zusammensetzung von Blut, anderen Körperflüssigkeiten oder anderen Flüssigkeiten zur Implantation oder Verabreichung in den Körper zu verändern",
+        "then": "119"
+      },
+      {
+        "id": "107.5",
+        "when": "Das Gerät kommt mit verletzter Haut oder Schleimhaut in Kontakt",
+        "then": "124"
+      }
+    ]
+  },
+  {
+    "id": "108",
+    "isLeaf": true,
+    "result": "Klasse I, Regel 1"
+  },
+  {
+    "id": "109",
+    "decision": "(a). Treffen eine der folgenden Aussagen auf Ihr Gerät zu?",
+    "options": [
+      {
+        "id": "109.1",
+        "when": "Das Gerät ist für die Verwendung mit Blut, anderen Körperflüssigkeiten, Organen, Geweben oder Zellen vorgesehen",
+        "then": "110"
+      },
+      {
+        "id": "109.2",
+        "when": "Das Gerät ist mit einem aktiven Gerät verbunden, das Klasse IIa oder höher ist",
+        "then": "111"
+      },
+      {
+        "id": "109.3",
+        "when": "Das Gerät ist eine Blutkonserve",
+        "then": "112"
+      },
+      {
+        "id": "109.4",
+        "when": "Keine dieser zusätzlichen Kriterien trifft zu",
+        "then": "113"
+      }
+    ]
+  },
+  {
+    "id": "110",
+    "isLeaf": true,
+    "result": "Klasse IIa, Regel 2"
+  },
+  {
+    "id": "111",
+    "isLeaf": true,
+    "result": "Klasse IIa, Regel 2"
+  },
+  {
+    "id": "112",
+    "isLeaf": true,
+    "result": "Klasse IIb, Regel 2"
+  },
+  {
+    "id": "113",
+    "isLeaf": true,
+    "result": "Klasse I, Regel 2"
+  },
+  {
+    "id": "114",
+    "decision": "(a). Treffen eine der folgenden Aussagen auf Ihr Gerät zu?",
+    "options": [
+      {
+        "id": "114.1",
+        "when": "Die Behandlung, für die das Gerät verwendet wird, besteht aus Filtration, Zentrifugation oder dem Austausch von Gas oder Wärme",
+        "then": "115"
+      },
+      {
+        "id": "114.2",
+        "when": "Es handelt sich um Substanzen, die in vitro im direkten Kontakt mit menschlichen Zellen, Geweben oder Organen aus dem menschlichen Körper verwendet werden sollen",
+        "then": "116"
+      },
+      {
+        "id": "114.3",
+        "when": "Es handelt sich um Substanzen, die in vitro mit menschlichen Embryonen vor der Implantation oder Verabreichung in den Körper verwendet werden sollen",
+        "then": "117"
+      },
+      {
+        "id": "114.4",
+        "when": "Keine dieser zusätzlichen Kriterien trifft zu",
+        "then": "118"
+      }
+    ]
+  },
+  {
+    "id": "115",
+    "isLeaf": true,
+    "result": "Klasse IIa, Regel 3"
+  },
+  {
+    "id": "116",
+    "isLeaf": true,
+    "result": "Klasse III, Regel 3"
+  },
+  {
+    "id": "117",
+    "isLeaf": true,
+    "result": "Klasse III, Regel 3"
+  },
+  {
+    "id": "118",
+    "isLeaf": true,
+    "result": "Klasse IIb, Regel 3"
+  },
+  {
+    "id": "119",
+    "decision": "(a). Treffen eine der folgenden Aussagen auf Ihr Gerät zu?",
+    "options": [
+      {
+        "id": "119.1",
+        "when": "Die Behandlung, für die das Gerät verwendet wird, besteht aus Filtration, Zentrifugation oder dem Austausch von Gas oder Wärme",
+        "then": "120"
+      },
+      {
+        "id": "119.2",
+        "when": "Es handelt sich um Substanzen, die in vitro im direkten Kontakt mit menschlichen Zellen, Geweben oder Organen aus dem menschlichen Körper verwendet werden sollen",
+        "then": "121"
+      },
+      {
+        "id": "119.3",
+        "when": "Es handelt sich um Substanzen, die in vitro mit menschlichen Embryonen vor der Implantation oder Verabreichung in den Körper verwendet werden sollen",
+        "then": "122"
+      },
+      {
+        "id": "119.4",
+        "when": "Keine dieser zusätzlichen Kriterien trifft zu",
+        "then": "123"
+      }
+    ]
+  },
+  {
+    "id": "120",
+    "isLeaf": true,
+    "result": "Klasse IIa, Regel 3"
+  },
+  {
+    "id": "121",
+    "isLeaf": true,
+    "result": "Klasse III, Regel 3"
+  },
+  {
+    "id": "122",
+    "isLeaf": true,
+    "result": "Klasse III, Regel 3"
+  },
+  {
+    "id": "123",
+    "isLeaf": true,
+    "result": "Klasse IIb, Regel 3"
+  },
+  {
+    "id": "124",
+    "decision": "(a) Treffen eine der folgenden Aussagen auf Ihr Gerät zu?",
+    "options": [
+      {
+        "id": "124.1",
+        "when": "Das Gerät wird als mechanische Barriere zur Kompression oder zur Aufnahme von Exsudaten verwendet",
+        "then": "125"
+      },
+      {
+        "id": "124.2",
+        "when": "Das Gerät ist dazu bestimmt, das Mikro-Umfeld von verletzter Haut oder Schleimhaut zu verwalten",
+        "then": "126"
+      },
+      {
+        "id": "124.3",
+        "when": "Das Gerät ist für Wunden bestimmt, die die Dermis oder Schleimhaut durchbrechen und nur durch sekundäre Absicht heilen können",
+        "then": "127"
+      },
+      {
+        "id": "124.4",
+        "when": "Keines dieser zusätzlichen Kriterien trifft zu",
+        "then": "128"
+      }
+    ]
+  },
+  {
+    "id": "125",
+    "isLeaf": true,
+    "result": "Klasse I, Regel 4"
+  },
+  {
+    "id": "126",
+    "isLeaf": true,
+    "result": "Klasse IIa, Regel 4"
+  },
+  {
+    "id": "127",
+    "isLeaf": true,
+    "result": "Klasse IIb, Regel 4"
+  },
+  {
+    "id": "128",
+    "isLeaf": true,
+    "result": "Klasse IIa, Regel 4"
+  }
+]

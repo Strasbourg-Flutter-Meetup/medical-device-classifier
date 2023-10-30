@@ -11,6 +11,7 @@ import 'dart:core';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:leoml_parser/leoml_parser.dart';
+import 'package:medical_device_classifier/extensions/cubit_extension.dart';
 import 'package:medical_device_classifier/features/general_explanation_of_rules/presentation/cubits/general_explanation_of_rules_state.dart';
 import 'package:medical_device_classifier/shared_preferences/shared_preferences_keys.dart';
 import 'package:medical_device_classifier/shared_preferences/shared_preferences_repository.dart';
@@ -30,11 +31,11 @@ class GeneralExplanationOfRulesCubit
   ///
   /// The [expansionTile1Template] parameter represents a template for expansion tiles.
   GeneralExplanationOfRulesCubit(
-      super.initialState, {
-        required this.leoMLDocumentParser,
-        required this.sharedPreferencesRepository,
-        required this.expansionTile1Template,
-      });
+    super.initialState, {
+    required this.leoMLDocumentParser,
+    required this.sharedPreferencesRepository,
+    required this.expansionTile1Template,
+  });
 
   /// An instance of the LeoML document parser used for parsing LeoML documents.
   final LeoMLDocumentParser leoMLDocumentParser;
@@ -57,7 +58,7 @@ class GeneralExplanationOfRulesCubit
   /// the provided template, and updates the state accordingly.
   Future<void> initialize() async {
     emit(const GeneralExplanationOfRulesState.loading());
-
+    await sharedPreferencesReinitialization(sharedPreferencesRepository);
     final leoMLDocument = sharedPreferencesRepository.read(
       key: SharedPreferencesKeys.rules,
     );
@@ -79,4 +80,3 @@ class GeneralExplanationOfRulesCubit
     );
   }
 }
-
