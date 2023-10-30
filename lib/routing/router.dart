@@ -68,4 +68,27 @@ void routeToClassificationPreconditions() {
     nameToClassificationPreconditions,
   );
 }
+/// Navigates to the classification screen.
+///
+/// Calls the GoRouter to navigate to the classification screen using the
+/// predefined route name [nameToClassification].
+void routeToClassification() {
+  goRouterContext?.goNamed(
+    nameToClassification,
+  );
+}
 
+/// Navigates back to the previous screen.
+///
+/// Calls the GoRouter to navigate back to the previous screen.
+void goBack() {
+  goRouterContext?.pop();
+}
+
+/// Navigates to the home (dashboard) screen.
+///
+/// Calls the GoRouter to navigate to the home (dashboard) screen using the
+/// predefined route path [pathToDashboard].
+void goToHome() {
+  goRouterContext?.go(pathToDashboard);
+}

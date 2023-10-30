@@ -11,7 +11,8 @@ import 'dart:core';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:leoml_parser/leoml_parser.dart';
-import 'package:medical_device_classifier/features/implementing_rules/cubits/implementing_rules_state.dart';
+import 'package:medical_device_classifier/extensions/cubit_extension.dart';
+import 'package:medical_device_classifier/features/implementing_rules/presentation/cubits/implementing_rules_state.dart';
 import 'package:medical_device_classifier/shared_preferences/shared_preferences_keys.dart';
 import 'package:medical_device_classifier/shared_preferences/shared_preferences_repository.dart';
 
@@ -21,17 +22,16 @@ import 'package:medical_device_classifier/shared_preferences/shared_preferences_
 /// It utilizes [LeoMLDocumentParser] for parsing documents and [SharedPreferencesRepository]
 /// for reading stored preferences.
 class ImplementingRulesCubit extends Cubit<ImplementingRulesState> {
-
   /// Creates an instance of [ImplementingRulesCubit].
   ///
   /// The [leoMLDocumentParser], [sharedPreferencesRepository], and [articleTemplate]
   /// are required and must not be null.
   ImplementingRulesCubit(
-      super.initialState, {
-        required this.leoMLDocumentParser,
-        required this.sharedPreferencesRepository,
-        required this.articleTemplate,
-      });
+    super.initialState, {
+    required this.leoMLDocumentParser,
+    required this.sharedPreferencesRepository,
+    required this.articleTemplate,
+  });
 
   /// The parser responsible for converting a LeoML document into a structured format.
   final LeoMLDocumentParser leoMLDocumentParser;
@@ -54,7 +54,7 @@ class ImplementingRulesCubit extends Cubit<ImplementingRulesState> {
   /// parses it and then updates the cubit's state to reflect the parsed content.
   Future<void> initialize() async {
     emit(const ImplementingRulesState.loading());
-
+    await sharedPreferencesReinitialization(sharedPreferencesRepository);
     final leoMLDocument = sharedPreferencesRepository.read(
       key: SharedPreferencesKeys.implementingRules,
     );
@@ -76,4 +76,3 @@ class ImplementingRulesCubit extends Cubit<ImplementingRulesState> {
     );
   }
 }
-

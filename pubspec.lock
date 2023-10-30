@@ -301,6 +301,14 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  flutterwebapp_reload_detector:
+    dependency: "direct main"
+    description:
+      name: flutterwebapp_reload_detector
+      sha256: "7e9fe08edd90082fa50ef105f04e4f8e28de0d11cce7699eb9c4d0bff10ae7d6"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.0.1"
   footer:
     dependency: "direct main"
     description:

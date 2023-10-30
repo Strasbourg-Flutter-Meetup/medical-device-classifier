@@ -149,7 +149,9 @@ class BootstrapImpl implements Bootstrap {
   }
 
   Future<void> _loadDecisionTree() async {
-    // Implement the logic to load the decision tree here.
+    await contentLoaderImpl.load(
+      contentLoaderType: ContentLoaderType.decisionTree,
+    );
   }
 
   Future<void> _loadDefinitions() async {

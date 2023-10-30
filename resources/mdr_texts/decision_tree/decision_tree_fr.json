@@ -1,0 +1,1323 @@
+[
+  {
+    "id": "1",
+    "isRoot": true,
+    "decision": "L'un des éléments suivants s'applique-t-il à votre dispositif ?",
+    "options": [
+      {
+        "id": "1.1",
+        "when": "Le dispositif intègre une substance médicamenteuse intégrée qui a une action auxiliaire à celle du dispositif",
+        "then": "2"
+      },
+      {
+        "id": "1.2",
+        "when": "Le dispositif est utilisé pour la contraception ou la prévention des maladies sexuellement transmissibles",
+        "then": "3"
+      },
+      {
+        "id": "1.3",
+        "when": "Le dispositif est spécifiquement destiné à être utilisé pour la désinfection ou la stérilisation de dispositifs médicaux",
+        "then": "6"
+      },
+      {
+        "id": "1.4",
+        "when": "Aucun de ceux-ci ne s'applique à mon dispositif",
+        "then": "10"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "isLeaf": true,
+    "result": "Classe III, Règle 14"
+  },
+  {
+    "id": "3",
+    "decision": "(a). Le dispositif est-il implantable ou à long terme invasif ?",
+    "options": [
+      {
+        "id": "3.1",
+        "when": "Oui",
+        "then": "4"
+      },
+      {
+        "id": "3.2",
+        "when": "Non",
+        "then": "5"
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "isLeaf": true,
+    "result": "Classe III, Règle 15"
+  },
+  {
+    "id": "5",
+    "isLeaf": true,
+    "result": "Classe IIb, Règle 15"
+  },
+  {
+    "id": "6",
+    "decision": "(b). L'un des éléments suivants s'applique-t-il à votre dispositif ?",
+    "options": [
+      {
+        "id": "6.1",
+        "when": "Le dispositif est spécifiquement destiné à la désinfection, au nettoyage, au rinçage ou à l'hydratation des lentilles de contact",
+        "then": "7"
+      },
+      {
+        "id": "6.2",
+        "when": "Le dispositif est une solution désinfectante ou une solution de lavage spécifiquement destinée à être utilisée pour la désinfection de dispositifs invasifs, en tant que point final du traitement",
+        "then": "8"
+      },
+      {
+        "id": "6.3",
+        "when": "Aucune de ces options ne s'applique à mon dispositif",
+        "then": "9"
+      }
+    ]
+  },
+  {
+    "id": "7",
+    "isLeaf": true,
+    "result": "Classe IIb, Règle 16"
+  },
+  {
+    "id": "8",
+    "isLeaf": true,
+    "result": "Classe IIb, Règle 16"
+  },
+  {
+    "id": "9",
+    "isLeaf": true,
+    "result": "Classe IIa, Règle 16"
+  },
+  {
+    "id": "10",
+    "decision": "L'un des éléments suivants s'applique-t-il à votre dispositif ?",
+    "information": "Un « nanomatériau » signifie un matériau naturel, incidentel ou fabriqué contenant des particules à l'état non lié ou sous forme d'agrégat ou d'agglomérat et où, pour 50 % ou plus des particules de la distribution en taille en nombre, une ou plusieurs dimensions externes se situent dans la plage de 1 à 100 nm ; les fullerènes, les paillettes de graphène et les nanotubes de carbone à paroi unique avec une ou plusieurs dimensions externes inférieures à 1 nm sont également considérés comme des nanomatériaux selon le RDM, article 2(18). Des exemples de dispositifs avec des nanomatériaux comprennent un cathéter intravasculaire en polymère non dégradable avec revêtement nanométrique et des matériaux de remplissage dentaires.",
+    "hint": "Les exemples de dispositifs destinés à l'enregistrement d'images diagnostiques par rayons X sont les films radiographiques ou les détecteurs numériques de rayons X pour l'enregistrement d'images, et non une machine à rayons X elle-même.",
+    "options": [
+      {
+        "id": "10.1",
+        "when": "Le dispositif est destiné à l'enregistrement d'images diagnostiques par rayons X",
+        "then": "11"
+      },
+      {
+        "id": "10.2",
+        "when": "Le dispositif utilise des tissus humains ou animaux non viables, des cellules ou leurs dérivés",
+        "then": "12"
+      },
+      {
+        "id": "10.3",
+        "when": "Le dispositif est spécifiquement destiné à être utilisé pour la désinfection ou la stérilisation de dispositifs médicaux",
+        "then": "15"
+      },
+      {
+        "id": "10.4",
+        "when": "Aucun de ceux-ci ne s'applique à mon dispositif",
+        "then": "19"
+      }
+    ]
+  },
+  {
+    "id": "11",
+    "isLeaf": true,
+    "result": "Classe IIa, Règle 17"
+  },
+  {
+    "id": "12",
+    "decision": "(a). Le dispositif est-il destiné à entrer en contact uniquement avec la peau intacte ?",
+    "options": [
+      {
+        "id": "12.1",
+        "when": "Oui",
+        "then": "13"
+      },
+      {
+        "id": "12.2",
+        "when": "Non",
+        "then": "14"
+      }
+    ]
+  },
+  {
+    "id": "13",
+    "isLeaf": true,
+    "result": "Classe I, Règle 18"
+  },
+  {
+    "id": "14",
+    "isLeaf": true,
+    "result": "Classe III, Règle 18"
+  },
+  {
+    "id": "15",
+    "decision": "(b). L'utilisation de nanomatériaux entraîne-t-elle",
+    "information": "Le potentiel élevé, moyen, faible ou négligeable d'exposition interne repose sur la combinaison de différents facteurs tels que le site d'application d'un dispositif médical, le type de contact (par exemple, tissu, cellules ou liquides corporels), la durée du contact et le type d'incorporation des nanomatériaux (libre, fixe, intégré). Lorsque le nanomatériau est appliqué comme revêtement à la surface du dispositif, il est important de prendre en compte le type d'interaction avec le matériau (chimisorption versus physisorption). Lorsque le nanomatériau est intégré dans une matrice, il sera important de prendre en compte la dégradabilité du matériau.",
+    "hint": "Voici quelques exemples de dispositifs correspondant à chaque niveau de risque décrit - un matériau de comblement osseux contenant des nanomatériaux dans sa formulation présente un potentiel élevé ou moyen d'exposition interne ; des vis/plaques de fixation osseuse avec un revêtement nanométrique fortement lié présentent un faible potentiel d'exposition interne ; et des matériaux de comblement dentaires présentent un potentiel négligeable d'exposition interne.",
+    "options": [
+      {
+        "id": "15.1",
+        "when": "Potentiel négligeable d'exposition interne",
+        "then": "16"
+      },
+      {
+        "id": "15.2",
+        "when": "Potentiel faible d'exposition interne",
+        "then": "17"
+      },
+      {
+        "id": 15.3,
+        "when": "Potentiel élevé ou moyen d'exposition interne",
+        "then": "18"
+      }
+    ]
+  },
+  {
+    "id": "16",
+    "isLeaf": true,
+    "result": "Classe IIa, Règle 19"
+  },
+  {
+    "id": "17",
+    "isLeaf": true,
+    "result": "Classe IIb, Règle 19"
+  },
+  {
+    "id": "18",
+    "isLeaf": true,
+    "result": "Classe III, Règle 19"
+  },
+  {
+    "id": "19",
+    "decision": "L'un des éléments suivants s'applique-t-il à votre dispositif ?",
+    "information": "Un orifice corporel est une ouverture naturelle du corps, ainsi que la surface externe de l'œil, ou toute ouverture artificielle permanente, telle qu'un stomie.",
+    "hint": "L'administration d'un produit médicinal par inhalation se réfère à l'inhalation du médicament dans le système respiratoire. Par exemple, les espaces réservés destinés aux inhalateurs à dose mesurée et les systèmes d'administration d'oxygène avec canules nasales.",
+    "options": [
+      {
+        "id": "19.1",
+        "when": "Il est invasif par le biais d'orifices corporels (non invasif par chirurgie) pour administrer un produit médicinal par inhalation",
+        "then": "21"
+      },
+      {
+        "id": "19.2",
+        "when": "Il est composé de substances destinées à être introduites dans le corps par un orifice corporel ou à être appliquées sur la peau et absorbées par le corps ou dispersées localement dans le corps",
+        "then": "24"
+      },
+      {
+        "id": "19.3",
+        "when": "Aucun de ceux-ci ne s'applique à mon dispositif",
+        "then": "29"
+      }
+    ]
+  },
+  {
+    "id": "21",
+    "decision": "(a). Le mode d'action de votre dispositif a-t-il un impact essentiel sur l'efficacité et la sécurité du produit médicinal administré ET/OU le dispositif est-il destiné à traiter des affections potentiellement mortelles ?",
+    "options": [
+      {
+        "id": "21.1",
+        "when": "Oui",
+        "then": "22"
+      },
+      {
+        "id": "21.2",
+        "when": "Non",
+        "then": "23"
+      }
+    ]
+  },
+  {
+    "id": "22",
+    "isLeaf": true,
+    "result": "Classe IIb, Règle 20"
+  },
+  {
+    "id": "23",
+    "isLeaf": true,
+    "result": "Classe IIa, Règle 20"
+  },
+  {
+    "id": "24",
+    "decision": "D(b). L'un des éléments suivants s'applique-t-il à votre dispositif ?",
+    "options": [
+      {
+        "id": "24.1",
+        "when": "Les substances sont appliquées sur la peau, la cavité nasale ou buccale jusqu'au pharynx et atteignent leur objectif prévu dans ces cavités",
+        "then": "25"
+      },
+      {
+        "id": "24.2",
+        "when": "Les substances sont systématiquement absorbées par le corps humain afin d'atteindre l'objectif prévu",
+        "then": "26"
+      },
+      {
+        "id": "24.3",
+        "when": "Les substances atteignent leur objectif prévu dans l'estomac ou le tractus gastro-intestinal inférieur et sont systématiquement absorbées par le corps humain",
+        "then": "27"
+      },
+      {
+        "id": "24.4",
+        "when": "Aucun de ceux-ci ne s'applique à mon dispositif",
+        "then": "28"
+      }
+    ]
+  },
+  {
+    "id": "25",
+    "isLeaf": true,
+    "result": "Classe IIa, Règle 21"
+  },
+  {
+    "id": "26",
+    "isLeaf": true,
+    "result": "Classe III, Règle 21"
+  },
+  {
+    "id": "27",
+    "isLeaf": true,
+    "result": "Classe III, Règle 21"
+  },
+  {
+    "id": "28",
+    "isLeaf": true,
+    "result": "Classe IIb, Règle 21"
+  },
+  {
+    "id": "29",
+    "decision": "Votre dispositif est-il un dispositif thérapeutique actif avec une fonction de diagnostic intégrée ou incorporée, qui détermine de manière significative la gestion du patient par le dispositif ?",
+    "information": "Un dispositif thérapeutique actif est tout dispositif actif utilisé, seul ou en combinaison avec d'autres dispositifs, pour soutenir, modifier, remplacer ou restaurer des fonctions ou des structures biologiques en vue du traitement ou de l'atténuation d'une maladie, d'une blessure ou d'un handicap. Les exemples de dispositifs relevant de cette question sont les systèmes en boucle fermée ou les défibrillateurs externes automatisés.",
+    "hint": "Des questions supplémentaires liées à d'autres types de dispositifs actifs (c'est-à-dire les règles de 9 à 13 du RDM) apparaissent plus tard dans ce questionnaire.",
+    "options": [
+      {
+        "id": "29.1",
+        "when": "Oui",
+        "then": "30"
+      },
+      {
+        "id": "29.2",
+        "when": "Non",
+        "then": "31"
+      }
+    ]
+  },
+  {
+    "id": "30",
+    "isLeaf": true,
+    "result": "Classe III, Règle 22"
+  },
+  {
+    "id": "31",
+    "decision": "Votre dispositif est-il destiné à être invasif ?",
+    "information": "Invasif : Tout dispositif qui, en tout ou en partie, pénètre à l'intérieur du corps, soit par une ouverture corporelle, soit par la surface du corps. Un dispositif qui administre de l'énergie au corps ne doit pas être considéré comme invasif si la seule énergie qu'il émet pénètre dans le corps et non dans le dispositif lui-même.",
+    "hint": "Si votre dispositif ne touche que la peau blessée ou la muqueuse, veuillez sélectionner \"non\" à cette question.",
+    "options": [
+      {
+        "id": "31.1",
+        "when": "Oui",
+        "then": "32"
+      },
+      {
+        "id": "31.2",
+        "when": "Non",
+        "then": "74"
+      }
+    ]
+  },
+  {
+    "id": "32",
+    "decision": "(a). Votre dispositif est-il destiné à être invasif dans une ouverture corporelle, un stomie ou est-il destiné à être invasif par voie chirurgicale ?",
+    "information": "Invasif chirurgical : un dispositif invasif qui pénètre dans le corps par la surface du corps, y compris à travers les muqueuses des orifices corporels avec l'aide ou dans le contexte d'une opération chirurgicale ; et un dispositif qui produit une pénétration autre que par un orifice corporel. Le terme opération chirurgicale comprend toutes les procédures cliniques interventionnelles dans lesquelles un dispositif est placé dans le corps par la surface du corps. Un dispositif invasif chirurgical implique toujours qu'il pénètre par une ouverture artificiellement créée.",
+    "hint": "Un stomie créé chirurgicalement utilisé en urostomie, colostomie et iléostomie ou trachéostomie permanente est considéré comme une ouverture corporelle ; par conséquent, les dispositifs introduits dans une telle stomie ne sont pas invasifs chirurgicalement. En revanche, une ouverture chirurgicalement créée pour permettre l'accès au système circulatoire ne doit pas être considérée comme une ouverture corporelle. Les dispositifs introduits dans une telle ouverture sont invasifs chirurgicalement. Des exemples de dispositifs invasifs par des orifices corporels sont les lentilles de contact correctrices, les tubes trachéaux, les endoprothèses urétrales et les gants d'examen (non gants chirurgicaux). La définition de l'invasivité chirurgicale peut également s'appliquer à certains dispositifs utilisés en chirurgie dentaire, tels que les alliages dentaires ou les céramiques dentaires.",
+    "options": [
+      {
+        "id": "32.1",
+        "when": "Invasif dans une ouverture corporelle ou stomie",
+        "then": "33"
+      },
+      {
+        "id": "32.2",
+        "when": "Invasif chirurgicalement",
+        "then": "45"
+      }
+    ]
+  },
+  {
+    "id": "33",
+    "decision": "(b). Quelle est la durée d'utilisation de votre dispositif ?",
+    "options": [
+      {
+        "id": "33.1",
+        "when": "Utilisation transitoire - utilisation continue pendant moins de 60 minutes",
+        "then": "34"
+      },
+      {
+        "id": "33.2",
+        "when": "Utilisation à court terme - utilisation continue pendant entre 60 minutes et 30 jours",
+        "then": "37"
+      },
+      {
+        "id": "33.3",
+        "when": "Utilisation à long terme - utilisation continue pendant plus de 30 jours",
+        "then": "42"
+      }
+    ]
+  },
+  {
+    "id": "34",
+    "decision": "(c). Votre dispositif est-il connecté à un dispositif médical actif de classe IIa ou supérieure ?",
+    "options": [
+      {
+        "id": "34.1",
+        "when": "Oui",
+        "then": "35"
+      },
+      {
+        "id": "34.2",
+        "when": "Non",
+        "then": "36"
+      }
+    ]
+  },
+  {
+    "id": "35",
+    "isLeaf": true,
+    "result": "Classe IIa, Règle 5"
+  },
+  {
+    "id": "36",
+    "isLeaf": true,
+    "result": "Classe I, Règle 5"
+  },
+  {
+    "id": "37",
+    "decision": "(c). Votre dispositif est-il connecté à un dispositif médical actif de classe IIa ou supérieure ?",
+    "options": [
+      {
+        "id": "37.1",
+        "when": "Oui",
+        "then": "38"
+      },
+      {
+        "id": "37.2",
+        "when": "Non",
+        "then": "39"
+      }
+    ]
+  },
+  {
+    "id": "38",
+    "isLeaf": true,
+    "result": "Classe IIa, Règle 5"
+  },
+  {
+    "id": "39",
+    "decision": "(d). Est-il destiné uniquement à être utilisé dans la cavité buccale jusqu'au pharynx, dans le conduit auditif jusqu'au tympan ou dans la cavité nasale ?",
+    "options": [
+      {
+        "id": "39.1",
+        "when": "Oui",
+        "then": "40"
+      },
+      {
+        "id": "39.2",
+        "when": "Non",
+        "then": "41"
+      }
+    ]
+  },
+  {
+    "id": "40",
+    "isLeaf": true,
+    "result": "Classe I, Règle 5"
+  },
+  {
+    "id": "41",
+    "isLeaf": true,
+    "result": "Classe IIa, Règle 5"
+  },
+  {
+    "id": "42",
+    "decision": "(e). Votre dispositif est-il destiné uniquement à être utilisé dans une cavité buccale, un conduit auditif ou une cavité nasale et n'est-il pas susceptible d'être absorbé par la muqueuse ?",
+    "information": "Pour référence supplémentaire, cela fait référence aux dispositifs utilisés dans la cavité buccale jusqu'au pharynx, dans le conduit auditif jusqu'au tympan ou dans la cavité nasale.",
+    "options": [
+      {
+        "id": "42.1",
+        "when": "Oui",
+        "then": "43"
+      },
+      {
+        "id": "42.2",
+        "when": "Non",
+        "then": "44"
+      }
+    ]
+  },
+  {
+    "id": "43",
+    "isLeaf": true,
+    "result": "Classe IIa, Règle 5"
+  },
+  {
+    "id": "44",
+    "isLeaf": true,
+    "result": "Classe IIb, Règle 5"
+  },
+  {
+    "id": "45",
+    "decision": "Quelle est la durée d'utilisation de votre dispositif ?",
+    "options": [
+      {
+        "id": "45.1",
+        "when": "Utilisation transitoire - utilisation continue pendant moins de 60 minutes",
+        "then": "46"
+      },
+      {
+        "id": "45.2",
+        "when": "Utilisation à court terme - utilisation continue pendant entre 60 minutes et 30 jours",
+        "then": "54"
+      },
+      {
+        "id": "45.3",
+        "when": "Utilisation à long terme - utilisation continue pendant plus de 30 jours",
+        "then": "62"
+      }
+    ]
+  },
+  {
+    "id": "46",
+    "decision": "(g). Lequel des éléments suivants s'applique à votre dispositif ?",
+    "information": "Instrument chirurgical réutilisable : Un instrument destiné à un usage chirurgical pour couper, percer, scier, gratter, racler, pincer, rétracter, pincer ou effectuer des procédures similaires, sans connexion à un dispositif actif et qui est destiné par le fabricant à être réutilisé après avoir été soumis à des procédures appropriées telles que le nettoyage, la désinfection et la stérilisation.",
+    "options": [
+      {
+        "id": "46.1",
+        "when": "Il s'agit d'un instrument chirurgical réutilisable",
+        "then": "47"
+      },
+      {
+        "id": "46.2",
+        "when": "Il est destiné à administrer des médicaments de manière potentiellement dangereuse",
+        "then": "48"
+      },
+      {
+        "id": "46.3",
+        "when": "Il est destiné à fournir de l'énergie ou des rayonnements ionisants",
+        "then": "49"
+      },
+      {
+        "id": "46.4",
+        "when": "Il a un effet biologique principalement ou entièrement absorbé",
+        "then": "50"
+      },
+      {
+        "id": "46.5",
+        "when": "Il est spécifiquement destiné à être utilisé en contact direct avec le cœur, le système circulatoire central ou le système nerveux central",
+        "then": "51"
+      },
+      {
+        "id": "46.6",
+        "when": "Il est spécifiquement destiné à contrôler, diagnostiquer, surveiller et/ou corriger un défaut du cœur ou du système circulatoire central par contact direct",
+        "then": "52"
+      },
+      {
+        "id": "46.7",
+        "when": "Le dispositif est invasif chirurgicalement pour un usage transitoire, mais aucun de ces critères supplémentaires ne s'applique",
+        "then": "53"
+      }
+    ]
+  },
+  {
+    "id": "47",
+    "isLeaf": true,
+    "result": "Classe I, Règle 6"
+  },
+  {
+    "id": "48",
+    "isLeaf": true,
+    "result": "Classe IIb, Règle 6"
+  },
+  {
+    "id": "49",
+    "isLeaf": true,
+    "result": "Classe IIb, Règle 6"
+  },
+  {
+    "id": "50",
+    "isLeaf": true,
+    "result": "Classe IIb, Règle 6"
+  },
+  {
+    "id": "51",
+    "isLeaf": true,
+    "result": "Classe III, Règle 6"
+  },
+  {
+    "id": "52",
+    "isLeaf": true,
+    "result": "Classe III, Règle 6"
+  },
+  {
+    "id": "53",
+    "isLeaf": true,
+    "result": "Classe IIa, Règle 6"
+  },
+  {
+    "id": "54",
+    "decision": "(g). Lequel des éléments suivants s'applique à votre dispositif ?",
+    "information": "Entièrement ou principalement absorbé : « absorption » dans le contexte des dispositifs implantables fait référence à la dégradation d'un matériau à l'intérieur du corps et à l'élimination métabolique des produits de dégradation résultants du corps. Cela ne s'applique pas aux substances qui sont excrétées sans modification par le corps, par exemple les gaz d'insufflation pour la cavité abdominale ou les procédures laparoscopiques et endoscopiques.",
+    "options": [
+      {
+        "id": "54.1",
+        "when": "Il est destiné à subir un changement chimique dans le corps (sauf dans les dents)",
+        "then": "55"
+      },
+      {
+        "id": "54.2",
+        "when": "Il est destiné à administrer des médicaments (sauf dans les dents)",
+        "then": "56"
+      },
+      {
+        "id": "54.3",
+        "when": "Il est destiné à fournir de l'énergie/radiations ionisantes",
+        "then": "57"
+      },
+      {
+        "id": "54.4",
+        "when": "Il a un effet biologique principalement ou entièrement absorbé",
+        "then": "58"
+      },
+      {
+        "id": "54.5",
+        "when": "Il est spécifiquement destiné à surveiller, contrôler, diagnostiquer ou corriger des défauts du cœur ou du système circulatoire central par contact direct",
+        "then": "59"
+      },
+      {
+        "id": "54.6",
+        "when": "Il est destiné à être utilisé en contact direct avec le système nerveux central, le cœur ou le système circulatoire central",
+        "then": "60"
+      },
+      {
+        "id": "54.7",
+        "when": "Le dispositif est invasif chirurgicalement pour une utilisation à court terme, mais aucun de ces critères supplémentaires ne s'applique",
+        "then": "61"
+      }
+    ]
+  },
+  {
+    "id": "55",
+    "isLeaf": true,
+    "result": "Classe IIb, Règle 7"
+  },
+  {
+    "id": "56",
+    "isLeaf": true,
+    "result": "Classe IIb, Règle 7"
+  },
+  {
+    "id": "57",
+    "isLeaf": true,
+    "result": "Classe IIb, Règle 7"
+  },
+  {
+    "id": "58",
+    "isLeaf": true,
+    "result": "Classe III, Règle 7"
+  },
+  {
+    "id": "59",
+    "isLeaf": true,
+    "result": "Classe III, Règle 7"
+  },
+  {
+    "id": "60",
+    "isLeaf": true,
+    "result": "Classe III, Règle 7"
+  },
+  {
+    "id": "61",
+    "isLeaf": true,
+    "result": "Classe IIa, Règle 7"
+  },
+  {
+    "id": "62",
+    "decision": "(g). Lequel des éléments suivants s'applique à votre dispositif ?",
+    "information": "Entièrement ou principalement absorbé : « absorption » dans le contexte des dispositifs implantables fait référence à la dégradation d'un matériau à l'intérieur du corps et à l'élimination métabolique des produits de dégradation résultants du corps. Cela ne s'applique pas aux substances qui sont excrétées sans modification par le corps, par exemple les gaz d'insufflation pour la cavité abdominale ou les procédures laparoscopiques et endoscopiques.",
+    "options": [
+      {
+        "id": "62.1",
+        "when": "Il est destiné à être placé dans les dents",
+        "then": "63"
+      },
+      {
+        "id": "62.2",
+        "when": "Il est destiné à être utilisé en contact direct avec le cœur ou le système circulatoire/nerveux central",
+        "then": "64"
+      },
+      {
+        "id": "62.3",
+        "when": "Il a un effet biologique principalement ou entièrement absorbé",
+        "then": "65"
+      },
+      {
+        "id": "62.4",
+        "when": "Il est destiné à subir un changement chimique dans le corps (sauf dans les dents)",
+        "then": "66"
+      },
+      {
+        "id": "62.5",
+        "when": "Il est destiné à administrer des produits médicamenteux",
+        "then": "67"
+      },
+      {
+        "id": "62.6",
+        "when": "Il s'agit d'un dispositif médical actif implantable ou d'un accessoire d'un dispositif médical actif implantable",
+        "then": "68"
+      },
+      {
+        "id": "62.7",
+        "when": "Il s'agit d'un implant mammaire ou d'une prothèse chirurgicale",
+        "then": "69"
+      },
+      {
+        "id": "62.8",
+        "when": "Il s'agit d'un remplacement total ou partiel d'une articulation, d'un remplacement de disque spinal ou d'un implant en contact avec la colonne vertébrale",
+        "then": "70"
+      },
+      {
+        "id": "62.9",
+        "when": "Le dispositif est invasif chirurgicalement pour une utilisation à long terme, mais aucun de ces critères supplémentaires ne s'applique",
+        "then": "73"
+      }
+    ]
+  },
+  {
+    "id": "63",
+    "isLeaf": true,
+    "result": "Classe IIb, Règle 8"
+  },
+  {
+    "id": "64",
+    "isLeaf": true,
+    "result": "Classe III, Règle 8"
+  },
+  {
+    "id": "65",
+    "isLeaf": true,
+    "result": "Classe III, Règle 8"
+  },
+  {
+    "id": "66",
+    "isLeaf": true,
+    "result": "Classe III, Règle 8"
+  },
+  {
+    "id": "67",
+    "isLeaf": true,
+    "result": "Classe III, Règle 8"
+  },
+  {
+    "id": "68",
+    "isLeaf": true,
+    "result": "Classe III, Règle 8"
+  },
+  {
+    "id": "69",
+    "isLeaf": true,
+    "result": "Classe III, Règle 8"
+  },
+  {
+    "id": "70",
+    "decision": "(h). S'agit-il d'un composant, tel qu'une vis, une plaque en coin ou un instrument ?",
+    "options": [
+      {
+        "id": "70.1",
+        "when": "Oui",
+        "then": 73
+      },
+      {
+        "id": "70.2",
+        "when": "Non",
+        "then": 74
+      }
+    ]
+  },
+  {
+    "id": "71",
+    "isLeaf": true,
+    "result": "Classe IIb, Règle 8"
+  },
+  {
+    "id": "72",
+    "isLeaf": true,
+    "result": "Classe III, Règle 8"
+  },
+  {
+    "id": "73",
+    "isLeaf": true,
+    "result": "Classe IIb, Règle 8"
+  },
+  {
+    "id": "74",
+    "decision": "S'agit-il d'un dispositif médical actif ?",
+    "hint": "Le logiciel est considéré comme un dispositif actif. Les dispositifs médicaux utilisant des gaz préstockés et/ou le vide comme source d'énergie sont également généralement considérés comme des dispositifs actifs s'ils remplissent les critères de la définition (détaillée dans le symbole 'i'). Les dispositifs qui atteignent leur objectif par filtration et centrifugation (par exemple, un hémodialyseur) ne sont pas considérés comme des dispositifs actifs car ils fonctionnent exclusivement par des méthodes mécaniques.\n\nSi votre dispositif est destiné au canalisation ou au stockage du sang, des liquides corporels, des cellules ou des tissus, des liquides ou des gaz en vue d'une future perfusion, administration ou introduction dans le corps, veuillez sélectionner \"Non\" à cette question, car ces dispositifs sont abordés ultérieurement dans le questionnaire. Un exemple de ce type de dispositif est un réfrigérateur/congélateur pour le stockage de sang et de tissus.",
+    "information": "Dispositif médical actif : Tout dispositif dont le fonctionnement dépend d'une source d'énergie autre que celle générée par le corps humain à cette fin, ou par la gravité, et qui agit en modifiant la densité de cette énergie ou en la convertissant. Les dispositifs destinés à transmettre de l'énergie, des substances ou d'autres éléments entre un dispositif actif et le patient, sans modification significative, ne sont pas considérés comme des dispositifs actifs.",
+    "options": [
+      {
+        "id": "74.1",
+        "when": "Oui",
+        "then": "75"
+      },
+      {
+        "id": "74.2",
+        "when": "Non",
+        "then": "107"
+      }
+    ]
+  },
+  {
+    "id": "75",
+    "decision": "(a). Lequel des éléments suivants s'applique à votre dispositif ?",
+    "hint": "Si le produit est un logiciel médical (LDM), cela ne signifie pas automatiquement que la règle sur les logiciels (Règle 11) s'applique. Les Règles 9 à 13, 15 et 22 peuvent toutes s'appliquer aux dispositifs logiciels. Par conséquent, si vous avez un dispositif logiciel, nous vous recommandons vivement de consulter les directives sur la classification des logiciels médicaux (MDCG 2019-11) pour vous assurer de sélectionner la règle correcte. La règle ou sous-règle la plus stricte s'appliquera.",
+    "information": "Avant de passer aux questions suivantes, veuillez confirmer que la règle 22 ne s'applique pas à votre dispositif. Si cette règle s'applique, veuillez revoir votre réponse à la quatrième question. Règle 22 : dispositifs thérapeutiques actifs avec une fonction diagnostique intégrée ou incorporée qui détermine de manière significative la prise en charge du patient par le dispositif, tels que les systèmes en boucle fermée ou les défibrillateurs externes automatisés.",
+    "options": [
+      {
+        "id": "75.1",
+        "when": "Il s'agit d'un dispositif thérapeutique destiné à administrer ou échanger de l'énergie",
+        "then": "76"
+      },
+      {
+        "id": "75.2",
+        "when": "Il est destiné à diagnostiquer, surveiller ou fournir de l'énergie absorbée par le corps ou à permettre un diagnostic ou une surveillance directe des processus physiologiques vitaux",
+        "then": "82"
+      },
+      {
+        "id": "75.3",
+        "when": "Il est destiné à l'imagerie de la distribution in vivo de radiopharmaceutiques",
+        "then": "88"
+      },
+      {
+        "id": "75.4",
+        "when": "Il s'agit d'un dispositif logiciel",
+        "then": "94"
+      },
+      {
+        "id": "75.5",
+        "when": "Il est destiné à administrer et/ou éliminer des médicaments et d'autres substances du corps",
+        "then": "103"
+      },
+      {
+        "id": "75.6",
+        "when": "Il s'agit d'un dispositif actif, mais aucun de ces autres critères ne s'applique",
+        "then": "106"
+      }
+    ]
+  },
+  {
+    "id": "76",
+    "decision": "(b). Lequel des éléments suivants s'applique à votre dispositif ?",
+    "information": "Selon MDCG 2021-24, la détermination de savoir si un dispositif administre ou échange de l'énergie vers et depuis le corps humain de manière potentiellement dangereuse est basée sur le type de technologie impliquée et l'application prévue du dispositif au patient. Elle n'est pas basée sur les mesures adoptées par le fabricant, par exemple l'utilisation de normes techniques, d'analyses de risque. Par exemple, tous les dispositifs destinés à émettre des radiations ionisantes et tous les ventilateurs pulmonaires sont considérés comme administrant de l'énergie de manière potentiellement dangereuse.",
+    "options": [
+      {
+        "id": "76.1",
+        "when": "Il est destiné à contrôler, surveiller ou influencer directement la performance d'un dispositif thérapeutique actif de classe IIb",
+        "then": "77"
+      },
+      {
+        "id": "76.2",
+        "when": "Il administre ou échange de l'énergie de manière potentiellement dangereuse",
+        "then": "78"
+      },
+      {
+        "id": "76.3",
+        "when": "Il est destiné à émettre des radiations ionisantes à des fins thérapeutiques, ou il contrôle, surveille ou influence directement la performance de dispositifs émettant des radiations ionisantes à des fins thérapeutiques",
+        "then": "79"
+      },
+      {
+        "id": "76.4",
+        "when": "Il est destiné à contrôler, surveiller ou influencer directement la performance de dispositifs implantables actifs",
+        "then": "80"
+      },
+      {
+        "id": "76.5",
+        "when": "Aucune de ces options ne s'applique à mon dispositif",
+        "then": "81"
+      }
+    ]
+  },
+  {
+    "id": "77",
+    "isLeaf": true,
+    "result": "Classe IIb, Règle 9"
+  },
+  {
+    "id": "78",
+    "isLeaf": true,
+    "result": "Classe IIb, Règle 9"
+  },
+  {
+    "id": "79",
+    "isLeaf": true,
+    "result": "Classe IIb, Règle 9"
+  },
+  {
+    "id": "80",
+    "isLeaf": true,
+    "result": "Classe III, Règle 9"
+  },
+  {
+    "id": "81",
+    "isLeaf": true,
+    "result": "Classe IIa, Règle 9"
+  },
+  {
+    "id": "82",
+    "decision": "(b). Lequel des éléments suivants s'applique à votre dispositif ?",
+    "options": [
+      {
+        "id": "82.1",
+        "when": "Il est destiné à éclairer le corps du patient, dans le spectre visible",
+        "then": "83"
+      },
+      {
+        "id": "82.2",
+        "when": "Il émet des radiations ionisantes à des fins de radiologie diagnostique ou thérapeutique, y compris les dispositifs de radiologie interventionnelle et les dispositifs qui contrôlent ou surveillent de tels dispositifs",
+        "then": "84"
+      },
+      {
+        "id": "82.3",
+        "when": "Il est spécifiquement destiné à surveiller des paramètres physiologiques vitaux où des variations pourraient entraîner un danger immédiat pour le patient",
+        "then": "85"
+      },
+      {
+        "id": "82.4",
+        "when": "Il est destiné au diagnostic dans des situations cliniques où le patient est en danger immédiat",
+        "then": "86"
+      },
+      {
+        "id": "82.5",
+        "when": "Aucune de ces options ne s'applique à mon dispositif",
+        "then": "87"
+      }
+    ]
+  },
+  {
+    "id": "83",
+    "isLeaf": true,
+    "result": "Classe I, Règle 10"
+  },
+  {
+    "id": "84",
+    "isLeaf": true,
+    "result": "Classe IIb, Règle 10"
+  },
+  {
+    "id": "85",
+    "isLeaf": true,
+    "result": "Classe IIb, Règle 10"
+  },
+  {
+    "id": "86",
+    "isLeaf": true,
+    "result": "Classe IIb, Règle 10"
+  },
+  {
+    "id": "87",
+    "isLeaf": true,
+    "result": "Classe IIa, Règle 10"
+  },
+  {
+    "id": "88",
+    "decision": "(b). Lequel des éléments suivants s'applique à votre dispositif ?",
+    "options": [
+      {
+        "id": "88.1",
+        "when": "Il est destiné à éclairer le corps du patient, dans le spectre visible",
+        "then": "89"
+      },
+      {
+        "id": "88.2",
+        "when": "Il émet des radiations ionisantes à des fins de radiologie diagnostique ou thérapeutique, y compris les dispositifs de radiologie interventionnelle et les dispositifs qui contrôlent ou surveillent de tels dispositifs",
+        "then": "90"
+      },
+      {
+        "id": "88.3",
+        "when": "Il est spécifiquement destiné à surveiller des paramètres physiologiques vitaux où des variations pourraient entraîner un danger immédiat pour le patient",
+        "then": "91"
+      },
+      {
+        "id": "88.4",
+        "when": "Il est destiné au diagnostic dans des situations cliniques où le patient est en danger immédiat",
+        "then": "92"
+      },
+      {
+        "id": "88.5",
+        "when": "Aucune de ces options ne s'applique à mon dispositif",
+        "then": "93"
+      }
+    ]
+  },
+  {
+    "id": "89",
+    "isLeaf": true,
+    "result": "Classe I, Règle 10"
+  },
+  {
+    "id": "90",
+    "isLeaf": true,
+    "result": "Classe IIb, Règle 10"
+  },
+  {
+    "id": "91",
+    "isLeaf": true,
+    "result": "Classe IIb, Règle 10"
+  },
+  {
+    "id": "92",
+    "isLeaf": true,
+    "result": "Classe IIb, Règle 10"
+  },
+  {
+    "id": "93",
+    "isLeaf": true,
+    "result": "Classe IIa, Règle 10"
+  },
+  {
+    "id": "94",
+    "decision": "(b). Lequel des éléments suivants s'applique à votre dispositif ?",
+    "options": [
+      {
+        "id": "94.1",
+        "when": "Il est destiné à fournir des informations utilisées pour prendre des décisions à des fins de diagnostic ou thérapeutiques",
+        "then": "95"
+      },
+      {
+        "id": "94.2",
+        "when": "Il est destiné à surveiller des processus physiologiques",
+        "then": "99"
+      },
+      {
+        "id": "94.3",
+        "when": "Aucune de ces options ne s'applique à mon dispositif",
+        "then": "102"
+      }
+    ]
+  },
+  {
+    "id": "95",
+    "decision": "(c). Lequel des éléments suivants s'applique à votre dispositif ?",
+    "information": "Un exemple de dispositif où l'impact de la décision peut causer 'la mort ou une détérioration irréversible de la santé' est un dispositif destiné à prendre des décisions de traitement chez les patients atteints d'un accident vasculaire cérébral aigu. Un exemple de dispositif où l'impact de la décision peut causer 'une détérioration grave de la santé ou une intervention chirurgicale' est une application mobile destinée à analyser le rythme cardiaque d'un utilisateur, détecter des anomalies et informer un médecin en conséquence.",
+    "options": [
+      {
+        "id": "95.1",
+        "when": "L'impact de la décision peut causer une détérioration grave de la santé ou une intervention chirurgicale",
+        "then": "96"
+      },
+      {
+        "id": "95.2",
+        "when": "L'impact de la décision peut causer la mort ou une détérioration irréversible de la santé",
+        "then": "97"
+      },
+      {
+        "id": "95.3",
+        "when": "Aucune de ces options ne s'applique à mon dispositif",
+        "then": "98"
+      }
+    ]
+  },
+  {
+    "id": "96",
+    "isLeaf": true,
+    "result": "Classe IIb, Règle 11"
+  },
+  {
+    "id": "97",
+    "isLeaf": true,
+    "result": "Classe III, Règle 11"
+  },
+  {
+    "id": "98",
+    "isLeaf": true,
+    "result": "Classe IIa, Règle 11"
+  },
+  {
+    "id": "99",
+    "decision": "(d). Est-il destiné à surveiller des paramètres physiologiques vitaux, où la nature des variations des paramètres pourrait entraîner un danger immédiat pour le patient ?",
+    "options": [
+      {
+        "id": "99.1",
+        "when": "Oui",
+        "then": "100"
+      },
+      {
+        "id": "99.2",
+        "when": "Non",
+        "then": "101"
+      }
+    ]
+  },
+  {
+    "id": "100",
+    "isLeaf": true,
+    "result": "Classe IIb, Règle 11"
+  },
+  {
+    "id": "101",
+    "isLeaf": true,
+    "result": "Classe IIa, Règle 11"
+  },
+  {
+    "id": "102",
+    "isLeaf": true,
+    "result": "Classe I, Règle 11"
+  },
+  {
+    "id": "103",
+    "decision": "(b). L'administration ou l'élimination de médicaments ou d'autres substances du corps est-elle effectuée de manière potentiellement dangereuse ?",
+    "information": "S'il est effectué de manière potentiellement dangereuse, cela doit tenir compte de la nature des substances impliquées, de la partie du corps concernée et du mode d'application.",
+    "options": [
+      {
+        "id": "103.1",
+        "when": "Oui",
+        "then": "104"
+      },
+      {
+        "id": "103.2",
+        "when": "Non",
+        "then": "105"
+      }
+    ]
+  },
+  {
+    "id": "104",
+    "isLeaf": true,
+    "result": "Classe IIb, Règle 12"
+  },
+  {
+    "id": "105",
+    "isLeaf": true,
+    "result": "Classe IIa, Règle 12"
+  },
+  {
+    "id": "106",
+    "isLeaf": true,
+    "result": "Classe I, Règle 13"
+  },
+  {
+    "id": "107",
+    "decision": "Le dispositif est non invasif et non actif - lequel des éléments suivants s'applique à votre dispositif ?",
+    "information": "Avant de poursuivre avec le prochain ensemble de questions, veuillez confirmer que ni la règle 14 ni la règle 22 ne s'applique à votre dispositif. Si l'une de ces règles s'applique, veuillez revoir vos réponses aux questions un et quatre. Règle 14 : dispositifs incorporant une substance médicinale intégrée et ayant une action auxiliaire à celle des dispositifs. Règle 22 : dispositifs thérapeutiques actifs dotés d'une fonction diagnostique intégrée ou incorporée qui détermine significativement la prise en charge du patient par le dispositif, tels que les systèmes en boucle fermée ou les défibrillateurs externes automatisés.",
+    "options": [
+      {
+        "id": "107.1",
+        "when": "Le dispositif ne touche pas le patient ou il n'entre en contact qu'avec une peau intacte",
+        "then": "108"
+      },
+      {
+        "id": "107.2",
+        "when": "Il est destiné à acheminer ou stocker du sang, des liquides corporels, des cellules ou des tissus, des liquides ou des gaz pour une administration ou une introduction éventuelle dans le corps",
+        "then": "109"
+      },
+      {
+        "id": "107.3",
+        "when": "Il est destiné à modifier la composition biologique ou chimique des tissus ou des cellules humains en vue d'une implantation ou d'une administration dans le corps",
+        "then": "114"
+      },
+      {
+        "id": "107.4",
+        "when": "Le dispositif entre en contact avec une peau blessée ou une muqueuse",
+        "then": "124"
+      }
+    ]
+  },
+  {
+    "id": "108",
+    "isLeaf": true,
+    "result": "Classe I, Règle 1"
+  },
+  {
+    "id": "109",
+    "decision": "(a). L'une des conditions suivantes s'applique-t-elle à votre dispositif ?",
+    "options": [
+      {
+        "id": "109.1",
+        "when": "Le dispositif est destiné à être utilisé avec du sang, d'autres liquides corporels, des organes, des tissus ou des cellules",
+        "then": "110"
+      },
+      {
+        "id": "109.2",
+        "when": "Le dispositif est connecté à un dispositif actif de classe IIa ou supérieure",
+        "then": "111"
+      },
+      {
+        "id": "109.3",
+        "when": "Le dispositif est un sac de sang",
+        "then": "112"
+      },
+      {
+        "id": "109.4",
+        "when": "Aucun de ces critères supplémentaires ne s'applique",
+        "then": "113"
+      }
+    ]
+  },
+  {
+    "id": "110",
+    "isLeaf": true,
+    "result": "Classe IIa, Règle 2"
+  },
+  {
+    "id": "111",
+    "isLeaf": true,
+    "result": "Classe IIa, Règle 2"
+  },
+  {
+    "id": "112",
+    "isLeaf": true,
+    "result": "Classe IIb, Règle 2"
+  },
+  {
+    "id": "113",
+    "isLeaf": true,
+    "result": "Classe I, Règle 2"
+  },
+  {
+    "id": "114",
+    "decision": "(a). L'une des conditions suivantes s'applique-t-elle à votre dispositif ?",
+    "options": [
+      {
+        "id": "114.1",
+        "when": "Le traitement pour lequel le dispositif est utilisé consiste en une filtration, une centrifugation ou un échange de gaz ou de chaleur",
+        "then": "115"
+      },
+      {
+        "id": "114.2",
+        "when": "Il consiste en des substances à utiliser in vitro en contact direct avec des cellules, des tissus ou des organes humains prélevés sur le corps humain",
+        "then": "116"
+      },
+      {
+        "id": "114.3",
+        "when": "Il consiste en des substances à utiliser in vitro avec des embryons humains avant implantation ou administration dans le corps",
+        "then": "117"
+      },
+      {
+        "id": "114.4",
+        "when": "Aucun de ces critères supplémentaires ne s'applique",
+        "then": "118"
+      }
+    ]
+  },
+  {
+    "id": "115",
+    "isLeaf": true,
+    "result": "Classe IIa, Règle 3"
+  },
+  {
+    "id": "116",
+    "isLeaf": true,
+    "result": "Classe III, Règle 3"
+  },
+  {
+    "id": "117",
+    "isLeaf": true,
+    "result": "Classe III, Règle 3"
+  },
+  {
+    "id": "118",
+    "isLeaf": true,
+    "result": "Classe IIb, Règle 3"
+  },
+  {
+    "id": "119",
+    "decision": "(a). L'une des conditions suivantes s'applique-t-elle à votre dispositif ?",
+    "options": [
+      {
+        "id": "119.1",
+        "when": "Le traitement pour lequel le dispositif est utilisé consiste en une filtration, une centrifugation ou un échange de gaz ou de chaleur",
+        "then": "120"
+      },
+      {
+        "id": "119.2",
+        "when": "Il consiste en des substances à utiliser in vitro en contact direct avec des cellules, des tissus ou des organes humains prélevés sur le corps humain",
+        "then": "121"
+      },
+      {
+        "id": "119.3",
+        "when": "Il consiste en des substances à utiliser in vitro avec des embryons humains avant implantation ou administration dans le corps",
+        "then": "122"
+      },
+      {
+        "id": "119.4",
+        "when": "Aucun de ces critères supplémentaires ne s'applique",
+        "then": "123"
+      }
+    ]
+  },
+  {
+    "id": "120",
+    "isLeaf": true,
+    "result": "Classe IIa, Règle 3"
+  },
+  {
+    "id": "121",
+    "isLeaf": true,
+    "result": "Classe III, Règle 3"
+  },
+  {
+    "id": "122",
+    "isLeaf": true,
+    "result": "Classe III, Règle 3"
+  },
+  {
+    "id": "123",
+    "isLeaf": true,
+    "result": "Classe IIb, Règle 3"
+  },
+  {
+    "id": "124",
+    "decision": "(a) L'une des conditions suivantes s'applique-t-elle à votre dispositif ?",
+    "options": [
+      {
+        "id": "124.1",
+        "when": "Le dispositif est utilisé comme barrière mécanique pour la compression ou l'absorption des exsudats",
+        "then": "125"
+      },
+      {
+        "id": "124.2",
+        "when": "Le dispositif est destiné à gérer le micro-environnement de la peau blessée ou de la muqueuse",
+        "then": "126"
+      },
+      {
+        "id": "124.3",
+        "when": "Le dispositif est destiné aux blessures qui franchissent le derme ou la muqueuse et ne peuvent guérir que par intention secondaire",
+        "then": "127"
+      },
+      {
+        "id": "124.4",
+        "when": "Aucun de ces critères supplémentaires ne s'applique",
+        "then": "128"
+      }
+    ]
+  },
+  {
+    "id": "125",
+    "isLeaf": true,
+    "result": "Classe I, Règle 4"
+  },
+  {
+    "id": "126",
+    "isLeaf": true,
+    "result": "Classe IIa, Règle 4"
+  },
+  {
+    "id": "127",
+    "isLeaf": true,
+    "result": "Classe IIb, Règle 4"
+  },
+  {
+    "id": "128",
+    "isLeaf": true,
+    "result": "Classe IIa, Règle 4"
+  }
+]

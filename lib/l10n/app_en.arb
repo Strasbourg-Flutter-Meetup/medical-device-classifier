@@ -15,5 +15,24 @@
   "classificationPreconditionsIsMedicalTitle":"Is your product a medical device by definition?",
   "classificationPreconditionsKnowsAboutDefinitionsTitle":"Do you know the definitions of the classification rules?",
   "classificationPreconditionsKnowsAboutImplementingRulesTitle":"Are you familiar with the implementation rules related to the classification rules?",
-  "classificationPreconditionsContinueButton":"Continue"
+  "classificationPreconditionsContinueButton":"Continue",
+  "classificationText": "Based on {rule}, your medical device is classified as {classification}.",
+  "@classificationText": {
+    "description": "Presents the final classification to the user",
+    "placeholders": {
+        "rule":{
+            "type": "String",
+            "example": "Rule 2"
+        },
+        "classification": {
+            "type": "String",
+            "example": "IIa"
+        }
+    }
+  },
+  "classificationInformation": "Information",
+  "classificationHint":"Hint",
+  "classificationBack": "Back",
+  "classificationRestart": "Restart",
+  "classificationCancel": "Cancel"
 }

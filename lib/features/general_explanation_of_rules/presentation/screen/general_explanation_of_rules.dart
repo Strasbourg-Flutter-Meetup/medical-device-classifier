@@ -14,6 +14,7 @@ import 'package:medical_device_classifier/features/general_explanation_of_rules/
 import 'package:medical_device_classifier/mixins/content_builder.dart';
 import 'package:medical_device_classifier/ui/app_bar_template.dart';
 import 'package:medical_device_classifier/ui/screen_template.dart';
+import 'package:medical_device_classifier/ui/ui_constants.dart';
 
 /// A widget that provides an overview or general explanation of rules.
 ///
@@ -54,7 +55,7 @@ class _GeneralExplanationOfRulesContent extends StatelessWidget
       child: buildContent(
         state: state,
         widget: ConstrainedBox(
-          constraints: const BoxConstraints(maxWidth: 600.0),
+          constraints: const BoxConstraints(maxWidth: UIConstants.maxWidth),
           child: state.data?.column,
         ),
       ),

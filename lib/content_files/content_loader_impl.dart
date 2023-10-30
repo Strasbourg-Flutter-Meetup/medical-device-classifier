@@ -67,8 +67,10 @@ class ContentLoaderImpl extends ContentLoader {
       key: _getSharedPreferencesKey(contentLoaderType).$3,
     );
 
-    final shouldUpdateData =
-        await _shouldUpdateData(sharedPreferencesLanguageCode);
+    final shouldUpdateData = await _shouldUpdateData(
+      sharedPreferencesLanguageCode,
+      contentLoaderType,
+    );
 
     if (shouldUpdateData) {
       final contentData = await _downloadFromRemote(
@@ -97,6 +99,7 @@ class ContentLoaderImpl extends ContentLoader {
   /// - Supabase database table name.
   /// - Supabase database file name attribute.
   /// - Supabase database language code attribute.
+  /// - Supabase database update at attribute
   ///
   /// Throws:
   /// - [ContentLoaderTypeNotFoundException]: If an unsupported or undefined
@@ -107,7 +110,7 @@ class ContentLoaderImpl extends ContentLoader {
   /// var keys = _getSupabaseKeys(ContentLoaderType.generalExplanationRules);
   /// print(keys); // ('tableName', 'fileNameAttribute', 'languageCodeAttribute')
   /// ```
-  (String, String, String) _getSupabaseKeys(
+  (String, String, String, String) _getSupabaseKeys(
     ContentLoaderType contentLoaderType,
   ) {
     switch (contentLoaderType) {
@@ -116,12 +119,14 @@ class ContentLoaderImpl extends ContentLoader {
           SupabaseDatabaseConstants.tableNameMetaDataRules,
           SupabaseDatabaseConstants.attributeMetaDataRulesFileName,
           SupabaseDatabaseConstants.attributeMetaDataRulesLanguageCode,
+          SupabaseDatabaseConstants.attributeMetaDataRulesUpdatedAt,
         );
       case ContentLoaderType.definitions:
         return (
           SupabaseDatabaseConstants.tableNameMetaDataDefinitions,
           SupabaseDatabaseConstants.attributeMetaDataDefinitionsFileName,
           SupabaseDatabaseConstants.attributeMetaDataDefinitionsLanguageCode,
+          SupabaseDatabaseConstants.attributeMetaDataDefinitionsUpdatedAt,
         );
       case ContentLoaderType.implementingRules:
         return (
@@ -129,12 +134,14 @@ class ContentLoaderImpl extends ContentLoader {
           SupabaseDatabaseConstants.attributeMetaDataImplementingRulesFileName,
           SupabaseDatabaseConstants
               .attributeMetaDataImplementingRulesLanguageCode,
+          SupabaseDatabaseConstants.attributeMetaDataImplementingRulesUpdatedAt,
         );
       case ContentLoaderType.decisionTree:
         return (
           SupabaseDatabaseConstants.tableNameMetaDataDecisionTree,
           SupabaseDatabaseConstants.attributeMetaDataDecisionTreeFileName,
           SupabaseDatabaseConstants.attributeMetaDataDecisionTreeLanguageCode,
+          SupabaseDatabaseConstants.attributeMetaDataDecisionTreeUpdatedAt,
         );
       default:
         throw ContentLoaderTypeNotFoundException(
@@ -325,18 +332,27 @@ class ContentLoaderImpl extends ContentLoader {
   /// final needsUpdate = _shouldUpdateData('en_US');
   /// print(needsUpdate); // Prints 'true' if an update is needed.
   /// ```
-  Future<bool> _shouldUpdateData(String sharedPreferencesLanguageCode) async {
+  Future<bool> _shouldUpdateData(
+    String sharedPreferencesLanguageCode,
+    ContentLoaderType contentLoaderType,
+  ) async {
     if (sharedPreferencesLanguageCode.isEmpty ||
         currentLocale.languageCode != sharedPreferencesLanguageCode) {
       return true;
     }
 
-    final localUpdateData = sharedPreferencesRepository.read(
-      key: SharedPreferencesKeys.rulesLocalUpdateDate,
-    );
-    final remoteUpdateData = await _fetchRemoteUpdateData();
+    final sharedPreferencesKey = _getSharedPreferencesKey(contentLoaderType);
 
-    return !_isRemoteDataOlder(remoteUpdateData, localUpdateData);
+    final localUpdateData = sharedPreferencesRepository.read(
+      key: sharedPreferencesKey.$2,
+    );
+    final remoteUpdateData = await _fetchRemoteUpdateData(contentLoaderType);
+
+    return !_isRemoteDataOlder(
+      remoteUpdateData,
+      localUpdateData,
+      contentLoaderType,
+    );
   }
 
   /// Fetches the remote update timestamp for content data.
@@ -352,15 +368,19 @@ class ContentLoaderImpl extends ContentLoader {
   /// final remoteTimestamp = _fetchRemoteUpdateData();
   /// print(remoteTimestamp); // Prints the remote update timestamp.
   /// ```
-  Future<Object?> _fetchRemoteUpdateData() async =>
-      await databaseFetchDataRepository.fetchData(
-        tableName: SupabaseDatabaseConstants.tableNameMetaDataRules,
-        columns: SupabaseDatabaseConstants.attributeMetaDataRulesUpdatedAt,
-        query: {
-          SupabaseDatabaseConstants.attributeMetaDataRulesLanguageCode:
-              currentLocale.languageCode,
-        },
-      );
+  Future<Object?> _fetchRemoteUpdateData(
+    ContentLoaderType contentLoaderType,
+  ) async {
+    final supabaseDatabaseKey = _getSupabaseKeys(contentLoaderType);
+
+    return await databaseFetchDataRepository.fetchData(
+      tableName: supabaseDatabaseKey.$1,
+      columns: supabaseDatabaseKey.$4,
+      query: {
+        supabaseDatabaseKey.$3: currentLocale.languageCode,
+      },
+    );
+  }
 
   /// Checks if the remote data is older than the local data based on timestamps.
   ///
@@ -381,12 +401,17 @@ class ContentLoaderImpl extends ContentLoader {
   /// final isOlder = _isRemoteDataOlder(remoteTimestamp, '2023-10-20T12:00:00Z');
   /// print(isOlder); // Prints 'true' if the remote data is older.
   /// ```
-  bool _isRemoteDataOlder(Object? remoteUpdateData, String localUpdateData) {
+  bool _isRemoteDataOlder(
+    Object? remoteUpdateData,
+    String localUpdateData,
+    ContentLoaderType contentLoaderType,
+  ) {
+    final supabaseDatabaseKey = _getSupabaseKeys(contentLoaderType);
+
     if (remoteUpdateData is List) {
       final remoteDateTime = DateTime.parse(
-        ((remoteUpdateData.first as Map<String, dynamic>)[
-                SupabaseDatabaseConstants.attributeMetaDataRulesUpdatedAt]
-            as String),
+        ((remoteUpdateData.first
+            as Map<String, dynamic>)[supabaseDatabaseKey.$4] as String),
       );
 
       final localDateTime = DateTime.parse(localUpdateData);

@@ -8,6 +8,7 @@
 // 24.10.2023 16:19
 import 'package:flutter/material.dart';
 import 'package:medical_device_classifier/extensions/app_localization_extension.dart';
+import 'package:medical_device_classifier/routing/router.dart';
 
 /// A button widget used to continue to the next step in a process.
 ///
@@ -37,7 +38,7 @@ class ContinueButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
-      onPressed: isActive ? () {} : null,
+      onPressed: isActive ? routeToClassification : null,
       child: Text(
         context.appLocalizations?.classificationPreconditionsContinueButton ??
             '',
@@ -45,4 +46,3 @@ class ContinueButton extends StatelessWidget {
     );
   }
 }
-

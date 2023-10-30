@@ -8,12 +8,13 @@
 // 11.10.2023 12:33
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:medical_device_classifier/features/classification/classification/presentation/screens/classification.dart';
 import 'package:medical_device_classifier/features/classification/classification_preconditions_checker/presentation/screen/classification_preconditions.dart';
 import 'package:medical_device_classifier/features/classification/classification_starter/screen/classification_starter.dart';
 import 'package:medical_device_classifier/features/dashboard/presentation/screen/dashboard.dart';
 import 'package:medical_device_classifier/features/definitions/presentation/screen/definitions.dart';
 import 'package:medical_device_classifier/features/general_explanation_of_rules/presentation/screen/general_explanation_of_rules.dart';
-import 'package:medical_device_classifier/features/implementing_rules/screen/implementing_rules.dart';
+import 'package:medical_device_classifier/features/implementing_rules/presentation/screen/implementing_rules.dart';
 import 'package:medical_device_classifier/routing/go_router_path.dart';
 
 /// The [goRouterConfiguration] instance is used to configure and manage the
@@ -171,5 +172,31 @@ final _toClassificationPrecondition = GoRoute(
       child: child,
     ),
     child: const ClassificationPrecondition(),
+  ),
+  routes: [
+    _toClassification,
+  ],
+);
+
+/// A [GoRoute] used for navigating to the classification screen.
+///
+/// The [_toClassification] route represents the navigation route to the
+/// classification screen. It includes the path, name, and page builder to
+/// define how the screen is presented with a fade transition animation.
+final _toClassification = GoRoute(
+  path: pathToClassification,
+  name: nameToClassification,
+  pageBuilder: (context, state) => CustomTransitionPage(
+    transitionsBuilder: (
+        context,
+        animation,
+        secondaryAnimation,
+        child,
+        ) =>
+        FadeTransition(
+          opacity: animation,
+          child: child,
+        ),
+    child: const Classification(),
   ),
 );

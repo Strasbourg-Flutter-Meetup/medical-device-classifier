@@ -9,6 +9,7 @@
 import 'package:flutter/material.dart';
 import 'package:medical_device_classifier/extensions/app_localization_extension.dart';
 import 'package:medical_device_classifier/routing/router.dart';
+import 'package:medical_device_classifier/ui/ui_constants.dart';
 import 'package:medical_device_classifier/ui/widgets/listtile_button.dart';
 
 /// The [DashboardBuildContent] class is a Flutter `StatelessWidget` used to represent a screen or
@@ -37,7 +38,7 @@ class DashboardBuildContent extends StatelessWidget {
       children: [
         ConstrainedBox(
           constraints: const BoxConstraints(
-            maxWidth: 600.0,
+            maxWidth: UIConstants.maxWidth,
           ),
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 12.0),
