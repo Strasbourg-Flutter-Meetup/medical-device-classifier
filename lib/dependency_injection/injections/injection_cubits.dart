@@ -18,6 +18,8 @@ import 'package:medical_device_classifier/features/classification/classification
 import 'package:medical_device_classifier/features/classification/classification_preconditions_checker/presentation/cubits/classification_precondition_checker_state.dart';
 import 'package:medical_device_classifier/features/dashboard/presentation/cubit/dashboard_cubit.dart';
 import 'package:medical_device_classifier/features/dashboard/presentation/cubit/dashboard_state.dart';
+import 'package:medical_device_classifier/features/definitions/presentation/cubits/definitions_cubit.dart';
+import 'package:medical_device_classifier/features/definitions/presentation/cubits/definitions_state.dart';
 import 'package:medical_device_classifier/features/general_explanation_of_rules/presentation/cubits/general_explanation_of_rules_cubit.dart';
 import 'package:medical_device_classifier/features/general_explanation_of_rules/presentation/cubits/general_explanation_of_rules_state.dart';
 import 'package:medical_device_classifier/features/implementing_rules/presentation/cubits/implementing_rules_cubit.dart';
@@ -80,6 +82,15 @@ class InjectionCubits extends InjectionConfiguration {
         const ClassificationState.initial(),
         decisionTree: getIt.get<DecisionTreeImpl>(),
         sharedPreferencesRepository: getIt.get<SharedPreferencesRepository>(),
+      ),
+    );
+
+    getIt.registerFactory<DefinitionsCubit>(
+      () => DefinitionsCubit(
+        const DefinitionsState.initial(),
+        leoMLDocumentParser: getIt.get<LeoMLDocumentParser>(),
+        sharedPreferencesRepository: getIt.get<SharedPreferencesRepository>(),
+        expansionTile1Template: getIt.get<ExpansionTile1>(),
       ),
     );
   }
