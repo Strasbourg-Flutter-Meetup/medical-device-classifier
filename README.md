@@ -40,19 +40,18 @@ online as a web page and as an application in the Android Play Store or Apple's 
 As a medical device manufacturer I would like to know which classification my product has in order
 to know which measures must be taken.
 
-- [ ] The application determines the correct classification based on the algorithm described in
+- [x] The application determines the correct classification based on the algorithm described in
   Annex
   VIII MDR
 - [ ] The application is reachable via a web site and via the app stores of Android and Apple
-- [ ] The application is available in English, German and French language
-- [ ] The application allows the user to change a previous made decision
-- [ ] Before the user starts the classification, he has to confirm the he knows the specific
+- [x] The application is available in English, German and French language
+- [x] The application allows the user to change a previous made decision
+- [x] Before the user starts the classification, he has to confirm the he knows the specific
   definitions regarding to the classification
-- [ ] Before the user starts the classification, he has to confirm the he knows the implementing
+- [x] Before the user starts the classification, he has to confirm the he knows the implementing
   rules regarding to the classification
-- [ ] Before the user starts the classification, he has to confirm that the device is a medical
+- [x] Before the user starts the classification, he has to confirm that the device is a medical
   device
-- [ ] The implementing rule 3.5 is covered by the algorithm
 
 #### R2 Definitions specific to classification rules
 
@@ -60,9 +59,9 @@ As a medical device manufacturer, I would like to understand the Annex VIII MDR 
 make correct decisions during the classification process.
 
 - [ ] The user can search for specific term within a glossary
-- [ ] The Annex VIII MDR specific definitions are available
-- [ ] The MDCG 2021-24 definitions are available
-- [ ] The user can read the definitions before he starts the classifier
+- [x] The Annex VIII MDR specific definitions are available
+- [x] The MDCG 2021-24 definitions are available
+- [x] The user can read the definitions before he starts the classifier
 - [ ] The user can read the definitions during the classification process
 
 #### R3 Implementing rules
@@ -71,7 +70,7 @@ As application provider, I would like that the user has the chance to read the i
 order to
 ensure that the user is able to make correct decisions during the classification process.
 
-- [ ] The user can read the implementing rules before he starts the classifier
+- [x] The user can read the implementing rules before he starts the classifier
 - [ ] The user can read the implementing rules during the classification process
 
 #### R4 Reference to the app stores
@@ -111,16 +110,16 @@ rules and the Annex VIII MDR decision tree if required without that the user hav
 entire application in order to be always up to date with the current specifications of the MDR and
 MDCG.
 
-- [ ] Definitions can be downloaded from a server as json file
-- [ ] Implementing rules can be downloaded from a server as json file
-- [ ] Decision tree can be downloaded from a server as json file
-- [ ] Definitions, Implementing Rules and Decision Tree are in English, German and French available
-- [ ] The json strings will be stored in the SharedPreferences (Android) / NSUserDefaults (iOS) /
+- [x] Definitions can be downloaded from a server as json file
+- [x] Implementing rules can be downloaded from a server as json file
+- [x] Decision tree can be downloaded from a server as json file
+- [x] Definitions, Implementing Rules and Decision Tree are in English, German and French available
+- [x] The json strings will be stored in the SharedPreferences (Android) / NSUserDefaults (iOS) /
   LocalStorage (Web)
-- [ ] The local stored json strings gets tagged with a download date
-- [ ] The server side stored json strings get tagged with an updated date
-- [ ] When the updated date is younger than the download date, then the data will be updated
-- [ ] When any of the above mentioned json strings is not locally stored, it will be downloaded and
+- [x] The local stored json strings gets tagged with a download date
+- [x] The server side stored json strings get tagged with an updated date
+- [x] When the updated date is younger than the download date, then the data will be updated
+- [x] When any of the above mentioned json strings is not locally stored, it will be downloaded and
   stored locally
 
 ### Quality Goals
