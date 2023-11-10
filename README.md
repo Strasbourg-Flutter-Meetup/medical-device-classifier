@@ -3,9 +3,6 @@
 This app is used to classify a medical device. It is an implementation of the classification rules
 according to MDR Annex VIII (EU 2017/745) agreed by the European Parliament and the Council of the
 European Union on 5 April 2017.
-This app is used to classify a medical device. It is an implementation of the classification rules
-according to MDR Annex VIII (EU 2017/745) agreed by the European Parliament and the Council of the
-European Union on 5 April 2017.
 
 1. [Introduction and Goals](#introduction-and-goals)
     1. [Requirements Overview](#requirements-overview)
