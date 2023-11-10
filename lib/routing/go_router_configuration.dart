@@ -16,12 +16,21 @@ import 'package:medical_device_classifier/features/definitions/presentation/scre
 import 'package:medical_device_classifier/features/general_explanation_of_rules/presentation/screen/general_explanation_of_rules.dart';
 import 'package:medical_device_classifier/features/implementing_rules/presentation/screen/implementing_rules.dart';
 import 'package:medical_device_classifier/routing/go_router_path.dart';
+import 'package:medical_device_classifier/ui/app_bar_template.dart';
+import 'package:medical_device_classifier/ui/screen_template.dart';
+import 'package:medical_device_classifier/ui/widgets/error_building_content.dart';
 
-/// The [goRouterConfiguration] instance is used to configure and manage the
-/// application's routing system through the GoRouter package. It specifies the
-/// initial route location and defines the available routes for navigation.
+/// The configuration for the application's routing system.
+///
+/// The [goRouterConfiguration] specifies the initial location, error handling,
+/// and available routes for the application's routing system using the
+/// [GoRouter] package.
 final goRouterConfiguration = GoRouter(
   initialLocation: pathToDashboard,
+  errorBuilder: (context, goRouterState) => const ScreenTemplate(
+    appBarTemplate: AppBarTemplate(),
+    child: ErrorBuildingContent(),
+  ),
   routes: [
     _toDashboard,
   ],
@@ -188,15 +197,15 @@ final _toClassification = GoRoute(
   name: nameToClassification,
   pageBuilder: (context, state) => CustomTransitionPage(
     transitionsBuilder: (
-        context,
-        animation,
-        secondaryAnimation,
-        child,
-        ) =>
+      context,
+      animation,
+      secondaryAnimation,
+      child,
+    ) =>
         FadeTransition(
-          opacity: animation,
-          child: child,
-        ),
+      opacity: animation,
+      child: child,
+    ),
     child: const Classification(),
   ),
 );

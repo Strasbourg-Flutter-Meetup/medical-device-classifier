@@ -32,15 +32,23 @@ class DashboardCubit extends Cubit<DashboardState> {
 
   /// Method to initialize the dashboard.
   ///
-  /// This method sets the state to [StateTemplateType.loading], triggers the bootstrap process,
-  /// updates the state data, and then transitions to [StateTemplateType.loaded] when initialization is complete.
-
+  /// This method sets the state to [DashboardState.loading], triggers the bootstrap process,
+  /// updates the state data, and then transitions to [DashboardState.loaded] when initialization is complete.
+  ///
+  /// If an error occurs during initialization, it emits a [DashboardState.error] state.
   Future<void> initialize() async {
-    emit(const DashboardState.loading());
-    await bootstrap.boot();
-    _updateStateData();
-    emit(DashboardState.loaded(data: _stateData));
+    try {
+      emit(const DashboardState.loading());
+      await bootstrap.boot();
+      _updateStateData();
+      emit(DashboardState.loaded(data: _stateData));
+    } catch (e) {
+      emit(
+        const DashboardState.error(),
+      );
+    }
   }
+
 
   /// Private method to update the state data for the dashboard.
   ///

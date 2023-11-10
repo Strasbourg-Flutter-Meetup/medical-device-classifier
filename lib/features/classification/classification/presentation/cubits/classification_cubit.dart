@@ -16,6 +16,7 @@ import 'package:medical_device_classifier/extensions/cubit_extension.dart';
 import 'package:medical_device_classifier/features/classification/classification/presentation/cubits/classification_state.dart';
 import 'package:medical_device_classifier/shared_preferences/shared_preferences_keys.dart';
 import 'package:medical_device_classifier/shared_preferences/shared_preferences_repository.dart';
+
 /// A Cubit class for managing classification state and navigation within a decision tree.
 class ClassificationCubit extends Cubit<ClassificationState> {
   /// Creates a [ClassificationCubit] with the provided initial state, decision tree,
@@ -25,10 +26,10 @@ class ClassificationCubit extends Cubit<ClassificationState> {
   /// - [decisionTree]: The decision tree used for classification.
   /// - [sharedPreferencesRepository]: The repository for managing shared preferences.
   ClassificationCubit(
-      super.initialState, {
-        required this.decisionTree,
-        required this.sharedPreferencesRepository,
-      });
+    super.initialState, {
+    required this.decisionTree,
+    required this.sharedPreferencesRepository,
+  });
 
   final DecisionTree decisionTree;
   final SharedPreferencesRepository sharedPreferencesRepository;
@@ -36,76 +37,117 @@ class ClassificationCubit extends Cubit<ClassificationState> {
   Node? _currentNode;
 
   /// Initializes the cubit by loading the decision tree and setting the initial state.
+  ///
+  /// This method initializes the [ClassificationCubit] by loading the decision
+  /// tree from shared preferences and setting the initial state to [loading].
+  /// If an error occurs during initialization, it emits an [error] state.
   Future<void> initialize() async {
-    emit(const ClassificationState.loading());
-    await sharedPreferencesReinitialization(sharedPreferencesRepository);
-    final jsonString = sharedPreferencesRepository.read(
-      key: SharedPreferencesKeys.decisionTree,
-    );
+    try {
+      emit(const ClassificationState.loading());
+      await sharedPreferencesReinitialization(sharedPreferencesRepository);
+      final jsonString = sharedPreferencesRepository.read(
+        key: SharedPreferencesKeys.decisionTree,
+      );
 
-    final decisionTreeMap = jsonDecode(jsonString) as List;
+      final decisionTreeMap = jsonDecode(jsonString) as List;
 
-    decisionTree.initialize(decisionTree: decisionTreeMap.cast());
-    _currentNode = decisionTree.getRootNodes().first;
-    decisionTree.addNodeToHistory(
-      node: _currentNode ??
-          LeafNode(
-            id: '',
-            result: '',
-          ),
-    );
-    _updateState();
+      decisionTree.initialize(decisionTree: decisionTreeMap.cast());
+      _currentNode = decisionTree.getRootNodes().first;
+      decisionTree.addNodeToHistory(
+        node: _currentNode ??
+            LeafNode(
+              id: '',
+              result: '',
+            ),
+      );
+      _updateState();
 
-    emit(
-      ClassificationState.loaded(
-        data: _classificationStateData,
-      ),
-    );
+      emit(
+        ClassificationState.loaded(
+          data: _classificationStateData,
+        ),
+      );
+    } catch (e) {
+      emit(
+        const ClassificationState.error(),
+      );
+    }
   }
 
   /// Navigates forward in the decision tree to the node with the specified [id].
+  ///
+  /// This method advances the classification process by navigating to the node
+  /// with the specified [id] in the decision tree. If an error occurs during
+  /// navigation, it emits an [error] state.
   void goForward({required String id}) {
-    emit(const ClassificationState.loading());
-    _currentNode = decisionTree.getNode(id: id);
-    decisionTree.addNodeToHistory(
-      node: _currentNode ??
-          LeafNode(
-            id: '',
-            result: '',
-          ),
-    );
-    _updateState();
-    emit(
-      ClassificationState.loaded(
-        data: _classificationStateData,
-      ),
-    );
+    try {
+      emit(const ClassificationState.loading());
+      _currentNode = decisionTree.getNode(id: id);
+      decisionTree.addNodeToHistory(
+        node: _currentNode ??
+            LeafNode(
+              id: '',
+              result: '',
+            ),
+      );
+      _updateState();
+      emit(
+        ClassificationState.loaded(
+          data: _classificationStateData,
+        ),
+      );
+    } catch (e) {
+      emit(
+        const ClassificationState.error(),
+      );
+    }
   }
 
   /// Navigates backward in the decision tree.
+  ///
+  /// This method allows the user to go back in the classification process by
+  /// navigating to the previous node in the decision tree. If an error occurs
+  /// during navigation, it emits an [error] state.
   void goBack() {
-    emit(const ClassificationState.loading());
-    decisionTree.removeLastNodeFromHistory();
-    _currentNode = decisionTree.getLastNode();
-    _updateState();
-    emit(
-      ClassificationState.loaded(
-        data: _classificationStateData,
-      ),
-    );
+    try {
+      emit(const ClassificationState.loading());
+      decisionTree.removeLastNodeFromHistory();
+      _currentNode = decisionTree.getLastNode();
+      _updateState();
+      emit(
+        ClassificationState.loaded(
+          data: _classificationStateData,
+        ),
+      );
+    } catch (e) {
+      emit(
+        const ClassificationState.error(),
+      );
+    }
   }
 
   /// Restarts the classification process by resetting to the initial state of the decision tree.
+  ///
+  /// This method restarts the classification process by resetting the decision
+  /// tree to its initial state. If an error occurs during the restart, it emits
+  /// an [error] state.
   void restart() {
-    emit(const ClassificationState.loading());
-    _currentNode = decisionTree.restart();
-    _updateState();
-    emit(
-      ClassificationState.loaded(
-        data: _classificationStateData,
-      ),
-    );
+    try {
+      emit(const ClassificationState.loading());
+      _currentNode = decisionTree.restart();
+      _updateState();
+      emit(
+        ClassificationState.loaded(
+          data: _classificationStateData,
+        ),
+      );
+    } catch (e) {
+      emit(
+        const ClassificationState.error(),
+      );
+    }
   }
+
 
   /// Updates the internal state based on the current node.
   void _updateState() {

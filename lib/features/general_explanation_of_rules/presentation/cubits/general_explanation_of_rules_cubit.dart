@@ -53,25 +53,35 @@ class GeneralExplanationOfRulesCubit
 
   /// Initializes the cubit by loading LeoML documents and updating the state.
   ///
-  /// This method emits loading state initially, reads LeoML documents from
+  /// This method emits a loading state initially, reads LeoML documents from
   /// shared preferences, parses them into a column of expansion tiles using
   /// the provided template, and updates the state accordingly.
+  ///
+  /// If an error occurs during initialization, it emits a
+  /// [GeneralExplanationOfRulesState.error] state.
   Future<void> initialize() async {
-    emit(const GeneralExplanationOfRulesState.loading());
-    await sharedPreferencesReinitialization(sharedPreferencesRepository);
-    final leoMLDocument = sharedPreferencesRepository.read(
-      key: SharedPreferencesKeys.rules,
-    );
+    try {
+      emit(const GeneralExplanationOfRulesState.loading());
+      await sharedPreferencesReinitialization(sharedPreferencesRepository);
+      final leoMLDocument = sharedPreferencesRepository.read(
+        key: SharedPreferencesKeys.rules,
+      );
 
-    _columnOfExpansionTiles = await leoMLDocumentParser.parseToColumn(
-      leoMLDocument: leoMLDocument,
-      template: expansionTile1Template,
-    );
+      _columnOfExpansionTiles = await leoMLDocumentParser.parseToColumn(
+        leoMLDocument: leoMLDocument,
+        template: expansionTile1Template,
+      );
 
-    _updateStateData();
+      _updateStateData();
 
-    emit(GeneralExplanationOfRulesState.loaded(data: _stateData));
+      emit(GeneralExplanationOfRulesState.loaded(data: _stateData));
+    } catch (e) {
+      emit(
+        const GeneralExplanationOfRulesState.error(),
+      );
+    }
   }
+
 
   /// Updates the [_stateData] with the current [_columnOfExpansionTiles].
   void _updateStateData() {
