@@ -12,6 +12,7 @@ import 'package:footer/footer.dart';
 import 'package:footer/footer_view.dart';
 import 'package:medical_device_classifier/ui/app_bar_template.dart';
 import 'package:medical_device_classifier/ui/web_footer.dart';
+import 'package:medical_device_classifier/ui/widgets/drawer/mdc_drawer.dart';
 
 /// The `ScreenTemplate` widget is a Flutter `StatelessWidget` that serves as
 /// a common template for creating screens or pages throughout the application.
@@ -48,11 +49,11 @@ class ScreenTemplate extends StatelessWidget {
       child: Scaffold(
         // The custom `AppBarTemplate` widget at the top of the screen.
         appBar: appBarTemplate,
-
+        drawer: const MDCDrawer(),
         body: FooterView(
           flex: 1,
           footer: Footer(
-            backgroundColor: kIsWeb ? Colors.amber : Colors.transparent,
+            backgroundColor: Colors.transparent,
             alignment: Alignment.bottomCenter,
             child: kIsWeb
                 ? const WebFooter()

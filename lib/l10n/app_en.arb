@@ -34,5 +34,8 @@
   "classificationHint":"Hint",
   "classificationBack": "Back",
   "classificationRestart": "Restart",
-  "classificationCancel": "Cancel"
+  "classificationCancel": "Cancel",
+  "drawerAboutUs": "About us",
+  "drawerDataProtection": "Privacy policy",
+  "drawerLegalInformation": "Legal information"
 }

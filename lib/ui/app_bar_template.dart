@@ -6,9 +6,9 @@
 // Copyright: Strasbourg Flutter Meetup Group 2023
 // ID: 20231011132712
 // 11.10.2023 13:27
-import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:flutter/material.dart';
+import 'package:medical_device_classifier/extensions/app_localization_extension.dart';
 import 'package:medical_device_classifier/ui/ui_constants.dart';
 
 /// The [AppBarTemplate] widget is a Flutter [StatelessWidget] that represents
@@ -36,10 +36,22 @@ class AppBarTemplate extends StatelessWidget implements PreferredSizeWidget {
 
   @override
   Widget build(BuildContext context) {
+
     return Center(
       child: ConstrainedBox(
         constraints: const BoxConstraints(maxWidth: UIConstants.maxWidth),
         child: AppBar(
+          actions: [
+            if (!kIsWeb)
+              IconButton(
+                onPressed: () {
+                  Scaffold.of(context).openDrawer();
+                },
+                icon: const Icon(
+                  Icons.menu,
+                ),
+              ),
+          ],
           // Display either a back button (on mobile) or an account tree icon.
           leading: !kIsWeb && !isDashboard
               ? const BackButton()
@@ -48,7 +60,7 @@ class AppBarTemplate extends StatelessWidget implements PreferredSizeWidget {
           // The title of the AppBar, retrieved from the app's localizations or
           // providing a default title if not found.
           title: Text(
-            AppLocalizations.of(context)?.appBarTitle ??
+            context.appLocalizations?.appBarTitle ??
                 'Medical Device Identifier',
           ),
         ),

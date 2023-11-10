@@ -34,5 +34,8 @@
   "classificationHint" : "Indice",
   "classificationBack": "Retour",
   "classificationRestart": "Redémarrage",
-  "classificationCancel": "Terminer"
+  "classificationCancel": "Terminer",
+  "drawerAboutUs" : "A propos de nous",
+  "drawerDataProtection" : "Protection des données",
+  "drawerLegalInformation" : "Informations légales"
 }
