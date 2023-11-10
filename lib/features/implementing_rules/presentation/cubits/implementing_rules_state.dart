@@ -15,7 +15,6 @@ import 'package:medical_device_classifier/state_management/states.dart';
 /// This class extends [Equatable] which allows it to override equality comparisons.
 /// This is useful in state management to determine when a state changes.
 class ImplementingRulesStateData extends Equatable {
-
   /// Constructs an instance of `ImplementingRulesStateData`.
   ///
   /// The [column] is required to instantiate this data object.

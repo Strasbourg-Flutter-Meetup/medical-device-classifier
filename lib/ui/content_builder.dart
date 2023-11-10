@@ -50,4 +50,3 @@ abstract class ContentBuilder<T> {
   /// ```
   Widget build({required T data});
 }
-

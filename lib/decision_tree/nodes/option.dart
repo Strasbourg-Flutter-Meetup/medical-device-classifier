@@ -28,4 +28,3 @@ class Option {
   /// The identifier of the node to navigate to when this option is selected.
   final String then;
 }
-

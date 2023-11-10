@@ -7,7 +7,6 @@
 // ID: 20231027165235
 // 27.10.2023 16:52
 
-
 /// An abstract class representing a node in a decision tree.
 abstract class Node {
   /// Creates a [Node] with the specified unique identifier.
@@ -20,7 +19,3 @@ abstract class Node {
   /// A unique identifier for this node.
   final String id;
 }
-
-
-
-

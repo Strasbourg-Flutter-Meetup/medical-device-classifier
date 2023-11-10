@@ -56,10 +56,10 @@ class ClassificationPreconditionsStateData extends Equatable {
 
   @override
   List<Object?> get props => [
-    isMedicalProduct,
-    knowsAboutDefinitions,
-    knowsAboutImplementingRules,
-  ];
+        isMedicalProduct,
+        knowsAboutDefinitions,
+        knowsAboutImplementingRules,
+      ];
 
   /// Creates a copy of [ClassificationPreconditionsStateData] with optional
   /// property updates.
@@ -85,11 +85,11 @@ class ClassificationPreconditionsStateData extends Equatable {
       ClassificationPreconditionsStateData(
         isMedicalProduct: isMedicalProduct ?? this.isMedicalProduct,
         knowsAboutDefinitions:
-        knowsAboutDefinitions ?? this.knowsAboutDefinitions,
+            knowsAboutDefinitions ?? this.knowsAboutDefinitions,
         knowsAboutImplementingRules:
-        knowsAboutImplementingRules ?? this.knowsAboutImplementingRules,
+            knowsAboutImplementingRules ?? this.knowsAboutImplementingRules,
         continueButtonIsActive:
-        continueButtonIsActive ?? this.continueButtonIsActive,
+            continueButtonIsActive ?? this.continueButtonIsActive,
       );
 }
 
@@ -104,5 +104,4 @@ class ClassificationPreconditionsStateData extends Equatable {
 /// final initialState = ClassificationPreconditionsState.initial();
 /// ```
 typedef ClassificationPreconditionsState
-= StateTemplate<ClassificationPreconditionsStateData>;
-
+    = StateTemplate<ClassificationPreconditionsStateData>;

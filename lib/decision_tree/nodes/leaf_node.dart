@@ -23,4 +23,3 @@ class LeafNode extends Node {
   /// The result or classification associated with this leaf node.
   final String result;
 }
-

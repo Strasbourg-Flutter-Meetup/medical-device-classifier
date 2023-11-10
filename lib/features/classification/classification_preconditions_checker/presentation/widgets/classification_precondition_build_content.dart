@@ -71,7 +71,7 @@ class ClassificationPreconditionsBuildContent extends StatelessWidget {
           ),
           ClassificationPreconditionsCheckbox(
             title: context.appLocalizations
-                ?.classificationPreconditionsIsMedicalTitle ??
+                    ?.classificationPreconditionsIsMedicalTitle ??
                 '',
             value: data.isMedicalProduct,
             onChanged: (value) {
@@ -85,7 +85,7 @@ class ClassificationPreconditionsBuildContent extends StatelessWidget {
           ),
           ClassificationPreconditionsCheckbox(
             title: context.appLocalizations
-                ?.classificationPreconditionsKnowsAboutDefinitionsTitle ??
+                    ?.classificationPreconditionsKnowsAboutDefinitionsTitle ??
                 '',
             value: data.knowsAboutDefinitions,
             onChanged: (value) {
@@ -99,7 +99,7 @@ class ClassificationPreconditionsBuildContent extends StatelessWidget {
           ),
           ClassificationPreconditionsCheckbox(
             title: context.appLocalizations
-                ?.classificationPreconditionsKnowsAboutImplementingRulesTitle ??
+                    ?.classificationPreconditionsKnowsAboutImplementingRulesTitle ??
                 '',
             value: data.knowsAboutImplementingRules,
             onChanged: (value) {
@@ -119,4 +119,3 @@ class ClassificationPreconditionsBuildContent extends StatelessWidget {
     );
   }
 }
-

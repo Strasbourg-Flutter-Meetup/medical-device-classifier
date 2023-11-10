@@ -3,11 +3,9 @@
 // Do not manually edit this file.
 
 // ignore_for_file: no_leading_underscores_for_library_prefixes
-import 'dart:async' as _i6;
+import 'dart:async' as _i5;
 
-import 'package:medical_device_classifier/bootstrap.dart' as _i5;
-import 'package:medical_device_classifier/content_files/content_loader.dart'
-    as _i4;
+import 'package:medical_device_classifier/bootstrap.dart' as _i4;
 import 'package:medical_device_classifier/shared_preferences/mdc_shared_preferences.dart'
     as _i3;
 import 'package:medical_device_classifier/supabase/supabase_client.dart' as _i2;
@@ -46,20 +44,10 @@ class _FakeMDCSharedPreferences_1 extends _i1.SmartFake
         );
 }
 
-class _FakeContentLoader_2 extends _i1.SmartFake implements _i4.ContentLoader {
-  _FakeContentLoader_2(
-    Object parent,
-    Invocation parentInvocation,
-  ) : super(
-          parent,
-          parentInvocation,
-        );
-}
-
 /// A class which mocks [BootstrapImpl].
 ///
 /// See the documentation for Mockito's code generation for more information.
-class MockBootstrapImpl extends _i1.Mock implements _i5.BootstrapImpl {
+class MockBootstrapImpl extends _i1.Mock implements _i4.BootstrapImpl {
   @override
   _i2.ISupabaseClient get supabaseClient => (super.noSuchMethod(
         Invocation.getter(#supabaseClient),
@@ -87,25 +75,12 @@ class MockBootstrapImpl extends _i1.Mock implements _i5.BootstrapImpl {
       ) as _i3.MDCSharedPreferences);
 
   @override
-  _i4.ContentLoader get contentLoaderImpl => (super.noSuchMethod(
-        Invocation.getter(#contentLoaderImpl),
-        returnValue: _FakeContentLoader_2(
-          this,
-          Invocation.getter(#contentLoaderImpl),
-        ),
-        returnValueForMissingStub: _FakeContentLoader_2(
-          this,
-          Invocation.getter(#contentLoaderImpl),
-        ),
-      ) as _i4.ContentLoader);
-
-  @override
-  _i6.Future<bool> boot() => (super.noSuchMethod(
+  _i5.Future<bool> boot() => (super.noSuchMethod(
         Invocation.method(
           #boot,
           [],
         ),
-        returnValue: _i6.Future<bool>.value(false),
-        returnValueForMissingStub: _i6.Future<bool>.value(false),
-      ) as _i6.Future<bool>);
+        returnValue: _i5.Future<bool>.value(false),
+        returnValueForMissingStub: _i5.Future<bool>.value(false),
+      ) as _i5.Future<bool>);
 }

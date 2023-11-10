@@ -64,10 +64,15 @@ class ImplementingRulesCubit extends Cubit<ImplementingRulesState> {
   Future<void> initialize() async {
     try {
       emit(const ImplementingRulesState.loading());
+      await dataSourcesConnectionReinitialization(
+        sharedPreferencesRepository: sharedPreferencesRepository,
+        supabaseClient:
+            contentLoader.storageDownloadRepository.supabaseClientImpl,
+      );
+
       await contentLoader.load(
         contentLoaderType: ContentLoaderType.implementingRules,
       );
-      await sharedPreferencesReinitialization(sharedPreferencesRepository);
       final leoMLDocument = sharedPreferencesRepository.read(
         key: SharedPreferencesKeys.implementingRules,
       );

@@ -49,11 +49,10 @@ class ClassificationPreconditionsCheckbox extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => CheckboxListTile(
-    title: Text(
-      title,
-    ),
-    value: value,
-    onChanged: onChanged,
-  );
+        title: Text(
+          title,
+        ),
+        value: value,
+        onChanged: onChanged,
+      );
 }
-

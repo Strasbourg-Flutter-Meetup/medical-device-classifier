@@ -32,17 +32,16 @@ class ClassificationStarter extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => const ScreenTemplate(
-    appBarTemplate: AppBarTemplate(),
-    child: Column(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      children: [
-        ClassificationStarterBuildContent(),
-        SizedBox(
-          height: 128.0,
+        appBarTemplate: AppBarTemplate(),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            ClassificationStarterBuildContent(),
+            SizedBox(
+              height: 128.0,
+            ),
+            StartButton(),
+          ],
         ),
-        StartButton(),
-      ],
-    ),
-  );
+      );
 }
-

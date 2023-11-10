@@ -15,7 +15,6 @@ import 'package:leoml_parser/leoml_parser.dart';
 /// presents it in a bold, prominent manner. It extends [StatelessWidgetTemplate],
 /// which presumably provides foundational methods and properties for widgets.
 class Headline extends StatelessWidgetTemplate {
-
   /// Constructs a `Headline` widget using the provided map object.
   ///
   /// The [object] parameter must contain a valid headline that can be
@@ -39,15 +38,18 @@ class Headline extends StatelessWidgetTemplate {
   /// @param context The build context.
   /// @returns A styled widget representing the headline.
   Widget build(BuildContext context) => Padding(
-    padding: const EdgeInsets.symmetric(horizontal: 12.0, vertical: 6.0,),
-    child: Text(
-      object[headline] as String,
-      style: const TextStyle(
-        fontSize: 20.0,
-        fontWeight: FontWeight.bold,
-      ),
-    ),
-  );
+        padding: const EdgeInsets.symmetric(
+          horizontal: 12.0,
+          vertical: 6.0,
+        ),
+        child: Text(
+          object[headline] as String,
+          style: const TextStyle(
+            fontSize: 20.0,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+      );
 
   @override
 

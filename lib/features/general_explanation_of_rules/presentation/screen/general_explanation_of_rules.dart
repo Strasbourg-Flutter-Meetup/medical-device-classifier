@@ -29,7 +29,8 @@ class GeneralExplanationOfRules extends StatelessWidget {
   /// Sets up a `BlocProvider` for `GeneralExplanationOfRulesCubit` and
   /// returns the `_GeneralExplanationOfRulesContent` widget.
   @override
-  Widget build(BuildContext context) => BlocProvider(
+  Widget build(BuildContext context) =>
+      BlocProvider<GeneralExplanationOfRulesCubit>(
         create: (context) =>
             getIt.get<GeneralExplanationOfRulesCubit>()..initialize(),
         child: _GeneralExplanationOfRulesContent(),

@@ -21,7 +21,8 @@ import 'package:medical_device_classifier/features/classification/classification
 /// final cubit = ClassificationPreconditionsCubit(ClassificationPreconditionsState.initial());
 /// cubit.initialize();
 /// ```
-class ClassificationPreconditionsCubit extends Cubit<ClassificationPreconditionsState> {
+class ClassificationPreconditionsCubit
+    extends Cubit<ClassificationPreconditionsState> {
   /// Creates an instance of [ClassificationPreconditionsCubit] with an initial state.
   ///
   /// The constructor takes an initial state and initializes the cubit with it.
@@ -134,4 +135,3 @@ class ClassificationPreconditionsCubit extends Cubit<ClassificationPreconditions
     );
   }
 }
-

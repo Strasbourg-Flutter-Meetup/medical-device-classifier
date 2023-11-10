@@ -34,19 +34,18 @@ class LeoExpansionTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => ExpansionTile(
-    // Custom shape with rounded corners and a border color.
-    shape: const ContinuousRectangleBorder(
-      borderRadius: BorderRadius.all(Radius.circular(10)),
-      side: BorderSide(color: Colors.amber),
-    ),
-    collapsedShape: const ContinuousRectangleBorder(
-      borderRadius: BorderRadius.all(Radius.circular(10)),
-      side: BorderSide(color: Colors.amber),
-    ),
-    title: header,
-    children: [
-      content,
-    ],
-  );
+        // Custom shape with rounded corners and a border color.
+        shape: const ContinuousRectangleBorder(
+          borderRadius: BorderRadius.all(Radius.circular(10)),
+          side: BorderSide(color: Colors.amber),
+        ),
+        collapsedShape: const ContinuousRectangleBorder(
+          borderRadius: BorderRadius.all(Radius.circular(10)),
+          side: BorderSide(color: Colors.amber),
+        ),
+        title: header,
+        children: [
+          content,
+        ],
+      );
 }
-

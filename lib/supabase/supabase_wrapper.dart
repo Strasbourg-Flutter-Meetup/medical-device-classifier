@@ -51,4 +51,3 @@ class SupabaseWrapper {
     return supabase.client;
   }
 }
-
