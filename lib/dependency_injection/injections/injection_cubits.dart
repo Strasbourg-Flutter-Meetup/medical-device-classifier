@@ -96,14 +96,5 @@ class InjectionCubits extends InjectionConfiguration {
         contentLoader: getIt.get<ContentLoaderImpl>(),
       ),
     );
-
-    getIt.registerFactory<DefinitionsCubit>(
-      () => DefinitionsCubit(
-        const DefinitionsState.initial(),
-        leoMLDocumentParser: getIt.get<LeoMLDocumentParser>(),
-        sharedPreferencesRepository: getIt.get<SharedPreferencesRepository>(),
-        expansionTile1Template: getIt.get<ExpansionTile1>(),
-      ),
-    );
   }
 }

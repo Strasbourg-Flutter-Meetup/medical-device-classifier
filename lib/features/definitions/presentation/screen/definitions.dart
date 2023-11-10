@@ -7,8 +7,14 @@
 // ID: 20231011134821
 // 11.10.2023 13:48
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:medical_device_classifier/dependency_injection/injections.dart';
+import 'package:medical_device_classifier/features/definitions/presentation/cubits/definitions_cubit.dart';
+import 'package:medical_device_classifier/features/definitions/presentation/cubits/definitions_state.dart';
+import 'package:medical_device_classifier/mixins/content_builder.dart';
 import 'package:medical_device_classifier/ui/app_bar_template.dart';
 import 'package:medical_device_classifier/ui/screen_template.dart';
+import 'package:medical_device_classifier/ui/ui_constants.dart';
 
 /// A Flutter widget that displays definitions content.
 ///
@@ -51,5 +57,7 @@ class _DefinitionsContent extends StatelessWidget
           constraints: const BoxConstraints(maxWidth: UIConstants.maxWidth),
           child: state.data?.column,
         ),
-      );
+      ),
+    );
+  }
 }
