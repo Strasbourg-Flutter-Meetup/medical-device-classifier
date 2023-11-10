@@ -734,12 +734,12 @@
       {
         "id": "70.1",
         "when": "Yes",
-        "then": 73
+        "then": "73"
       },
       {
         "id": "70.2",
         "when": "No",
-        "then": 74
+        "then": "74"
       }
     ]
   },
@@ -777,7 +777,7 @@
     ]
   },
   {
-    "id": 75,
+    "id": "75",
     "decision": "(a). Which of the following applies to your device?",
     "hint": "If the product is a medical device software (MDSW), that does not mean that the software rule (Rule 11) automatically applies. Rules 9-13, 15 and 22 can all apply to software devices. Therefore, if you have a software device, we strongly recommend reviewing the guidance on medical device software classification (MDCG 2019-11) to best ensure the correct rule is selected. The strictest rule or sub-rule will apply.",
     "information": "Before proceeding with the next set of questions, please confirm that rule 22 does not apply to your device. If this rule applies, please review your response to question four. Rule 22: active therapeutic devices with an integrated or incorporated diagnostic function which significantly determines the patient management by the device, such as closed loop systems or automated external defibrillators.",
