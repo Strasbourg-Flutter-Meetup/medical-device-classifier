@@ -11,6 +11,8 @@ import 'dart:core';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:leoml_parser/leoml_parser.dart';
+import 'package:medical_device_classifier/content_files/content_loader.dart';
+import 'package:medical_device_classifier/content_files/content_loader_impl.dart';
 import 'package:medical_device_classifier/extensions/cubit_extension.dart';
 import 'package:medical_device_classifier/features/general_explanation_of_rules/presentation/cubits/general_explanation_of_rules_state.dart';
 import 'package:medical_device_classifier/shared_preferences/shared_preferences_keys.dart';
@@ -30,11 +32,14 @@ class GeneralExplanationOfRulesCubit
   /// The [sharedPreferencesRepository] parameter manages shared preferences data.
   ///
   /// The [expansionTile1Template] parameter represents a template for expansion tiles.
+  ///
+  /// The [contentLoader] parameter is responsible for loading content, including LeoML documents.
   GeneralExplanationOfRulesCubit(
     super.initialState, {
     required this.leoMLDocumentParser,
     required this.sharedPreferencesRepository,
     required this.expansionTile1Template,
+    required this.contentLoader,
   });
 
   /// An instance of the LeoML document parser used for parsing LeoML documents.
@@ -46,6 +51,10 @@ class GeneralExplanationOfRulesCubit
   /// A template for creating ExpansionTile widgets.
   final ExpansionTile1 expansionTile1Template;
 
+  /// The content loader responsible for loading necessary content, including LeoML documents.
+  final ContentLoader contentLoader;
+
+  /// The data representing the current state of the general explanations of rules.
   GeneralExplanationOfRulesStateData? _stateData;
 
   /// A widget representing a column of expansion tiles.
@@ -62,6 +71,9 @@ class GeneralExplanationOfRulesCubit
   Future<void> initialize() async {
     try {
       emit(const GeneralExplanationOfRulesState.loading());
+      await contentLoader.load(
+        contentLoaderType: ContentLoaderType.generalExplanationRules,
+      );
       await sharedPreferencesReinitialization(sharedPreferencesRepository);
       final leoMLDocument = sharedPreferencesRepository.read(
         key: SharedPreferencesKeys.rules,
@@ -81,7 +93,6 @@ class GeneralExplanationOfRulesCubit
       );
     }
   }
-
 
   /// Updates the [_stateData] with the current [_columnOfExpansionTiles].
   void _updateStateData() {

@@ -9,6 +9,8 @@
 import 'dart:convert';
 
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:medical_device_classifier/content_files/content_loader.dart';
+import 'package:medical_device_classifier/content_files/content_loader_impl.dart';
 import 'package:medical_device_classifier/decision_tree/decision_tree.dart';
 import 'package:medical_device_classifier/decision_tree/nodes/interfaces/node.dart';
 import 'package:medical_device_classifier/decision_tree/nodes/leaf_node.dart';
@@ -20,30 +22,47 @@ import 'package:medical_device_classifier/shared_preferences/shared_preferences_
 /// A Cubit class for managing classification state and navigation within a decision tree.
 class ClassificationCubit extends Cubit<ClassificationState> {
   /// Creates a [ClassificationCubit] with the provided initial state, decision tree,
-  /// and shared preferences repository.
+  /// shared preferences repository, and content loader.
   ///
   /// - [initialState]: The initial state of the cubit.
   /// - [decisionTree]: The decision tree used for classification.
   /// - [sharedPreferencesRepository]: The repository for managing shared preferences.
+  /// - [contentLoader]: The content loader responsible for loading necessary content.
   ClassificationCubit(
-    super.initialState, {
-    required this.decisionTree,
-    required this.sharedPreferencesRepository,
-  });
+      super.initialState, {
+        required this.decisionTree,
+        required this.sharedPreferencesRepository,
+        required this.contentLoader,
+      });
 
+  /// The decision tree used for classification.
   final DecisionTree decisionTree;
+
+  /// The repository for managing shared preferences.
   final SharedPreferencesRepository sharedPreferencesRepository;
+
+  /// The content loader responsible for loading necessary content.
+  final ContentLoader contentLoader;
+
+  /// The data representing the current state of the classification.
   ClassificationStateData? _classificationStateData;
+
+  /// The current node in the decision tree.
   Node? _currentNode;
 
   /// Initializes the cubit by loading the decision tree and setting the initial state.
   ///
-  /// This method initializes the [ClassificationCubit] by loading the decision
-  /// tree from shared preferences and setting the initial state to [loading].
-  /// If an error occurs during initialization, it emits an [error] state.
+  /// This method initializes the [ClassificationCubit] by using the provided [contentLoader]
+  /// to load the decision tree and setting the initial state to [ClassificationState.loading].
+  /// If an error occurs during initialization, it emits an [ClassificationState.error] state.
+  ///
+  /// Throws an error if loading or initialization fails.
   Future<void> initialize() async {
     try {
       emit(const ClassificationState.loading());
+      await contentLoader.load(
+        contentLoaderType: ContentLoaderType.decisionTree,
+      );
       await sharedPreferencesReinitialization(sharedPreferencesRepository);
       final jsonString = sharedPreferencesRepository.read(
         key: SharedPreferencesKeys.decisionTree,
@@ -67,12 +86,15 @@ class ClassificationCubit extends Cubit<ClassificationState> {
           data: _classificationStateData,
         ),
       );
-    } catch (e) {
+    } catch (error) {
+      // Emit an error state to handle the error gracefully.
       emit(
         const ClassificationState.error(),
       );
+      throw error; // Rethrow the error for external handling if needed.
     }
   }
+
 
   /// Navigates forward in the decision tree to the node with the specified [id].
   ///
@@ -147,7 +169,6 @@ class ClassificationCubit extends Cubit<ClassificationState> {
       );
     }
   }
-
 
   /// Updates the internal state based on the current node.
   void _updateState() {

@@ -11,6 +11,8 @@ import 'dart:core';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:leoml_parser/leoml_parser.dart';
+import 'package:medical_device_classifier/content_files/content_loader.dart';
+import 'package:medical_device_classifier/content_files/content_loader_impl.dart';
 import 'package:medical_device_classifier/extensions/cubit_extension.dart';
 import 'package:medical_device_classifier/features/implementing_rules/presentation/cubits/implementing_rules_state.dart';
 import 'package:medical_device_classifier/shared_preferences/shared_preferences_keys.dart';
@@ -24,13 +26,14 @@ import 'package:medical_device_classifier/shared_preferences/shared_preferences_
 class ImplementingRulesCubit extends Cubit<ImplementingRulesState> {
   /// Creates an instance of [ImplementingRulesCubit].
   ///
-  /// The [leoMLDocumentParser], [sharedPreferencesRepository], and [articleTemplate]
+  /// The [leoMLDocumentParser], [sharedPreferencesRepository], [articleTemplate] and [contentLoader]
   /// are required and must not be null.
   ImplementingRulesCubit(
     super.initialState, {
     required this.leoMLDocumentParser,
     required this.sharedPreferencesRepository,
     required this.articleTemplate,
+    required this.contentLoader,
   });
 
   /// The parser responsible for converting a LeoML document into a structured format.
@@ -41,6 +44,9 @@ class ImplementingRulesCubit extends Cubit<ImplementingRulesState> {
 
   /// The template that guides the structure and layout of an article.
   final Article articleTemplate;
+
+  /// The content loader responsible for loading necessary content, including implementing rules.
+  final ContentLoader contentLoader;
 
   /// The parsed state data.
   ImplementingRulesStateData? _stateData;
@@ -58,6 +64,9 @@ class ImplementingRulesCubit extends Cubit<ImplementingRulesState> {
   Future<void> initialize() async {
     try {
       emit(const ImplementingRulesState.loading());
+      await contentLoader.load(
+        contentLoaderType: ContentLoaderType.implementingRules,
+      );
       await sharedPreferencesReinitialization(sharedPreferencesRepository);
       final leoMLDocument = sharedPreferencesRepository.read(
         key: SharedPreferencesKeys.implementingRules,
@@ -78,7 +87,6 @@ class ImplementingRulesCubit extends Cubit<ImplementingRulesState> {
       );
     }
   }
-
 
   /// Updates [_stateData] with the latest parsed content.
   void _updateStateData() {
