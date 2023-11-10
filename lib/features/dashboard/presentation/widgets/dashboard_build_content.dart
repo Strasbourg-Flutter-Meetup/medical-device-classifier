@@ -9,7 +9,6 @@
 import 'package:flutter/material.dart';
 import 'package:medical_device_classifier/extensions/app_localization_extension.dart';
 import 'package:medical_device_classifier/routing/router.dart';
-import 'package:medical_device_classifier/ui/ui_constants.dart';
 import 'package:medical_device_classifier/ui/widgets/listtile_button.dart';
 
 /// The [DashboardBuildContent] class is a Flutter `StatelessWidget` used to represent a screen or
@@ -36,70 +35,75 @@ class DashboardBuildContent extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        ConstrainedBox(
-          constraints: const BoxConstraints(
-            maxWidth: UIConstants.maxWidth,
-          ),
-          child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 12.0),
-            child: Text(
-              context.appLocalizations?.dashboardExplanationText ?? '',
-            ),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 12.0),
+          child: Text(
+            context.appLocalizations?.dashboardExplanationText ?? '',
           ),
         ),
         const SizedBox(
           height: 24.0,
         ),
-        ListTileButton(
-          leading: const Icon(
-            Icons.account_tree_outlined,
-          ),
-          title: Text(
-            context.appLocalizations?.dashboardClassifierTitle ?? '',
-          ),
-          onTap: routeToClassificationStarter,
-          subtitle: Text(
-            context.appLocalizations?.dashboardClassifierSubtitle ?? '',
-          ),
-        ),
-        const SizedBox(
-          height: 48.0,
-        ),
-        ListTileButton(
-          title: Text(
-            context.appLocalizations?.dashboardDefinitionsTitle ?? '',
-          ),
-          onTap: routeToDefinitions,
-          leading: const Icon(Icons.list_alt_outlined),
-          subtitle: Text(
-            context.appLocalizations?.dashboardDefinitionsSubtitle ?? '',
-          ),
-        ),
-        const SizedBox(
-          height: 48.0,
-        ),
-        ListTileButton(
-          title: Text(
-            context.appLocalizations?.dashboardImplementingRulesTitle ?? '',
-          ),
-          onTap: routeToImplementingRules,
-          leading: const Icon(Icons.rule_outlined),
-          subtitle: Text(
-            context.appLocalizations?.dashboardImplementingRulesSubtitle ?? '',
-          ),
-        ),
-        const SizedBox(
-          height: 48.0,
-        ),
-        ListTileButton(
-          title: Text(
-            context.appLocalizations?.dashboardGeneralExplanationTitle ?? '',
-          ),
-          onTap: routeToGeneralExplanationOfRules,
-          leading: const Icon(Icons.description_outlined),
-          subtitle: Text(
-            context.appLocalizations?.dashboardGeneralExplanationSubtitle ?? '',
-          ),
+        Wrap(
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(12.0),
+              child: ListTileButton(
+                leading: const Icon(
+                  Icons.account_tree_outlined,
+                ),
+                title: Text(
+                  context.appLocalizations?.dashboardClassifierTitle ?? '',
+                ),
+                onTap: routeToClassificationStarter,
+                subtitle: Text(
+                  context.appLocalizations?.dashboardClassifierSubtitle ?? '',
+                ),
+              ),
+            ),
+
+            Padding(
+              padding: const EdgeInsets.all(12.0),
+              child: ListTileButton(
+                title: Text(
+                  context.appLocalizations?.dashboardDefinitionsTitle ?? '',
+                ),
+                onTap: routeToDefinitions,
+                leading: const Icon(Icons.list_alt_outlined),
+                subtitle: Text(
+                  context.appLocalizations?.dashboardDefinitionsSubtitle ?? '',
+                ),
+              ),
+            ),
+
+            Padding(
+              padding: const EdgeInsets.all(12.0),
+              child: ListTileButton(
+                title: Text(
+                  context.appLocalizations?.dashboardImplementingRulesTitle ?? '',
+                ),
+                onTap: routeToImplementingRules,
+                leading: const Icon(Icons.rule_outlined),
+                subtitle: Text(
+                  context.appLocalizations?.dashboardImplementingRulesSubtitle ?? '',
+                ),
+              ),
+            ),
+
+            Padding(
+              padding: const EdgeInsets.all(12.0),
+              child: ListTileButton(
+                title: Text(
+                  context.appLocalizations?.dashboardGeneralExplanationTitle ?? '',
+                ),
+                onTap: routeToGeneralExplanationOfRules,
+                leading: const Icon(Icons.description_outlined),
+                subtitle: Text(
+                  context.appLocalizations?.dashboardGeneralExplanationSubtitle ?? '',
+                ),
+              ),
+            ),
+          ],
         ),
       ],
     );

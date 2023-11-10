@@ -24,23 +24,16 @@ class WebFooter extends StatelessWidget {
   const WebFooter({super.key});
 
   @override
-  Widget build(BuildContext context) => ConstrainedBox(
-    constraints: const BoxConstraints(
-      maxWidth: UIConstants.maxWidth,
-      minWidth: UIConstants.maxWidth,
-    ),
-    child: Container(
-      height: 128.0,
-      padding: const EdgeInsets.all(12.0),
-      decoration: BoxDecoration(
-        color: Colors.amber,
-        borderRadius: BorderRadius.circular(
-          10.0,
+  Widget build(BuildContext context) => Container(
+        height: 128.0,
+        width: UIConstants.maxWidth,
+        padding: const EdgeInsets.all(12.0),
+        decoration: BoxDecoration(
+          color: Colors.amber,
+          borderRadius: BorderRadius.circular(
+            10.0,
+          ),
         ),
-      ),
-      child: const WebFooterContent(),
-    ),
-  );
+        child: const WebFooterContent(),
+      );
 }
-
-

@@ -58,4 +58,3 @@ class MDCWebFooterHeader extends StatelessWidget {
     );
   }
 }
-

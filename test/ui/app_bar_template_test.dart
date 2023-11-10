@@ -7,8 +7,8 @@
 // ID: 20231012123213
 // 12.10.2023 12:32
 import 'package:flutter/material.dart';
-import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:flutter_test/flutter_test.dart';
 import 'package:medical_device_classifier/ui/app_bar_template.dart';
 
 void main() {

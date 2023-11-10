@@ -36,10 +36,11 @@ class AppBarTemplate extends StatelessWidget implements PreferredSizeWidget {
 
   @override
   Widget build(BuildContext context) {
-
     return Center(
       child: ConstrainedBox(
-        constraints: const BoxConstraints(maxWidth: UIConstants.maxWidth),
+        constraints: const BoxConstraints(
+          maxWidth: UIConstants.maxWidth,
+        ),
         child: AppBar(
           actions: [
             if (!kIsWeb)

@@ -38,17 +38,16 @@ class MDCWebFooterNavigationButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => SizedBox(
-    height: 48.0,
-    width: 128.0,
-    child: ListTile(
-      titleTextStyle: const TextStyle(
-        color: Colors.black,
-      ),
-      title: Text(
-        buttonText,
-      ),
-      onTap: onTap,
-    ),
-  );
+        height: 48.0,
+        width: 128.0,
+        child: ListTile(
+          titleTextStyle: const TextStyle(
+            color: Colors.black,
+          ),
+          title: Text(
+            buttonText,
+          ),
+          onTap: onTap,
+        ),
+      );
 }
-

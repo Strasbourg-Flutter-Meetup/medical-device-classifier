@@ -53,10 +53,7 @@ class _DefinitionsContent extends StatelessWidget
       appBarTemplate: const AppBarTemplate(),
       child: buildContent(
         state: state,
-        widget: ConstrainedBox(
-          constraints: const BoxConstraints(maxWidth: UIConstants.maxWidth),
-          child: state.data?.column,
-        ),
+        widget: state.data?.column,
       ),
     );
   }

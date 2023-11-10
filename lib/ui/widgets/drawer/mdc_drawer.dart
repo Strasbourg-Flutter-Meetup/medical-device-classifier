@@ -36,4 +36,3 @@ class MDCDrawer extends StatelessWidget {
     );
   }
 }
-

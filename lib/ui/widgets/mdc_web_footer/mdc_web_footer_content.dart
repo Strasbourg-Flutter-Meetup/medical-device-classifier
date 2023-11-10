@@ -24,28 +24,27 @@ class WebFooterContent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Wrap(
-    alignment: WrapAlignment.center,
-    children: [
-      const MDCWebFooterHeader(),
-      MDCWebFooterNavigationButton(
-        buttonText: context.appLocalizations?.drawerAboutUs ?? '',
-        onTap: () {},
-      ),
-      const SizedBox(
-        width: 12.0,
-      ),
-      MDCWebFooterNavigationButton(
-        buttonText: context.appLocalizations?.drawerDataProtection ?? '',
-        onTap: () {},
-      ),
-      const SizedBox(
-        width: 12.0,
-      ),
-      MDCWebFooterNavigationButton(
-        buttonText: context.appLocalizations?.drawerLegalInformation ?? '',
-        onTap: () {},
-      ),
-    ],
-  );
+        alignment: WrapAlignment.center,
+        children: [
+          const MDCWebFooterHeader(),
+          MDCWebFooterNavigationButton(
+            buttonText: context.appLocalizations?.drawerAboutUs ?? '',
+            onTap: () {},
+          ),
+          const SizedBox(
+            width: 12.0,
+          ),
+          MDCWebFooterNavigationButton(
+            buttonText: context.appLocalizations?.drawerDataProtection ?? '',
+            onTap: () {},
+          ),
+          const SizedBox(
+            width: 12.0,
+          ),
+          MDCWebFooterNavigationButton(
+            buttonText: context.appLocalizations?.drawerLegalInformation ?? '',
+            onTap: () {},
+          ),
+        ],
+      );
 }
-
