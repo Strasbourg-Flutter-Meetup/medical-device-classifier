@@ -49,7 +49,6 @@ class DashboardCubit extends Cubit<DashboardState> {
     }
   }
 
-
   /// Private method to update the state data for the dashboard.
   ///
   /// This method creates a new instance of [DashboardStateData] and assigns it to the [_stateData] field.

@@ -32,4 +32,3 @@ class ClassificationStateData extends Equatable {
 
 /// A typedef for a classification state using [ClassificationStateData] as the data type.
 typedef ClassificationState = StateTemplate<ClassificationStateData>;
-

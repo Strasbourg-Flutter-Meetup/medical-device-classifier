@@ -16,7 +16,6 @@ import 'package:medical_device_classifier/leoml/leoml_widget/headline.dart';
 /// that represent headlines. It extends the `LeoMLWidgetBuilder` which
 /// presumably offers a general interface for building widgets from LeoML data structures.
 class HeadlineBuilder extends LeoMLWidgetBuilder {
-
   @override
 
   /// Builds a `Headline` widget based on the given LeoML object.

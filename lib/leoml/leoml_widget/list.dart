@@ -15,7 +15,6 @@ import 'package:leoml_parser/leoml_parser.dart';
 /// presents each item as a bullet point. It extends [StatelessWidgetTemplate],
 /// which presumably provides foundational methods and properties for widgets.
 class BulletList extends StatelessWidgetTemplate {
-
   /// Constructs a `BulletList` widget using the provided map object.
   ///
   /// The [object] parameter must contain a valid list that can be
@@ -39,17 +38,17 @@ class BulletList extends StatelessWidgetTemplate {
   /// @param context The build context.
   /// @returns A styled widget representing the bullet list.
   Widget build(BuildContext context) => Padding(
-    padding: const EdgeInsets.symmetric(
-      vertical: 12.0,
-    ),
-    child: Column(
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: getTextWidgets(
-        object,
-        'list',
-      ),
-    ),
-  );
+        padding: const EdgeInsets.symmetric(
+          vertical: 12.0,
+        ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: getTextWidgets(
+            object,
+            'list',
+          ),
+        ),
+      );
 
   @override
 
@@ -104,4 +103,3 @@ class BulletList extends StatelessWidgetTemplate {
     return output;
   }
 }
-

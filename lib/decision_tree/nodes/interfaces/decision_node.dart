@@ -30,4 +30,3 @@ abstract class DecisionNode extends Node {
   /// are [Option] objects representing the available choices.
   final Map<String, Option> options;
 }
-

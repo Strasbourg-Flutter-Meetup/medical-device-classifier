@@ -26,21 +26,21 @@ class ExpansionTileHeader extends StatelessWidgetTemplate {
 
   @override
   Widget build(BuildContext context) => Column(
-    crossAxisAlignment: CrossAxisAlignment.start,
-    children: [
-      // Display the headline with a custom text style.
-      Text(
-        object[header][headline] as String,
-        style: const TextStyle(fontSize: 20),
-      ),
-      // Display the subheadline if available with a custom text style.
-      if ((object[header] as Map).containsKey(subHeadline))
-        Text(
-          object[header][subHeadline] as String,
-          style: const TextStyle(fontSize: 16),
-        ),
-    ],
-  );
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          // Display the headline with a custom text style.
+          Text(
+            object[header][headline] as String,
+            style: const TextStyle(fontSize: 20),
+          ),
+          // Display the subheadline if available with a custom text style.
+          if ((object[header] as Map).containsKey(subHeadline))
+            Text(
+              object[header][subHeadline] as String,
+              style: const TextStyle(fontSize: 16),
+            ),
+        ],
+      );
 
   @override
   void validateObject() {
@@ -61,4 +61,3 @@ class ExpansionTileHeader extends StatelessWidgetTemplate {
     }
   }
 }
-

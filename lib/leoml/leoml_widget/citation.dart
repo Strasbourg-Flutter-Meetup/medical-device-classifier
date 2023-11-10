@@ -15,7 +15,6 @@ import 'package:leoml_parser/leoml_parser.dart';
 /// presents it in a formatted manner. It extends [StatelessWidgetTemplate],
 /// which presumably provides some foundational methods and properties for widgets.
 class Citation extends StatelessWidgetTemplate {
-
   /// Constructs a `Citation` widget using the provided map object.
   ///
   /// The [object] parameter must contain a valid citation that can be
@@ -39,18 +38,18 @@ class Citation extends StatelessWidgetTemplate {
   /// @param context The build context.
   /// @returns A styled widget representing the citation.
   Widget build(BuildContext context) => Padding(
-    padding: const EdgeInsets.symmetric(
-      horizontal: 12.0,
-      vertical: 6.0,
-    ),
-    child: Text(
-      object[citation] as String,
-      style: const TextStyle(
-        fontSize: 14.0,
-        fontStyle: FontStyle.italic,
-      ),
-    ),
-  );
+        padding: const EdgeInsets.symmetric(
+          horizontal: 12.0,
+          vertical: 6.0,
+        ),
+        child: Text(
+          object[citation] as String,
+          style: const TextStyle(
+            fontSize: 14.0,
+            fontStyle: FontStyle.italic,
+          ),
+        ),
+      );
 
   @override
 
@@ -68,4 +67,3 @@ class Citation extends StatelessWidgetTemplate {
     }
   }
 }
-

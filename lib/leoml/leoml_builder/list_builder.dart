@@ -16,7 +16,6 @@ import 'package:medical_device_classifier/leoml/leoml_widget/list.dart';
 /// that represent lists, specifically bullet lists. It extends the `LeoMLWidgetBuilder`
 /// which provides a general interface for building widgets from LeoML data structures.
 class ListBuilder extends LeoMLWidgetBuilder {
-
   @override
 
   /// Constructs a `BulletList` widget using the provided LeoML object.

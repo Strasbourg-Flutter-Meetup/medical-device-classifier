@@ -29,11 +29,11 @@ class ClassificationCubit extends Cubit<ClassificationState> {
   /// - [sharedPreferencesRepository]: The repository for managing shared preferences.
   /// - [contentLoader]: The content loader responsible for loading necessary content.
   ClassificationCubit(
-      super.initialState, {
-        required this.decisionTree,
-        required this.sharedPreferencesRepository,
-        required this.contentLoader,
-      });
+    super.initialState, {
+    required this.decisionTree,
+    required this.sharedPreferencesRepository,
+    required this.contentLoader,
+  });
 
   /// The decision tree used for classification.
   final DecisionTree decisionTree;
@@ -60,10 +60,14 @@ class ClassificationCubit extends Cubit<ClassificationState> {
   Future<void> initialize() async {
     try {
       emit(const ClassificationState.loading());
+      await dataSourcesConnectionReinitialization(
+        sharedPreferencesRepository: sharedPreferencesRepository,
+        supabaseClient:
+            contentLoader.storageDownloadRepository.supabaseClientImpl,
+      );
       await contentLoader.load(
         contentLoaderType: ContentLoaderType.decisionTree,
       );
-      await sharedPreferencesReinitialization(sharedPreferencesRepository);
       final jsonString = sharedPreferencesRepository.read(
         key: SharedPreferencesKeys.decisionTree,
       );
@@ -91,10 +95,8 @@ class ClassificationCubit extends Cubit<ClassificationState> {
       emit(
         const ClassificationState.error(),
       );
-      throw error; // Rethrow the error for external handling if needed.
     }
   }
-
 
   /// Navigates forward in the decision tree to the node with the specified [id].
   ///

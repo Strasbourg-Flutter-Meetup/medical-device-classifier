@@ -16,7 +16,6 @@ import 'package:medical_device_classifier/leoml/leoml_widget/citation.dart';
 /// represent citations. It extends the `LeoMLWidgetBuilder` which presumably
 /// offers a general interface for building widgets from LeoML data structures.
 class CitationBuilder extends LeoMLWidgetBuilder {
-
   @override
 
   /// Builds a `Citation` widget based on the given LeoML object.
@@ -30,4 +29,3 @@ class CitationBuilder extends LeoMLWidgetBuilder {
   Widget build({required Map<String, dynamic> object}) =>
       Citation(object: object)..validateObject();
 }
-

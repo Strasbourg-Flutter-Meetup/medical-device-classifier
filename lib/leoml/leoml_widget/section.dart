@@ -15,7 +15,6 @@ import 'package:leoml_parser/leoml_parser.dart';
 /// and presents it with appropriate styling. It extends [StatelessWidgetTemplate],
 /// which presumably provides foundational methods and properties for widgets.
 class Section extends StatelessWidgetTemplate {
-
   /// Constructs a `Section` widget using the provided map object.
   ///
   /// The [object] parameter must contain a valid text representation
@@ -39,15 +38,18 @@ class Section extends StatelessWidgetTemplate {
   /// @param context The build context.
   /// @returns A styled widget representing the section content.
   Widget build(BuildContext context) => Padding(
-    padding: const EdgeInsets.symmetric(horizontal: 12.0, vertical: 6.0,),
-    child: Text(
-      object[section] as String,
-      style: const TextStyle(
-        fontSize: 16.0,
-        fontWeight: FontWeight.normal,
-      ),
-    ),
-  );
+        padding: const EdgeInsets.symmetric(
+          horizontal: 12.0,
+          vertical: 6.0,
+        ),
+        child: Text(
+          object[section] as String,
+          style: const TextStyle(
+            fontSize: 16.0,
+            fontWeight: FontWeight.normal,
+          ),
+        ),
+      );
 
   @override
 

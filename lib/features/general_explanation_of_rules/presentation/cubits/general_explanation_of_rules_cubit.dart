@@ -71,10 +71,14 @@ class GeneralExplanationOfRulesCubit
   Future<void> initialize() async {
     try {
       emit(const GeneralExplanationOfRulesState.loading());
+      await dataSourcesConnectionReinitialization(
+        sharedPreferencesRepository: sharedPreferencesRepository,
+        supabaseClient:
+            contentLoader.storageDownloadRepository.supabaseClientImpl,
+      );
       await contentLoader.load(
         contentLoaderType: ContentLoaderType.generalExplanationRules,
       );
-      await sharedPreferencesReinitialization(sharedPreferencesRepository);
       final leoMLDocument = sharedPreferencesRepository.read(
         key: SharedPreferencesKeys.rules,
       );

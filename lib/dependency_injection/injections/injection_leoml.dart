@@ -59,6 +59,7 @@ class InjectionLeoML extends InjectionConfiguration {
         customExpansionTile: getIt.get<ExpansionTileBuilder>(),
         headlineBuilder: getIt.get<HeadlineBuilder>(),
         citationBuilder: getIt.get<CitationBuilder>(),
+        sectionBuilder: getIt.get<SectionBuilder>(),
       ),
     );
 

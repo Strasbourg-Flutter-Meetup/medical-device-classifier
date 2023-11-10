@@ -93,6 +93,7 @@ class InjectionCubits extends InjectionConfiguration {
         leoMLDocumentParser: getIt.get<LeoMLDocumentParser>(),
         sharedPreferencesRepository: getIt.get<SharedPreferencesRepository>(),
         expansionTile1Template: getIt.get<ExpansionTile1>(),
+        contentLoader: getIt.get<ContentLoaderImpl>(),
       ),
     );
   }

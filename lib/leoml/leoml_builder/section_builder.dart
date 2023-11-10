@@ -16,7 +16,6 @@ import 'package:medical_device_classifier/leoml/leoml_widget/section.dart';
 /// that represent sections. It inherits from `LeoMLWidgetBuilder`, which
 /// provides a generic interface for constructing widgets from LeoML data structures.
 class SectionBuilder extends LeoMLWidgetBuilder {
-
   @override
 
   /// Constructs a `Section` widget using the provided LeoML object.

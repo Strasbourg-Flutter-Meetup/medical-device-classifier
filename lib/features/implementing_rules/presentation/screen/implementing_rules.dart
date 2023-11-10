@@ -22,7 +22,6 @@ import 'package:medical_device_classifier/ui/ui_constants.dart';
 /// the implementing rules. It then delegates the presentation details
 /// to its child `_ImplementingRulesContent`.
 class ImplementingRules extends StatelessWidget {
-
   /// Constructs an instance of `ImplementingRules`.
   const ImplementingRules({super.key});
 
@@ -33,9 +32,9 @@ class ImplementingRules extends StatelessWidget {
   /// It initializes a `BlocProvider` for `ImplementingRulesCubit` and sets up
   /// `_ImplementingRulesContent` as its child.
   Widget build(BuildContext context) => BlocProvider(
-    create: (context) => getIt.get<ImplementingRulesCubit>()..initialize(),
-    child: _ImplementingRulesContent(),
-  );
+        create: (context) => getIt.get<ImplementingRulesCubit>()..initialize(),
+        child: _ImplementingRulesContent(),
+      );
 }
 
 /// Represents the content part of the `ImplementingRules` widget.
@@ -45,7 +44,6 @@ class ImplementingRules extends StatelessWidget {
 /// pattern to determine the visual representation of the implementing rules.
 class _ImplementingRulesContent extends StatelessWidget
     with ContentBuilderMixin<ImplementingRulesStateData> {
-
   @override
 
   /// Builds the `_ImplementingRulesContent` widget tree.

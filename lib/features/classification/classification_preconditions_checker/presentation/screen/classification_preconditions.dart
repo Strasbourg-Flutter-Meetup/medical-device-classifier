@@ -35,7 +35,7 @@ class ClassificationPrecondition extends StatelessWidget {
   Widget build(BuildContext context) =>
       BlocProvider<ClassificationPreconditionsCubit>(
         create: (context) =>
-        getIt.get<ClassificationPreconditionsCubit>()..initialize(),
+            getIt.get<ClassificationPreconditionsCubit>()..initialize(),
         child: _ClassificationPreconditionCheckerContent(),
       );
 }
@@ -61,4 +61,3 @@ class _ClassificationPreconditionCheckerContent extends StatelessWidget
     );
   }
 }
-

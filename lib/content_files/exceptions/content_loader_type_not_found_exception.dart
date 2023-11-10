@@ -13,7 +13,6 @@ import 'package:medical_device_classifier/content_files/content_loader_impl.dart
 /// This exception is used when trying to retrieve a content loader type that
 /// doesn't exist or hasn't been registered yet.
 class ContentLoaderTypeNotFoundException implements Exception {
-
   /// Creates an instance of the exception with the provided content loader type.
   ///
   /// [contentLoaderType] represents the type of the content loader that was not found.
@@ -29,4 +28,3 @@ class ContentLoaderTypeNotFoundException implements Exception {
   @override
   String toString() => "'${contentLoaderType.name}' was not found.";
 }
-

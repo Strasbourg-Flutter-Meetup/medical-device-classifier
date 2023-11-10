@@ -68,6 +68,7 @@ void routeToClassificationPreconditions() {
     nameToClassificationPreconditions,
   );
 }
+
 /// Navigates to the classification screen.
 ///
 /// Calls the GoRouter to navigate to the classification screen using the

@@ -31,4 +31,3 @@ class InternalNode extends DecisionNode {
   /// Detailed information about the decision.
   final String? information;
 }
-

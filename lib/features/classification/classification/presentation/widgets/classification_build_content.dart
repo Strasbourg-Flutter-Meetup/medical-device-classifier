@@ -25,9 +25,9 @@ import 'package:medical_device_classifier/ui/widgets/listtile_button.dart';
 /// A widget representing the content of the Classification screen.
 class ClassificationBuildContent extends StatelessWidget {
   const ClassificationBuildContent({
-    Key? key,
+    super.key,
     required this.data,
-  }) : super(key: key);
+  });
 
   final ClassificationStateData data;
 
@@ -88,10 +88,10 @@ class ClassificationBuildContent extends StatelessWidget {
   }
 
   List<Widget> _getNodeWidgets(
-      Node currentNode,
-      ClassificationCubit cubit,
-      BuildContext context,
-      ) {
+    Node currentNode,
+    ClassificationCubit cubit,
+    BuildContext context,
+  ) {
     final output = <Widget>[];
 
     if (currentNode is LeafNode) {
@@ -124,10 +124,10 @@ class ClassificationBuildContent extends StatelessWidget {
   }
 
   void _handleInternalNodeOptions(
-      Option option,
-      List<Widget> output,
-      ClassificationCubit cubit,
-      ) {
+    Option option,
+    List<Widget> output,
+    ClassificationCubit cubit,
+  ) {
     final when = option.when;
     final title = Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -153,10 +153,10 @@ class ClassificationBuildContent extends StatelessWidget {
   }
 
   void _handleInternalNodeHint(
-      List<Widget> output,
-      BuildContext context,
-      InternalNode currentNode,
-      ) {
+    List<Widget> output,
+    BuildContext context,
+    InternalNode currentNode,
+  ) {
     output.add(
       ExpansionTile(
         title: Row(
@@ -182,10 +182,10 @@ class ClassificationBuildContent extends StatelessWidget {
   }
 
   void _handleInternalNodeInformation(
-      List<Widget> output,
-      BuildContext context,
-      InternalNode currentNode,
-      ) {
+    List<Widget> output,
+    BuildContext context,
+    InternalNode currentNode,
+  ) {
     output.add(
       ExpansionTile(
         title: Row(
@@ -213,10 +213,10 @@ class ClassificationBuildContent extends StatelessWidget {
   }
 
   void _handleRootNode(
-      RootNode currentNode,
-      List<Widget> output,
-      ClassificationCubit cubit,
-      ) {
+    RootNode currentNode,
+    List<Widget> output,
+    ClassificationCubit cubit,
+  ) {
     for (Option option in currentNode.options.values.toList()) {
       output.add(
         Padding(
@@ -255,4 +255,3 @@ class ClassificationBuildContent extends StatelessWidget {
     );
   }
 }
-

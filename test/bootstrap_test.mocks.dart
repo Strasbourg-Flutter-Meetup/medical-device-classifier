@@ -3,25 +3,18 @@
 // Do not manually edit this file.
 
 // ignore_for_file: no_leading_underscores_for_library_prefixes
-import 'dart:async' as _i10;
-import 'dart:ui' as _i6;
+import 'dart:async' as _i6;
 
-import 'package:medical_device_classifier/content_files/content_loader_impl.dart'
-    as _i12;
 import 'package:medical_device_classifier/shared_preferences/mdc_shared_preferences.dart'
     as _i2;
 import 'package:medical_device_classifier/shared_preferences/shared_preferences_repository.dart'
-    as _i5;
-import 'package:medical_device_classifier/supabase/database/database_fetch_data_repository.dart'
-    as _i3;
-import 'package:medical_device_classifier/supabase/storage/storage_download_repository.dart'
-    as _i4;
-import 'package:medical_device_classifier/supabase/supabase_client.dart' as _i7;
+    as _i7;
+import 'package:medical_device_classifier/supabase/supabase_client.dart' as _i3;
 import 'package:medical_device_classifier/supabase/supabase_wrapper.dart'
-    as _i9;
+    as _i5;
 import 'package:mockito/mockito.dart' as _i1;
-import 'package:shared_preferences/shared_preferences.dart' as _i11;
-import 'package:supabase_flutter/supabase_flutter.dart' as _i8;
+import 'package:shared_preferences/shared_preferences.dart' as _i8;
+import 'package:supabase_flutter/supabase_flutter.dart' as _i4;
 
 // ignore_for_file: type=lint
 // ignore_for_file: avoid_redundant_argument_values
@@ -45,56 +38,13 @@ class _FakeMDCSharedPreferences_0 extends _i1.SmartFake
         );
 }
 
-class _FakeIDatabaseFetchDataRepository_1 extends _i1.SmartFake
-    implements _i3.IDatabaseFetchDataRepository {
-  _FakeIDatabaseFetchDataRepository_1(
-    Object parent,
-    Invocation parentInvocation,
-  ) : super(
-          parent,
-          parentInvocation,
-        );
-}
-
-class _FakeIStorageDownloadRepository_2 extends _i1.SmartFake
-    implements _i4.IStorageDownloadRepository {
-  _FakeIStorageDownloadRepository_2(
-    Object parent,
-    Invocation parentInvocation,
-  ) : super(
-          parent,
-          parentInvocation,
-        );
-}
-
-class _FakeSharedPreferencesRepository_3 extends _i1.SmartFake
-    implements _i5.SharedPreferencesRepository {
-  _FakeSharedPreferencesRepository_3(
-    Object parent,
-    Invocation parentInvocation,
-  ) : super(
-          parent,
-          parentInvocation,
-        );
-}
-
-class _FakeLocale_4 extends _i1.SmartFake implements _i6.Locale {
-  _FakeLocale_4(
-    Object parent,
-    Invocation parentInvocation,
-  ) : super(
-          parent,
-          parentInvocation,
-        );
-}
-
 /// A class which mocks [SupabaseClientImpl].
 ///
 /// See the documentation for Mockito's code generation for more information.
 class MockSupabaseClientImpl extends _i1.Mock
-    implements _i7.SupabaseClientImpl {
+    implements _i3.SupabaseClientImpl {
   @override
-  set supabaseClient(_i8.SupabaseClient? _supabaseClient) => super.noSuchMethod(
+  set supabaseClient(_i4.SupabaseClient? _supabaseClient) => super.noSuchMethod(
         Invocation.setter(
           #supabaseClient,
           _supabaseClient,
@@ -103,7 +53,7 @@ class MockSupabaseClientImpl extends _i1.Mock
       );
 
   @override
-  void setSupabaseWrapper(_i9.SupabaseWrapper? supabaseWrapper) =>
+  void setSupabaseWrapper(_i5.SupabaseWrapper? supabaseWrapper) =>
       super.noSuchMethod(
         Invocation.method(
           #setSupabaseWrapper,
@@ -113,7 +63,7 @@ class MockSupabaseClientImpl extends _i1.Mock
       );
 
   @override
-  _i10.Future<void> initialize({
+  _i6.Future<void> initialize({
     required String? supabaseURL,
     required String? supabaseAnonKey,
   }) =>
@@ -126,16 +76,16 @@ class MockSupabaseClientImpl extends _i1.Mock
             #supabaseAnonKey: supabaseAnonKey,
           },
         ),
-        returnValue: _i10.Future<void>.value(),
-        returnValueForMissingStub: _i10.Future<void>.value(),
-      ) as _i10.Future<void>);
+        returnValue: _i6.Future<void>.value(),
+        returnValueForMissingStub: _i6.Future<void>.value(),
+      ) as _i6.Future<void>);
 }
 
 /// A class which mocks [SharedPreferencesRepository].
 ///
 /// See the documentation for Mockito's code generation for more information.
 class MockSharedPreferencesRepository extends _i1.Mock
-    implements _i5.SharedPreferencesRepository {
+    implements _i7.SharedPreferencesRepository {
   @override
   _i2.MDCSharedPreferences get mdcSharedPreferences => (super.noSuchMethod(
         Invocation.getter(#mdcSharedPreferences),
@@ -160,15 +110,15 @@ class MockSharedPreferencesRepository extends _i1.Mock
       );
 
   @override
-  _i10.Future<bool> delete({required String? key}) => (super.noSuchMethod(
+  _i6.Future<bool> delete({required String? key}) => (super.noSuchMethod(
         Invocation.method(
           #delete,
           [],
           {#key: key},
         ),
-        returnValue: _i10.Future<bool>.value(false),
-        returnValueForMissingStub: _i10.Future<bool>.value(false),
-      ) as _i10.Future<bool>);
+        returnValue: _i6.Future<bool>.value(false),
+        returnValueForMissingStub: _i6.Future<bool>.value(false),
+      ) as _i6.Future<bool>);
 
   @override
   String read({required String? key}) => (super.noSuchMethod(
@@ -182,7 +132,7 @@ class MockSharedPreferencesRepository extends _i1.Mock
       ) as String);
 
   @override
-  _i10.Future<bool> setString({
+  _i6.Future<bool> setString({
     required String? key,
     required String? value,
   }) =>
@@ -195,9 +145,9 @@ class MockSharedPreferencesRepository extends _i1.Mock
             #value: value,
           },
         ),
-        returnValue: _i10.Future<bool>.value(false),
-        returnValueForMissingStub: _i10.Future<bool>.value(false),
-      ) as _i10.Future<bool>);
+        returnValue: _i6.Future<bool>.value(false),
+        returnValueForMissingStub: _i6.Future<bool>.value(false),
+      ) as _i6.Future<bool>);
 }
 
 /// A class which mocks [MDCSharedPreferences].
@@ -206,7 +156,7 @@ class MockSharedPreferencesRepository extends _i1.Mock
 class MockMDCSharedPreferences extends _i1.Mock
     implements _i2.MDCSharedPreferences {
   @override
-  set sharedPreferences(_i11.SharedPreferences? _sharedPreferences) =>
+  set sharedPreferences(_i8.SharedPreferences? _sharedPreferences) =>
       super.noSuchMethod(
         Invocation.setter(
           #sharedPreferences,
@@ -216,85 +166,12 @@ class MockMDCSharedPreferences extends _i1.Mock
       );
 
   @override
-  _i10.Future<void> initializeSharedPreferences() => (super.noSuchMethod(
+  _i6.Future<void> initializeSharedPreferences() => (super.noSuchMethod(
         Invocation.method(
           #initializeSharedPreferences,
           [],
         ),
-        returnValue: _i10.Future<void>.value(),
-        returnValueForMissingStub: _i10.Future<void>.value(),
-      ) as _i10.Future<void>);
-}
-
-/// A class which mocks [ContentLoaderImpl].
-///
-/// See the documentation for Mockito's code generation for more information.
-class MockContentLoaderImpl extends _i1.Mock implements _i12.ContentLoaderImpl {
-  @override
-  _i3.IDatabaseFetchDataRepository get databaseFetchDataRepository =>
-      (super.noSuchMethod(
-        Invocation.getter(#databaseFetchDataRepository),
-        returnValue: _FakeIDatabaseFetchDataRepository_1(
-          this,
-          Invocation.getter(#databaseFetchDataRepository),
-        ),
-        returnValueForMissingStub: _FakeIDatabaseFetchDataRepository_1(
-          this,
-          Invocation.getter(#databaseFetchDataRepository),
-        ),
-      ) as _i3.IDatabaseFetchDataRepository);
-
-  @override
-  _i4.IStorageDownloadRepository get storageDownloadRepository =>
-      (super.noSuchMethod(
-        Invocation.getter(#storageDownloadRepository),
-        returnValue: _FakeIStorageDownloadRepository_2(
-          this,
-          Invocation.getter(#storageDownloadRepository),
-        ),
-        returnValueForMissingStub: _FakeIStorageDownloadRepository_2(
-          this,
-          Invocation.getter(#storageDownloadRepository),
-        ),
-      ) as _i4.IStorageDownloadRepository);
-
-  @override
-  _i5.SharedPreferencesRepository get sharedPreferencesRepository =>
-      (super.noSuchMethod(
-        Invocation.getter(#sharedPreferencesRepository),
-        returnValue: _FakeSharedPreferencesRepository_3(
-          this,
-          Invocation.getter(#sharedPreferencesRepository),
-        ),
-        returnValueForMissingStub: _FakeSharedPreferencesRepository_3(
-          this,
-          Invocation.getter(#sharedPreferencesRepository),
-        ),
-      ) as _i5.SharedPreferencesRepository);
-
-  @override
-  _i6.Locale get currentLocale => (super.noSuchMethod(
-        Invocation.getter(#currentLocale),
-        returnValue: _FakeLocale_4(
-          this,
-          Invocation.getter(#currentLocale),
-        ),
-        returnValueForMissingStub: _FakeLocale_4(
-          this,
-          Invocation.getter(#currentLocale),
-        ),
-      ) as _i6.Locale);
-
-  @override
-  _i10.Future<void> load(
-          {required _i12.ContentLoaderType? contentLoaderType}) =>
-      (super.noSuchMethod(
-        Invocation.method(
-          #load,
-          [],
-          {#contentLoaderType: contentLoaderType},
-        ),
-        returnValue: _i10.Future<void>.value(),
-        returnValueForMissingStub: _i10.Future<void>.value(),
-      ) as _i10.Future<void>);
+        returnValue: _i6.Future<void>.value(),
+        returnValueForMissingStub: _i6.Future<void>.value(),
+      ) as _i6.Future<void>);
 }

@@ -103,7 +103,6 @@ abstract class DecisionTree {
     return rootNode;
   }
 
-
   /// Gets the list of root nodes in the decision tree.
   ///
   /// This method returns a list of all root nodes present in the decision tree.
