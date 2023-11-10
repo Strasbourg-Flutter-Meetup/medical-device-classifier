@@ -51,23 +51,34 @@ class ImplementingRulesCubit extends Cubit<ImplementingRulesState> {
   /// Initializes the state of the cubit.
   ///
   /// This function fetches the implementing rules document from shared preferences,
-  /// parses it and then updates the cubit's state to reflect the parsed content.
+  /// parses it, and then updates the cubit's state to reflect the parsed content.
+  ///
+  /// If an error occurs during initialization, it emits an [ImplementingRulesState.error]
+  /// state to handle the error gracefully.
   Future<void> initialize() async {
-    emit(const ImplementingRulesState.loading());
-    await sharedPreferencesReinitialization(sharedPreferencesRepository);
-    final leoMLDocument = sharedPreferencesRepository.read(
-      key: SharedPreferencesKeys.implementingRules,
-    );
+    try {
+      emit(const ImplementingRulesState.loading());
+      await sharedPreferencesReinitialization(sharedPreferencesRepository);
+      final leoMLDocument = sharedPreferencesRepository.read(
+        key: SharedPreferencesKeys.implementingRules,
+      );
 
-    _columnOfExpansionTiles = await leoMLDocumentParser.parseToColumn(
-      leoMLDocument: leoMLDocument,
-      template: articleTemplate,
-    );
+      _columnOfExpansionTiles = await leoMLDocumentParser.parseToColumn(
+        leoMLDocument: leoMLDocument,
+        template: articleTemplate,
+      );
 
-    _updateStateData();
+      _updateStateData();
 
-    emit(ImplementingRulesState.loaded(data: _stateData));
+      emit(ImplementingRulesState.loaded(data: _stateData));
+    } catch (error) {
+      // Emit an error state to handle the error gracefully.
+      emit(
+        const ImplementingRulesState.error(),
+      );
+    }
   }
+
 
   /// Updates [_stateData] with the latest parsed content.
   void _updateStateData() {

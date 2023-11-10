@@ -7,7 +7,7 @@
 // ID: 20231024144106
 // 24.10.2023 14:41
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:medical_device_classifier/features/classification/classification_preconditions_checker/presentation/cubits/classification_precondition_checker_state.dart';
+import 'package:medical_device_classifier/features/classification/classification_preconditions_checker/presentation/cubits/classification_precondition_state.dart';
 
 /// A [Cubit] responsible for managing the state of the classification preconditions screen.
 ///

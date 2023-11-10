@@ -15,7 +15,7 @@ import 'package:medical_device_classifier/dependency_injection/injections/inject
 import 'package:medical_device_classifier/features/classification/classification/presentation/cubits/classification_cubit.dart';
 import 'package:medical_device_classifier/features/classification/classification/presentation/cubits/classification_state.dart';
 import 'package:medical_device_classifier/features/classification/classification_preconditions_checker/presentation/cubits/classification_preconditions_cubit.dart';
-import 'package:medical_device_classifier/features/classification/classification_preconditions_checker/presentation/cubits/classification_precondition_checker_state.dart';
+import 'package:medical_device_classifier/features/classification/classification_preconditions_checker/presentation/cubits/classification_precondition_state.dart';
 import 'package:medical_device_classifier/features/dashboard/presentation/cubit/dashboard_cubit.dart';
 import 'package:medical_device_classifier/features/dashboard/presentation/cubit/dashboard_state.dart';
 import 'package:medical_device_classifier/features/general_explanation_of_rules/presentation/cubits/general_explanation_of_rules_cubit.dart';

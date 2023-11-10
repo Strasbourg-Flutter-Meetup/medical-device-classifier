@@ -10,7 +10,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:medical_device_classifier/extensions/app_localization_extension.dart';
 import 'package:medical_device_classifier/features/classification/classification_preconditions_checker/presentation/cubits/classification_preconditions_cubit.dart';
-import 'package:medical_device_classifier/features/classification/classification_preconditions_checker/presentation/cubits/classification_precondition_checker_state.dart';
+import 'package:medical_device_classifier/features/classification/classification_preconditions_checker/presentation/cubits/classification_precondition_state.dart';
 import 'package:medical_device_classifier/features/classification/classification_preconditions_checker/presentation/widgets/classification_preconditions_checkbox.dart';
 import 'package:medical_device_classifier/features/classification/classification_preconditions_checker/presentation/widgets/continue_button.dart';
 import 'package:medical_device_classifier/ui/content_builder.dart';
