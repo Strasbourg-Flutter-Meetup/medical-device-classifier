@@ -76,6 +76,7 @@ class ListTileButton extends StatelessWidget {
           borderRadius: BorderRadius.circular(10.0),
           side: const BorderSide(
             color: Colors.amber,
+            strokeAlign: 2.0,
           ),
         ),
         leading: leading,
