@@ -9,6 +9,7 @@
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:medical_device_classifier/extensions/app_localization_extension.dart';
+import 'package:medical_device_classifier/routing/router.dart';
 import 'package:medical_device_classifier/ui/ui_constants.dart';
 
 /// The [AppBarTemplate] widget is a Flutter [StatelessWidget] that represents
@@ -56,7 +57,12 @@ class AppBarTemplate extends StatelessWidget implements PreferredSizeWidget {
           // Display either a back button (on mobile) or an account tree icon.
           leading: !kIsWeb && !isDashboard
               ? const BackButton()
-              : const Icon(Icons.account_tree_outlined),
+              : const IconButton(
+                  onPressed: goToHome,
+                  icon: Icon(
+                    Icons.account_tree_outlined,
+                  ),
+                ),
 
           // The title of the AppBar, retrieved from the app's localizations or
           // providing a default title if not found.

@@ -7,6 +7,7 @@
 // 10.11.2023 19:07
 import 'package:flutter/material.dart';
 import 'package:medical_device_classifier/extensions/app_localization_extension.dart';
+import 'package:medical_device_classifier/routing/router.dart';
 
 /// A Flutter widget representing the header of a web footer.
 ///
@@ -34,10 +35,13 @@ class MDCWebFooterHeader extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisSize: MainAxisSize.min,
         children: [
-          const Icon(
-            Icons.account_tree_outlined,
-            color: Colors.black,
-            size: 40.0,
+          const IconButton(
+            onPressed: goToHome,
+            icon: Icon(
+              Icons.account_tree_outlined,
+              color: Colors.black,
+              size: 40.0,
+            ),
           ),
           const SizedBox(
             width: 24.0,
