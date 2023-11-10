@@ -9,8 +9,6 @@
 
 import 'dart:core';
 
-import 'package:medical_device_classifier/content_files/content_loader.dart';
-import 'package:medical_device_classifier/content_files/content_loader_impl.dart';
 import 'package:medical_device_classifier/shared_preferences/mdc_shared_preferences.dart';
 import 'package:medical_device_classifier/supabase/anon_key.dart';
 import 'package:medical_device_classifier/supabase/supabase_client.dart';
@@ -73,12 +71,10 @@ class BootstrapImpl implements Bootstrap {
   const BootstrapImpl({
     required this.supabaseClient,
     required this.mdcSharedPreferences,
-    required this.contentLoaderImpl,
   });
 
   final ISupabaseClient supabaseClient;
   final MDCSharedPreferences mdcSharedPreferences;
-  final ContentLoader contentLoaderImpl;
 
   /// Initializes the bootstrapping process.
   ///
@@ -106,10 +102,6 @@ class BootstrapImpl implements Bootstrap {
   Future<bool> boot() async {
     await _initSupabaseClient();
     await _initSharedPreferences();
-    await _loadDecisionTree();
-    await _loadDefinitions();
-    await _loadImplementingRules();
-    await _loadGeneralExplanationOfRules();
 
     return true;
   }
@@ -146,29 +138,5 @@ class BootstrapImpl implements Bootstrap {
 
   Future<void> _initSharedPreferences() async {
     await mdcSharedPreferences.initializeSharedPreferences();
-  }
-
-  Future<void> _loadDecisionTree() async {
-    await contentLoaderImpl.load(
-      contentLoaderType: ContentLoaderType.decisionTree,
-    );
-  }
-
-  Future<void> _loadDefinitions() async {
-    await contentLoaderImpl.load(
-      contentLoaderType: ContentLoaderType.definitions,
-    );
-  }
-
-  Future<void> _loadImplementingRules() async {
-    await contentLoaderImpl.load(
-      contentLoaderType: ContentLoaderType.implementingRules,
-    );
-  }
-
-  Future<void> _loadGeneralExplanationOfRules() async {
-    await contentLoaderImpl.load(
-      contentLoaderType: ContentLoaderType.generalExplanationRules,
-    );
   }
 }

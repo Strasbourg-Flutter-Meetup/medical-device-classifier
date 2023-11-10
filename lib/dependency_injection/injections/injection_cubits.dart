@@ -43,7 +43,6 @@ class InjectionCubits extends InjectionConfiguration {
         bootstrap: BootstrapImpl(
           supabaseClient: getIt.get<SupabaseClientImpl>(),
           mdcSharedPreferences: getIt.get<MDCSharedPreferences>(),
-          contentLoaderImpl: getIt.get<ContentLoaderImpl>(),
         ),
       ),
     );
@@ -57,6 +56,7 @@ class InjectionCubits extends InjectionConfiguration {
         leoMLDocumentParser: getIt.get<LeoMLDocumentParser>(),
         sharedPreferencesRepository: getIt.get<SharedPreferencesRepository>(),
         expansionTile1Template: getIt.get<ExpansionTile1>(),
+        contentLoader: getIt.get<ContentLoaderImpl>(),
       ),
     );
 
@@ -66,6 +66,7 @@ class InjectionCubits extends InjectionConfiguration {
         leoMLDocumentParser: getIt.get<LeoMLDocumentParser>(),
         sharedPreferencesRepository: getIt.get<SharedPreferencesRepository>(),
         articleTemplate: getIt.get<Article>(),
+        contentLoader: getIt.get<ContentLoaderImpl>(),
       ),
     );
 
@@ -80,6 +81,7 @@ class InjectionCubits extends InjectionConfiguration {
         const ClassificationState.initial(),
         decisionTree: getIt.get<DecisionTreeImpl>(),
         sharedPreferencesRepository: getIt.get<SharedPreferencesRepository>(),
+        contentLoader: getIt.get<ContentLoaderImpl>(),
       ),
     );
   }
