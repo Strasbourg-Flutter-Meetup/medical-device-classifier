@@ -70,12 +70,13 @@ class ListTileButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ConstrainedBox(
-      constraints: const BoxConstraints(maxWidth: 300.0),
+      constraints: const BoxConstraints(maxWidth: 350.0, minHeight: 150.0),
       child: ListTile(
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(10.0),
           side: const BorderSide(
             color: Colors.amber,
+            strokeAlign: 2.0,
           ),
         ),
         leading: leading,

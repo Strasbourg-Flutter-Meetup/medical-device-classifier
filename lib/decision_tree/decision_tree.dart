@@ -6,9 +6,9 @@
 // Copyright: Strasbourg Flutter Meetup Group 2023
 // ID: 20231027165223
 // 27.10.2023 16:52
+import 'package:medical_device_classifier/decision_tree/nodes/interfaces/node.dart';
 import 'package:medical_device_classifier/decision_tree/nodes/internal_node.dart';
 import 'package:medical_device_classifier/decision_tree/nodes/leaf_node.dart';
-import 'package:medical_device_classifier/decision_tree/nodes/interfaces/node.dart';
 import 'package:medical_device_classifier/decision_tree/nodes/option.dart';
 import 'package:medical_device_classifier/decision_tree/nodes/root_node.dart';
 

@@ -34,5 +34,8 @@
   "classificationHint": "Hinweis",
   "classificationBack": "Zurück",
   "classificationRestart": "Neustart",
-  "classificationCancel": "Beenden"
+  "classificationCancel": "Beenden",
+  "drawerAboutUs": "Über uns",
+  "drawerDataProtection": "Datenschutz",
+  "drawerLegalInformation": "Rechtliche Informationen"
 }

@@ -8,7 +8,6 @@
 // 23.10.2023 13:48
 import 'package:flutter/material.dart';
 import 'package:medical_device_classifier/extensions/app_localization_extension.dart';
-import 'package:medical_device_classifier/ui/ui_constants.dart';
 
 /// A widget representing the build content section of the classification starter screen.
 ///
@@ -30,31 +29,28 @@ class ClassificationStarterBuildContent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ConstrainedBox(
-      constraints: const BoxConstraints(maxWidth: UIConstants.maxWidth),
-      child: Column(
-        children: [
-          const SizedBox(
-            height: 12.0,
+    return Column(
+      children: [
+        const SizedBox(
+          height: 12.0,
+        ),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 12.0),
+          child: Column(
+            children: [
+              Text(
+                context.appLocalizations?.classificationStarter1 ?? '',
+              ),
+              const SizedBox(
+                height: 32.0,
+              ),
+              Text(
+                context.appLocalizations?.classificationStarter2 ?? '',
+              ),
+            ],
           ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 12.0),
-            child: Column(
-              children: [
-                Text(
-                  context.appLocalizations?.classificationStarter1 ?? '',
-                ),
-                const SizedBox(
-                  height: 32.0,
-                ),
-                Text(
-                  context.appLocalizations?.classificationStarter2 ?? '',
-                ),
-              ],
-            ),
-          ),
-        ],
-      ),
+        ),
+      ],
     );
   }
 }

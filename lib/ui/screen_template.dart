@@ -11,7 +11,9 @@ import 'package:flutter/material.dart';
 import 'package:footer/footer.dart';
 import 'package:footer/footer_view.dart';
 import 'package:medical_device_classifier/ui/app_bar_template.dart';
+import 'package:medical_device_classifier/ui/ui_constants.dart';
 import 'package:medical_device_classifier/ui/web_footer.dart';
+import 'package:medical_device_classifier/ui/widgets/drawer/mdc_drawer.dart';
 
 /// The `ScreenTemplate` widget is a Flutter `StatelessWidget` that serves as
 /// a common template for creating screens or pages throughout the application.
@@ -48,27 +50,34 @@ class ScreenTemplate extends StatelessWidget {
       child: Scaffold(
         // The custom `AppBarTemplate` widget at the top of the screen.
         appBar: appBarTemplate,
-
-        body: FooterView(
-          flex: 1,
-          footer: Footer(
-            backgroundColor: kIsWeb ? Colors.amber : Colors.transparent,
-            alignment: Alignment.bottomCenter,
-            child: kIsWeb
-                ? const WebFooter()
-                : const SizedBox(
-                    height: 0.0,
-                  ),
-          ),
-          children: [
-            SingleChildScrollView(
-              child: Column(
-                children: [
-                  child,
-                ],
-              ),
+        drawer: const MDCDrawer(),
+        body: Center(
+          child: ConstrainedBox(
+            constraints: const BoxConstraints(
+              maxWidth: UIConstants.maxWidth,
             ),
-          ],
+            child: FooterView(
+              footer: Footer(
+                padding: const EdgeInsets.only(bottom: 12.0),
+                backgroundColor: Colors.transparent,
+                alignment: Alignment.bottomCenter,
+                child: kIsWeb
+                    ? const WebFooter()
+                    : const SizedBox(
+                        height: 0.0,
+                      ),
+              ),
+              children: [
+                SingleChildScrollView(
+                  child: Column(
+                    children: [
+                      child,
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
         ),
       ),
     );

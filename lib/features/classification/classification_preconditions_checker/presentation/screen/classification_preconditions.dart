@@ -9,8 +9,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:medical_device_classifier/dependency_injection/injections.dart';
-import 'package:medical_device_classifier/features/classification/classification_preconditions_checker/presentation/cubits/classification_preconditions_cubit.dart';
 import 'package:medical_device_classifier/features/classification/classification_preconditions_checker/presentation/cubits/classification_precondition_state.dart';
+import 'package:medical_device_classifier/features/classification/classification_preconditions_checker/presentation/cubits/classification_preconditions_cubit.dart';
 import 'package:medical_device_classifier/features/classification/classification_preconditions_checker/presentation/widgets/classification_precondition_build_content.dart';
 import 'package:medical_device_classifier/mixins/content_builder.dart';
 import 'package:medical_device_classifier/ui/app_bar_template.dart';
