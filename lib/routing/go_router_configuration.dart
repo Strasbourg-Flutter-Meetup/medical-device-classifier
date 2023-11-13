@@ -8,6 +8,7 @@
 // 11.10.2023 12:33
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:medical_device_classifier/features/about_us/about_us.dart';
 import 'package:medical_device_classifier/features/classification/classification/presentation/screens/classification.dart';
 import 'package:medical_device_classifier/features/classification/classification_preconditions_checker/presentation/screen/classification_preconditions.dart';
 import 'package:medical_device_classifier/features/classification/classification_starter/screen/classification_starter.dart';
@@ -16,8 +17,8 @@ import 'package:medical_device_classifier/features/definitions/presentation/scre
 import 'package:medical_device_classifier/features/general_explanation_of_rules/presentation/screen/general_explanation_of_rules.dart';
 import 'package:medical_device_classifier/features/implementing_rules/presentation/screen/implementing_rules.dart';
 import 'package:medical_device_classifier/routing/go_router_path.dart';
-import 'package:medical_device_classifier/ui/widgets/app_bar/presentation/widget/app_bar_template.dart';
 import 'package:medical_device_classifier/ui/screen_template.dart';
+import 'package:medical_device_classifier/ui/widgets/app_bar/presentation/widget/app_bar_template.dart';
 import 'package:medical_device_classifier/ui/widgets/error_building_content.dart';
 
 /// The configuration for the application's routing system.
@@ -27,10 +28,12 @@ import 'package:medical_device_classifier/ui/widgets/error_building_content.dart
 /// [GoRouter] package.
 final goRouterConfiguration = GoRouter(
   initialLocation: pathToDashboard,
-  errorBuilder: (context, goRouterState) => const ScreenTemplate(
+  errorBuilder: (context, goRouterState) {
+    return const ScreenTemplate(
     appBarTemplate: AppBarTemplate(),
     child: ErrorBuildingContent(),
-  ),
+  );
+  },
   routes: [
     _toDashboard,
   ],
@@ -61,6 +64,7 @@ final _toDashboard = GoRoute(
     _toGeneralExplanationsOfRules,
     _toImplementingRules,
     _toClassificationStarter,
+    _toAboutUs,
   ],
 );
 
@@ -209,3 +213,27 @@ final _toClassification = GoRoute(
     child: const Classification(),
   ),
 );
+
+/// A [GoRoute] used for navigating to the 'About Us' page.
+///
+/// The [_toAboutUs] route configuration is used to navigate to the 'About Us'
+/// page in the application. It defines the path, name, and page builder for
+/// presenting the page with a fade transition animation.
+final _toAboutUs = GoRoute(
+  path: pathToAboutUs,
+  name: nameToAboutUs,
+  pageBuilder: (context, state) => CustomTransitionPage(
+    transitionsBuilder: (
+        context,
+        animation,
+        secondaryAnimation,
+        child,
+        ) =>
+        FadeTransition(
+          opacity: animation,
+          child: child,
+        ),
+    child: const AboutUs(),
+  ),
+);
+

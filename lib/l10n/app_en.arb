@@ -43,6 +43,14 @@
   "dashboardStickyNoteTranslationButtonContinue":"OK",
   "dashboardStickyNoteTranslationTitle":"Translation Notice & Language Options",
   "classificationPreconditionsWarningTitle":"Accuracy and Reliability Come First",
-  "classificationPreconditionsWarningText":"The use of the Medical Device Classifier is at your own risk. Please proceed with caution. If you notice any errors or have comments, do not hesitate to contact us at [Your Email Address]. Your feedback is valuable and helps us improve the application."
-
+  "classificationPreconditionsWarningText":"The use of the Medical Device Classifier is at your own risk. Please proceed with caution. If you notice any errors or have comments, do not hesitate to contact us at [Your Email Address]. Your feedback is valuable and helps us improve the application.",
+  "appBarLanguageMenuTooltip":"Select language",
+  "aboutUsTitle": "About us",
+  "aboutUsSubtitle1":"Who is the Strasbourg Flutter Meetup Group?",
+  "aboutUsText1":"The Strasbourg Flutter Meetup Group is a vibrant community of Flutter enthusiasts based in and around Strasbourg. We are brought together by our shared passion for Flutter, Google's open-source UI development framework. Our group serves as a platform for developers to connect, collaborate, and learn more about Flutter.",
+  "aboutUsSubtitle2":"Our First Project: Medical Device Classifier",
+  "aboutUsText2":"As a community, we are proud to introduce our very first project, the \"Medical Device Classifier\". The driving idea behind this project was to create something simple yet impactful. We wanted to develop a practical solution that could genuinely help people in the real world. This commitment to addressing real-world challenges is at the core of our group's mission.",
+  "aboutUsSubtitle3":"Join Us, Regardless of Your Experience",
+  "aboutUsText3":"At the Strasbourg Flutter Meetup Group, we believe that diversity in experience is our strength. Whether you're a novice eager to explore the world of Flutter or a seasoned senior developer with years of expertise, we welcome developers of all levels. Our group is open to anyone with a passion for Flutter.\n\nIf you're excited about Flutter and want to be part of our thriving community, simply click on the \"Go to meetup.com\" button to join us. We look forward to having you on board as we embark on this exciting Flutter journey together!",
+  "aboutUsMeetUpButton": "Go to meetup.com"
 }

@@ -43,5 +43,14 @@
   "dashboardStickyNoteTranslationButtonContinue":"OK",
   "dashboardStickyNoteTranslationTitle":"Hinweise zur Übersetzung & Sprachoptionen",
   "classificationPreconditionsWarningTitle":"Korrektheit und Zuverlässigkeit stehen an erster Stelle",
-  "classificationPreconditionsWarningText":"Die Verwendung des Medical Device Classifiers erfolgt auf eigene Gefahr. Bitte gehen Sie vorsichtig vor. Wenn Sie Fehler feststellen oder Anmerkungen haben, zögern Sie nicht, uns unter [Ihre E-Mail-Adresse] zu kontaktieren. Ihr Feedback ist wertvoll und hilft uns dabei, die Anwendung zu verbessern."
+  "classificationPreconditionsWarningText":"Die Verwendung des Medical Device Classifiers erfolgt auf eigene Gefahr. Bitte gehen Sie vorsichtig vor. Wenn Sie Fehler feststellen oder Anmerkungen haben, zögern Sie nicht, uns unter [Ihre E-Mail-Adresse] zu kontaktieren. Ihr Feedback ist wertvoll und hilft uns dabei, die Anwendung zu verbessern.",
+  "appBarLanguageMenuTooltip":"Sprache auswählen",
+  "aboutUsTitle": "Über uns",
+  "aboutUsSubtitle1":"Wer ist die Strasbourg Flutter Meetup Gruppe?",
+  "aboutUsText1":"Die Strasbourg Flutter Meetup Gruppe ist eine lebendige Community von Flutter-Enthusiasten aus Strasbourg und Umgebung. Wir werden durch unsere gemeinsame Leidenschaft für Flutter, Googles Open-Source-UI-Entwicklungsframework, zusammengebracht. Unsere Gruppe dient als Plattform für Entwickler, um sich zu vernetzen, zusammenzuarbeiten und mehr über Flutter zu erfahren.",
+  "aboutUsSubtitle2":"Unser Erstes Projekt: Medical Device Classifier",
+  "aboutUsText2":"Als Gemeinschaft sind wir stolz darauf, unser allererstes Projekt, den \"Medical Device Classifier\", vorzustellen. Die treibende Idee hinter diesem Projekt war es, etwas Einfaches und dennoch Wirkungsvolles zu schaffen. Wir wollten eine praktische Lösung entwickeln, die Menschen in der realen Welt tatsächlich helfen könnte. Diese Verpflichtung zur Lösung realer Herausforderungen steht im Mittelpunkt unserer Gruppenmission.",
+  "aboutUsSubtitle3":"Treten Sie uns bei, unabhängig von Ihrer Erfahrung",
+  "aboutUsText3":"In der Strasbourg Flutter Meetup Gruppe glauben wir, dass Vielfalt an Erfahrungen unsere Stärke ist. Egal, ob Sie ein Anfänger sind, der die Welt von Flutter erkunden möchte, oder ein erfahrener Senior-Entwickler mit jahrelanger Expertise, wir begrüßen Entwickler jeden Levels. Unsere Gruppe steht allen offen, die eine Leidenschaft für Flutter haben.\n\nWenn Sie von Flutter begeistert sind und Teil unserer blühenden Community werden möchten, klicken Sie einfach auf die Schaltfläche \"Gehe zu meetup.com\", um uns beizutreten. Wir freuen uns darauf, Sie an Bord zu haben, während wir gemeinsam diese spannende Flutter-Reise antreten!",
+  "aboutUsMeetUpButton": "Gehe zu meetup.com"
 }

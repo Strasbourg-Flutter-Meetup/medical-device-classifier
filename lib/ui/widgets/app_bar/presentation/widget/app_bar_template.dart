@@ -64,6 +64,8 @@ class _AppBarContent extends StatelessWidget {
         child: AppBar(
           actions: [
             PopupMenuButton(
+              tooltip:
+                  context.appLocalizations?.appBarLanguageMenuTooltip ?? '',
               icon: const Icon(
                 Icons.language_outlined,
               ),
