@@ -1,0 +1,4 @@
+id,created_at,updated_at,file_name,language_code
+0488a5fa-618a-48af-9493-f7b51a7ae9e1,2023-10-22 11:37:12.091964+00,2023-10-22 17:42:12+00,implementing_rules_de.json,de
+7dfc43c5-0cf2-4ce2-8d85-7237aff05443,2023-10-22 11:37:45.604427+00,2023-10-22 17:42:45+00,implementing_rules_fr.json,fr
+54e113e6-b591-467e-bb7c-7ebe94e2934c,2023-10-22 11:37:28.933439+00,2023-10-22 17:42:28+00,implementing_rules_en.json,en

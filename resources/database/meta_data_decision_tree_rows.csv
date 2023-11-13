@@ -1,0 +1,4 @@
+id,created_at,updated_at,file_name,language_code
+68ae87b1-bfd3-4136-b321-00947c959deb,2023-10-27 14:21:07.505416+00,2023-10-30 06:07:07+00,decision_tree_de.json,de
+1fe589b6-9657-4ade-b4ca-36c371eb4e5a,2023-10-27 14:21:36.426255+00,2023-11-10 06:07:36+00,decision_tree_fr.json,fr
+9e5ed696-78a4-40cc-ba8d-1c7e9b070afc,2023-10-27 14:21:22.305933+00,2023-11-11 07:50:22+00,decision_tree_en.json,en

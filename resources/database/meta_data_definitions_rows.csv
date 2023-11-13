@@ -1,0 +1,4 @@
+id,created_at,updated_at,file_name,language_code
+d06d5108-3d45-4fe2-a7e4-9e64beb9688f,2023-10-22 11:36:11.022972+00,2023-10-22 11:36:11.022972+00,definitions_en.json,en
+2da978bd-4e2a-4784-a6f7-e7eb90973aa1,2023-10-22 11:36:47.282406+00,2023-10-22 11:36:47.282406+00,definitions_fr.json,fr
+c4b57166-8254-4507-aef8-07fac80afc7e,2023-10-22 11:35:53.62669+00,2023-11-10 11:17:49+00,definitions_de.json,de

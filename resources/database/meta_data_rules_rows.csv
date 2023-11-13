@@ -1,0 +1,4 @@
+id,created_at,updated_at,file_name,language_code
+61332b18-7836-433c-aee4-a1972c02a8f2,2023-10-13 18:36:56.045792+00,2023-10-22 17:33:58+00,general_explanation_of_rules_en.json,en
+ac98d593-9771-4987-a0f5-46652dfa606d,2023-10-13 18:54:34.919329+00,2023-10-22 17:33:07+00,general_explanation_of_rules_fr.json,fr
+ebaa4b62-1780-4602-8b76-5444d9a1a9c9,2023-10-13 18:54:11.115401+00,2023-10-22 17:33:14+00,general_explanation_of_rules_de.json,de
