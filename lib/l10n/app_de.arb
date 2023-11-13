@@ -37,5 +37,11 @@
   "classificationCancel": "Beenden",
   "drawerAboutUs": "Über uns",
   "drawerDataProtection": "Datenschutz",
-  "drawerLegalInformation": "Rechtliche Informationen"
+  "drawerLegalInformation": "Rechtliche Informationen",
+  "dashboardStickyNoteTranslationNoteText": "Liebe Benutzerin, lieber Benutzer,\n\nBitte beachten Sie, dass der Inhalt dieser Anwendung aus seiner Originalsprache (Englisch) ins Französische und Deutsche übersetzt wurde. Obwohl wir uns um Genauigkeit bemühen, besteht die Möglichkeit von Übersetzungsfehlern.\n\nSie haben folgende Möglichkeiten:\n\n• Wechseln Sie zur englischen Sprache: Wenn Sie den Inhalt lieber auf Englisch lesen möchten, können Sie jederzeit zur Originalsprache wechseln. Klicken Sie auf das Spracheinstellungen-Symbol, um Ihre Spracheinstellung zu ändern.\n\n• Weiter auf Französisch/Deutsch: Wenn Sie sich dafür entscheiden, auf Französisch oder Deutsch fortzufahren, beachten Sie bitte, dass einige Inhalte möglicherweise Übersetzungsungenauigkeiten unterliegen.\n\n• Helfen Sie uns bei der Verbesserung: Wenn Sie auf inkorrekte Übersetzungen stoßen oder Feedback geben möchten, kontaktieren Sie uns bitte unter translations@medicaldeviceapp.org. Ihr Feedback ist wertvoll und wird uns bei der Verbesserung der Übersetzungsqualität helfen.\n\nVielen Dank, dass Sie die Anwendung für die Klassifizierung von medizinischen Geräten verwenden.",
+  "dashboardStickyNoteTranslationButtonSwitchToEnglish":"Zu Englisch wechseln",
+  "dashboardStickyNoteTranslationButtonContinue":"OK",
+  "dashboardStickyNoteTranslationTitle":"Hinweise zur Übersetzung & Sprachoptionen",
+  "classificationPreconditionsWarningTitle":"Korrektheit und Zuverlässigkeit stehen an erster Stelle",
+  "classificationPreconditionsWarningText":"Die Verwendung des Medical Device Classifiers erfolgt auf eigene Gefahr. Bitte gehen Sie vorsichtig vor. Wenn Sie Fehler feststellen oder Anmerkungen haben, zögern Sie nicht, uns unter [Ihre E-Mail-Adresse] zu kontaktieren. Ihr Feedback ist wertvoll und hilft uns dabei, die Anwendung zu verbessern."
 }

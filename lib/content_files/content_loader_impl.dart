@@ -60,6 +60,10 @@ class ContentLoaderImpl extends ContentLoader {
   /// checks whether the data needs to be updated. If an update is required,
   /// it downloads the content from the remote database, saves it to
   /// SharedPreferences, and updates the language code and timestamp.
+  ///
+  /// - [contentLoaderType]: The type of content to load.
+  ///
+  /// Throws a [ContentLoadException] if there is an issue loading the content.
 
   @override
   Future<void> load({required ContentLoaderType contentLoaderType}) async {
@@ -67,20 +71,55 @@ class ContentLoaderImpl extends ContentLoader {
       key: _getSharedPreferencesKey(contentLoaderType).$3,
     );
 
+    final appLanguage = sharedPreferencesRepository.read(
+      key: SharedPreferencesKeys.appLanguage,
+    );
+
     final shouldUpdateData = await _shouldUpdateData(
       sharedPreferencesLanguageCode,
+      appLanguage,
       contentLoaderType,
     );
 
     if (shouldUpdateData) {
+      String languageCode = '';
+
+      languageCode = _getLanguageCode(
+        appLanguage,
+        sharedPreferencesLanguageCode,
+      );
+
       final contentData = await _downloadFromRemote(
         contentLoaderType: contentLoaderType,
-        languageCode: currentLocale.languageCode,
+        languageCode: languageCode,
       );
       await _saveDataIntoSharedPreferences(
         contentType: contentLoaderType,
         contentToStore: contentData,
       );
+    }
+  }
+
+  /// Determines the language code to use for content retrieval.
+  ///
+  /// This method checks if [appLanguage] is not empty. If it is not empty,
+  /// [appLanguage] is returned as the language code. Otherwise, it checks
+  /// if [sharedPreferencesLanguageCode] is not empty. If it is not empty,
+  /// [sharedPreferencesLanguageCode] is returned as the language code.
+  /// If both [appLanguage] and [sharedPreferencesLanguageCode] are empty,
+  /// the language code from [currentLocale] is used as a fallback.
+  ///
+  /// Returns the selected language code for content retrieval.
+  String _getLanguageCode(
+    String appLanguage,
+    String sharedPreferencesLanguageCode,
+  ) {
+    if (appLanguage.isNotEmpty) {
+      return appLanguage;
+    } else if (sharedPreferencesLanguageCode.isNotEmpty) {
+      return sharedPreferencesLanguageCode;
+    } else {
+      return currentLocale.languageCode;
     }
   }
 
@@ -334,10 +373,12 @@ class ContentLoaderImpl extends ContentLoader {
   /// ```
   Future<bool> _shouldUpdateData(
     String sharedPreferencesLanguageCode,
+    String appLanguage,
     ContentLoaderType contentLoaderType,
   ) async {
     if (sharedPreferencesLanguageCode.isEmpty ||
-        currentLocale.languageCode != sharedPreferencesLanguageCode) {
+        currentLocale.languageCode != sharedPreferencesLanguageCode ||
+        appLanguage != currentLocale.languageCode) {
       return true;
     }
 

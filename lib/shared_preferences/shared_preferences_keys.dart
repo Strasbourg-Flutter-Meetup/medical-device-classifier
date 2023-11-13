@@ -29,4 +29,8 @@ class SharedPreferencesKeys {
   static const String rules = 'rules';
   static const String rulesLanguageCode = 'rulesLanguageCode';
   static const String rulesLocalUpdateDate = 'rulesLocalUpdateData';
+
+  // application
+
+  static const String appLanguage = 'appLanguage';
 }

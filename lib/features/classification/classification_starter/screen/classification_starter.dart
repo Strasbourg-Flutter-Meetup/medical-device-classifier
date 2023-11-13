@@ -9,7 +9,7 @@
 import 'package:flutter/material.dart';
 import 'package:medical_device_classifier/features/classification/classification_starter/widgets/classification_starter_build_content.dart';
 import 'package:medical_device_classifier/features/classification/classification_starter/widgets/start_button.dart';
-import 'package:medical_device_classifier/ui/app_bar_template.dart';
+import 'package:medical_device_classifier/ui/widgets/app_bar/presentation/widget/app_bar_template.dart';
 import 'package:medical_device_classifier/ui/screen_template.dart';
 
 /// A widget representing the starter screen for a classification task.

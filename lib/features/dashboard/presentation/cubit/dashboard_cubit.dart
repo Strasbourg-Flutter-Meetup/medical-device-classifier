@@ -6,6 +6,8 @@
 // Copyright: Strasbourg Flutter Meetup Group 2023
 // ID: 20231011210923
 // 11.10.2023 21:09
+import 'dart:async';
+
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:medical_device_classifier/bootstrap.dart';
 import 'package:medical_device_classifier/features/dashboard/presentation/cubit/dashboard_state.dart';
@@ -22,10 +24,12 @@ class DashboardCubit extends Cubit<DashboardState> {
   DashboardCubit(
     super.initialState, {
     required this.bootstrap,
-  });
+      });
 
   /// An instance of [Bootstrap] used for initializing the dashboard.
-  Bootstrap bootstrap;
+  final Bootstrap bootstrap;
+
+
 
   /// Private field to store the state data associated with the dashboard.
   DashboardStateData? _stateData;

@@ -11,8 +11,22 @@ import 'package:medical_device_classifier/state_management/states.dart';
 import 'package:medical_device_classifier/ui/content_builder.dart';
 import 'package:medical_device_classifier/ui/widgets/error_building_content.dart';
 import 'package:medical_device_classifier/ui/widgets/loading_content.dart';
-
+/// A mixin that provides a method for building content based on the state of a
+/// [StateTemplate] with a specific data type [T].
 mixin ContentBuilderMixin<T> {
+  /// Builds content based on the state provided.
+  ///
+  /// Depending on the [StateTemplate] type, this method constructs and returns
+  /// different widgets to represent the content.
+  ///
+  /// [state]: The [StateTemplate] representing the current state.
+  ///
+  /// [contentBuilder]: A [ContentBuilder] used to construct content based on
+  /// the state's data.
+  ///
+  /// [widget]: A custom widget to be used if [contentBuilder] is not provided.
+  ///
+  /// Returns a widget representing the constructed content.
   Widget buildContent({
     required StateTemplate<T> state,
     ContentBuilder<T>? contentBuilder,
@@ -20,32 +34,46 @@ mixin ContentBuilderMixin<T> {
   }) {
     switch (state.type) {
       case StateTemplateType.initial:
+        return _buildInitialContent();
       case StateTemplateType.loading:
-        // Display a loading indicator.
-        return const LoadingBuildContent();
+        return _buildLoadingContent(state.data, contentBuilder, widget);
       case StateTemplateType.error:
-        // Display an error message.
-        return const ErrorBuildingContent();
+        return _buildErrorContent();
       default:
-        final stateData = state.data;
+        return _buildDefaultContent(state.data, contentBuilder, widget);
+    }
+  }
 
-        // If stateData is null, display an error message.
-        if (stateData == null) {
-          return const ErrorBuildingContent(
-            errorMessage: 'No data available.',
-          );
-        }
+  Widget _buildInitialContent() {
+    return const LoadingBuildContent();
+  }
 
-        // Display the dashboard content.
-        if (contentBuilder != null) {
-          return contentBuilder.build(data: stateData);
-        }
+  Widget _buildLoadingContent(
+      T? data,
+      ContentBuilder<T>? contentBuilder,
+      Widget? widget,
+      ) {
+    if (data != null) {
+      return contentBuilder?.build(data: data) ?? widget ?? const Placeholder();
+    } else {
+      return const LoadingBuildContent();
+    }
+  }
 
-        if (widget != null) {
-          return widget;
-        }
+  Widget _buildErrorContent() {
+    return const ErrorBuildingContent();
+  }
 
-        return const Placeholder();
+  Widget _buildDefaultContent(
+      T? data,
+      ContentBuilder<T>? contentBuilder,
+      Widget? widget,
+      ) {
+    if (data != null) {
+      return contentBuilder?.build(data: data) ?? widget ?? const Placeholder();
+    } else {
+      return const ErrorBuildingContent(errorMessage: 'No data available.');
     }
   }
 }
+

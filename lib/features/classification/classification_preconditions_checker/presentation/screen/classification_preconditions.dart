@@ -13,7 +13,7 @@ import 'package:medical_device_classifier/features/classification/classification
 import 'package:medical_device_classifier/features/classification/classification_preconditions_checker/presentation/cubits/classification_preconditions_cubit.dart';
 import 'package:medical_device_classifier/features/classification/classification_preconditions_checker/presentation/widgets/classification_precondition_build_content.dart';
 import 'package:medical_device_classifier/mixins/content_builder.dart';
-import 'package:medical_device_classifier/ui/app_bar_template.dart';
+import 'package:medical_device_classifier/ui/widgets/app_bar/presentation/widget/app_bar_template.dart';
 import 'package:medical_device_classifier/ui/screen_template.dart';
 
 /// A widget representing the classification preconditions screen.

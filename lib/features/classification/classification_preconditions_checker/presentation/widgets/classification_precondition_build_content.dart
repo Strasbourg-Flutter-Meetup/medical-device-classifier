@@ -14,6 +14,7 @@ import 'package:medical_device_classifier/features/classification/classification
 import 'package:medical_device_classifier/features/classification/classification_preconditions_checker/presentation/widgets/classification_preconditions_checkbox.dart';
 import 'package:medical_device_classifier/features/classification/classification_preconditions_checker/presentation/widgets/continue_button.dart';
 import 'package:medical_device_classifier/ui/content_builder.dart';
+import 'package:medical_device_classifier/ui/widgets/sticky_note.dart';
 
 /// A content builder for the classification preconditions screen.
 ///
@@ -104,6 +105,22 @@ class ClassificationPreconditionsBuildContent extends StatelessWidget {
               knowsAboutImplementingRules: value ?? false,
             );
           },
+        ),
+        const SizedBox(
+          height: 48.0,
+        ),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 12.0),
+          child: StickyNote(
+            content: Text(
+              context.appLocalizations?.classificationPreconditionsWarningText ??
+                  '',
+            ),
+            title: context
+                    .appLocalizations?.classificationPreconditionsWarningTitle ??
+                '',
+            type: StickyNoteMessageType.warning,
+          ),
         ),
         const SizedBox(
           height: 128.0,

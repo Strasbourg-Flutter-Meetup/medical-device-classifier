@@ -18,15 +18,22 @@ import 'package:medical_device_classifier/features/classification/classification
 import 'package:medical_device_classifier/features/classification/classification_preconditions_checker/presentation/cubits/classification_preconditions_cubit.dart';
 import 'package:medical_device_classifier/features/dashboard/presentation/cubit/dashboard_cubit.dart';
 import 'package:medical_device_classifier/features/dashboard/presentation/cubit/dashboard_state.dart';
+import 'package:medical_device_classifier/features/dashboard/presentation/cubit/sticky_note_cubit.dart';
+import 'package:medical_device_classifier/features/dashboard/presentation/cubit/sticky_note_state.dart';
 import 'package:medical_device_classifier/features/definitions/presentation/cubits/definitions_cubit.dart';
 import 'package:medical_device_classifier/features/definitions/presentation/cubits/definitions_state.dart';
 import 'package:medical_device_classifier/features/general_explanation_of_rules/presentation/cubits/general_explanation_of_rules_cubit.dart';
 import 'package:medical_device_classifier/features/general_explanation_of_rules/presentation/cubits/general_explanation_of_rules_state.dart';
 import 'package:medical_device_classifier/features/implementing_rules/presentation/cubits/implementing_rules_cubit.dart';
 import 'package:medical_device_classifier/features/implementing_rules/presentation/cubits/implementing_rules_state.dart';
+import 'package:medical_device_classifier/features/language_handler/presentation/cubits/language_cubit.dart';
+import 'package:medical_device_classifier/features/language_handler/presentation/cubits/language_state.dart';
+import 'package:medical_device_classifier/global_event_bus/global_event_bus.dart';
 import 'package:medical_device_classifier/shared_preferences/mdc_shared_preferences.dart';
 import 'package:medical_device_classifier/shared_preferences/shared_preferences_repository.dart';
 import 'package:medical_device_classifier/supabase/supabase_client.dart';
+import 'package:medical_device_classifier/ui/widgets/app_bar/presentation/cubit/app_bar_cubit.dart';
+import 'package:medical_device_classifier/ui/widgets/app_bar/presentation/cubit/app_bar_state.dart';
 
 /// This class is responsible for configuring the dependency injections for various Cubits in the Medical Device Classifier project.
 ///
@@ -59,6 +66,7 @@ class InjectionCubits extends InjectionConfiguration {
         sharedPreferencesRepository: getIt.get<SharedPreferencesRepository>(),
         expansionTile1Template: getIt.get<ExpansionTile1>(),
         contentLoader: getIt.get<ContentLoaderImpl>(),
+        globalEventBus: getIt.get<GlobalEventBus>(),
       ),
     );
 
@@ -69,6 +77,7 @@ class InjectionCubits extends InjectionConfiguration {
         sharedPreferencesRepository: getIt.get<SharedPreferencesRepository>(),
         articleTemplate: getIt.get<Article>(),
         contentLoader: getIt.get<ContentLoaderImpl>(),
+        globalEventBus: getIt.get<GlobalEventBus>(),
       ),
     );
 
@@ -84,6 +93,7 @@ class InjectionCubits extends InjectionConfiguration {
         decisionTree: getIt.get<DecisionTreeImpl>(),
         sharedPreferencesRepository: getIt.get<SharedPreferencesRepository>(),
         contentLoader: getIt.get<ContentLoaderImpl>(),
+        globalEventBus: getIt.get<GlobalEventBus>(),
       ),
     );
 
@@ -94,6 +104,30 @@ class InjectionCubits extends InjectionConfiguration {
         sharedPreferencesRepository: getIt.get<SharedPreferencesRepository>(),
         expansionTile1Template: getIt.get<ExpansionTile1>(),
         contentLoader: getIt.get<ContentLoaderImpl>(),
+        globalEventBus: getIt.get<GlobalEventBus>(),
+      ),
+    );
+
+    getIt.registerFactory<LanguageCubit>(
+      () => LanguageCubit(
+        const LanguageState.initial(),
+        globalEventBus: getIt.get<GlobalEventBus>(),
+      ),
+    );
+
+    getIt.registerFactory<StickyNoteCubit>(
+      () => StickyNoteCubit(
+        const StickyNoteState.initial(),
+        globalEventBus: getIt.get<GlobalEventBus>(),
+        sharedPreferencesRepository: getIt.get<SharedPreferencesRepository>(),
+      ),
+    );
+
+    getIt.registerFactory<AppBarCubit>(
+      () => AppBarCubit(
+        const AppBarState.initial(),
+        globalEventBus: getIt.get<GlobalEventBus>(),
+        sharedPreferencesRepository: getIt.get<SharedPreferencesRepository>(),
       ),
     );
   }

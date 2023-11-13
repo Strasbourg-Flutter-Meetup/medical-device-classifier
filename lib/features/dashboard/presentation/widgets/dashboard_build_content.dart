@@ -8,18 +8,15 @@
 // 12.10.2023 11:22
 import 'package:flutter/material.dart';
 import 'package:medical_device_classifier/extensions/app_localization_extension.dart';
+import 'package:medical_device_classifier/features/dashboard/presentation/widgets/dashboard_sticky_note.dart';
 import 'package:medical_device_classifier/routing/router.dart';
 import 'package:medical_device_classifier/ui/ui_constants.dart';
 import 'package:medical_device_classifier/ui/widgets/listtile_button.dart';
-
-/// The [DashboardBuildContent] class is a Flutter `StatelessWidget` used to represent a screen or
-/// content area that displays dashboard-related content for the Medical Device Classifier application.
 
 class DashboardBuildContent extends StatelessWidget {
   /// Constructor for the [DashboardBuildContent] widget.
   ///
   /// [key] is an optional parameter that can be used to provide a key for this widget.
-
   const DashboardBuildContent({
     super.key,
   });
@@ -34,7 +31,10 @@ class DashboardBuildContent extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 12.0),
             child: ClipRRect(
               borderRadius: BorderRadius.circular(10.0),
-              child: Image.asset('assets/images/header_image.jpg', fit: BoxFit.cover,),
+              child: Image.asset(
+                'assets/images/header_image.jpg',
+                fit: BoxFit.cover,
+              ),
             ),
           ),
           Padding(
@@ -46,6 +46,7 @@ class DashboardBuildContent extends StatelessWidget {
               context.appLocalizations?.dashboardExplanationText ?? '',
             ),
           ),
+          const DashboardStickyNote(),
           Wrap(
             children: [
               Padding(

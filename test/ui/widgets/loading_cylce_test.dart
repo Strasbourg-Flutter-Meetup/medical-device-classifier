@@ -8,7 +8,6 @@
 // 12.10.2023 12:26
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:loading_indicator/loading_indicator.dart';
 import 'package:medical_device_classifier/ui/widgets/loading_cycle.dart';
 
 /// This widget test checks that the LoadingCycle widget correctly displays the
@@ -29,6 +28,6 @@ void main() {
     );
 
     // Verify that the LoadingIndicator is displayed.
-    expect(find.byType(LoadingIndicator), findsOneWidget);
+    expect(find.byType(CircularProgressIndicator), findsOneWidget);
   });
 }

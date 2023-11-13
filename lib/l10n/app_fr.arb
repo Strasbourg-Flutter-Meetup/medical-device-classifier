@@ -37,5 +37,11 @@
   "classificationCancel": "Terminer",
   "drawerAboutUs" : "A propos de nous",
   "drawerDataProtection" : "Protection des données",
-  "drawerLegalInformation" : "Informations légales"
+  "drawerLegalInformation" : "Informations légales",
+  "dashboardStickyNoteTranslationNoteText": "Cher utilisateur,\n\nVeuillez noter que le contenu de cette application a été traduit de sa langue d'origine (l'anglais) en français et en allemand. Bien que nous nous efforcions d'assurer la précision, il existe une possibilité d'erreurs de traduction.\n\nVous avez les options suivantes :\n\n• Passer en anglais : Si vous préférez lire le contenu en anglais, vous pouvez passer à la langue d'origine à tout moment. Cliquez sur l'icône des paramètres de langue pour modifier votre préférence de langue.\n\n• Continuer en français/allemand : Si vous choisissez de continuer en français ou en allemand, veuillez noter que certains contenus peuvent faire l'objet d'inexactitudes de traduction.\n\n• Aidez-nous à améliorer : Si vous rencontrez des traductions incorrectes ou si vous souhaitez nous faire part de vos commentaires, veuillez nous contacter à l'adresse translations@medicaldeviceapp.org. Vos commentaires sont précieux et nous aideront à améliorer la qualité des traductions.\n\nMerci d'utiliser l'application de classification des dispositifs médicaux.",
+  "dashboardStickyNoteTranslationButtonSwitchToEnglish":"Passer en anglais",
+  "dashboardStickyNoteTranslationButtonContinue":"D'accord",
+  "dashboardStickyNoteTranslationTitle":"Avis de traduction et options linguistiques",
+  "classificationPreconditionsWarningTitle":"La précision et la fiabilité sont prioritaires",
+  "classificationPreconditionsWarningText":"L'utilisation du Medical Device Classifier se fait à vos risques et périls. Veuillez procéder avec prudence. Si vous constatez des erreurs ou avez des commentaires, n'hésitez pas à nous contacter à [Votre adresse e-mail]. Vos commentaires sont précieux et nous aident à améliorer l'application."
 }

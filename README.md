@@ -122,6 +122,38 @@ MDCG.
 - [x] When any of the above mentioned json strings is not locally stored, it will be downloaded and
   stored locally
 
+#### R9 Language selection
+
+User Story:
+As a user of the medical device classifier application, I want to be informed about the possibility
+of translation errors in the French and German versions of the content. I want the application to
+provide a sticky note notification that allows me to switch to the English version if I prefer or
+continue using the French or German versions. Additionally, I want the flexibility to change the
+language at any time, even if I initially choose to stay with the French or German content.
+
+- [ ] When I open the medical device classifier application, a sticky note with a notification is
+  displayed prominently on the screen.
+- [ ] The sticky note contains a message that informs me about the possibility of translation errors
+  in the French and German content. The message should be clear and concise, stating that the
+  content is translated and may not be completely accurate.
+- [ ] The sticky note provides two options:
+  Option 1: "Switch to English" – Clicking this option should immediately switch the application's
+  language to English.
+  Option 2: "Continue in French/German" – Clicking this option should dismiss the sticky note and
+  allow me to continue using the application in the selected language (French or German).
+- [ ] Regardless of my initial choice (switching to English or continuing in French/German), I
+  should have the ability to change the language at any time during my interaction with the
+  application.
+- [ ] There should be a language settings menu or button within the application's user interface
+  that allows me to easily switch between English, French, and German as needed.
+- [ ] After switching the language, the application's content, including labels, descriptions, and
+  instructions, should update to the selected language.
+- [ ] The sticky note should only be displayed the first time I open the application or until I make
+  a language selection. It should not appear in subsequent sessions unless I reset the language
+  preference.
+- [ ] The language switching functionality should be intuitive and user-friendly, ensuring that I
+  can easily find and use it whenever I need to change the language.
+
 ### Quality Goals
 
 | Goal          | Description                                                                |
@@ -619,6 +651,64 @@ after 1 week of inactivity, because of a lack of documentation regarding Flutter
 existing knowledge and code snippets regarding supabase and knowledge about a workaround to avoid
 the one week inactivity limitation.
 
+### ADR002: Language Translation Management in Medical Device Classifier Application
+
+#### Context
+
+In the context of the Medical Device Classifier Application, there is a need to manage translations
+for content in French and German while maintaining the ability to update definitions, implementing
+rules, and the decision tree without requiring a full application update. The primary concern is to
+ensure that users are informed about the potential risk of translation inaccuracies and to provide
+them with options to switch between languages or contact us in case of identifying incorrect
+translations.
+
+#### Decision
+
+After evaluating various options, the following decisions have been made:
+
+##### Decision 1: Translation Risk Notification
+
+To address the risk of translation inaccuracies, a sticky note notification will be implemented
+within the application. This notification will inform users about the possibility of translation
+errors and provide them with options to switch to the original English content.
+
+##### Decision 2: Language Switching
+
+Users will have the flexibility to switch between languages (English, French, and German) within the
+application at any time. This feature allows users to choose their preferred language for using the
+application.
+
+##### Decision 3: User Feedback Mechanism
+
+To further enhance translation quality and user engagement, a user feedback mechanism will be
+included in the application. Users will have the option to report translation errors or provide
+feedback on the content. This mechanism will help identify and address any inaccuracies promptly.
+
+##### Decision 4: Solution Selection
+
+Solution 'a,' involving the use of professional translation services, is not feasible for our
+non-profit group due to budget constraints. Therefore, we will not pursue this option.
+
+#### Consequences
+
+These decisions aim to mitigate the risk of translation inaccuracies and provide users with a better
+experience when using the Medical Device Classifier Application. Users will be informed about the
+risk and given the choice to switch languages or report errors, enhancing overall user satisfaction
+and application usability.
+
+#### Additional Information (Optional)
+
+For users who identify incorrect translations and wish to report them, an email address, such as '
+translations@medicaldeviceapp.org,' will be provided within the application. This email address will
+serve as a channel for users to contact us and contribute to improving the quality of translations.
+We value user feedback and are committed to addressing translation issues promptly.
+
+Decision Date: 11/11/2023
+
+Decision Makers: DKR
+
+Email for Translation Feedback: translations@medicaldeviceapp.org (Optional)
+
 ## Conventions
 
 ### Coding Conventions
@@ -773,7 +863,61 @@ TBD
 
 ## Risks and Technical Debts
 
-TBD
+### Translation Accuracy Risk in Medical Device Classifier Application
+
+#### Risk Description:
+
+The Medical Device Classifier Application relies on translations for content in French and German,
+while the primary content is in English. There is a risk that the translations may contain
+inaccuracies, which could lead to misunderstandings or incorrect interpretations of the medical
+device information.
+
+#### Risk Probability:
+
+Low to Medium
+The probability of translation errors depends on the quality of the translation process and the
+expertise of the translators. If professional translation services are used, the risk is lower.
+However, human error and language nuances may still introduce inaccuracies.
+
+#### Risk Impact:
+
+Low to High
+The impact of translation errors can vary:
+Low Impact: Minor grammatical or typographical errors that do not affect the overall understanding.
+Medium Impact: Translation errors that lead to slight confusion but do not compromise user safety.
+High Impact: Translation errors that miscommunicate critical medical information, potentially
+leading to user misunderstanding or incorrect device classification.
+
+#### Risk Mitigation:
+
+To mitigate the risk of translation inaccuracies, the following measures can be taken:
+
+a. Professional Translation: Use professional translation services or experts proficient in medical
+terminology to ensure accurate translations.
+
+b. User Notification: Implement a sticky note notification within the application, informing users
+about the possibility of translation errors. Offer users the choice to switch to the original
+English content.
+
+c. Language Switching: Allow users to switch between languages (English, French, and German) within
+the application at any time, providing flexibility to choose their preferred language.
+
+d. Continuous Monitoring: Regularly review and update translations based on user feedback and
+accuracy assessments. Correct any identified errors promptly.
+
+e. User Feedback Mechanism: Include a feature that allows users to report translation errors or
+provide feedback on the content.
+
+#### Risk Acceptance:
+
+The level of risk acceptance depends on the criticality of the medical device information and the
+consequences of translation errors. High-impact inaccuracies should be considered unacceptable,
+while low-impact errors may be tolerated to some extent. Continuous improvement and monitoring of
+translations are essential.
+
+Risk Monitoring:
+Monitor user feedback and reports of translation errors. Regularly assess the quality and accuracy
+of translations. Adjust risk mitigation strategies based on the observed impact and user feedback.
 
 ## Glossary
 
