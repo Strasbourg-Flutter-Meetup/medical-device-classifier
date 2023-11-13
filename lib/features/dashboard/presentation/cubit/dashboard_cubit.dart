@@ -11,6 +11,8 @@ import 'dart:async';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:medical_device_classifier/bootstrap.dart';
 import 'package:medical_device_classifier/features/dashboard/presentation/cubit/dashboard_state.dart';
+import 'package:medical_device_classifier/shared_preferences/shared_preferences_keys.dart';
+import 'package:medical_device_classifier/shared_preferences/shared_preferences_repository.dart';
 
 /// The [DashboardCubit] class is part of the Flutter `Bloc` architecture and represents the business logic
 /// for managing the state of the dashboard screen in the Medical Device Classifier application.
@@ -24,26 +26,40 @@ class DashboardCubit extends Cubit<DashboardState> {
   DashboardCubit(
     super.initialState, {
     required this.bootstrap,
-      });
+    required this.sharedPreferencesRepository,
+  });
 
   /// An instance of [Bootstrap] used for initializing the dashboard.
   final Bootstrap bootstrap;
 
-
+  final SharedPreferencesRepository sharedPreferencesRepository;
 
   /// Private field to store the state data associated with the dashboard.
   DashboardStateData? _stateData;
 
-  /// Method to initialize the dashboard.
+  bool _showDisclaimerDialog = true;
+
+  /// Method to initialize the dashboard and check legal notice confirmation.
   ///
   /// This method sets the state to [DashboardState.loading], triggers the bootstrap process,
-  /// updates the state data, and then transitions to [DashboardState.loaded] when initialization is complete.
+  /// checks the user's legal notice confirmation status, and updates the state data.
+  /// It then transitions to [DashboardState.loaded] when initialization is complete.
   ///
   /// If an error occurs during initialization, it emits a [DashboardState.error] state.
   Future<void> initialize() async {
     try {
       emit(const DashboardState.loading());
       await bootstrap.boot();
+
+      // Check the user's legal notice confirmation status from SharedPreferences.
+      final legalNoticeConfirmationState = sharedPreferencesRepository.read(
+        key: SharedPreferencesKeys.legalNoticeConfirmation,
+      );
+
+      // Determine whether to show the legal notice disclaimer dialog.
+      _showDisclaimerDialog = legalNoticeConfirmationState == 'false' ||
+          legalNoticeConfirmationState.isEmpty;
+
       _updateStateData();
       emit(DashboardState.loaded(data: _stateData));
     } catch (e) {
@@ -53,11 +69,14 @@ class DashboardCubit extends Cubit<DashboardState> {
     }
   }
 
+
   /// Private method to update the state data for the dashboard.
   ///
   /// This method creates a new instance of [DashboardStateData] and assigns it to the [_stateData] field.
 
   void _updateStateData() {
-    _stateData = const DashboardStateData();
+    _stateData = DashboardStateData(
+      showDisclaimerDialog: _showDisclaimerDialog,
+    );
   }
 }

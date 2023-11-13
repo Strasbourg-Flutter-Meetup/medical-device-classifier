@@ -33,4 +33,6 @@ class SharedPreferencesKeys {
   // application
 
   static const String appLanguage = 'appLanguage';
+
+  static const String legalNoticeConfirmation = 'legalNoticeConfirmation';
 }

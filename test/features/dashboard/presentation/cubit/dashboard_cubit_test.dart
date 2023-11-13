@@ -13,6 +13,7 @@ import 'package:medical_device_classifier/features/dashboard/presentation/cubit/
 import 'package:medical_device_classifier/features/dashboard/presentation/cubit/dashboard_state.dart';
 import 'package:mockito/annotations.dart';
 
+import '../../../../bootstrap_test.mocks.dart';
 import 'dashboard_cubit_test.mocks.dart';
 
 @GenerateNiceMocks([MockSpec<BootstrapImpl>()])
@@ -20,11 +21,13 @@ void main() {
   group('DashboardCubit', () {
     late DashboardCubit dashboardCubit;
     final mockBootstrap = MockBootstrapImpl();
+    final mockSharedPreferencesRepository = MockSharedPreferencesRepository();
 
     setUp(() {
       dashboardCubit = DashboardCubit(
         const DashboardState.initial(),
         bootstrap: mockBootstrap,
+        sharedPreferencesRepository: mockSharedPreferencesRepository,
       );
     });
 
@@ -43,7 +46,13 @@ void main() {
         equals(const DashboardState.loading()),
 
         // Verify that it emits a loaded state.
-        equals(const DashboardState.loaded(data: DashboardStateData())),
+        equals(
+          const DashboardState.loaded(
+            data: DashboardStateData(
+              showDisclaimerDialog: true,
+            ),
+          ),
+        ),
       ],
     );
 
@@ -57,7 +66,13 @@ void main() {
         // Verify that the dashboard data is initialized.
         expect(
           cubit.state,
-          equals(const DashboardState.loaded(data: DashboardStateData())),
+          equals(
+            const DashboardState.loaded(
+              data: DashboardStateData(
+                showDisclaimerDialog: true,
+              ),
+            ),
+          ),
         );
         final loadedStateData = cubit.state.data;
         expect(loadedStateData, isA<DashboardStateData>());

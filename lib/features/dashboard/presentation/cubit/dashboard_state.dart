@@ -12,16 +12,30 @@ import 'package:medical_device_classifier/state_management/states.dart';
 /// The [DashboardStateData] class represents the specific data associated with the [DashboardState].
 /// It extends [Equatable], allowing for easy comparison and equality checks.
 class DashboardStateData extends Equatable {
-  const DashboardStateData();
+  /// Creates a new instance of [DashboardStateData].
+  ///
+  /// [showDisclaimerDialog] indicates whether to show the legal notice disclaimer dialog.
+  const DashboardStateData({
+    required this.showDisclaimerDialog,
+  });
+
+  /// Indicates whether to show the legal notice disclaimer dialog.
+  final bool showDisclaimerDialog;
 
   @override
-  List<Object?> get props => [];
+  List<Object?> get props => [
+    showDisclaimerDialog,
+  ];
 
   /// Creates a copy of the [DashboardStateData] object.
   ///
   /// This method is used for creating a new instance of [DashboardStateData] with the same properties.
-  DashboardStateData copyWith() => const DashboardStateData();
+  DashboardStateData copyWith({bool? showDisclaimerDialog}) =>
+      DashboardStateData(
+        showDisclaimerDialog: showDisclaimerDialog ?? this.showDisclaimerDialog,
+      );
 }
+
 
 /// The [DashboardState] type is an alias for a specific state template.
 ///

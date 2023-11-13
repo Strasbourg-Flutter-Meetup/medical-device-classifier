@@ -13,7 +13,11 @@ void main() {
   group('DashboardState', () {
     test('creates an instance of DashboardStateData', () {
       // Create a DashboardState instance.
-      const dashboardState = DashboardState.loaded(data: DashboardStateData());
+      const dashboardState = DashboardState.loaded(
+        data: DashboardStateData(
+          showDisclaimerDialog: true,
+        ),
+      );
 
       // Verify that the associated data is of type DashboardStateData.
       expect(dashboardState.data, isA<DashboardStateData>());
@@ -21,7 +25,7 @@ void main() {
 
     test('creates an instance of DashboardStateData with copyWith', () {
       // Create a DashboardStateData instance.
-      const originalData = DashboardStateData();
+      const originalData = DashboardStateData(showDisclaimerDialog: true);
 
       // Create a copy of DashboardStateData using copyWith.
       final copiedData = originalData.copyWith();
@@ -41,8 +45,8 @@ void main() {
 
     test('compares DashboardStateData instances', () {
       // Create two instances of DashboardStateData.
-      const data1 = DashboardStateData();
-      const data2 = DashboardStateData();
+      const data1 = DashboardStateData(showDisclaimerDialog: true);
+      const data2 = DashboardStateData(showDisclaimerDialog: true);
 
       // Verify that the two instances are equal.
       expect(data1, equals(data2));
@@ -51,7 +55,11 @@ void main() {
     test('checks equality of DashboardState instances using Equatable', () {
       // Create two instances of DashboardState with different data.
       const state1 = DashboardState.initial();
-      const state2 = DashboardState.loaded(data: DashboardStateData());
+      const state2 = DashboardState.loaded(
+        data: DashboardStateData(
+          showDisclaimerDialog: true,
+        ),
+      );
 
       // Verify that Equatable checks correctly.
       expect(state1, isNot(equals(state2)));
@@ -59,8 +67,8 @@ void main() {
 
     test('checks equality of DashboardStateData instances using Equatable', () {
       // Create two instances of DashboardStateData with different properties.
-      const data1 = DashboardStateData();
-      const data2 = DashboardStateData();
+      const data1 = DashboardStateData(showDisclaimerDialog: true);
+      const data2 = DashboardStateData(showDisclaimerDialog: true);
 
       // Verify that Equatable checks correctly.
       expect(data1, equals(data2));

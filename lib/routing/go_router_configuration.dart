@@ -16,6 +16,7 @@ import 'package:medical_device_classifier/features/dashboard/presentation/screen
 import 'package:medical_device_classifier/features/definitions/presentation/screen/definitions.dart';
 import 'package:medical_device_classifier/features/general_explanation_of_rules/presentation/screen/general_explanation_of_rules.dart';
 import 'package:medical_device_classifier/features/implementing_rules/presentation/screen/implementing_rules.dart';
+import 'package:medical_device_classifier/features/legal_notice/screen/legal_notice.dart';
 import 'package:medical_device_classifier/routing/go_router_path.dart';
 import 'package:medical_device_classifier/ui/screen_template.dart';
 import 'package:medical_device_classifier/ui/widgets/app_bar/presentation/widget/app_bar_template.dart';
@@ -30,9 +31,9 @@ final goRouterConfiguration = GoRouter(
   initialLocation: pathToDashboard,
   errorBuilder: (context, goRouterState) {
     return const ScreenTemplate(
-    appBarTemplate: AppBarTemplate(),
-    child: ErrorBuildingContent(),
-  );
+      appBarTemplate: AppBarTemplate(),
+      child: ErrorBuildingContent(),
+    );
   },
   routes: [
     _toDashboard,
@@ -65,6 +66,7 @@ final _toDashboard = GoRoute(
     _toImplementingRules,
     _toClassificationStarter,
     _toAboutUs,
+    _toLegalNotice,
   ],
 );
 
@@ -224,16 +226,33 @@ final _toAboutUs = GoRoute(
   name: nameToAboutUs,
   pageBuilder: (context, state) => CustomTransitionPage(
     transitionsBuilder: (
-        context,
-        animation,
-        secondaryAnimation,
-        child,
-        ) =>
+      context,
+      animation,
+      secondaryAnimation,
+      child,
+    ) =>
         FadeTransition(
-          opacity: animation,
-          child: child,
-        ),
+      opacity: animation,
+      child: child,
+    ),
     child: const AboutUs(),
   ),
 );
 
+final _toLegalNotice = GoRoute(
+  path: pathToLegalNotice,
+  name: nameToLegalNotice,
+  pageBuilder: (context, state) => CustomTransitionPage(
+    transitionsBuilder: (
+      context,
+      animation,
+      secondaryAnimation,
+      child,
+    ) =>
+        FadeTransition(
+      opacity: animation,
+      child: child,
+    ),
+    child: const LegalNotice(),
+  ),
+);

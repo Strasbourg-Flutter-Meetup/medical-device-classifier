@@ -8,6 +8,7 @@
 // 12.10.2023 14:56
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:medical_device_classifier/features/dashboard/presentation/cubit/dashboard_state.dart';
 import 'package:medical_device_classifier/features/dashboard/presentation/widgets/dashboard_build_content.dart';
 
 void main() {
@@ -16,7 +17,11 @@ void main() {
     await tester.pumpWidget(
       const MaterialApp(
         home: Scaffold(
-          body: DashboardBuildContent(),
+          body: DashboardBuildContent(
+            data: DashboardStateData(
+              showDisclaimerDialog: true,
+            ),
+          ),
         ),
       ),
     );

@@ -53,6 +53,7 @@ class InjectionCubits extends InjectionConfiguration {
           supabaseClient: getIt.get<SupabaseClientImpl>(),
           mdcSharedPreferences: getIt.get<MDCSharedPreferences>(),
         ),
+        sharedPreferencesRepository: getIt.get<SharedPreferencesRepository>(),
       ),
     );
     // Add registrations for other Cubits in a similar manner.
