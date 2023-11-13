@@ -93,3 +93,13 @@ void goBack() {
 void goToHome() {
   goRouterContext?.go(pathToDashboard);
 }
+
+/// Navigates to the About Us screen.
+///
+/// The [routeToAboutUs] function is used to navigate to the About Us screen within the app.
+/// It utilizes the GoRouter context to trigger the navigation by invoking the named route
+/// associated with the About Us screen.
+void routeToAboutUs() {
+  goRouterContext?.goNamed(nameToAboutUs);
+}
+

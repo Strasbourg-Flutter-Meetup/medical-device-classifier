@@ -131,27 +131,19 @@ provide a sticky note notification that allows me to switch to the English versi
 continue using the French or German versions. Additionally, I want the flexibility to change the
 language at any time, even if I initially choose to stay with the French or German content.
 
-- [ ] When I open the medical device classifier application, a sticky note with a notification is
+- [x] When I open the medical device classifier application, a sticky note with a notification is
   displayed prominently on the screen.
-- [ ] The sticky note contains a message that informs me about the possibility of translation errors
+- [x] The sticky note contains a message that informs me about the possibility of translation errors
   in the French and German content. The message should be clear and concise, stating that the
   content is translated and may not be completely accurate.
-- [ ] The sticky note provides two options:
-  Option 1: "Switch to English" – Clicking this option should immediately switch the application's
-  language to English.
-  Option 2: "Continue in French/German" – Clicking this option should dismiss the sticky note and
-  allow me to continue using the application in the selected language (French or German).
-- [ ] Regardless of my initial choice (switching to English or continuing in French/German), I
-  should have the ability to change the language at any time during my interaction with the
+- [x] I should have the ability to change the language at any time during my interaction with the
   application.
-- [ ] There should be a language settings menu or button within the application's user interface
+- [x] There should be a language settings menu or button within the application's user interface
   that allows me to easily switch between English, French, and German as needed.
-- [ ] After switching the language, the application's content, including labels, descriptions, and
+- [x] After switching the language, the application's content, including labels, descriptions, and
   instructions, should update to the selected language.
-- [ ] The sticky note should only be displayed the first time I open the application or until I make
-  a language selection. It should not appear in subsequent sessions unless I reset the language
-  preference.
-- [ ] The language switching functionality should be intuitive and user-friendly, ensuring that I
+- [x] The sticky note should always be displayed when the language is french or german.
+- [x] The language switching functionality should be intuitive and user-friendly, ensuring that I
   can easily find and use it whenever I need to change the language.
 
 ### Quality Goals

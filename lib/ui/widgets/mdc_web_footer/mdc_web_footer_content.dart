@@ -7,6 +7,7 @@
 // 10.11.2023 19:08
 import 'package:flutter/material.dart';
 import 'package:medical_device_classifier/extensions/app_localization_extension.dart';
+import 'package:medical_device_classifier/routing/router.dart';
 import 'package:medical_device_classifier/ui/widgets/mdc_web_footer/mdc_web_footer_header.dart';
 import 'package:medical_device_classifier/ui/widgets/mdc_web_footer/mdc_web_footer_navigation_button.dart';
 
@@ -29,7 +30,7 @@ class WebFooterContent extends StatelessWidget {
           const MDCWebFooterHeader(),
           MDCWebFooterNavigationButton(
             buttonText: context.appLocalizations?.drawerAboutUs ?? '',
-            onTap: () {},
+            onTap: routeToAboutUs,
           ),
           const SizedBox(
             width: 12.0,
