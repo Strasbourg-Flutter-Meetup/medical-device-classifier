@@ -44,7 +44,7 @@ class WebFooterContent extends StatelessWidget {
           ),
           MDCWebFooterNavigationButton(
             buttonText: context.appLocalizations?.drawerLegalInformation ?? '',
-            onTap: () {},
+            onTap: routeToLegalNotice,
           ),
         ],
       );

@@ -52,105 +52,81 @@ class AboutUs extends StatelessWidget {
           const SizedBox(
             height: 32.0,
           ),
-          Wrap(
-            alignment: WrapAlignment.start,
+          Text(
+            context.appLocalizations?.aboutUsSubtitle1 ?? '',
+            style: const TextStyle(
+              fontSize: 16.0,
+              fontWeight: FontWeight.w400,
+            ),
+          ),
+          const SizedBox(
+            height: 12.0,
+          ),
+          Text(
+            context.appLocalizations?.aboutUsText1 ?? '',
+            style: const TextStyle(
+              fontSize: 14.0,
+            ),
+          ),
+          const SizedBox(
+            height: 24.0,
+          ),
+          Text(
+            context.appLocalizations?.aboutUsSubtitle2 ?? '',
+            style: const TextStyle(
+              fontSize: 16.0,
+              fontWeight: FontWeight.w400,
+            ),
+          ),
+          const SizedBox(
+            height: 12.0,
+          ),
+          Text(
+            context.appLocalizations?.aboutUsText2 ?? '',
+            style: const TextStyle(
+              fontSize: 14.0,
+            ),
+          ),
+          const SizedBox(
+            height: 24.0,
+          ),
+          Text(
+            context.appLocalizations?.aboutUsSubtitle3 ?? '',
+            style: const TextStyle(
+              fontSize: 16.0,
+              fontWeight: FontWeight.w400,
+            ),
+          ),
+          const SizedBox(
+            height: 12.0,
+          ),
+          Text(
+            context.appLocalizations?.aboutUsText3 ?? '',
+            style: const TextStyle(
+              fontSize: 14.0,
+            ),
+          ),
+          const SizedBox(
+            height: 24.0,
+          ),
+          const SizedBox(
+            height: 48.0,
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.end,
             children: [
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: [
-                  Text(
-                    context.appLocalizations?.aboutUsSubtitle1 ?? '',
-                    style: const TextStyle(
-                      fontSize: 16.0,
-                      fontWeight: FontWeight.w400,
+              TextButton(
+                onPressed: () async {
+                  !await launchUrl(
+                    Uri.parse(
+                      'https://www.meetup.com/strasbourg-flutter-meetup-group/',
                     ),
-                  ),
-                  const SizedBox(
-                    height: 12.0,
-                  ),
-                  Text(
-                    context.appLocalizations?.aboutUsText1 ?? '',
-                    style: const TextStyle(
-                      fontSize: 14.0,
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 24.0,
-                  ),
-                ],
-              ),
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: [
-                  Text(
-                    context.appLocalizations?.aboutUsSubtitle2 ?? '',
-                    style: const TextStyle(
-                      fontSize: 16.0,
-                      fontWeight: FontWeight.w400,
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 12.0,
-                  ),
-                  Text(
-                    context.appLocalizations?.aboutUsText2 ?? '',
-                    style: const TextStyle(
-                      fontSize: 14.0,
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 24.0,
-                  ),
-                ],
-              ),
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: [
-                  Text(
-                    context.appLocalizations?.aboutUsSubtitle3 ?? '',
-                    style: const TextStyle(
-                      fontSize: 16.0,
-                      fontWeight: FontWeight.w400,
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 12.0,
-                  ),
-                  Text(
-                    context.appLocalizations?.aboutUsText3 ?? '',
-                    style: const TextStyle(
-                      fontSize: 14.0,
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 24.0,
-                  ),
-                ],
-              ),
-              Column(
-                children: [
-                  const SizedBox(
-                    height: 48.0,
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.end,
-                    children: [
-                      TextButton(
-                        onPressed: () async {
-                          !await launchUrl(
-                            Uri.parse(
-                              'https://www.meetup.com/strasbourg-flutter-meetup-group/',
-                            ),
-                          );
-                        },
-                        child: Text(
-                          context.appLocalizations?.aboutUsMeetUpButton ??
-                              '',
-                        ),
-                      ),
-                    ],
-                  ),
-                ],
+                  );
+                },
+                child: Text(
+                  context.appLocalizations?.aboutUsMeetUpButton ??
+                      '',
+                ),
               ),
             ],
           ),

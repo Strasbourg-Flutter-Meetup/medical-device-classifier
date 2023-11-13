@@ -103,3 +103,7 @@ void routeToAboutUs() {
   goRouterContext?.goNamed(nameToAboutUs);
 }
 
+void routeToLegalNotice() {
+  goRouterContext?.goNamed(nameToLegalNotice);
+}
+

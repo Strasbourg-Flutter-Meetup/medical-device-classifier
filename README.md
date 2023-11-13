@@ -295,8 +295,6 @@ TBD
 
 ## Cross-cutting Concepts
 
-TBD
-
 ### State management
 
 #### State and StateData

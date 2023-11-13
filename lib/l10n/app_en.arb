@@ -52,5 +52,22 @@
   "aboutUsText2":"As a community, we are proud to introduce our very first project, the \"Medical Device Classifier\". The driving idea behind this project was to create something simple yet impactful. We wanted to develop a practical solution that could genuinely help people in the real world. This commitment to addressing real-world challenges is at the core of our group's mission.",
   "aboutUsSubtitle3":"Join Us, Regardless of Your Experience",
   "aboutUsText3":"At the Strasbourg Flutter Meetup Group, we believe that diversity in experience is our strength. Whether you're a novice eager to explore the world of Flutter or a seasoned senior developer with years of expertise, we welcome developers of all levels. Our group is open to anyone with a passion for Flutter.\n\nIf you're excited about Flutter and want to be part of our thriving community, simply click on the \"Go to meetup.com\" button to join us. We look forward to having you on board as we embark on this exciting Flutter journey together!",
-  "aboutUsMeetUpButton": "Go to meetup.com"
+  "aboutUsMeetUpButton": "Go to meetup.com",
+  "legalNoticeTitle":"Legal Notice and Disclaimer",
+  "legalNoticeSubtitle1":"Medical Device Classifier - General Disclaimer",
+  "legalNoticeText1":"The Medical Device Classifier (\"the Classifier\") is provided for informational and educational purposes only. It is a hobby project developed by volunteers and is intended solely for the purpose of classifying medical devices into categories I, IIa, IIb, or III in accordance with applicable regulations. By using the Classifier, you acknowledge and agree to the terms and conditions outlined in this legal notice and disclaimer.",
+  "legalNoticeSubtitle2":"No Warranty",
+  "legalNoticeText2":"The Classifier is provided \"as is\", without any warranties or guarantees, expressed or implied. The creators and maintainers of the Classifier make no representations or warranties regarding its accuracy, completeness, reliability, or suitability for any purpose. We do not guarantee that the Classifier will be error-free, uninterrupted, or free from defects.",
+  "legalNoticeSubtitle3":"Use at Your Own Risk",
+  "legalNoticeText3":"Users of the Classifier understand and accept that they use it at their own risk. The Classifier is designed solely for the purpose of classifying medical devices into categories I, IIa, IIb, or III. It is not intended to provide medical advice, diagnosis, or treatment. The only risk associated with the Classifier is the possibility of classification inaccuracies.\n\nPlease note that the Classifier should not be relied upon for critical or life-critical purposes, and users should always consult with qualified medical professionals when making important medical decisions. The Classifier's classifications are for reference and informational purposes only and should be verified by appropriate authorities, if necessary.",
+  "legalNoticeSubtitle4":"No Liability",
+  "legalNoticeText4":"In no event shall the creators, developers, or contributors of the Classifier be liable for any direct, indirect, incidental, special, consequential, or punitive damages, whether in an action of contract, negligence, or other tort, arising out of or in connection with the use of the Classifier or any information provided by it.",
+  "legalNoticeSubtitle5":"Hobby Project",
+  "legalNoticeText5":"The Classifier is a hobby project and should not be used for any critical or life-critical purposes. It is not validated or verified to meet any medical or regulatory standards. It does not offer medical advice, diagnoses, or treatments.",
+  "legalNoticeSubtitle6":"Changes and Updates",
+  "legalNoticeText6":"The creators of the Classifier may make changes, updates, or improvements to the Classifier at any time, without notice.",
+  "legalNoticeSubtitle7":"Acceptance of Terms",
+  "legalNoticeText7":"By using the Classifier, you acknowledge that you have read, understood, and agreed to the terms and conditions outlined in this legal notice and disclaimer. If you do not agree with these terms, you should not use the Classifier.",
+  "legalNoticeText8":"This legal notice and disclaimer are subject to change without notice.",
+  "disclaimerDialogButton":"OK"
 }

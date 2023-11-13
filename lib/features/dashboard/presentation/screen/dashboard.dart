@@ -59,7 +59,7 @@ class _DashboardContent extends StatelessWidget
       appBarTemplate: const AppBarTemplate(isDashboard: true),
       child: buildContent(
         state: state,
-        widget: const DashboardBuildContent(),
+        contentBuilder: DashboardBuildContentBuilder(),
       ),
     );
   }
