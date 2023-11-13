@@ -103,6 +103,12 @@ abstract class DecisionTree {
     return rootNode;
   }
 
+  void clearTree() {
+    _rootNodes.clear();
+    _nodes.clear();
+    clearHistory();
+  }
+
   /// Gets the list of root nodes in the decision tree.
   ///
   /// This method returns a list of all root nodes present in the decision tree.

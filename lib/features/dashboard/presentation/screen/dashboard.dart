@@ -13,8 +13,8 @@ import 'package:medical_device_classifier/features/dashboard/presentation/cubit/
 import 'package:medical_device_classifier/features/dashboard/presentation/cubit/dashboard_state.dart';
 import 'package:medical_device_classifier/features/dashboard/presentation/widgets/dashboard_build_content.dart';
 import 'package:medical_device_classifier/mixins/content_builder.dart';
-import 'package:medical_device_classifier/ui/app_bar_template.dart';
 import 'package:medical_device_classifier/ui/screen_template.dart';
+import 'package:medical_device_classifier/ui/widgets/app_bar/presentation/widget/app_bar_template.dart';
 
 /// The [Dashboard] class is a Flutter `StatelessWidget` representing the main dashboard screen
 /// for the Medical Device Classifier application.

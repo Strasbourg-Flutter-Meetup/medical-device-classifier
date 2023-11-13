@@ -6,15 +6,17 @@
 // Copyright: Strasbourg Flutter Meetup Group 2023
 // ID: 20231011134821
 // 11.10.2023 13:48
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:medical_device_classifier/dependency_injection/injections.dart';
 import 'package:medical_device_classifier/features/definitions/presentation/cubits/definitions_cubit.dart';
 import 'package:medical_device_classifier/features/definitions/presentation/cubits/definitions_state.dart';
 import 'package:medical_device_classifier/mixins/content_builder.dart';
-import 'package:medical_device_classifier/ui/app_bar_template.dart';
 import 'package:medical_device_classifier/ui/screen_template.dart';
 import 'package:medical_device_classifier/ui/ui_constants.dart';
+import 'package:medical_device_classifier/ui/widgets/app_bar/presentation/widget/app_bar_template.dart';
 
 /// A Flutter widget that displays definitions content.
 ///
@@ -31,7 +33,9 @@ class Definitions extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => BlocProvider<DefinitionsCubit>(
-        create: (context) => getIt.get<DefinitionsCubit>()..initialize(),
+        create: (context) => getIt.get<DefinitionsCubit>()
+          ..initialize()
+          ..listenToGlobalEventBus(),
         child: _DefinitionsContent(),
       );
 }
@@ -43,8 +47,22 @@ class Definitions extends StatelessWidget {
 /// the state management and content rendering. The content is displayed within
 /// a [ScreenTemplate] and is constrained to a maximum width defined by
 /// [UIConstants.maxWidth].
-class _DefinitionsContent extends StatelessWidget
+class _DefinitionsContent extends StatefulWidget
     with ContentBuilderMixin<DefinitionsStateData> {
+  @override
+  State<_DefinitionsContent> createState() => _DefinitionsContentState();
+}
+
+class _DefinitionsContentState extends State<_DefinitionsContent>
+    with ContentBuilderMixin<DefinitionsStateData> {
+  DefinitionsCubit? _cubit;
+
+  @override
+  void initState() {
+    super.initState();
+    _cubit = context.read<DefinitionsCubit>();
+  }
+
   @override
   Widget build(BuildContext context) {
     final state = context.watch<DefinitionsCubit>().state;
@@ -55,6 +73,14 @@ class _DefinitionsContent extends StatelessWidget
         state: state,
         widget: state.data?.column,
       ),
+    );
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
+    unawaited(
+      _cubit?.cancelGlobalEventBusSubscription(),
     );
   }
 }

@@ -8,9 +8,12 @@
 // 11.10.2023 13:27
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:medical_device_classifier/dependency_injection/injections.dart';
 import 'package:medical_device_classifier/extensions/app_localization_extension.dart';
 import 'package:medical_device_classifier/routing/router.dart';
 import 'package:medical_device_classifier/ui/ui_constants.dart';
+import 'package:medical_device_classifier/ui/widgets/app_bar/presentation/cubit/app_bar_cubit.dart';
 
 /// The [AppBarTemplate] widget is a Flutter [StatelessWidget] that represents
 /// the custom AppBar used throughout the application. It provides the
@@ -37,6 +40,22 @@ class AppBarTemplate extends StatelessWidget implements PreferredSizeWidget {
 
   @override
   Widget build(BuildContext context) {
+    return BlocProvider<AppBarCubit>(
+      create: (context) => getIt.get<AppBarCubit>()..initialize(),
+      child: _AppBarContent(isDashboard: isDashboard),
+    );
+  }
+}
+
+class _AppBarContent extends StatelessWidget {
+  const _AppBarContent({
+    required this.isDashboard,
+  });
+
+  final bool isDashboard;
+
+  @override
+  Widget build(BuildContext context) {
     return Center(
       child: ConstrainedBox(
         constraints: const BoxConstraints(
@@ -44,25 +63,51 @@ class AppBarTemplate extends StatelessWidget implements PreferredSizeWidget {
         ),
         child: AppBar(
           actions: [
-            if (!kIsWeb)
-              IconButton(
-                onPressed: () {
-                  Scaffold.of(context).openDrawer();
-                },
-                icon: const Icon(
-                  Icons.menu,
-                ),
+            PopupMenuButton(
+              icon: const Icon(
+                Icons.language_outlined,
               ),
+              onSelected: (languageCode) {
+                context.read<AppBarCubit>().updateLanguage(
+                      languageCode: languageCode,
+                    );
+              },
+              itemBuilder: (context) {
+                return const [
+                  PopupMenuItem(
+                    value: 'de',
+                    child: Text("Deutsch"),
+                  ),
+                  PopupMenuItem(
+                    value: 'en',
+                    child: Text("English"),
+                  ),
+                  PopupMenuItem(
+                    value: 'fr',
+                    child: Text("Français"),
+                  ),
+                ];
+              },
+            ),
           ],
           // Display either a back button (on mobile) or an account tree icon.
           leading: !kIsWeb && !isDashboard
               ? const BackButton()
-              : const IconButton(
-                  onPressed: goToHome,
-                  icon: Icon(
-                    Icons.account_tree_outlined,
-                  ),
-                ),
+              : !kIsWeb && isDashboard
+                  ? IconButton(
+                      onPressed: () {
+                        Scaffold.of(context).openDrawer();
+                      },
+                      icon: const Icon(
+                        Icons.menu,
+                      ),
+                    )
+                  : const IconButton(
+                      onPressed: goToHome,
+                      icon: Icon(
+                        Icons.account_tree_outlined,
+                      ),
+                    ),
 
           // The title of the AppBar, retrieved from the app's localizations or
           // providing a default title if not found.

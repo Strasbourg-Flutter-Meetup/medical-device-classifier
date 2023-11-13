@@ -45,7 +45,6 @@ dependencies:
     git:
       url: https://github.com/WalnutIT/LeoML-Parser.git
       ref: v_1_1_0
-  loading_indicator: ^3.1.1
   shared_preferences: ^2.2.2
   supabase_flutter: ^1.10.22
   footer: ^0.0.4

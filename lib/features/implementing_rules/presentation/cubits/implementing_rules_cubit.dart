@@ -6,7 +6,7 @@
 // Copyright: Strasbourg Flutter Meetup Group 2023
 // ID: 20231022135918
 // 22.10.2023 13:59
-import 'dart:core';
+import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -15,6 +15,8 @@ import 'package:medical_device_classifier/content_files/content_loader.dart';
 import 'package:medical_device_classifier/content_files/content_loader_impl.dart';
 import 'package:medical_device_classifier/extensions/cubit_extension.dart';
 import 'package:medical_device_classifier/features/implementing_rules/presentation/cubits/implementing_rules_state.dart';
+import 'package:medical_device_classifier/global_event_bus/global_event_bus.dart';
+import 'package:medical_device_classifier/global_event_bus/global_events.dart';
 import 'package:medical_device_classifier/shared_preferences/shared_preferences_keys.dart';
 import 'package:medical_device_classifier/shared_preferences/shared_preferences_repository.dart';
 
@@ -34,6 +36,7 @@ class ImplementingRulesCubit extends Cubit<ImplementingRulesState> {
     required this.sharedPreferencesRepository,
     required this.articleTemplate,
     required this.contentLoader,
+    required this.globalEventBus,
   });
 
   /// The parser responsible for converting a LeoML document into a structured format.
@@ -48,11 +51,26 @@ class ImplementingRulesCubit extends Cubit<ImplementingRulesState> {
   /// The content loader responsible for loading necessary content, including implementing rules.
   final ContentLoader contentLoader;
 
+  /// A global event bus instance for handling cross-component communication.
+  ///
+  /// The `globalEventBus` is used to publish and subscribe to global events
+  /// within the application. Components can use it to communicate and trigger
+  /// actions across different parts of the app.
+  final GlobalEventBus globalEventBus;
+
   /// The parsed state data.
   ImplementingRulesStateData? _stateData;
 
   /// The visual representation of implementing rules, structured as a column of expansion tiles.
   Widget _columnOfExpansionTiles = const Placeholder();
+
+  /// A subscription to the global event bus stream.
+  ///
+  /// The [_globalEventBusStreamSubscription] is used to listen to events
+  /// published on the global event bus. It allows components to react to
+  /// and handle global events by subscribing to the event bus stream.
+  StreamSubscription<dynamic>? _globalEventBusStreamSubscription;
+
 
   /// Initializes the state of the cubit.
   ///
@@ -91,6 +109,43 @@ class ImplementingRulesCubit extends Cubit<ImplementingRulesState> {
         const ImplementingRulesState.error(),
       );
     }
+  }
+
+  Future<void> cancelGlobalEventBusSubscription() async {
+    await _globalEventBusStreamSubscription?.cancel();
+  }
+
+  void listenToGlobalEventBus() {
+    _globalEventBusStreamSubscription = globalEventBus.eventBus
+        .where(
+      (event) =>
+          event == GlobalEvent.switchToGerman ||
+          event == GlobalEvent.switchToEnglish ||
+          event == GlobalEvent.switchToFrench,
+    )
+        .listen((event) async {
+      try {
+        emit(const ImplementingRulesState.loading());
+
+        await contentLoader.load(
+          contentLoaderType: ContentLoaderType.implementingRules,
+        );
+        final leoMLDocument = sharedPreferencesRepository.read(
+          key: SharedPreferencesKeys.implementingRules,
+        );
+
+        _columnOfExpansionTiles = await leoMLDocumentParser.parseToColumn(
+          leoMLDocument: leoMLDocument,
+          template: articleTemplate,
+        );
+
+        _updateStateData();
+
+        emit(ImplementingRulesState.loaded(data: _stateData));
+      } catch (e) {
+        emit(const ImplementingRulesState.error());
+      }
+    });
   }
 
   /// Updates [_stateData] with the latest parsed content.

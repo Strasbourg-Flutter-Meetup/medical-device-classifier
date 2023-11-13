@@ -7,8 +7,6 @@
 // ID: 20231011205328
 // 11.10.2023 20:53
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
-import 'package:loading_indicator/loading_indicator.dart';
 
 /// The [LoadingCycle] widget is a Flutter [StatelessWidget] that displays a
 /// circular loading indicator in the form of a [CircularProgressIndicator].
@@ -22,18 +20,23 @@ class LoadingCycle extends StatelessWidget {
   const LoadingCycle({super.key});
 
   @override
-  Widget build(BuildContext context) => Padding(
-        padding: EdgeInsets.all(MediaQuery.of(context).size.width * 0.4),
-        child: LoadingIndicator(
-          indicatorType: Indicator.ballGridPulse,
-          backgroundColor:
-              SchedulerBinding.instance.platformDispatcher.platformBrightness ==
-                      Brightness.light
-                  ? Colors.white
-                  : Colors.black,
-          colors: const [
-            Colors.blueGrey,
-          ],
+  Widget build(BuildContext context) => Center(
+        child: Padding(
+          padding: EdgeInsets.symmetric(
+            vertical: MediaQuery.of(context).size.height / 3 - 150.0,
+          ),
+          child: ConstrainedBox(
+            constraints: const BoxConstraints(
+              maxWidth: 150.0,
+              minWidth: 100.0,
+              maxHeight: 150.0,
+              minHeight: 100.0,
+            ),
+            child: const CircularProgressIndicator(
+              color: Colors.amber,
+              strokeWidth: 3,
+            ),
+          ),
         ),
       );
 }

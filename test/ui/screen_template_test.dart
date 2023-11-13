@@ -10,7 +10,7 @@
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:medical_device_classifier/ui/app_bar_template.dart';
+import 'package:medical_device_classifier/ui/widgets/app_bar/presentation/widget/app_bar_template.dart';
 import 'package:medical_device_classifier/ui/screen_template.dart';
 import 'package:medical_device_classifier/ui/web_footer.dart';
 

@@ -16,7 +16,7 @@ import 'package:medical_device_classifier/features/definitions/presentation/scre
 import 'package:medical_device_classifier/features/general_explanation_of_rules/presentation/screen/general_explanation_of_rules.dart';
 import 'package:medical_device_classifier/features/implementing_rules/presentation/screen/implementing_rules.dart';
 import 'package:medical_device_classifier/routing/go_router_path.dart';
-import 'package:medical_device_classifier/ui/app_bar_template.dart';
+import 'package:medical_device_classifier/ui/widgets/app_bar/presentation/widget/app_bar_template.dart';
 import 'package:medical_device_classifier/ui/screen_template.dart';
 import 'package:medical_device_classifier/ui/widgets/error_building_content.dart';
 
