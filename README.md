@@ -86,8 +86,8 @@ the app stores in order to animate the users to download the app.
 As responsible of the Medical Device Classifier I would like to present the responsible Strasbourg
 Flutter Meetup group and the responsible developers within the application in order to honor them.
 
-- [ ] The application describes the Strasbourg Flutter Meetup Group
-- [ ] The link to the Strasbourg Flutter Meetup is available
+- [x] The application describes the Strasbourg Flutter Meetup Group
+- [x] The link to the Strasbourg Flutter Meetup is available
 - [ ] The link to the repository is available, because it is an open source project
 
 #### R6 Data protection
@@ -101,7 +101,8 @@ get any fee.
 
 Hint: Not sure if this is necessary, because it is a private project.
 
-- [ ] The application contains a valid legal notice
+- [x] The application contains a valid legal notice
+- [x] The user has to confirm initially that he read the legal notice and accepts the terms and conditions before he can use the app
 
 #### R8 Definitions, Implementing Rules and Decision Tree must be updatable without updating the entire application
 
