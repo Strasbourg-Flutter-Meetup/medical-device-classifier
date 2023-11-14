@@ -54,6 +54,7 @@ class InjectionCubits extends InjectionConfiguration {
           mdcSharedPreferences: getIt.get<MDCSharedPreferences>(),
         ),
         sharedPreferencesRepository: getIt.get<SharedPreferencesRepository>(),
+        globalEventBus: getIt.get<GlobalEventBus>(),
       ),
     );
     // Add registrations for other Cubits in a similar manner.

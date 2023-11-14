@@ -17,6 +17,7 @@ const String pathToClassificationPreconditions = 'classificationPreconditions';
 const String pathToClassification = 'classification';
 const String pathToAboutUs = 'aboutUs';
 const String pathToLegalNotice = 'legalNotice';
+const String pathToPrivacyPolicy = 'privacyPolicy';
 
 // names
 const String nameToDefinitions = 'definitions';
@@ -27,3 +28,4 @@ const String nameToClassificationPreconditions = 'classificationPreconditions';
 const String nameToClassification = 'classification';
 const String nameToAboutUs = 'aboutUs';
 const String nameToLegalNotice = 'legalNotice';
+const String nameToPrivacyPolicy = 'privacyPolicy';

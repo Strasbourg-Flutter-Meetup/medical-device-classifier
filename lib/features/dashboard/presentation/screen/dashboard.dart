@@ -6,6 +6,8 @@
 // Copyright: Strasbourg Flutter Meetup Group 2023
 // ID: 20231011125329
 // 11.10.2023 12:53
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:medical_device_classifier/dependency_injection/injections.dart';
@@ -36,7 +38,9 @@ class Dashboard extends StatelessWidget {
     /// The dashboard content is displayed using the [_DashboardContent] widget.
 
     return BlocProvider<DashboardCubit>(
-      create: (context) => getIt.get<DashboardCubit>()..initialize(),
+      create: (context) => getIt.get<DashboardCubit>()
+        ..initialize()
+        ..listenToGlobalEventBus(),
       child: const _DashboardContent(),
     );
   }
@@ -45,9 +49,23 @@ class Dashboard extends StatelessWidget {
 /// The [_DashboardContent] class is a private Flutter `StatelessWidget` representing the content
 /// of the dashboard screen.
 
-class _DashboardContent extends StatelessWidget
+class _DashboardContent extends StatefulWidget
     with ContentBuilderMixin<DashboardStateData> {
   const _DashboardContent();
+
+  @override
+  State<_DashboardContent> createState() => _DashboardContentState();
+}
+
+class _DashboardContentState extends State<_DashboardContent>
+    with ContentBuilderMixin<DashboardStateData> {
+  DashboardCubit? _cubit;
+
+  @override
+  void initState() {
+    super.initState();
+    _cubit = context.read<DashboardCubit>();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -61,6 +79,14 @@ class _DashboardContent extends StatelessWidget
         state: state,
         contentBuilder: DashboardBuildContentBuilder(),
       ),
+    );
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
+    unawaited(
+      _cubit?.cancelGlobalEventBusStreamSubscription(),
     );
   }
 }

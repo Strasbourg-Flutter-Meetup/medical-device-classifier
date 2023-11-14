@@ -44,7 +44,7 @@ class MDCDrawerContent extends StatelessWidget {
           title: Text(
             context.appLocalizations?.drawerDataProtection ?? '',
           ),
-          onTap: () {},
+          onTap: routeToPrivacyPolicy,
         ),
         const SizedBox(
           height: 12.0,

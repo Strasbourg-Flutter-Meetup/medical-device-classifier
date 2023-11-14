@@ -12,6 +12,9 @@ import 'package:medical_device_classifier/extensions/app_localization_extension.
 import 'package:medical_device_classifier/features/dashboard/presentation/cubit/dashboard_state.dart';
 import 'package:medical_device_classifier/features/dashboard/presentation/widgets/dashboard_sticky_note.dart';
 import 'package:medical_device_classifier/features/legal_notice/widgets/legal_notice_content.dart';
+import 'package:medical_device_classifier/features/privacy_policy/widgets/privacy_policy_content.dart';
+import 'package:medical_device_classifier/global_event_bus/global_event_bus.dart';
+import 'package:medical_device_classifier/global_event_bus/global_events.dart';
 import 'package:medical_device_classifier/routing/router.dart';
 import 'package:medical_device_classifier/shared_preferences/shared_preferences_keys.dart';
 import 'package:medical_device_classifier/shared_preferences/shared_preferences_repository.dart';
@@ -170,37 +173,56 @@ class DashboardBuildContent extends StatelessWidget {
           children: [
             Expanded(
               child: Text(
-                context.appLocalizations?.legalNoticeTitle ?? '',
+                context.appLocalizations?.dialogPrivacyPolicyLegalNoticeTitle ??
+                    '',
               ),
             ),
           ],
         ),
-        content: SingleChildScrollView(
-          child: Column(
-            children: [
-              const LegalNoticeContent(
-                showHeadline: false,
-              ),
-              const SizedBox(
-                height: 48.0,
-              ),
-              TextButton(
-                onPressed: () async {
-                  // Set the legal notice confirmation flag to 'true' in SharedPreferences.
-                  await getIt.get<SharedPreferencesRepository>().setString(
-                        key: SharedPreferencesKeys.legalNoticeConfirmation,
-                        value: 'true',
-                      );
-
-                  // Close the dialog.
-                  goBack();
-                },
-                child: Text(
-                  context.appLocalizations?.disclaimerDialogButton ?? '',
+        content: Column(
+          children: [
+            const Expanded(
+              child: SingleChildScrollView(
+                child: Column(
+                  children: [
+                    Column(
+                      children: [
+                        PrivacyPolicyContent(),
+                        SizedBox(
+                          height: 24.0,
+                        ),
+                        LegalNoticeContent(
+                          showHeadline: true,
+                        ),
+                      ],
+                    ),
+                  ],
                 ),
               ),
-            ],
-          ),
+            ),
+            const SizedBox(
+              height: 48.0,
+            ),
+            TextButton(
+              onPressed: () async {
+                // Set the legal notice confirmation flag to 'true' in SharedPreferences.
+                await getIt.get<SharedPreferencesRepository>().setString(
+                      key: SharedPreferencesKeys.legalNoticeConfirmation,
+                      value: 'true',
+                    );
+
+                getIt.get<GlobalEventBus>().addEvent(
+                      GlobalEvent.disableShowDisclaimerDialog,
+                    );
+
+                // Close the dialog.
+                goBack();
+              },
+              child: Text(
+                context.appLocalizations?.disclaimerDialogButton ?? '',
+              ),
+            ),
+          ],
         ),
       ),
     );

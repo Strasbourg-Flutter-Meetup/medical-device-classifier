@@ -21,6 +21,6 @@ enum GlobalEvent {
   hideStickyNote,
 
   /// Event to show the sticky note or informational message.
-  showStickyNote,
+  showStickyNote, disableShowDisclaimerDialog,
 }
 
