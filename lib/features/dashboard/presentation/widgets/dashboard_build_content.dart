@@ -13,6 +13,8 @@ import 'package:medical_device_classifier/features/dashboard/presentation/cubit/
 import 'package:medical_device_classifier/features/dashboard/presentation/widgets/dashboard_sticky_note.dart';
 import 'package:medical_device_classifier/features/legal_notice/widgets/legal_notice_content.dart';
 import 'package:medical_device_classifier/features/privacy_policy/widgets/privacy_policy_content.dart';
+import 'package:medical_device_classifier/global_event_bus/global_event_bus.dart';
+import 'package:medical_device_classifier/global_event_bus/global_events.dart';
 import 'package:medical_device_classifier/routing/router.dart';
 import 'package:medical_device_classifier/shared_preferences/shared_preferences_keys.dart';
 import 'package:medical_device_classifier/shared_preferences/shared_preferences_repository.dart';
@@ -171,7 +173,8 @@ class DashboardBuildContent extends StatelessWidget {
           children: [
             Expanded(
               child: Text(
-                context.appLocalizations?.dialogPrivacyPolicyLegalNoticeTitle ?? '',
+                context.appLocalizations?.dialogPrivacyPolicyLegalNoticeTitle ??
+                    '',
               ),
             ),
           ],
@@ -191,7 +194,6 @@ class DashboardBuildContent extends StatelessWidget {
                         LegalNoticeContent(
                           showHeadline: true,
                         ),
-
                       ],
                     ),
                   ],
@@ -205,9 +207,13 @@ class DashboardBuildContent extends StatelessWidget {
               onPressed: () async {
                 // Set the legal notice confirmation flag to 'true' in SharedPreferences.
                 await getIt.get<SharedPreferencesRepository>().setString(
-                  key: SharedPreferencesKeys.legalNoticeConfirmation,
-                  value: 'true',
-                );
+                      key: SharedPreferencesKeys.legalNoticeConfirmation,
+                      value: 'true',
+                    );
+
+                getIt.get<GlobalEventBus>().addEvent(
+                      GlobalEvent.disableShowDisclaimerDialog,
+                    );
 
                 // Close the dialog.
                 goBack();

@@ -11,6 +11,8 @@ import 'dart:async';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:medical_device_classifier/bootstrap.dart';
 import 'package:medical_device_classifier/features/dashboard/presentation/cubit/dashboard_state.dart';
+import 'package:medical_device_classifier/global_event_bus/global_event_bus.dart';
+import 'package:medical_device_classifier/global_event_bus/global_events.dart';
 import 'package:medical_device_classifier/shared_preferences/shared_preferences_keys.dart';
 import 'package:medical_device_classifier/shared_preferences/shared_preferences_repository.dart';
 
@@ -27,6 +29,7 @@ class DashboardCubit extends Cubit<DashboardState> {
     super.initialState, {
     required this.bootstrap,
     required this.sharedPreferencesRepository,
+    required this.globalEventBus,
   });
 
   /// An instance of [Bootstrap] used for initializing the dashboard.
@@ -34,10 +37,14 @@ class DashboardCubit extends Cubit<DashboardState> {
 
   final SharedPreferencesRepository sharedPreferencesRepository;
 
+  final GlobalEventBus globalEventBus;
+
   /// Private field to store the state data associated with the dashboard.
   DashboardStateData? _stateData;
 
-  bool _showDisclaimerDialog = true;
+  bool _showDisclaimerDialog = false;
+
+  StreamSubscription<GlobalEvent>? _globalEventBusStreamSubscription;
 
   /// Method to initialize the dashboard and check legal notice confirmation.
   ///
@@ -69,6 +76,20 @@ class DashboardCubit extends Cubit<DashboardState> {
     }
   }
 
+  Future<void> cancelGlobalEventBusStreamSubscription() async {
+    await _globalEventBusStreamSubscription?.cancel();
+  }
+
+  void listenToGlobalEventBus() {
+    _globalEventBusStreamSubscription = globalEventBus.eventBus
+        .where((event) => event == GlobalEvent.disableShowDisclaimerDialog)
+        .listen((event) {
+      emit(const DashboardState.loading());
+      _showDisclaimerDialog = false;
+      _updateStateData();
+      emit(DashboardState.loaded(data: _stateData));
+    });
+  }
 
   /// Private method to update the state data for the dashboard.
   ///
