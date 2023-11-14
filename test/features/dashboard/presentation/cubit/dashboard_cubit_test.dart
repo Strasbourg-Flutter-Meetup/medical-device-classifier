@@ -11,6 +11,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:medical_device_classifier/bootstrap.dart';
 import 'package:medical_device_classifier/features/dashboard/presentation/cubit/dashboard_cubit.dart';
 import 'package:medical_device_classifier/features/dashboard/presentation/cubit/dashboard_state.dart';
+import 'package:medical_device_classifier/global_event_bus/global_event_bus.dart';
 import 'package:mockito/annotations.dart';
 
 import '../../../../bootstrap_test.mocks.dart';
@@ -28,6 +29,7 @@ void main() {
         const DashboardState.initial(),
         bootstrap: mockBootstrap,
         sharedPreferencesRepository: mockSharedPreferencesRepository,
+        globalEventBus: GlobalEventBus.instance,
       );
     });
 

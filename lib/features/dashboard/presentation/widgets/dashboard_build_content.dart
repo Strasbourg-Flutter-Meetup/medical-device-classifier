@@ -167,62 +167,72 @@ class DashboardBuildContent extends StatelessWidget {
     showDialog<void>(
       barrierDismissible: false,
       context: context,
-      builder: (context) => AlertDialog(
-        title: Row(
-          mainAxisAlignment: MainAxisAlignment.start,
-          children: [
-            Expanded(
-              child: Text(
-                context.appLocalizations?.dialogPrivacyPolicyLegalNoticeTitle ??
-                    '',
-              ),
-            ),
-          ],
+      builder: (context) => ConstrainedBox(
+        constraints: const BoxConstraints(
+          maxWidth: UIConstants.maxWidth,
         ),
-        content: Column(
-          children: [
-            const Expanded(
-              child: SingleChildScrollView(
-                child: Column(
-                  children: [
-                    Column(
-                      children: [
-                        PrivacyPolicyContent(),
-                        SizedBox(
-                          height: 24.0,
-                        ),
-                        LegalNoticeContent(
-                          showHeadline: true,
-                        ),
-                      ],
-                    ),
-                  ],
+        child: AlertDialog(
+          insetPadding: EdgeInsets.symmetric(
+            horizontal: MediaQuery.of(context).size.width * 0.1,
+            vertical: MediaQuery.of(context).size.height * 0.2,
+          ),
+          title: Row(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              Expanded(
+                child: Text(
+                  context.appLocalizations
+                          ?.dialogPrivacyPolicyLegalNoticeTitle ??
+                      '',
                 ),
               ),
-            ),
-            const SizedBox(
-              height: 48.0,
-            ),
-            TextButton(
-              onPressed: () async {
-                // Set the legal notice confirmation flag to 'true' in SharedPreferences.
-                await getIt.get<SharedPreferencesRepository>().setString(
-                      key: SharedPreferencesKeys.legalNoticeConfirmation,
-                      value: 'true',
-                    );
-
-                getIt.get<GlobalEventBus>().addEvent(
-                      GlobalEvent.disableShowDisclaimerDialog,
-                    );
-
-                // Close the dialog.
-                goBack();
-              },
-              child: Text(
-                context.appLocalizations?.disclaimerDialogButton ?? '',
+            ],
+          ),
+          content: Column(
+            children: [
+              const Expanded(
+                child: SingleChildScrollView(
+                  child: Column(
+                    children: [
+                      Column(
+                        children: [
+                          PrivacyPolicyContent(),
+                          SizedBox(
+                            height: 24.0,
+                          ),
+                          LegalNoticeContent(
+                            showHeadline: true,
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
               ),
-            ),
-          ],
+              const SizedBox(
+                height: 48.0,
+              ),
+              TextButton(
+                onPressed: () async {
+                  // Set the legal notice confirmation flag to 'true' in SharedPreferences.
+                  await getIt.get<SharedPreferencesRepository>().setString(
+                        key: SharedPreferencesKeys.legalNoticeConfirmation,
+                        value: 'true',
+                      );
+
+                  getIt.get<GlobalEventBus>().addEvent(
+                        GlobalEvent.disableShowDisclaimerDialog,
+                      );
+
+                  // Close the dialog.
+                  goBack();
+                },
+                child: Text(
+                  context.appLocalizations?.disclaimerDialogButton ?? '',
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
