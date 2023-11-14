@@ -102,8 +102,20 @@ void goToHome() {
 void routeToAboutUs() {
   goRouterContext?.goNamed(nameToAboutUs);
 }
-
+/// Navigates to the legal notice screen.
+///
+/// If [goRouterContext] is available, it uses it to navigate to the legal notice screen
+/// by using the [nameToLegalNotice] route name.
 void routeToLegalNotice() {
   goRouterContext?.goNamed(nameToLegalNotice);
 }
+
+/// Navigates to the privacy policy screen.
+///
+/// If [goRouterContext] is available, it uses it to navigate to the privacy policy screen
+/// by using the [nameToPrivacyPolicy] route name.
+void routeToPrivacyPolicy() {
+  goRouterContext?.goNamed(nameToPrivacyPolicy);
+}
+
 

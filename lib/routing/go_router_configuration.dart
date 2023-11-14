@@ -17,6 +17,7 @@ import 'package:medical_device_classifier/features/definitions/presentation/scre
 import 'package:medical_device_classifier/features/general_explanation_of_rules/presentation/screen/general_explanation_of_rules.dart';
 import 'package:medical_device_classifier/features/implementing_rules/presentation/screen/implementing_rules.dart';
 import 'package:medical_device_classifier/features/legal_notice/screen/legal_notice.dart';
+import 'package:medical_device_classifier/features/privacy_policy/screen/privacy_policy.dart';
 import 'package:medical_device_classifier/routing/go_router_path.dart';
 import 'package:medical_device_classifier/ui/screen_template.dart';
 import 'package:medical_device_classifier/ui/widgets/app_bar/presentation/widget/app_bar_template.dart';
@@ -67,6 +68,7 @@ final _toDashboard = GoRoute(
     _toClassificationStarter,
     _toAboutUs,
     _toLegalNotice,
+    _toPrivacyPolicy,
   ],
 );
 
@@ -238,21 +240,45 @@ final _toAboutUs = GoRoute(
     child: const AboutUs(),
   ),
 );
-
+/// A route configuration for navigating to the legal notice screen.
+///
+/// This route is defined with a specific path, name, and a custom transition page builder.
 final _toLegalNotice = GoRoute(
   path: pathToLegalNotice,
   name: nameToLegalNotice,
   pageBuilder: (context, state) => CustomTransitionPage(
     transitionsBuilder: (
-      context,
-      animation,
-      secondaryAnimation,
-      child,
-    ) =>
+        context,
+        animation,
+        secondaryAnimation,
+        child,
+        ) =>
         FadeTransition(
-      opacity: animation,
-      child: child,
-    ),
+          opacity: animation,
+          child: child,
+        ),
     child: const LegalNotice(),
   ),
 );
+
+/// A route configuration for navigating to the privacy policy screen.
+///
+/// This route is defined with a specific path, name, and a custom transition page builder.
+final _toPrivacyPolicy = GoRoute(
+  path: pathToPrivacyPolicy,
+  name: nameToPrivacyPolicy,
+  pageBuilder: (context, state) => CustomTransitionPage(
+    transitionsBuilder: (
+        context,
+        animation,
+        secondaryAnimation,
+        child,
+        ) =>
+        FadeTransition(
+          opacity: animation,
+          child: child,
+        ),
+    child: const PrivacyPolicy(),
+  ),
+);
+

@@ -37,7 +37,7 @@ class WebFooterContent extends StatelessWidget {
           ),
           MDCWebFooterNavigationButton(
             buttonText: context.appLocalizations?.drawerDataProtection ?? '',
-            onTap: () {},
+            onTap: routeToPrivacyPolicy,
           ),
           const SizedBox(
             width: 12.0,
