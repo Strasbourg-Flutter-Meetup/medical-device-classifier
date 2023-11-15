@@ -25,7 +25,8 @@ class WebFooterContent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Wrap(
-        alignment: WrapAlignment.spaceEvenly,
+
+        alignment: WrapAlignment.start,
         children: [
           const MDCWebFooterHeader(),
           MDCWebFooterNavigationButton(

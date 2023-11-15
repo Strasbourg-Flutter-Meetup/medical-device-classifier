@@ -12,7 +12,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:medical_device_classifier/dependency_injection/injections.dart';
 import 'package:medical_device_classifier/extensions/app_localization_extension.dart';
 import 'package:medical_device_classifier/routing/router.dart';
-import 'package:medical_device_classifier/ui/ui_constants.dart';
 import 'package:medical_device_classifier/ui/widgets/app_bar/presentation/cubit/app_bar_cubit.dart';
 
 /// The [AppBarTemplate] widget is a Flutter [StatelessWidget] that represents
@@ -59,7 +58,7 @@ class _AppBarContent extends StatelessWidget {
     return Center(
       child: ConstrainedBox(
         constraints: const BoxConstraints(
-          maxWidth: UIConstants.maxWidth,
+          maxWidth: double.infinity,
         ),
         child: AppBar(
           actions: [

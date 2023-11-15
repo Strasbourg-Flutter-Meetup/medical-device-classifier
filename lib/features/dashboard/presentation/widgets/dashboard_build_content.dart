@@ -62,28 +62,67 @@ class DashboardBuildContent extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        Container(
-          height: 250.0,
-          width: UIConstants.maxWidth,
-          padding: const EdgeInsets.symmetric(horizontal: 12.0),
-          child: ClipRRect(
-            borderRadius: BorderRadius.circular(10.0),
-            child: Image.asset(
-              'assets/images/header_image.jpg',
-              fit: BoxFit.cover,
+        const SizedBox(
+          height: 12.0,
+        ),
+        Stack(
+          children: [
+            Container(
+              height: 250.0,
+              width: double.infinity,
+              padding: const EdgeInsets.symmetric(horizontal: 12.0),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(10.0),
+                child: Image.asset(
+                  'assets/images/header_image.jpg',
+                  fit: BoxFit.cover,
+                ),
+              ),
             ),
+            const Positioned(
+              right: 48.0,
+              bottom: 48.0,
+              child: Text(
+                'Classify your medical device',
+                style: TextStyle(
+                  fontSize: 22.0,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                ),
+              ),
+            ),
+          ],
+        ),
+        ConstrainedBox(
+          constraints: const BoxConstraints(
+            maxWidth: UIConstants.maxWidth,
+          ),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 12.0,
+                    vertical: 24.0,
+                  ),
+                  child: Text(
+                    context.appLocalizations?.dashboardExplanationText ?? '',
+                    style: const TextStyle(
+                      fontSize: 18.0,
+                    ),
+                  ),
+                ),
+              ),
+            ],
           ),
         ),
-        Padding(
-          padding: const EdgeInsets.symmetric(
-            horizontal: 12.0,
-            vertical: 24.0,
+        ConstrainedBox(
+          constraints: const BoxConstraints(
+            maxWidth: UIConstants.maxWidth,
           ),
-          child: Text(
-            context.appLocalizations?.dashboardExplanationText ?? '',
-          ),
+          child: const DashboardStickyNote(),
         ),
-        const DashboardStickyNote(),
         Wrap(
           children: [
             Padding(
@@ -169,12 +208,12 @@ class DashboardBuildContent extends StatelessWidget {
       context: context,
       builder: (context) => ConstrainedBox(
         constraints: const BoxConstraints(
-          maxWidth: UIConstants.maxWidth,
+          maxWidth: UIConstants.maxWidthHalf,
         ),
         child: AlertDialog(
           insetPadding: EdgeInsets.symmetric(
             horizontal: MediaQuery.of(context).size.width * 0.1,
-            vertical: MediaQuery.of(context).size.height * 0.2,
+            vertical: MediaQuery.of(context).size.height * 0.1,
           ),
           title: Row(
             mainAxisAlignment: MainAxisAlignment.start,

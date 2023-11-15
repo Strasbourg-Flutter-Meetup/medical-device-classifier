@@ -59,11 +59,24 @@ class _MedicalDeviceClassifierContentState
     // Obtain the language data from the [LanguageCubit] using the [context.watch] method.
     final data = context.watch<LanguageCubit>().state.data;
 
+    final colorSchemeLight = ColorScheme.fromSeed(
+      brightness: Brightness.light,
+      seedColor: Colors.lightBlueAccent,
+    );
+    final colorSchemeDark = ColorScheme.fromSeed(
+      brightness: Brightness.dark,
+      seedColor: Colors.lightBlueAccent,
+    );
+
     return AdaptiveTheme(
-      light: ThemeData.light(useMaterial3: true),
-      // Light theme configuration.
-      dark: ThemeData.dark(useMaterial3: true),
-      // Dark theme configuration.
+      light: ThemeData(
+        colorScheme: colorSchemeLight,
+        useMaterial3: true,
+      ),
+      dark: ThemeData(
+        colorScheme: colorSchemeDark,
+        useMaterial3: true,
+      ),
       initial: AdaptiveThemeMode.system,
       // Initial theme mode (light, dark, or system).
       builder: (ThemeData light, ThemeData dark) => MaterialApp.router(

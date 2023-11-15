@@ -8,6 +8,7 @@
 import 'package:flutter/material.dart';
 import 'package:medical_device_classifier/extensions/app_localization_extension.dart';
 import 'package:medical_device_classifier/ui/screen_template.dart';
+import 'package:medical_device_classifier/ui/ui_constants.dart';
 import 'package:medical_device_classifier/ui/widgets/app_bar/presentation/widget/app_bar_template.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -24,113 +25,118 @@ class AboutUs extends StatelessWidget {
   @override
   Widget build(BuildContext context) => ScreenTemplate(
     appBarTemplate: const AppBarTemplate(),
-    child: Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 12.0),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          const SizedBox(
-            height: 12.0,
-          ),
-          ClipRRect(
-            borderRadius: BorderRadius.circular(10.0),
-            child: Image.asset(
-              'assets/images/strasbourg_flutter_meetup_group.jpg',
-              fit: BoxFit.cover,
+    child: ConstrainedBox(
+      constraints: const BoxConstraints(
+        maxWidth: UIConstants.maxWidthHalf,
+      ),
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 12.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            const SizedBox(
+              height: 12.0,
             ),
-          ),
-          const SizedBox(
-            height: 12.0,
-          ),
-          Text(
-            context.appLocalizations?.aboutUsTitle ?? '',
-            style: const TextStyle(
-              fontSize: 18.0,
-              fontWeight: FontWeight.bold,
-            ),
-          ),
-          const SizedBox(
-            height: 32.0,
-          ),
-          Text(
-            context.appLocalizations?.aboutUsSubtitle1 ?? '',
-            style: const TextStyle(
-              fontSize: 16.0,
-              fontWeight: FontWeight.w400,
-            ),
-          ),
-          const SizedBox(
-            height: 12.0,
-          ),
-          Text(
-            context.appLocalizations?.aboutUsText1 ?? '',
-            style: const TextStyle(
-              fontSize: 14.0,
-            ),
-          ),
-          const SizedBox(
-            height: 24.0,
-          ),
-          Text(
-            context.appLocalizations?.aboutUsSubtitle2 ?? '',
-            style: const TextStyle(
-              fontSize: 16.0,
-              fontWeight: FontWeight.w400,
-            ),
-          ),
-          const SizedBox(
-            height: 12.0,
-          ),
-          Text(
-            context.appLocalizations?.aboutUsText2 ?? '',
-            style: const TextStyle(
-              fontSize: 14.0,
-            ),
-          ),
-          const SizedBox(
-            height: 24.0,
-          ),
-          Text(
-            context.appLocalizations?.aboutUsSubtitle3 ?? '',
-            style: const TextStyle(
-              fontSize: 16.0,
-              fontWeight: FontWeight.w400,
-            ),
-          ),
-          const SizedBox(
-            height: 12.0,
-          ),
-          Text(
-            context.appLocalizations?.aboutUsText3 ?? '',
-            style: const TextStyle(
-              fontSize: 14.0,
-            ),
-          ),
-          const SizedBox(
-            height: 24.0,
-          ),
-          const SizedBox(
-            height: 48.0,
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.end,
-            children: [
-              TextButton(
-                onPressed: () async {
-                  !await launchUrl(
-                    Uri.parse(
-                      'https://www.meetup.com/strasbourg-flutter-meetup-group/',
-                    ),
-                  );
-                },
-                child: Text(
-                  context.appLocalizations?.aboutUsMeetUpButton ??
-                      '',
-                ),
+            ClipRRect(
+              borderRadius: BorderRadius.circular(10.0),
+              child: Image.asset(
+                'assets/images/strasbourg_flutter_meetup_group.jpg',
+                fit: BoxFit.cover,
               ),
-            ],
-          ),
-        ],
+            ),
+            const SizedBox(
+              height: 12.0,
+            ),
+            Text(
+              context.appLocalizations?.aboutUsTitle ?? '',
+              style: const TextStyle(
+                fontSize: 18.0,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            const SizedBox(
+              height: 32.0,
+            ),
+            Text(
+              context.appLocalizations?.aboutUsSubtitle1 ?? '',
+              style: const TextStyle(
+                fontSize: 16.0,
+                fontWeight: FontWeight.w400,
+              ),
+            ),
+            const SizedBox(
+              height: 12.0,
+            ),
+            Text(
+              context.appLocalizations?.aboutUsText1 ?? '',
+              style: const TextStyle(
+                fontSize: 14.0,
+              ),
+            ),
+            const SizedBox(
+              height: 24.0,
+            ),
+            Text(
+              context.appLocalizations?.aboutUsSubtitle2 ?? '',
+              style: const TextStyle(
+                fontSize: 16.0,
+                fontWeight: FontWeight.w400,
+              ),
+            ),
+            const SizedBox(
+              height: 12.0,
+            ),
+            Text(
+              context.appLocalizations?.aboutUsText2 ?? '',
+              style: const TextStyle(
+                fontSize: 14.0,
+              ),
+            ),
+            const SizedBox(
+              height: 24.0,
+            ),
+            Text(
+              context.appLocalizations?.aboutUsSubtitle3 ?? '',
+              style: const TextStyle(
+                fontSize: 16.0,
+                fontWeight: FontWeight.w400,
+              ),
+            ),
+            const SizedBox(
+              height: 12.0,
+            ),
+            Text(
+              context.appLocalizations?.aboutUsText3 ?? '',
+              style: const TextStyle(
+                fontSize: 14.0,
+              ),
+            ),
+            const SizedBox(
+              height: 24.0,
+            ),
+            const SizedBox(
+              height: 48.0,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                TextButton(
+                  onPressed: () async {
+                    !await launchUrl(
+                      Uri.parse(
+                        'https://www.meetup.com/strasbourg-flutter-meetup-group/',
+                      ),
+                    );
+                  },
+                  child: Text(
+                    context.appLocalizations?.aboutUsMeetUpButton ??
+                        '',
+                  ),
+                ),
+              ],
+            ),
+          ],
+        ),
       ),
     ),
   );

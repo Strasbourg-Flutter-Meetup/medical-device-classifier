@@ -14,6 +14,7 @@ import 'package:medical_device_classifier/features/classification/classification
 import 'package:medical_device_classifier/features/classification/classification_preconditions_checker/presentation/widgets/classification_preconditions_checkbox.dart';
 import 'package:medical_device_classifier/features/classification/classification_preconditions_checker/presentation/widgets/continue_button.dart';
 import 'package:medical_device_classifier/ui/content_builder.dart';
+import 'package:medical_device_classifier/ui/ui_constants.dart';
 import 'package:medical_device_classifier/ui/widgets/sticky_note.dart';
 
 /// A content builder for the classification preconditions screen.
@@ -62,73 +63,76 @@ class ClassificationPreconditionsBuildContent extends StatelessWidget {
   Widget build(BuildContext context) {
     final cubit = context.read<ClassificationPreconditionsCubit>();
 
-    return Column(
-      children: [
-        const SizedBox(
-          height: 12.0,
-        ),
-        ClassificationPreconditionsCheckbox(
-          title: context.appLocalizations
-                  ?.classificationPreconditionsIsMedicalTitle ??
-              '',
-          value: data.isMedicalProduct,
-          onChanged: (value) {
-            cubit.updateIsMedicalProduct(
-              isMedicalProduct: value ?? false,
-            );
-          },
-        ),
-        const SizedBox(
-          height: 24.0,
-        ),
-        ClassificationPreconditionsCheckbox(
-          title: context.appLocalizations
-                  ?.classificationPreconditionsKnowsAboutDefinitionsTitle ??
-              '',
-          value: data.knowsAboutDefinitions,
-          onChanged: (value) {
-            cubit.updateKnowsAboutDefinitions(
-              knowsAboutDefinitions: value ?? false,
-            );
-          },
-        ),
-        const SizedBox(
-          height: 24.0,
-        ),
-        ClassificationPreconditionsCheckbox(
-          title: context.appLocalizations
-                  ?.classificationPreconditionsKnowsAboutImplementingRulesTitle ??
-              '',
-          value: data.knowsAboutImplementingRules,
-          onChanged: (value) {
-            cubit.updateKnowsAboutImplementingRules(
-              knowsAboutImplementingRules: value ?? false,
-            );
-          },
-        ),
-        const SizedBox(
-          height: 48.0,
-        ),
-        Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 12.0),
-          child: StickyNote(
-            content: Text(
-              context.appLocalizations?.classificationPreconditionsWarningText ??
-                  '',
-            ),
-            title: context
-                    .appLocalizations?.classificationPreconditionsWarningTitle ??
-                '',
-            type: StickyNoteMessageType.warning,
+    return ConstrainedBox(
+      constraints: const BoxConstraints(maxWidth: UIConstants.maxWidthHalf),
+      child: Column(
+        children: [
+          const SizedBox(
+            height: 12.0,
           ),
-        ),
-        const SizedBox(
-          height: 128.0,
-        ),
-        ContinueButton(
-          isActive: data.continueButtonIsActive,
-        ),
-      ],
+          ClassificationPreconditionsCheckbox(
+            title: context.appLocalizations
+                    ?.classificationPreconditionsIsMedicalTitle ??
+                '',
+            value: data.isMedicalProduct,
+            onChanged: (value) {
+              cubit.updateIsMedicalProduct(
+                isMedicalProduct: value ?? false,
+              );
+            },
+          ),
+          const SizedBox(
+            height: 24.0,
+          ),
+          ClassificationPreconditionsCheckbox(
+            title: context.appLocalizations
+                    ?.classificationPreconditionsKnowsAboutDefinitionsTitle ??
+                '',
+            value: data.knowsAboutDefinitions,
+            onChanged: (value) {
+              cubit.updateKnowsAboutDefinitions(
+                knowsAboutDefinitions: value ?? false,
+              );
+            },
+          ),
+          const SizedBox(
+            height: 24.0,
+          ),
+          ClassificationPreconditionsCheckbox(
+            title: context.appLocalizations
+                    ?.classificationPreconditionsKnowsAboutImplementingRulesTitle ??
+                '',
+            value: data.knowsAboutImplementingRules,
+            onChanged: (value) {
+              cubit.updateKnowsAboutImplementingRules(
+                knowsAboutImplementingRules: value ?? false,
+              );
+            },
+          ),
+          const SizedBox(
+            height: 48.0,
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 12.0),
+            child: StickyNote(
+              content: Text(
+                context.appLocalizations?.classificationPreconditionsWarningText ??
+                    '',
+              ),
+              title: context
+                      .appLocalizations?.classificationPreconditionsWarningTitle ??
+                  '',
+              type: StickyNoteMessageType.warning,
+            ),
+          ),
+          const SizedBox(
+            height: 128.0,
+          ),
+          ContinueButton(
+            isActive: data.continueButtonIsActive,
+          ),
+        ],
+      ),
     );
   }
 }

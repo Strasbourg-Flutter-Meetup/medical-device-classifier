@@ -30,6 +30,7 @@ class ClassificationStarterBuildContent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         const SizedBox(
           height: 12.0,
@@ -37,6 +38,7 @@ class ClassificationStarterBuildContent extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 12.0),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               Text(
                 context.appLocalizations?.classificationStarter1 ?? '',

@@ -7,6 +7,7 @@
 // ID: 20231011205328
 // 11.10.2023 20:53
 import 'package:flutter/material.dart';
+import 'package:medical_device_classifier/ui/ui_constants.dart';
 
 /// The [LoadingCycle] widget is a Flutter [StatelessWidget] that displays a
 /// circular loading indicator in the form of a [CircularProgressIndicator].
@@ -23,17 +24,17 @@ class LoadingCycle extends StatelessWidget {
   Widget build(BuildContext context) => Center(
         child: Padding(
           padding: EdgeInsets.symmetric(
-            vertical: MediaQuery.of(context).size.height / 3 - 150.0,
+            vertical: MediaQuery.of(context).size.height / 3 -
+                UIConstants.loadingCycleMaxHeight,
           ),
           child: ConstrainedBox(
             constraints: const BoxConstraints(
-              maxWidth: 150.0,
-              minWidth: 100.0,
-              maxHeight: 150.0,
-              minHeight: 100.0,
+              maxWidth: UIConstants.loadingCycleMaxWidth,
+              minWidth: UIConstants.loadingCycleMinWidth,
+              maxHeight: UIConstants.loadingCycleMaxHeight,
+              minHeight: UIConstants.loadingCycleMinHeight,
             ),
             child: const CircularProgressIndicator(
-              color: Colors.amber,
               strokeWidth: 3,
             ),
           ),

@@ -13,7 +13,7 @@ import 'package:medical_device_classifier/ui/widgets/mdc_web_footer/mdc_web_foot
 /// A Flutter widget representing the footer for the web version of the app.
 ///
 /// The [WebFooter] widget is responsible for displaying the footer content in
-/// the web version of the app. It constrains its width to [UIConstants.maxWidth]
+/// the web version of the app. It constrains its width to [UIConstants.maxWidthHalf]
 /// and provides a colored background with rounded corners. The content of the
 /// footer is wrapped in a [WebFooterContent] widget.
 class WebFooter extends StatelessWidget {
@@ -30,10 +30,12 @@ class WebFooter extends StatelessWidget {
           constraints: const BoxConstraints(
             minWidth: double.infinity,
           ),
-          height: 160.0,
+          height: 224.0,
           padding: const EdgeInsets.all(12.0),
           decoration: BoxDecoration(
-            color: Colors.amber,
+            color: MediaQuery.of(context).platformBrightness == Brightness.light
+                ? const Color(0xFFC3E8FF)
+                : const Color(0xFF004c69),
             borderRadius: BorderRadius.circular(
               10.0,
             ),

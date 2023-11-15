@@ -15,6 +15,7 @@ import 'package:medical_device_classifier/features/implementing_rules/presentati
 import 'package:medical_device_classifier/features/implementing_rules/presentation/cubits/implementing_rules_state.dart';
 import 'package:medical_device_classifier/mixins/content_builder.dart';
 import 'package:medical_device_classifier/ui/screen_template.dart';
+import 'package:medical_device_classifier/ui/ui_constants.dart';
 import 'package:medical_device_classifier/ui/widgets/app_bar/presentation/widget/app_bar_template.dart';
 
 /// Represents the top-level widget for implementing rules.
@@ -74,7 +75,12 @@ class _ImplementingRulesContentState extends State<_ImplementingRulesContent>
       appBarTemplate: const AppBarTemplate(),
       child: buildContent(
         state: state,
-        widget: state.data?.column,
+        widget: ConstrainedBox(
+          constraints: const BoxConstraints(
+            maxWidth: UIConstants.maxWidthHalf,
+          ),
+          child: state.data?.column,
+        ),
       ),
     );
   }

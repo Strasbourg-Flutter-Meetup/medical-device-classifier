@@ -46,7 +46,7 @@ class Definitions extends StatelessWidget {
 /// of the definitions screen. It utilizes the [ContentBuilderMixin] to handle
 /// the state management and content rendering. The content is displayed within
 /// a [ScreenTemplate] and is constrained to a maximum width defined by
-/// [UIConstants.maxWidth].
+/// [UIConstants.maxWidthHalf].
 class _DefinitionsContent extends StatefulWidget
     with ContentBuilderMixin<DefinitionsStateData> {
   @override
@@ -71,7 +71,12 @@ class _DefinitionsContentState extends State<_DefinitionsContent>
       appBarTemplate: const AppBarTemplate(),
       child: buildContent(
         state: state,
-        widget: state.data?.column,
+        widget: ConstrainedBox(
+          constraints: const BoxConstraints(
+            maxWidth: UIConstants.maxWidthHalf,
+          ),
+          child: state.data?.column,
+        ),
       ),
     );
   }
