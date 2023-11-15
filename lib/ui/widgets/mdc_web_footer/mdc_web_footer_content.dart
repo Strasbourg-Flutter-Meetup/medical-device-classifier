@@ -25,7 +25,6 @@ class WebFooterContent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Wrap(
-
         alignment: WrapAlignment.start,
         children: [
           const MDCWebFooterHeader(),
@@ -33,15 +32,9 @@ class WebFooterContent extends StatelessWidget {
             buttonText: context.appLocalizations?.drawerAboutUs ?? '',
             onTap: routeToAboutUs,
           ),
-          const SizedBox(
-            width: 12.0,
-          ),
           MDCWebFooterNavigationButton(
             buttonText: context.appLocalizations?.drawerDataProtection ?? '',
             onTap: routeToPrivacyPolicy,
-          ),
-          const SizedBox(
-            width: 12.0,
           ),
           MDCWebFooterNavigationButton(
             buttonText: context.appLocalizations?.drawerLegalInformation ?? '',

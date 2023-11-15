@@ -26,7 +26,7 @@ class UIConstants {
 
   static const double listTileButtonMinHeight = 150.0;
 
-  static const double webFooterNavigationButtonMaxWidth = 192.0;
+  static const double webFooterNavigationButtonMaxWidth = 136.0;
 
   static const double webFooterNavigationButtonMinWidth = 96.0;
 
