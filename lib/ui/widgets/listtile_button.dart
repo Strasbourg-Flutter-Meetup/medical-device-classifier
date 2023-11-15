@@ -7,6 +7,7 @@
 // ID: 20231023142532
 // 23.10.2023 14:25
 import 'package:flutter/material.dart';
+import 'package:medical_device_classifier/ui/ui_constants.dart';
 
 /// A custom widget that combines the features of a ListTile and a Button.
 ///
@@ -71,14 +72,13 @@ class ListTileButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return ConstrainedBox(
       constraints: const BoxConstraints(
-        maxWidth: 350.0,
-        minHeight: 150.0,
+        maxWidth: UIConstants.listTileButtonMaxWidth,
+        minHeight: UIConstants.listTileButtonMinHeight,
       ),
       child: ListTile(
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(10.0),
           side: const BorderSide(
-            color: Colors.amber,
             strokeAlign: 2.0,
           ),
         ),

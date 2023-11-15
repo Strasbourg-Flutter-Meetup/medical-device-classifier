@@ -20,6 +20,7 @@ import 'package:medical_device_classifier/features/classification/classification
 import 'package:medical_device_classifier/features/classification/classification/presentation/cubits/classification_state.dart';
 import 'package:medical_device_classifier/features/classification/classification/presentation/widgets/result.dart';
 import 'package:medical_device_classifier/routing/router.dart';
+import 'package:medical_device_classifier/ui/ui_constants.dart';
 import 'package:medical_device_classifier/ui/widgets/listtile_button.dart';
 
 /// A widget representing the content of the Classification screen.
@@ -36,7 +37,7 @@ class ClassificationBuildContent extends StatelessWidget {
     final cubit = context.read<ClassificationCubit>();
 
     return ConstrainedBox(
-      constraints: const BoxConstraints(maxWidth: 600.0),
+      constraints: const BoxConstraints(maxWidth: UIConstants.maxWidthHalf),
       child: Padding(
         padding: const EdgeInsets.symmetric(
           horizontal: 12.0,

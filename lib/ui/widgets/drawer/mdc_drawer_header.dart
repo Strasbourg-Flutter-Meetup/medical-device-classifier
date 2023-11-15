@@ -7,6 +7,7 @@
 // 10.11.2023 19:10
 import 'package:flutter/material.dart';
 import 'package:medical_device_classifier/extensions/app_localization_extension.dart';
+import 'package:medical_device_classifier/ui/ui_constants.dart';
 
 /// A Flutter widget representing the header of a Material Design (MDC) drawer.
 ///
@@ -25,9 +26,9 @@ class MDCDrawerHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 128.0,
-      decoration: const BoxDecoration(
-        borderRadius: BorderRadius.only(
+      height: UIConstants.mdcDrawerHeaderHeight,
+      decoration: BoxDecoration(
+        borderRadius: const BorderRadius.only(
           // bottomLeft: Radius.circular(
           //   10.0,
           // ),
@@ -35,7 +36,9 @@ class MDCDrawerHeader extends StatelessWidget {
             20.0,
           ),
         ),
-        color: Colors.amber,
+        color: MediaQuery.of(context).platformBrightness == Brightness.light
+            ? const Color(0xFFC3E8FF)
+            : const Color(0xFF004c69),
       ),
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 12.0),

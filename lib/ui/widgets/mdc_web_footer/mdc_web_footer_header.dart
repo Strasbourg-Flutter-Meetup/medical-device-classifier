@@ -8,6 +8,7 @@
 import 'package:flutter/material.dart';
 import 'package:medical_device_classifier/extensions/app_localization_extension.dart';
 import 'package:medical_device_classifier/routing/router.dart';
+import 'package:medical_device_classifier/ui/ui_constants.dart';
 
 /// A Flutter widget representing the header of a web footer.
 ///
@@ -39,7 +40,6 @@ class MDCWebFooterHeader extends StatelessWidget {
             onPressed: goToHome,
             icon: Icon(
               Icons.account_tree_outlined,
-              color: Colors.black,
               size: 40.0,
             ),
           ),
@@ -47,13 +47,14 @@ class MDCWebFooterHeader extends StatelessWidget {
             width: 24.0,
           ),
           ConstrainedBox(
-            constraints: const BoxConstraints(maxWidth: 100.0),
+            constraints: const BoxConstraints(
+              maxWidth: UIConstants.webFooterHeaderMaxWidth,
+            ),
             child: Text(
               context.appLocalizations?.appBarTitle ?? '',
               style: const TextStyle(
                 fontSize: 16.0,
                 fontWeight: FontWeight.w500,
-                color: Colors.black,
               ),
             ),
           ),

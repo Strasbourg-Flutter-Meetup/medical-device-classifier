@@ -6,6 +6,7 @@
 // ID: 20231110190746
 // 10.11.2023 19:07
 import 'package:flutter/material.dart';
+import 'package:medical_device_classifier/ui/ui_constants.dart';
 
 /// A Flutter widget representing a navigation button in a web footer.
 ///
@@ -37,15 +38,17 @@ class MDCWebFooterNavigationButton extends StatelessWidget {
   final void Function() onTap;
 
   @override
-  Widget build(BuildContext context) => SizedBox(
-        height: 48.0,
-        width: 128.0,
+  Widget build(BuildContext context) => ConstrainedBox(
+        constraints: const BoxConstraints(
+          maxHeight: UIConstants.webFooterNavigationButtonMaxHeight,
+          minHeight: UIConstants.webFooterNavigationButtonMinHeight,
+          maxWidth: UIConstants.webFooterNavigationButtonMaxWidth,
+          minWidth: UIConstants.webFooterNavigationButtonMinWidth,
+        ),
         child: ListTile(
-          titleTextStyle: const TextStyle(
-            color: Colors.black,
-          ),
           title: Text(
             buttonText,
+            style: const TextStyle(fontSize: 12.0),
           ),
           onTap: onTap,
         ),
