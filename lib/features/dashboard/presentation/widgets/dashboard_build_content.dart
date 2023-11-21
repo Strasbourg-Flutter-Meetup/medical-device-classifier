@@ -79,15 +79,20 @@ class DashboardBuildContent extends StatelessWidget {
                 ),
               ),
             ),
-            const Positioned(
+            Positioned(
               right: 48.0,
               bottom: 48.0,
-              child: Text(
-                'Classify your medical device',
-                style: TextStyle(
-                  fontSize: 22.0,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white,
+              child: Container(
+                constraints: const BoxConstraints(
+                  maxWidth: UIConstants.dashboardHeaderImageTextMaxWidth,
+                ),
+                child: const Text(
+                  'Classify your medical device',
+                  style: TextStyle(
+                    fontSize: 22.0,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                  ),
                 ),
               ),
             ),

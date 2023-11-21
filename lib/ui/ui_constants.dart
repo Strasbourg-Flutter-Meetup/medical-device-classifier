@@ -37,4 +37,6 @@ class UIConstants {
   static const double webFooterHeaderMaxWidth = 100.0;
 
   static const double mdcDrawerHeaderHeight = 128.0;
+
+  static const double dashboardHeaderImageTextMaxWidth = 192.0;
 }
