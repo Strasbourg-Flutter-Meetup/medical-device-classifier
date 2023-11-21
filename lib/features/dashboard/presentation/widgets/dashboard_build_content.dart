@@ -8,7 +8,7 @@
 // 12.10.2023 11:22
 import 'package:flutter/material.dart';
 import 'package:medical_device_classifier/dependency_injection/injections.dart';
-import 'package:medical_device_classifier/extensions/app_localization_extension.dart';
+import 'package:medical_device_classifier/extensions/build_context_extension.dart';
 import 'package:medical_device_classifier/features/dashboard/presentation/cubit/dashboard_state.dart';
 import 'package:medical_device_classifier/features/dashboard/presentation/widgets/dashboard_sticky_note.dart';
 import 'package:medical_device_classifier/features/legal_notice/widgets/legal_notice_content.dart';

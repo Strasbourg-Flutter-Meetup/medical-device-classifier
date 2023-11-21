@@ -135,5 +135,6 @@
   "privacyPolicy62": "Si vous avez des questions à nous poser, n’hésitez pas à communiquer avec nous en utilisant ce qui suit :",
   "privacyPolicy63":"+33 7 69 27 69 87\ndaniel.krentzlin@walnut-it.com\n7Rue de la croix\nFR-67380 Lingolsheim",
   "privacyPolicy64":"Date d'entrée en vigueur : le 14 novembre 2023",
-  "dialogPrivacyPolicyLegalNoticeTitle" : "Politique de confidentialité, avis juridique et clause de non-responsabilité"
+  "dialogPrivacyPolicyLegalNoticeTitle" : "Politique de confidentialité, avis juridique et clause de non-responsabilité",
+  "appBarTemplateLanguage":"Langue"
 }

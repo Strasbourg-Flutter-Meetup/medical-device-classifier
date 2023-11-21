@@ -11,7 +11,7 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 /// Extension on [BuildContext] to provide convenient access to [AppLocalizations].
 ///
-/// The [AppLocalizationBuildContext] extension adds a `appLocalizations` property
+/// The [BuildContextExtension] extension adds a `appLocalizations` property
 /// to [BuildContext], allowing easy access to the [AppLocalizations] object
 /// using the `of` method.
 ///
@@ -23,7 +23,7 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 /// ```dart
 /// final localizedString = context.appLocalizations?.someLocalizedString;
 /// ```
-extension AppLocalizationBuildContext on BuildContext {
+extension BuildContextExtension on BuildContext {
   /// Provides access to [AppLocalizations] for localization within the app.
   ///
   /// Use this property to retrieve an instance of [AppLocalizations] associated
@@ -39,4 +39,22 @@ extension AppLocalizationBuildContext on BuildContext {
   /// final localizedString = context.appLocalizations?.someLocalizedString;
   /// ```
   AppLocalizations? get appLocalizations => AppLocalizations.of(this);
+
+  ScreenSizeClass getScreenSizeClass() {
+    final width = MediaQuery.of(this).size.width;
+
+    if (width >= 1008.0) {
+      return ScreenSizeClass.largeScreen;
+    } else if (width >= 641.0 && width < 1008.0) {
+      return ScreenSizeClass.mediumScreen;
+    } else {
+      return ScreenSizeClass.smallScreen;
+    }
+  }
+}
+
+enum ScreenSizeClass {
+  smallScreen,
+  mediumScreen,
+  largeScreen,
 }

@@ -7,7 +7,7 @@
 // ID: 20231023134705
 // 23.10.2023 13:47
 import 'package:flutter/material.dart';
-import 'package:medical_device_classifier/extensions/app_localization_extension.dart';
+import 'package:medical_device_classifier/extensions/build_context_extension.dart';
 import 'package:medical_device_classifier/routing/router.dart';
 
 /// A widget representing the start button for the classification starter screen.

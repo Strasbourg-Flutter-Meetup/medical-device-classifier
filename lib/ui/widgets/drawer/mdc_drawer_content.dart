@@ -6,7 +6,7 @@
 // ID: 20231110191054
 // 10.11.2023 19:10
 import 'package:flutter/material.dart';
-import 'package:medical_device_classifier/extensions/app_localization_extension.dart';
+import 'package:medical_device_classifier/extensions/build_context_extension.dart';
 import 'package:medical_device_classifier/routing/router.dart';
 
 /// A Flutter widget representing the content of a Material Design (MDC) drawer.
