@@ -29,6 +29,7 @@ environment:
 # versions available, run `flutter pub outdated`.
 dependencies:
   adaptive_theme: ^3.4.1
+  auto_size_text: ^3.0.0
   cupertino_icons: ^1.0.6
   equatable: ^2.0.5
   flutter:

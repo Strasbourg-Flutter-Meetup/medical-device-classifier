@@ -8,7 +8,7 @@
 // 24.10.2023 14:55
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:medical_device_classifier/extensions/app_localization_extension.dart';
+import 'package:medical_device_classifier/extensions/build_context_extension.dart';
 import 'package:medical_device_classifier/features/classification/classification_preconditions_checker/presentation/cubits/classification_precondition_state.dart';
 import 'package:medical_device_classifier/features/classification/classification_preconditions_checker/presentation/cubits/classification_preconditions_cubit.dart';
 import 'package:medical_device_classifier/features/classification/classification_preconditions_checker/presentation/widgets/classification_preconditions_checkbox.dart';

@@ -8,7 +8,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:medical_device_classifier/dependency_injection/injections.dart';
-import 'package:medical_device_classifier/extensions/app_localization_extension.dart';
+import 'package:medical_device_classifier/extensions/build_context_extension.dart';
 import 'package:medical_device_classifier/features/dashboard/presentation/cubit/sticky_note_cubit.dart';
 import 'package:medical_device_classifier/ui/widgets/sticky_note.dart';
 /// A widget representing a sticky note displayed on the dashboard.

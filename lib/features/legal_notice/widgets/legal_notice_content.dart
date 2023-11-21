@@ -7,7 +7,7 @@
 // 13.11.2023 19:35
 
 import 'package:flutter/material.dart';
-import 'package:medical_device_classifier/extensions/app_localization_extension.dart';
+import 'package:medical_device_classifier/extensions/build_context_extension.dart';
 
 class LegalNoticeContent extends StatelessWidget {
   const LegalNoticeContent({

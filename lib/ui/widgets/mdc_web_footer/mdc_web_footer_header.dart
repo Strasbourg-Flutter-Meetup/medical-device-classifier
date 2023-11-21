@@ -6,7 +6,7 @@
 // ID: 20231110190702
 // 10.11.2023 19:07
 import 'package:flutter/material.dart';
-import 'package:medical_device_classifier/extensions/app_localization_extension.dart';
+import 'package:medical_device_classifier/extensions/build_context_extension.dart';
 import 'package:medical_device_classifier/routing/router.dart';
 import 'package:medical_device_classifier/ui/ui_constants.dart';
 

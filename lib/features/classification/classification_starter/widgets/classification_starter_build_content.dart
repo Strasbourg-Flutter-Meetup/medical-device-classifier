@@ -7,7 +7,7 @@
 // ID: 20231023134839
 // 23.10.2023 13:48
 import 'package:flutter/material.dart';
-import 'package:medical_device_classifier/extensions/app_localization_extension.dart';
+import 'package:medical_device_classifier/extensions/build_context_extension.dart';
 
 /// A widget representing the build content section of the classification starter screen.
 ///

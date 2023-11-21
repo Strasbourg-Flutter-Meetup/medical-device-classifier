@@ -6,7 +6,7 @@
 // ID: 20231114102142
 // 14.11.2023 10:21
 import 'package:flutter/cupertino.dart';
-import 'package:medical_device_classifier/extensions/app_localization_extension.dart';
+import 'package:medical_device_classifier/extensions/build_context_extension.dart';
 /// A widget that displays the content of a privacy policy using text components.
 class PrivacyPolicyContent extends StatelessWidget {
   /// Creates a [PrivacyPolicyContent] widget.

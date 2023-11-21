@@ -15,7 +15,7 @@ import 'package:medical_device_classifier/decision_tree/nodes/internal_node.dart
 import 'package:medical_device_classifier/decision_tree/nodes/leaf_node.dart';
 import 'package:medical_device_classifier/decision_tree/nodes/option.dart';
 import 'package:medical_device_classifier/decision_tree/nodes/root_node.dart';
-import 'package:medical_device_classifier/extensions/app_localization_extension.dart';
+import 'package:medical_device_classifier/extensions/build_context_extension.dart';
 import 'package:medical_device_classifier/features/classification/classification/presentation/cubits/classification_cubit.dart';
 import 'package:medical_device_classifier/features/classification/classification/presentation/cubits/classification_state.dart';
 import 'package:medical_device_classifier/features/classification/classification/presentation/widgets/result.dart';

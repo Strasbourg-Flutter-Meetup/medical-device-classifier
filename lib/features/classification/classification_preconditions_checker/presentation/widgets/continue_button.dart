@@ -7,7 +7,7 @@
 // ID: 20231024161953
 // 24.10.2023 16:19
 import 'package:flutter/material.dart';
-import 'package:medical_device_classifier/extensions/app_localization_extension.dart';
+import 'package:medical_device_classifier/extensions/build_context_extension.dart';
 import 'package:medical_device_classifier/routing/router.dart';
 
 /// A button widget used to continue to the next step in a process.
