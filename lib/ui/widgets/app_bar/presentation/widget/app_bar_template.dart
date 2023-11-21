@@ -73,11 +73,14 @@ class _AppBarContent extends StatelessWidget {
               actions: [
                 if (kIsWeb && screenSizeClass != ScreenSizeClass.smallScreen)
                   TextButton(
-                    style: TextButton.styleFrom(padding: const EdgeInsets.all(22.0)),
-                    onPressed: routeToAboutUs,
-                    child: Text(
-                      context.appLocalizations?.drawerAboutUs ?? '',
+                    style: ButtonStyle(
+                      overlayColor: MaterialStateColor.resolveWith(
+                        (states) => Colors.transparent,
+                      ),
+                      splashFactory: NoSplash.splashFactory,
                     ),
+                    onPressed: routeToAboutUs,
+                    child: Text(context.appLocalizations?.drawerAboutUs ?? ''),
                   ),
                 PopupMenuButton(
                   tooltip: screenSizeClass == ScreenSizeClass.smallScreen
