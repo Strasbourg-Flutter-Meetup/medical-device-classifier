@@ -30,11 +30,13 @@ class LegalNoticeContent extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
-                        Text(
-                          context.appLocalizations?.legalNoticeTitle ?? '',
-                          style: const TextStyle(
-                            fontSize: 18.0,
-                            fontWeight: FontWeight.bold,
+                        Expanded(
+                          child: Text(
+                            context.appLocalizations?.legalNoticeTitle ?? '',
+                            style: const TextStyle(
+                              fontSize: 18.0,
+                              fontWeight: FontWeight.bold,
+                            ),
                           ),
                         ),
                       ],
