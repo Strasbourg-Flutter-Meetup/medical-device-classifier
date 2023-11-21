@@ -40,6 +40,27 @@ extension BuildContextExtension on BuildContext {
   /// ```
   AppLocalizations? get appLocalizations => AppLocalizations.of(this);
 
+  /// Determines the screen size class based on the screen width.
+  ///
+  /// The [getScreenSizeClass] method calculates the screen size class based on
+  /// the width of the screen as obtained from the [MediaQuery] of the current
+  /// context. It categorizes screens into three broad classes: small, medium,
+  /// and large, and returns the appropriate [ScreenSizeClass] enum value.
+  ///
+  /// - For screens with a width greater than or equal to 1008.0 pixels,
+  ///   it returns [ScreenSizeClass.largeScreen].
+  ///
+  /// - For screens with a width between 641.0 pixels (inclusive) and 1008.0 pixels
+  ///   (exclusive), it returns [ScreenSizeClass.mediumScreen].
+  ///
+  /// - For screens with a width less than 641.0 pixels, it returns
+  ///   [ScreenSizeClass.smallScreen].
+  ///
+  /// Returns:
+  /// - [ScreenSizeClass.largeScreen] for screens with a width >= 1008.0 pixels.
+  /// - [ScreenSizeClass.mediumScreen] for screens with a width between
+  ///   641.0 pixels (inclusive) and 1008.0 pixels (exclusive).
+  /// - [ScreenSizeClass.smallScreen] for screens with a width < 641.0 pixels.
   ScreenSizeClass getScreenSizeClass() {
     final width = MediaQuery.of(this).size.width;
 
@@ -51,10 +72,22 @@ extension BuildContextExtension on BuildContext {
       return ScreenSizeClass.smallScreen;
     }
   }
+
 }
 
+/// Enumeration representing different screen size classes.
+///
+/// The [ScreenSizeClass] enum categorizes screens into three broad classes
+/// based on their width: small, medium, and large. These classes can be used
+/// to adapt the user interface and layout for different screen sizes.
 enum ScreenSizeClass {
+  /// Represents a small screen size.
   smallScreen,
+
+  /// Represents a medium screen size.
   mediumScreen,
+
+  /// Represents a large screen size.
   largeScreen,
 }
+
