@@ -102,7 +102,8 @@ get any fee.
 Hint: Not sure if this is necessary, because it is a private project.
 
 - [x] The application contains a valid legal notice
-- [x] The user has to confirm initially that he read the legal notice and accepts the terms and conditions before he can use the app
+- [x] The user has to confirm initially that he read the legal notice and accepts the terms and
+  conditions before he can use the app
 
 #### R8 Definitions, Implementing Rules and Decision Tree must be updatable without updating the entire application
 
@@ -146,6 +147,14 @@ language at any time, even if I initially choose to stay with the French or Germ
 - [x] The sticky note should always be displayed when the language is french or german.
 - [x] The language switching functionality should be intuitive and user-friendly, ensuring that I
   can easily find and use it whenever I need to change the language.
+
+#### R10 General explanation of rules
+
+As application provider, I would like that the user has the chance to read the general explanation
+of rules, which are described in the MDCG 2021-24 in order to ensure that the user is able to make
+correct decisions during the classification process.
+
+- [x] The user can read the general explanation of rules before he starts the classifier
 
 ### Quality Goals
 
@@ -200,11 +209,15 @@ in **R2 Definitions specific to classification rules**.
 #### Implementing Rules
 
 The implementing rule view exists to provide the user MDR III specific impelementation rules in
-order
-to allow the user to use the classifier correctly. Furthermore a separated Implementing Rules view
-can be easily accessed from anywhere within the application, which will satisfy some specific
-requirements
-in **R3 Implementing rules**.
+order to allow the user to use the classifier correctly. Furthermore a separated Implementing Rules
+view can be easily accessed from anywhere within the application, which will satisfy some specific
+requirements in **R3 Implementing rules**.
+
+#### General explanation of rules
+
+The general explanation of rules view exist to provide the user the MDCG explanations of rules in
+ir order to allow the user to use the classifier correctly.It satisfies the the requirement **R10
+General explanation of rules**.
 
 #### Data Protection
 
@@ -244,19 +257,16 @@ Nevertheless I mentioned some information, which should be published.
 At the About Us view we will describe the Strasbourg Flutter Meetup Group and the motivation why we
 developed this classifier.
 
-#### Classifier Introduction
+#### Classifier Introduction & Classifier Precondition
 
 Allows a deeper explanation of the classifier and to make sure that the user is aware of the
-specific
-definitions, implementing rules and the status of its device. The user shall proof that, by
-confirming
-the understanding of the definitions, implementing rules and the status of its device.
+specific definitions, implementing rules and the status of its device. The user shall proof that, by
+confirming the understanding of the definitions, implementing rules and the status of its device.
 
 #### Classifier
 
 The classifier view allows the user classify its device and to interrupt the process in order to
-check
-definitions and implementing rules.
+check definitions and implementing rules.
 
 ### Wire frame
 
@@ -264,7 +274,104 @@ definitions and implementing rules.
 
 ### Final design
 
-TBD
+#### Web
+
+##### Medium / Large (light mode)
+
+![Dashboard Large](resources/visual_design/final_design/web/web_dashboard_large.png)
+*Dashboard Large*
+
+![Dashboard Medium](resources/visual_design/final_design/web/web_dashboard_m.png)
+*Dashboard Medium*
+
+![Dashboard Translation Info](resources/visual_design/final_design/web/web_dashboard_translation_info.png)
+*Dashboard with additional translation information, when selected language is not english*
+
+![Classification Introduction](resources/visual_design/final_design/web/web_classification_intro_lm.png)
+*Classifier Introduction*
+
+![Classification Precondition](resources/visual_design/final_design/web/web_classification_preconditions_ml.png)
+*Classifier Preconditions*
+
+![Classifier](resources/visual_design/final_design/web/web_classifier_ml.png)
+*Classifier*
+
+![Definitions](resources/visual_design/final_design/web/web_definitions_ml.png)
+*Definitions*
+
+![Implementing Rules](resources/visual_design/final_design/web/web_impl_rules_ml.png)
+*Implementing Rules*
+
+![General Explanation of Rules](resources/visual_design/final_design/web/web_general_expl_rules_ml.png)
+*General explanation of rules*
+
+![About us](resources/visual_design/final_design/web/web_about_us_ml.png)
+*About us*
+
+![Privacy Policy](resources/visual_design/final_design/web/web_privacy_policy_ml.png)
+*Privacy Policy*
+
+![Legal Information](resources/visual_design/final_design/web/web_legal_info_ml.png)
+*Legal Information*
+
+![Language Selection](resources/visual_design/final_design/web/web_language_selection_ml.png)
+*Language selection*
+
+##### Small (dark mode)
+
+![Dashboard](resources/visual_design/final_design/web/web_dashboard_s.png)
+*Dashboard*
+
+1. The tile buttons wrap to a column.
+2. The footer items wrap to a column.
+3. The "About Us" button in the app bar disappeared and is accessible via the menu button.
+
+![Menu](resources/visual_design/final_design/web/web_menu_s.png)
+*Menu*
+
+#### Mobile
+![Dashboard](resources/visual_design/final_design/sp_tb/sp_img1.png)
+*Dashboard*
+
+![Classifier](resources/visual_design/final_design/sp_tb/sp_img2.png)
+*Classifier*
+
+![Definitions](resources/visual_design/final_design/sp_tb/sp_img3.png)
+*Definitions*
+
+![Implementing Rules](resources/visual_design/final_design/sp_tb/sp_img4.png)
+*Implementing Rules*
+
+![Rules](resources/visual_design/final_design/sp_tb/sp_img5.png)
+*General explanation of rules*
+
+![Dashboard](resources/visual_design/final_design/sp_tb/sp_img6.png)
+*Menu*
+
+![About Us](resources/visual_design/final_design/sp_tb/sp_img7.png)
+*About us*
+
+#### Tablet
+![Dashboard](resources/visual_design/final_design/sp_tb/tb10_img1.jpg)
+*Dashboard*
+
+![Classifier](resources/visual_design/final_design/sp_tb/tb10_img2.jpg)
+*Classifier*
+
+![Definitions](resources/visual_design/final_design/sp_tb/tb10_img3.jpg)
+*Definitions*
+
+![Implementing Rules](resources/visual_design/final_design/sp_tb/tb10_img4.jpg)
+*Implementing Rules*
+
+![Rules](resources/visual_design/final_design/sp_tb/tb10_img5.jpg)
+*General explanation of rules*
+
+![Dashboard](resources/visual_design/final_design/sp_tb/tb10_img6.jpg)
+*Menu*
+
+![About Us](resources/visual_design/final_design/sp_tb/tb10_img7.jpg)
+*About us*
 
 ## Solution Strategy
 
