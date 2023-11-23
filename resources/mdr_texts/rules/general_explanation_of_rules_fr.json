@@ -174,5 +174,384 @@
         }
       ]
     }
+  ],
+  [
+    {
+      "header": {
+        "headline": "Règle 3",
+        "subHeadline": "Dispositifs qui modifient la composition biologique ou chimique des tissus ou cellules humains, du sang, d'autres liquides corporels ou d'autres liquides destinés à être implantés ou administrés dans le corps"
+      }
+    },
+    {
+      "content": [
+        {
+          "sectionHeadline": "Explication générale de la règle"
+        },
+        {
+          "section": "Ces types de dispositifs doivent être considérés séparément des dispositifs sans contact de la Règle 1 car ils sont indirectement invasifs. Ils modifient des substances qui seront finalement administrées dans le corps. Cette règle couvre principalement les éléments plus sophistiqués des ensembles de circulation extracorporelle, des systèmes de dialyse et des systèmes d'autotransfusion, ainsi que des dispositifs de traitement extracorporel de fluides corporels, qui peuvent être réintroduits ou non immédiatement dans le corps, y compris les cas où le patient n'est pas dans une boucle fermée avec le dispositif."
+        },
+        {
+          "section": "Cette règle couvre également les substances en contact direct avec les cellules, tissus ou organes humains in vitro avant leur implantation ou administration, sans substances d'origine humaine ou animale telles que l'albumine humaine."
+        },
+        {
+          "paragraphHeadline": "Classe"
+        },
+        {
+          "section": "IIb"
+        },
+        {
+          "section": "Tous les dispositifs non invasifs destinés à modifier la composition biologique ou chimique des tissus ou cellules humains, du sang, d'autres liquides corporels ou d'autres liquides destinés à être implantés ou administrés dans le corps sont classés en classe IIb."
+        },
+        {
+          "paragraphHeadline": "Exemples"
+        },
+        {
+          "list": [
+            "Dispositifs destinés à éliminer des substances indésirables du sang par échange de solutés, tels que les hémodialyseurs",
+            "Dispositifs destinés à séparer les cellules par des moyens physiques, par exemple un milieu de gradient pour la séparation des spermatozoïdes",
+            "Concentrés d'hémodialyse",
+            "Dispositif éliminant des cellules sanguines spécifiques (par exemple activées) par liaison spécifique à une matrice"
+          ]
+        },
+        {
+          "paragraphHeadline": "Classe"
+        },
+        {
+          "section": "IIa"
+        },
+        {
+          "section": "à moins que le traitement pour lequel le dispositif est utilisé ne consiste en une filtration, une centrifugation ou un échange de gaz, de chaleur, auquel cas ils sont classés en classe IIa."
+        },
+        {
+          "paragraphHeadline": "Exemples"
+        },
+        {
+          "list": [
+            "Filtration particulaire du sang dans un système de circulation extracorporelle. Ils sont utilisés pour éliminer les particules du sang",
+            "Centrifugation du sang pour le préparer à la transfusion ou à l'autotransfusion, à l'exclusion des centrifugeuses pour la fabrication d'un produit médical",
+            "Élimination du dioxyde de carbone du sang et/ou ajout d'oxygène",
+            "Réchauffement ou refroidissement du sang dans un système de circulation extracorporelle."
+          ]
+        },
+        {
+          "paragraphHeadline": "Classe"
+        },
+        {
+          "section": "III"
+        },
+        {
+          "section": "Tous les dispositifs non invasifs composés d'une substance ou d'un mélange de substances destinés à être utilisés in vitro en contact direct avec des cellules, des tissus ou des organes humains prélevés sur le corps humain ou utilisés in vitro avec des embryons humains avant leur implantation ou administration dans le corps sont classés en classe III."
+        },
+        {
+          "paragraphHeadline": "Exemples"
+        },
+        {
+          "list": [
+            "Substances ou mélanges de substances pour le transport, la perfusion et le stockage d'organes destinés à la transplantation qui n'atteignent pas leur action principale par des moyens pharmacologiques, immunologiques ou métaboliques",
+            "Produits de FIV ou de procréation médicalement assistée sans action pharmacologique/métabolique principale (substances ou mélanges de substances)",
+            "Milieux de culture cellulaire pour FIV sans albumine humaine"
+          ]
+        },
+        {
+          "sectionHeadline": "Questions pratiques de classification"
+        },
+        {
+          "section": "Ces dispositifs sont généralement utilisés en association avec un dispositif médical actif couvert par la Règle 9 ou la Règle 11. La filtration et la centrifugation doivent être comprises dans le contexte de cette règle comme étant effectuées exclusivement par des méthodes mécaniques."
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "header": {
+        "headline": "Règle 4",
+        "subHeadline": "Dispositifs en contact avec une peau blessée ou une muqueuse"
+      }
+    },
+    {
+      "content": [
+        {
+          "sectionHeadline": "Explication générale de la règle"
+        },
+        {
+          "section": "Cette règle s'applique aux dispositifs non invasifs ainsi qu'aux dispositifs invasifs en contact avec une peau blessée ou une muqueuse. Cette règle vise principalement les pansements indépendamment de la profondeur de la blessure cutanée ou de la blessure de la muqueuse. Les types conventionnels de produits, tels que ceux utilisés comme barrière mécanique, sont bien compris et ne présentent aucun grand danger. Il y a également eu des développements technologiques rapides dans ce domaine, avec l'émergence de nouveaux types de pansements pour lesquels de nouveaux types de revendications sont faites, par exemple la gestion du microenvironnement d'une plaie pour améliorer son mécanisme de guérison naturel."
+        },
+        {
+          "section": "Les revendications plus récentes concernent le mécanisme de guérison par intention secondaire, telles que l'influence sur les mécanismes sous-jacents de la granulation ou de la formation de l'épithélium ou la prévention de la contraction de la plaie. Certains dispositifs utilisés sur la derme ou la muqueuse blessée peuvent même avoir un but de maintien de la vie ou de sauvetage de la vie, par exemple en cas de destruction de l'épiderme ou de la muqueuse sur une grande surface et/ou d'impact systémique."
+        },
+        {
+          "section": "Les pansements incorporant une substance qui, si elle est utilisée séparément, peut être considérée comme un produit médicamenteux et qui a une action auxiliaire par rapport au pansement, relèvent de la classe III en vertu de la règle 14. Les dispositifs composés d'autres substances qui sont absorbées ou localement dispersées dans le corps humain relèvent de la règle 21."
+        },
+        {
+          "paragraphHeadline": "Classe"
+        },
+        {
+          "section": "I"
+        },
+        {
+          "section": "Tous les dispositifs non invasifs en contact avec une peau blessée ou une muqueuse sont classés comme suit :"
+        },
+        {
+          "section": "- classe I s'ils sont destinés à être utilisés comme barrière mécanique, pour la compression ou pour l'absorption des exsudats ;"
+        },
+        {
+          "paragraphHeadline": "Exemples"
+        },
+        {
+          "list": [
+            "Pansements pour la peau ou la muqueuse, tels que : tampons absorbants, pansements îlots, coton, bandes de pansement, sparadraps adhésifs et pansements de gaze agissant comme barrière, maintenant la position de la plaie ou absorbant les exsudats de la plaie",
+            "Sacs de stomie"
+          ]
+        },
+        {
+          "paragraphHeadline": "Classe"
+        },
+        {
+          "section": "IIb"
+        },
+        {
+          "section": "- classe IIb s'ils sont principalement destinés aux blessures de la peau qui ont atteint le derme ou la muqueuse et ne peuvent guérir que par intention secondaire ;"
+        },
+        {
+          "paragraphHeadline": "Exemples"
+        },
+        {
+          "section": "Sont principalement destinés à être utilisés avec des blessures graves :"
+        },
+        {
+          "list": [
+            "Pansements destinés aux plaies ulcérées ayant atteint le derme",
+            "Pansements destinés aux brûlures ayant atteint le derme",
+            "Pansements pour les plaies de décubitus graves",
+            "Pansements incorporant des moyens d'augmentation du tissu et fournissant un substitut cutané temporaire"
+          ]
+        },
+        {
+          "paragraphHeadline": "Classe"
+        },
+        {
+          "section": "IIa"
+        },
+        {
+          "section": "- classe IIa s'ils sont principalement destinés à gérer le micro-environnement de la peau blessée ou de la muqueuse ; et"
+        },
+        {
+          "paragraphHeadline": "Exemples"
+        },
+        {
+          "list": [
+            "Pansements hydrogel pour les plaies ou les blessures qui n'ont pas atteint le derme ou qui ne peuvent guérir que par intention secondaire",
+            "Pansements de gaze non médicamenteux imprégnés",
+            "Pansements en film polymère"
+          ]
+        },
+        {
+          "paragraphHeadline": "Classe"
+        },
+        {
+          "section": "IIa"
+        },
+        {
+          "section": "- classe IIa dans tous les autres cas"
+        },
+        {
+          "paragraphHeadline": "Classe"
+        },
+        {
+          "section": "I"
+        },
+        {
+          "section": "Cette règle s'applique également aux dispositifs invasifs en contact avec une muqueuse blessée."
+        },
+        {
+          "paragraphHeadline": "Exemples"
+        },
+        {
+          "list": [
+            "Pansements pour saignements de nez (le but du pansement n'est pas de gérer le micro-environnement) sont de classe I selon cette règle",
+            "Pansements dentaires ne contenant pas de matériel d'origine animale"
+          ]
+        },
+        {
+          "sectionHeadline": "Questions pratiques de classification"
+        },
+        {
+          "section": "La classification des dispositifs couverts par cette règle dépend de l'utilisation prévue par le fabricant, par exemple, un pansement en film polymère serait de classe IIa si son utilisation prévue est de gérer le microenvironnement de la plaie ou de classe I si son utilisation prévue se limite à maintenir une canule invasive à l'emplacement de la plaie. Par conséquent, il est impossible de dire a priori qu'un type particulier de pansement appartient à une classe donnée sans connaître son utilisation prévue telle que définie par le fabricant. Cependant, une revendication selon laquelle le dispositif est interactif ou actif par rapport au processus de guérison de la plaie implique généralement que le dispositif est au moins de classe IIa."
+        },
+        {
+          "section": "La plupart des pansements destinés à une utilisation relevant de la classe IIa ou IIb remplissent également des fonctions relevant de la classe I, par exemple celle d'une barrière mécanique. De tels dispositifs sont néanmoins classés en fonction de leur utilisation prévue dans la classe supérieure."
+        },
+        {
+          "section": "Pour de tels dispositifs incorporant une substance qui, si elle est utilisée séparément, peut être considérée comme un produit médicamenteux ou un dérivé du sang humain, ou des tissus animaux ou des dérivés rendus non viables, voir la Règle 14 ou la Règle 18, respectivement."
+        },
+        {
+          "sectionHeadline": "Explication des concepts spéciaux"
+        },
+        {
+          "section": "Dermis ou muqueuse lésés : la blessure expose au moins partiellement le tissu sous-cutané."
+        },
+        {
+          "section": "Intention secondaire : la blessure guérit d'abord en étant remplie de tissu de granulation ; ensuite, l'épithélium repousse par-dessus le tissu de granulation et la blessure se contracte. En revanche, l'intention primaire implique que les bords de la blessure sont suffisamment proches ou rapprochés, par exemple par suture, pour permettre à la blessure de guérir avant la formation de tissu de granulation."
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "header": {
+        "headline": "Règle 5",
+        "subHeadline": "Dispositifs invasifs par rapport aux orifices corporels"
+      }
+    },
+    {
+      "content": [
+        {
+          "sectionHeadline": "Explication générale de la règle"
+        },
+        {
+          "section": "L'invasivité par rapport aux orifices corporels doit être considérée séparément de l'invasivité qui pénètre à travers une coupure de la surface corporelle (invasivité chirurgicale). Pour une utilisation à court terme, il convient également de faire une distinction entre l'invasivité par rapport aux parties antérieures moins vulnérables de l'oreille, de la bouche et du nez, et les autres sites anatomiques accessibles par des orifices corporels naturels. Un stomie créé chirurgicalement, qui permet, par exemple, l'évacuation de l'urine ou des matières fécales, doit également être considéré comme un orifice corporel."
+        },
+        {
+          "section": "Les dispositifs couverts par cette règle ont tendance à être des instruments diagnostiques et thérapeutiques utilisés dans des spécialités particulières (otorhinolaryngologie, ophtalmologie, dentisterie, proctologie, urologie et gynécologie)."
+        },
+        {
+          "paragraphHeadline": "Classe"
+        },
+        {
+          "section": "I"
+        },
+        {
+          "section": "Tous les dispositifs invasifs par rapport aux orifices corporels, à l'exception des dispositifs invasifs chirurgicaux, qui ne sont pas destinés à être connectés à un dispositif actif ou qui sont destinés à être connectés à un dispositif actif de classe I, sont classés comme suit :"
+        },
+        {
+          "section": "classe I s'ils sont destinés à une utilisation temporaire ;"
+        },
+        {
+          "paragraphHeadline": "Exemples"
+        },
+        {
+          "list": [
+            "Miroirs portatifs utilisés en dentisterie pour faciliter le diagnostic et la chirurgie dentaire",
+            "Matériaux pour empreintes dentaires",
+            "Sondes gastriques",
+            "Bacs pour empreintes",
+            "Gants d'examen",
+            "Cathéters urinaires destinés à une utilisation temporaire",
+            "Cathéter de transfert d'embryon et cathéter d'insémination"
+          ]
+        },
+        {
+          "paragraphHeadline": "Classe"
+        },
+        {
+          "section": "IIa"
+        },
+        {
+          "section": "- classe IIa s'ils sont destinés à une utilisation à court terme,"
+        },
+        {
+          "paragraphHeadline": "Exemples"
+        },
+        {
+          "list": [
+            "Lentilles de contact correctrices à court terme",
+            "Tubes trachéaux",
+            "Cathéters urinaires à demeure destinés à une utilisation à court terme",
+            "Gaz utilisés pour l'insufflation dans le corps",
+            "Tubes nasobiliaires"
+          ]
+        },
+        {
+          "paragraphHeadline": "Classe"
+        },
+        {
+          "section": "I"
+        },
+        {
+          "section": "- sauf s'ils sont utilisés dans la cavité buccale jusqu'au pharynx, dans le conduit auditif jusqu'au tympan ou dans la cavité nasale, auquel cas ils sont classés en classe I ; et"
+        },
+        {
+          "paragraphHeadline": "Exemples"
+        },
+        {
+          "list": [
+            "Matériaux pour empreintes dentaires",
+            "Seringue en plastique utilisée pour mesurer une quantité de médicament avant son administration par voie orale au patient",
+            "Prothèses dentaires amovibles ou fixes"
+          ]
+        },
+        {
+          "paragraphHeadline": "Classe"
+        },
+        {
+          "section": "IIb"
+        },
+        {
+          "section": "- classe IIb s'ils sont destinés à une utilisation à long terme."
+        },
+        {
+          "paragraphHeadline": "Exemples"
+        },
+        {
+          "list": [
+            "Endoprothèses urétrales",
+            "Lentilles de contact correctrices à long terme",
+            "Canules trachéales pour trachéostomie à long terme",
+            "Cathéters urinaires destinés à une utilisation à long terme"
+          ]
+        },
+        {
+          "paragraphHeadline": "Classe"
+        },
+        {
+          "section": "IIa"
+        },
+        {
+          "section": "- sauf s'ils sont utilisés dans la cavité buccale jusqu'au pharynx, dans le conduit auditif jusqu'au tympan ou dans la cavité nasale et ne sont pas susceptibles d'être absorbés par la muqueuse, auquel cas ils sont classés en classe IIa"
+        },
+        {
+          "paragraphHeadline": "Exemples"
+        },
+        {
+          "list": [
+            "Fils orthodontiques",
+            "Prothèses dentaires fixes",
+            "Scellants de fissures"
+          ]
+        },
+        {
+          "paragraphHeadline": "Classe"
+        },
+        {
+          "section": "IIa"
+        },
+        {
+          "section": "Tous les dispositifs invasifs par rapport aux orifices corporels, à l'exception des dispositifs invasifs chirurgicaux, destinés à être connectés à un dispositif actif de classe IIa, classe IIb ou classe III, sont classés en classe IIa"
+        },
+        {
+          "paragraphHeadline": "Exemples"
+        },
+        {
+          "list": [
+            "Canules de trachéostomie ou tubes trachéaux connectés à un ventilateur",
+            "Analyseurs d'oxygène dans le sang placés sous la paupière",
+            "Irrigateurs nasaux électriques",
+            "Fibres optiques dans les endoscopes connectés à des lasers chirurgicaux",
+            "Cathéters ou tubes d'aspiration gastrique",
+            "Embouts d'aspiration dentaire",
+            "Endoscopes utilisant une source lumineuse dans le spectre visible"
+          ]
+        },
+        {
+          "sectionHeadline": "Questions pratiques de classification"
+        },
+        {
+          "section": "En ce qui concerne les dispositifs destinés à être connectés à un dispositif actif : la règle et la sous-règle les plus strictes entraînant une classification plus élevée s'appliqueront. Par exemple, une canule trachéale destinée à une utilisation à long terme doit être classée en classe IIb."
+        },
+        {
+          "section": "Les dispositifs composés de substances absorbées par ou localement dispersées dans le corps humain peuvent également relever de la règle 21."
+        }
+      ]
+    }
   ]
 ]

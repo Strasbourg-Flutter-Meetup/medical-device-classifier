@@ -174,5 +174,384 @@
         }
       ]
     }
+  ],
+  [
+    {
+      "header": {
+        "headline": "Regel 3",
+        "subHeadline": "Geräte, die die biologische oder chemische Zusammensetzung von menschlichem Gewebe oder Zellen, Blut, anderen Körperflüssigkeiten oder anderen Flüssigkeiten, die zur Implantation oder Verabreichung in den Körper vorgesehen sind, verändern"
+      }
+    },
+    {
+      "content": [
+        {
+          "sectionHeadline": "Allgemeine Erklärung der Regel"
+        },
+        {
+          "section": "Diese Art von Geräten muss separat von den berührungslosen Geräten nach Regel 1 betrachtet werden, da sie indirekt invasiv sind. Sie verändern Substanzen, die schließlich in den Körper verabreicht werden. Diese Regel umfasst hauptsächlich die anspruchsvolleren Elemente von extrakorporalen Kreislaufsets, Dialysesystemen und Autotransfusionssystemen sowie Geräte zur extrakorporalen Behandlung von Körperflüssigkeiten, die möglicherweise oder möglicherweise nicht unmittelbar wieder in den Körper eingeführt werden, einschließlich Fällen, in denen der Patient nicht in einer geschlossenen Schleife mit dem Gerät ist."
+        },
+        {
+          "section": "Diese Regel umfasst auch Substanzen, die vor ihrer Implantation oder Verabreichung in vitro direkt mit menschlichen Zellen, Geweben oder Organen in Kontakt kommen, ohne Substanzen aus menschlicher oder tierischer Herkunft wie Humanalbumin."
+        },
+        {
+          "paragraphHeadline": "Klasse"
+        },
+        {
+          "section": "IIb"
+        },
+        {
+          "section": "Alle nicht-invasiven Geräte, die dazu bestimmt sind, die biologische oder chemische Zusammensetzung von menschlichem Gewebe oder Zellen, Blut, anderen Körperflüssigkeiten oder anderen Flüssigkeiten, die zur Implantation oder Verabreichung in den Körper vorgesehen sind, zu verändern, werden als Klasse IIb eingestuft."
+        },
+        {
+          "paragraphHeadline": "Beispiele"
+        },
+        {
+          "list": [
+            "Geräte, die dazu bestimmt sind, unerwünschte Substanzen aus dem Blut durch Austausch von Lösungsmitteln wie Hämodialysatoren zu entfernen",
+            "Geräte, die Zellen durch physische Mittel trennen, z. B. Gradientenmedium zur Spermientrennung",
+            "Hämokonzentrate",
+            "Gerät zur Entfernung bestimmter Blutzellen (z. B. aktiviert) durch spezifische Bindung an eine Matrix"
+          ]
+        },
+        {
+          "paragraphHeadline": "Klasse"
+        },
+        {
+          "section": "IIa"
+        },
+        {
+          "section": "sofern die Behandlung, für die das Gerät verwendet wird, aus Filtration, Zentrifugation oder Gasaustausch, Wärme besteht, in welchem Fall sie als Klasse IIa eingestuft sind."
+        },
+        {
+          "paragraphHeadline": "Beispiele"
+        },
+        {
+          "list": [
+            "Partikelfiltration des Blutes in einem extrakorporalen Kreislaufsystem. Diese werden verwendet, um Partikel aus dem Blut zu entfernen",
+            "Zentrifugation des Blutes zur Vorbereitung für die Transfusion oder Autotransfusion, ausgenommen Zentrifugen zur Herstellung eines Arzneimittels",
+            "Entfernen von Kohlendioxid aus dem Blut und/oder Hinzufügen von Sauerstoff",
+            "Erwärmen oder Kühlen des Blutes in einem extrakorporalen Kreislaufsystem."
+          ]
+        },
+        {
+          "paragraphHeadline": "Klasse"
+        },
+        {
+          "section": "III"
+        },
+        {
+          "section": "Alle nicht-invasiven Geräte, die aus einer Substanz oder einer Mischung von Substanzen bestehen und dazu bestimmt sind, in vitro in direktem Kontakt mit menschlichen Zellen, Geweben oder Organen aus dem menschlichen Körper oder in vitro mit menschlichen Embryonen vor ihrer Implantation oder Verabreichung in den Körper verwendet zu werden, werden als Klasse III eingestuft."
+        },
+        {
+          "paragraphHeadline": "Beispiele"
+        },
+        {
+          "list": [
+            "Substanzen oder Mischungen von Substanzen zur Transport, Perfusions und Lagerung von Organen, die zur Transplantation bestimmt sind und die ihre Hauptwirkung nicht durch pharmakologische, immunologische oder metabolische Mittel erzielen",
+            "IVF- oder ART-Produkte ohne Hauptpharmakologische/metabolische Wirkung (Substanzen oder Mischungen von Substanzen)",
+            "IVF-Zellmedien ohne Humanalbumin"
+          ]
+        },
+        {
+          "sectionHeadline": "Praktische Fragen zur Klassifizierung"
+        },
+        {
+          "section": "Diese Geräte werden normalerweise in Verbindung mit einem aktiven medizinischen Gerät verwendet, das unter Regel 9 oder Regel 11 fällt. Filtration und Zentrifugation sollten im Kontext dieser Regel ausschließlich durch mechanische Methoden verstanden werden."
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "header": {
+        "headline": "Regel 4",
+        "subHeadline": "Geräte, die mit verletzter Haut oder Schleimhaut in Kontakt kommen"
+      }
+    },
+    {
+      "content": [
+        {
+          "sectionHeadline": "Allgemeine Erklärung der Regel"
+        },
+        {
+          "section": "Diese Regel gilt für nicht-invasive Geräte sowie invasive Geräte, die mit verletzter Haut oder Schleimhaut in Kontakt kommen. Diese Regel soll hauptsächlich Wundverbände abdecken, unabhängig von der Tiefe der Haut- oder Schleimhautwunde. Die herkömmlichen Arten von Produkten, wie solche, die als mechanische Barriere verwendet werden, sind gut verstanden und stellen keine große Gefahr dar. Es gab auch schnelle technologische Entwicklungen in diesem Bereich, mit dem Aufkommen neuer Arten von Wundverbänden, für die neue Arten von Ansprüchen geltend gemacht werden, z. B. die Verwaltung des Mikroumfelds einer Wunde, um ihren natürlichen Heilungsmechanismus zu verbessern."
+        },
+        {
+          "section": "Neuere Ansprüche beziehen sich auf den Heilungsmechanismus durch sekundäre Absicht, wie die Beeinflussung der zugrunde liegenden Mechanismen der Granulation oder Epithelbildung oder die Verhinderung der Kontraktion der Wunde. Einige Geräte, die auf verletzte Dermis oder Schleimhaut aufgetragen werden, können sogar einen lebenserhaltenden oder lebensrettenden Zweck haben, z. B. bei vollständiger Zerstörung der Haut oder Schleimhaut über eine große Fläche und/oder systemischen Auswirkungen."
+        },
+        {
+          "section": "Verbandmittel, die eine Substanz enthalten, die, wenn sie separat verwendet wird, als Arzneimittel betrachtet werden kann und eine Wirkung hat, die der des Verbandmittels dient, fallen gemäß Regel 14 in die Klasse III. Geräte, die aus anderen Substanzen bestehen, die vom menschlichen Körper aufgenommen oder lokal im menschlichen Körper verteilt werden, fallen unter Regel 21."
+        },
+        {
+          "paragraphHeadline": "Klasse"
+        },
+        {
+          "section": "I"
+        },
+        {
+          "section": "Alle nicht-invasiven Geräte, die mit verletzter Haut oder Schleimhaut in Kontakt kommen, werden wie folgt eingestuft:"
+        },
+        {
+          "section": "- Klasse I, wenn sie dazu bestimmt sind, als mechanische Barriere, zur Kompression oder zur Aufnahme von Exsudaten verwendet zu werden;"
+        },
+        {
+          "paragraphHeadline": "Beispiele"
+        },
+        {
+          "list": [
+            "Wundverbände für Haut oder Schleimhaut, wie saugfähige Pads, Inselflächendesinfektionsmittel, Baumwolle, Wundstreifen, Klebeverbände (Pflaster) und Gaze, die als Barriere wirken, die Wundposition aufrechterhalten oder Exsudate aus der Wunde aufnehmen",
+            "Stomabeutel"
+          ]
+        },
+        {
+          "paragraphHeadline": "Klasse"
+        },
+        {
+          "section": "IIb"
+        },
+        {
+          "section": "- Klasse IIb, wenn sie hauptsächlich für Verletzungen der Haut bestimmt sind, die die Dermis oder Schleimhaut durchbrochen haben und nur durch sekundäre Absicht heilen können;"
+        },
+        {
+          "paragraphHeadline": "Beispiele"
+        },
+        {
+          "section": "Sind hauptsächlich für schwere Wunden vorgesehen:"
+        },
+        {
+          "list": [
+            "Verbände für ulzerierte Wunden mit durchbrochener Dermis",
+            "Verbände für Verbrennungen mit durchbrochener Dermis",
+            "Verbände für schwere Dekubituswunden",
+            "Verbände, die Mittel zur Förderung des Gewebes enthalten und vorübergehende Hautersatzstoffe liefern"
+          ]
+        },
+        {
+          "paragraphHeadline": "Klasse"
+        },
+        {
+          "section": "IIa"
+        },
+        {
+          "section": "- Klasse IIa, wenn sie hauptsächlich dazu bestimmt sind, das Mikroumfeld der verletzten Haut oder Schleimhaut zu verwalten; und"
+        },
+        {
+          "paragraphHeadline": "Beispiele"
+        },
+        {
+          "list": [
+            "Hydrogele Verbände für Wunden oder Verletzungen, die die Dermis nicht durchbrochen haben oder nur durch sekundäre Absicht heilen können",
+            "Nicht-medikamentöse imprägnierte Gaze-Verbände",
+            "Polymerfilmverbände"
+          ]
+        },
+        {
+          "paragraphHeadline": "Klasse"
+        },
+        {
+          "section": "IIa"
+        },
+        {
+          "section": "- Klasse IIa in allen anderen Fällen"
+        },
+        {
+          "paragraphHeadline": "Klasse"
+        },
+        {
+          "section": "I"
+        },
+        {
+          "section": "Diese Regel gilt auch für invasive Geräte, die mit verletzter Schleimhaut in Kontakt kommen."
+        },
+        {
+          "paragraphHeadline": "Beispiele"
+        },
+        {
+          "list": [
+            "Verbände für Nasenbluten (der Zweck des Verbandes besteht nicht darin, das Mikroumfeld zu verwalten), fallen gemäß dieser Regel in die Klasse I",
+            "Zahnverbandmittel, die keine tierischen Bestandteile enthalten"
+          ]
+        },
+        {
+          "sectionHeadline": "Praktische Fragen zur Einstufung"
+        },
+        {
+          "section": "Die Einstufung von Geräten, die von dieser Regel erfasst werden, hängt von der vom Hersteller beabsichtigten Verwendung ab. Ein polymerer Filmverband würde beispielsweise in Klasse IIa eingestuft, wenn die beabsichtigte Verwendung darin besteht, das Mikroumfeld der Wunde zu verwalten, oder in Klasse I, wenn seine beabsichtigte Verwendung auf die Aufrechterhaltung einer invasiven Kanüle an der Wundstelle beschränkt ist. Daher ist es unmöglich zu sagen, dass ein bestimmter Verbandtyp a priori zu einer bestimmten Klasse gehört, ohne seine beabsichtigte Verwendung gemäß der Definition des Herstellers zu kennen. Allerdings impliziert eine Behauptung, dass das Gerät interaktiv oder aktiv im Hinblick auf den Wundheilungsprozess ist, in der Regel, dass das Gerät mindestens Klasse IIa ist."
+        },
+        {
+          "section": "Die meisten Verbände, die für eine Verwendung fallen, die unter Klasse IIa oder IIb fällt, erfüllen auch Funktionen, die unter Klasse I fallen, z. B. die einer mechanischen Barriere. Solche Geräte werden jedoch gemäß ihrer beabsichtigten Verwendung in die höhere Klasse eingestuft."
+        },
+        {
+          "section": "Für solche Geräte, die eine Substanz enthalten, die, wenn sie separat verwendet wird, als Arzneimittel oder als Derivat menschlichen Blutes oder tierische Gewebe oder Derivate, die nicht lebensfähig gemacht wurden, betrachtet werden kann, siehe Regel 14 oder Regel 18."
+        },
+        {
+          "sectionHeadline": "Erklärung besonderer Konzepte"
+        },
+        {
+          "section": "Durchbrochene Dermis oder Schleimhaut: Die Wunde legt zumindest teilweise das Unterhautgewebe frei."
+        },
+        {
+          "section": "Sekundäre Absicht: Die Wunde heilt zuerst, indem sie mit Granulationstextur gefüllt wird; anschließend wächst das Epithel über das Granulationstextur zurück, und die Wunde zieht sich zusammen. Im Gegensatz dazu bedeutet primäre Absicht, dass die Ränder der Wunde nahe genug beieinander liegen oder zusammengezogen werden, z. B. durch Nähen, um die Wunde vor der Bildung von Granulationstextur heilen zu lassen."
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "header": {
+        "headline": "Regel 5",
+        "subHeadline": "Invasive Geräte in Bezug auf Körperöffnungen"
+      }
+    },
+    {
+      "content": [
+        {
+          "sectionHeadline": "Allgemeine Erklärung der Regel"
+        },
+        {
+          "section": "Die Invasivität in Bezug auf Körperöffnungen muss getrennt von der Invasivität betrachtet werden, die durch einen Schnitt in die Körperoberfläche eindringt (chirurgische Invasivität). Für den kurzfristigen Gebrauch muss auch eine Unterscheidung getroffen werden zwischen der Invasivität in Bezug auf die weniger anfälligen vorderen Teile des Ohres, des Mundes und der Nase sowie den anderen anatomischen Stellen, die über natürliche Körperöffnungen erreicht werden können. Ein chirurgisch geschaffenes Stoma, das beispielsweise die Evakuierung von Urin oder Kot ermöglicht, ist ebenfalls als Körperöffnung zu betrachten."
+        },
+        {
+          "section": "Die von dieser Regel erfassten Geräte neigen dazu, diagnostische und therapeutische Instrumente in bestimmten Fachgebieten zu sein (Hals-Nasen-Ohren-Heilkunde, Augenheilkunde, Zahnmedizin, Proktologie, Urologie und Gynäkologie)."
+        },
+        {
+          "paragraphHeadline": "Klasse"
+        },
+        {
+          "section": "I"
+        },
+        {
+          "section": "Alle invasiven Geräte in Bezug auf Körperöffnungen, mit Ausnahme von chirurgisch invasiven Geräten, die nicht für die Verbindung mit einem aktiven Gerät vorgesehen sind oder die für die Verbindung mit einem aktiven Gerät der Klasse I vorgesehen sind, werden wie folgt klassifiziert:"
+        },
+        {
+          "section": "Klasse I, wenn sie für den vorübergehenden Gebrauch vorgesehen sind;"
+        },
+        {
+          "paragraphHeadline": "Beispiele"
+        },
+        {
+          "list": [
+            "Handspiegel, die in der Zahnmedizin zur Unterstützung bei zahnärztlichen Diagnosen und Operationen verwendet werden",
+            "Zahnabdruckmaterialien",
+            "Magenrohre",
+            "Abdrucklöffel",
+            "Untersuchungshandschuhe",
+            "Harnkatheter für den vorübergehenden Gebrauch",
+            "Embryo-Transferkatheter und Befruchtungskatheter"
+          ]
+        },
+        {
+          "paragraphHeadline": "Klasse"
+        },
+        {
+          "section": "IIa"
+        },
+        {
+          "section": "- Klasse IIa, wenn sie für den kurzfristigen Gebrauch vorgesehen sind,"
+        },
+        {
+          "paragraphHeadline": "Beispiele"
+        },
+        {
+          "list": [
+            "Kurzfristige korrigierende Kontaktlinsen",
+            "Trachealtuben",
+            "Dauerhafte Harnkatheter für den kurzfristigen Gebrauch",
+            "Gasgemische für die Insufflation im Körper",
+            "Nasobilliare Tuben"
+          ]
+        },
+        {
+          "paragraphHeadline": "Klasse"
+        },
+        {
+          "section": "I"
+        },
+        {
+          "section": "- es sei denn, sie werden in der Mundhöhle bis zum Rachen, im Gehörgang bis zum Trommelfell oder in der Nasenhöhle verwendet, in welchem Fall sie als Klasse I eingestuft werden; und"
+        },
+        {
+          "paragraphHeadline": "Beispiele"
+        },
+        {
+          "list": [
+            "Materialien für zahnärztliche Abdrücke",
+            "Plastikspritze zur Messung einer Arzneimittelmenge vor der oralen Verabreichung an den Patienten",
+            "Abnehmbarer oder fester Zahnersatz"
+          ]
+        },
+        {
+          "paragraphHeadline": "Klasse"
+        },
+        {
+          "section": "IIb"
+        },
+        {
+          "section": "- Klasse IIb, wenn sie für den Langzeitgebrauch vorgesehen sind."
+        },
+        {
+          "paragraphHeadline": "Beispiele"
+        },
+        {
+          "list": [
+            "Harnröhrenstents",
+            "Langfristige korrigierende Kontaktlinsen",
+            "Trachealkanülen für Tracheostoma für den Langzeitgebrauch",
+            "Harnkatheter für den Langzeitgebrauch"
+          ]
+        },
+        {
+          "paragraphHeadline": "Klasse"
+        },
+        {
+          "section": "IIa"
+        },
+        {
+          "section": "- es sei denn, sie werden in der Mundhöhle bis zum Rachen, im Gehörgang bis zum Trommelfell oder in der Nasenhöhle verwendet und sind nicht dazu geeignet, von der Schleimhaut aufgenommen zu werden, in welchem Fall sie als Klasse IIa eingestuft werden"
+        },
+        {
+          "paragraphHeadline": "Beispiele"
+        },
+        {
+          "list": [
+            "Orthodontische Drähte",
+            "Feste Zahnersätze",
+            "Fissurversiegelungsmittel"
+          ]
+        },
+        {
+          "paragraphHeadline": "Klasse"
+        },
+        {
+          "section": "IIa"
+        },
+        {
+          "section": "Alle invasiven Geräte in Bezug auf Körperöffnungen, mit Ausnahme von chirurgisch invasiven Geräten, die für die Verbindung mit einem aktiven Gerät der Klasse IIa, Klasse IIb oder Klasse III vorgesehen sind, werden als Klasse IIa eingestuft"
+        },
+        {
+          "paragraphHeadline": "Beispiele"
+        },
+        {
+          "list": [
+            "Tracheostomie- oder Trachealtuben, die mit einem Beatmungsgerät verbunden sind",
+            "Blutsauerstoffanalysatoren, die unter das Augenlid gelegt werden",
+            "Elektrische Nasenspülungen",
+            "Lichtleitfasern in Endoskopen, die mit chirurgischen Lasern verbunden sind",
+            "Absaugkatheter oder -röhren für die Magenentleerung",
+            "Zahnaspirationsdüsen",
+            "Endoskope mit einer Lichtquelle im sichtbaren Spektrum"
+          ]
+        },
+        {
+          "sectionHeadline": "Praktische Fragen zur Klassifizierung"
+        },
+        {
+          "section": "Für Geräte, die für die Verbindung mit einem aktiven Gerät vorgesehen sind, gilt die strengste Regel und Unterregel, die zu einer höheren Klassifizierung führt. Ein Trachealkanüle für den Langzeitgebrauch muss beispielsweise als Klasse IIb eingestuft werden."
+        },
+        {
+          "section": "Geräte, die aus Stoffen bestehen, die vom menschlichen Körper aufgenommen oder lokal im Körper verteilt werden, können ebenfalls unter Regel 21 fallen."
+        }
+      ]
+    }
   ]
 ]

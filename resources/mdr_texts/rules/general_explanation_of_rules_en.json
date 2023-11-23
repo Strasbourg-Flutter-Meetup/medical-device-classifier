@@ -151,7 +151,7 @@
         {
           "list": [
             "Non-invasive devices that provide a simple channelling function, with gravity providing the force to transport the liquid, e.g. administration sets for infusion",
-            "Devices intended to be used for a temporary\ncontainment or storage function, e.g. cups and\nspoons specifically intended for administering\nmedicines2 Empty syringes without needles"
+            "Devices intended to be used for a temporary containment or storage function, e.g. cups and spoons specifically intended for administering medicines2 Empty syringes without needles"
           ]
         },
         {
@@ -171,6 +171,385 @@
         },
         {
           "paragraph": "See MDCG 2021-24 chapter 3.1.6 \\'Devices with a measuring function\\' regarding the possible measuring function."
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "header": {
+        "headline": "Rule 3",
+        "subHeadline": "Devices that modify biological or chemical composition of human tissues or cells, blood, other body liquids or other liquids intended for implantation or administration into the body"
+      }
+    },
+    {
+      "content": [
+        {
+          "sectionHeadline": "General explanation of the rule"
+        },
+        {
+          "section": "These types of devices must be considered separately from the non-contact devices of Rule 1 because they are indirectly invasive. They modify substances that will eventually be administered into the body. This rule covers mostly the more sophisticated elements of extracorporeal circulation sets, dialysis systems and autotransfusion systems as well as devices for extracorporeal treatment of body fluids which may or may not be immediately reintroduced into the body, including cases where the patient is not in a closed loop with the device."
+        },
+        {
+          "section": "This rule covers also substances in direct contact with human cells, tissues or organs in vitro before their implantation or administration, without substances derived from human or animal origin such as human albumin."
+        },
+        {
+          "paragraphHeadline": "Class"
+        },
+        {
+          "section": "IIb"
+        },
+        {
+          "section": "All non-invasive devices intended for modifying the biological or chemical composition of human tissues or cells, blood, other body liquids or other liquids intended for implantation or administration into the body are classified as class IIb,"
+        },
+        {
+          "paragraphHeadline": "Examples"
+        },
+        {
+          "list": [
+            "Devices intended to remove undesirable substances out of the blood by exchange of solutes such as hemodialysers",
+            "Devices intended to separate cells by physical means, e.g. gradient medium for sperm separation",
+            "Haemodialysis concentrates",
+            "Device removing specific blood cells (e.g. activated) by specific binding to a matrix"
+          ]
+        },
+        {
+          "paragraphHeadline": "Class"
+        },
+        {
+          "section": "IIa"
+        },
+        {
+          "section": "unless the treatment for which the device is used consists of filtration, centrifugation or exchanges of gas, heat, in which case they are classified as class IIa"
+        },
+        {
+          "paragraphHeadline": "Examples"
+        },
+        {
+          "list": [
+            "Particulate filtration of blood in an extracorporeal circulation system. These are used to remove particles from the blood",
+            "Centrifugation of blood to prepare it for transfusion or autotransfusion excluding centrifuges for manufacturing a medicinal product",
+            "Removal of carbon dioxide from the blood and/or adding oxygen",
+            "Warming or cooling the blood in an extracorporeal circulation system."
+          ]
+        },
+        {
+          "paragraphHeadline": "Class"
+        },
+        {
+          "section": "III"
+        },
+        {
+          "section": "All non-invasive devices consisting of a substance or a mixture of substances intended to be used in vitro in direct contact with human cells, tissues or organs taken from the human body or used in vitro with human embryos before their implantation or administration into the body are classified as class III."
+        },
+        {
+          "paragraphHeadline": "Examples"
+        },
+        {
+          "list": [
+            "Substances or mixture of substances for transport, perfusion, storage of organs intended for transplantation that do not achieve the principal intended action by pharmacological, immunological or metabolic means",
+            "IVF or ART products without principal pharmacological/metabolic action (substances or mixture of substances)",
+            "IVF cell media without human albumin"
+          ]
+        },
+        {
+          "sectionHeadline": "Practical issues of classification"
+        },
+        {
+          "section": "These devices are normally used in conjunction with an active medical device covered under Rule 9 or Rule 11. Filtration and centrifugation should be understood in the context of this rule as being done exclusively through mechanical methods."
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "header": {
+        "headline": "Rule 4",
+        "subHeadline": "Devices that come into contact with injured skin or mucous membrane"
+      }
+    },
+    {
+      "content": [
+        {
+          "sectionHeadline": "General explanation of the rule"
+        },
+        {
+          "section": "This rule applies to non-invasive devices as well as invasive devices that come into contact with injured skin or mucous membrane. This rule is intended to primarily cover wound dressings independently of the depth of the skin wound or mucosa wound. The conventional types of products, such as those used as a mechanical barrier, are well understood and do not result in any great hazard. There have also been rapid technological developments in this area, with the emergence of new types of wound dressings for which new types of claims are made, e.g. management of the microenvironment of a wound to enhance its natural healing mechanism."
+        },
+        {
+          "section": "More novel claims relate to the mechanism of healing by secondary intent, such as influencing the underlying mechanisms of granulation or epithelial formation or preventing contraction of the wound. Some devices used on breached dermis or breached mucosa may even have a lifesustaining or lifesaving purpose, e.g. when there is full thickness destruction of the skin or mucosa over a large area and/or systemic impact."
+        },
+        {
+          "section": "Dressings incorporating a substance which, if used separately, can be considered to be a medicinal product and that has an action ancillary to that of the dressing, fall within class III under Rule 14. Devices composed of other substances which are absorbed by or locally dispersed in the human body fall under Rule 21."
+        },
+        {
+          "paragraphHeadline": "Class"
+        },
+        {
+          "section": "I"
+        },
+        {
+          "section": "All non-invasive devices which come into contact with injured skin or mucous membrane are classified as:"
+        },
+        {
+          "section": "- class I if they are intended to be used as a mechanical barrier, for compression or for absorption of exudates;"
+        },
+        {
+          "paragraphHeadline": "Examples"
+        },
+        {
+          "list": [
+            "Wound dressings for skin or mucous, such as: absorbent pads, island dressings, cotton wool, wound strips, adhesive bandages (sticking plasters, band-aid) and gauze dressings which act as a barrier, maintain wound position or absorb exudates from the wound",
+            "Ostomy bags"
+          ]
+        },
+        {
+          "paragraphHeadline": "Class"
+        },
+        {
+          "section": "IIb"
+        },
+        {
+          "section": "- class IIb if they are intended to be used principally for injuries to skin which have breached the dermis or mucous membrane and can only heal by secondary intent;"
+        },
+        {
+          "paragraphHeadline": "Examples"
+        },
+        {
+          "section": "Are principally intended to be used with severe wounds:"
+        },
+        {
+          "list": [
+            "Dressings intended for ulcerated wounds having breached the dermis",
+            "Dressings intended for burns having breached the dermis",
+            "Dressings for severe decubitus wounds",
+            "Dressings incorporating means of augmenting tissue and providing a temporary skin substitute"
+          ]
+        },
+        {
+          "paragraphHeadline": "Class"
+        },
+        {
+          "section": "IIa"
+        },
+        {
+          "section": "- class IIa if they are principally intended to manage the micro-environment of injured skin or mucous membrane; and"
+        },
+        {
+          "paragraphHeadline": "Examples"
+        },
+        {
+          "list": [
+            "Hydrogel dressings for wounds or injuries that have not breached the dermis or can only heal by secondary intent",
+            "Non-medicated impregnated gauze dressings",
+            "Polymer film dressings"
+          ]
+        },
+        {
+          "paragraphHeadline": "Class"
+        },
+        {
+          "section": "IIa"
+        },
+        {
+          "section": "- class IIa in all other cases "
+        },
+        {
+          "paragraphHeadline": "Class"
+        },
+        {
+          "section": "I"
+        },
+        {
+          "section": "This rule applies also to the invasive devices that come into contact with injured mucous membrane."
+        },
+        {
+          "paragraphHeadline": "Examples"
+        },
+        {
+          "list": [
+            "Dressings for nose bleeds (the purpose of the dressing is not to manage micro-environment) are in class I according to this rule",
+            "Dental wound dressings not containing animal derived material"
+          ]
+        },
+        {
+          "sectionHeadline": "Practical issues of classification"
+        },
+        {
+          "section": "The classification of devices covered by this rule depends on the use intended by the manufacturer’s, e.g. a polymeric film dressing would be in class IIa if the intended use is to manage the micro-environment of the wound or in class I if its intended use is limited to retaining an invasive cannula at the wound site. Consequently, it is impossible to say a priori that a particular type of dressing belongs to a given class without knowing its intended use as defined by the manufacturer. However, a claim that the device is interactive or active with respect to the wound healing process usually implies that the device is at least class IIa."
+        },
+        {
+          "section": "Most dressings that are intended for a use that falls under class IIa or IIb also perform functions that are in class I, e.g. that of a mechanical barrier. Such devices are nevertheless classified according to their intended use in the higher class."
+        },
+        {
+          "section": "For such devices incorporating a substance which, if used separately, can be considered to be medicinal product or a human blood derivative, or animal tissues or derivatives rendered non-viable, see Rule 14 or Rule 18 respectively."
+        },
+        {
+          "sectionHeadline": "Explanation of special concepts"
+        },
+        {
+          "section": "Breached dermis or mucosa: the wound exposes at least partly the subcutaneous tissue."
+        },
+        {
+          "section": "Secondary intent: the wound heals by first being filled with granulation tissue; subsequently the epithelium grows back over the granulation tissue and the wound contracts. In contrast, primary intent implies that the edges of the wound are close enough or pulled together, e.g. by suturing, to allow the wound to heal before formation of granulation tissue."
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "header": {
+        "headline": "Rule 5",
+        "subHeadline": "Devices invasive with respect to body orifices"
+      }
+    },
+    {
+      "content": [
+        {
+          "sectionHeadline": "General explanation of the rule"
+        },
+        {
+          "section": "Invasiveness with respect to body orifices must be considered separately from invasiveness that penetrates through a cut in the body surface (surgical invasiveness). For short term use, a further distinction must be made between invasiveness with respect to the less vulnerable anterior parts of the ear, mouth and nose and the other anatomical sites that can be accessed through natural body orifices. A surgically created stoma, which, for example, allows the evacuation of urine or faeces, is also to be considered a body orifice."
+        },
+        {
+          "section": "The devices covered by this rule tend to be diagnostic and therapeutic instruments used in particular specialties (otorhinolaryngology, ophthalmology, dentistry, proctology, urology and gynaecology)."
+        },
+        {
+          "paragraphHeadline": "Class"
+        },
+        {
+          "section": "I"
+        },
+        {
+          "section": "All invasive devices with respect to body orifices, other than surgically invasive devices, which are not intended for connection to an active device or which are intended for connection to a class I active device are classified as:"
+        },
+        {
+          "section": "class I if they are intended for transient use;"
+        },
+        {
+          "paragraphHeadline": "Examples"
+        },
+        {
+          "list": [
+            "Handheld mirrors used in dentistry to aid in dental diagnosis and surgery",
+            "Dental impression materials",
+            "Stomach tubes",
+            "Impression trays",
+            "Examination gloves",
+            "Urinary catheters intended for transient use",
+            "Embryo transfer catheter and insemination catheter"
+          ]
+        },
+        {
+          "paragraphHeadline": "Class"
+        },
+        {
+          "section": "IIa"
+        },
+        {
+          "section": "- class IIa if they are intended for short-term use,"
+        },
+        {
+          "paragraphHeadline": "Examples"
+        },
+        {
+          "list": [
+            "Short term corrective contact lenses",
+            "Tracheal tubes",
+            "Indwelling urinary catheters intended for short term use",
+            "Gasses used for insufflation in the body",
+            "Nasobilliary tubes"
+          ]
+        },
+        {
+          "paragraphHeadline": "Class"
+        },
+        {
+          "section": "I"
+        },
+        {
+          "section": "- except if they are used in the oral cavity as far as the pharynx, in an ear canal up to the ear drum or in the nasal cavity, in which case they are classified as class I; and"
+        },
+        {
+          "paragraphHeadline": "Examples"
+        },
+        {
+          "list": [
+            "Materials for dental impressions",
+            "Plastic syringe used to measure a quantity of medicinal product before oral administration to the patient",
+            "Removable or fixed dental prostheses"
+          ]
+        },
+        {
+          "paragraphHeadline": "Class"
+        },
+        {
+          "section": "IIb"
+        },
+        {
+          "section": "- class IIb if they are intended for long-term use."
+        },
+        {
+          "paragraphHeadline": "Examples"
+        },
+        {
+          "list": [
+            "Urethral stents",
+            "Long term corrective contact lenses",
+            "Tracheal cannulae for tracheostoma for long term use",
+            "Urinary catheters intended for long term use"
+          ]
+        },
+        {
+          "paragraphHeadline": "Class"
+        },
+        {
+          "section": "IIa"
+        },
+        {
+          "section": "- except if they are used in the oral cavity as far as the pharynx, in an ear canal up to the ear drum or in the nasal cavity and are not liable to be absorbed by the mucous membrane, in which case they are classified as class IIa"
+        },
+        {
+          "paragraphHeadline": "Examples"
+        },
+        {
+          "list": [
+            "Orthodontic wires",
+            "Fixed dental prostheses",
+            "Fissure sealants"
+          ]
+        },
+        {
+          "paragraphHeadline": "Class"
+        },
+        {
+          "section": "IIa"
+        },
+        {
+          "section": "All invasive devices with respect to body orifices, other than surgically invasive devices, intended for connection to a class IIa, class IIb or class III active device, are classified as class IIa"
+        },
+        {
+          "paragraphHeadline": "Examples"
+        },
+        {
+          "list": [
+            "Tracheostomy or tracheal tubes connected to a ventilator",
+            "Blood oxygen analysers placed under the eye-lid",
+            "Powered nasal irrigators",
+            "Fibre optics in endoscopes connected to surgical lasers",
+            "Suction catheters or tubes for stomach drainage",
+            "Dental aspirator tips",
+            "Endoscopes using a light source in the visible spectrum"
+          ]
+        },
+        {
+          "sectionHeadline": "Practical issues of classification"
+        },
+        {
+          "section": "Regarding devices intended for connection to an active device: the strictest rule and sub-rule resulting in higher classification will apply. For instance a trachea cannula for long-term use need to be classified as class IIb."
+        },
+        {
+          "section": "Devices composed of substances which are absorbed by or locally dispersed in the human body may also fall under Rule 21"
         }
       ]
     }
