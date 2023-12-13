@@ -33,6 +33,12 @@ medical devices. The aim is to transfer these rules into an application for trai
 which users can use to classify easily their medical device. The final application will be available
 online as a web page and as an application in the Android Play Store or Apple's App Store.
 
+### Project Status
+
+Project status: In production
+
+Open tasks: [Go to task board](https://www.notion.so/8b2018a5ad044a6a970cb1ef2d7fb504?v=d3d8e84c3f5e415eb78f7c711ce78e74)
+
 ### Requirements Overview
 
 #### R1  Medical device classification
