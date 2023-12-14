@@ -35,7 +35,7 @@ online as a web page and as an application in the Android Play Store or Apple's 
 
 ### Project Status
 
-Project status: In production
+ ![Static Badge](https://img.shields.io/badge/Project_status-In_production-brightgreen)
 
 Open tasks: [Go to task board](https://www.notion.so/8b2018a5ad044a6a970cb1ef2d7fb504?v=d3d8e84c3f5e415eb78f7c711ce78e74)
 
