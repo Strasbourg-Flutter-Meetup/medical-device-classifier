@@ -3,18 +3,12 @@
 // Do not manually edit this file.
 
 // ignore_for_file: no_leading_underscores_for_library_prefixes
-import 'dart:async' as _i9;
+import 'dart:async' as _i3;
 
-import 'package:functions_client/functions_client.dart' as _i3;
-import 'package:gotrue/gotrue.dart' as _i2;
 import 'package:medical_device_classifier/supabase/supabase_wrapper.dart'
-    as _i10;
+    as _i4;
 import 'package:mockito/mockito.dart' as _i1;
-import 'package:postgrest/postgrest.dart' as _i6;
-import 'package:realtime_client/realtime_client.dart' as _i5;
-import 'package:storage_client/storage_client.dart' as _i4;
-import 'package:supabase/src/supabase_query_builder.dart' as _i7;
-import 'package:supabase_flutter/supabase_flutter.dart' as _i8;
+import 'package:supabase/supabase.dart' as _i2;
 
 // ignore_for_file: type=lint
 // ignore_for_file: avoid_redundant_argument_values
@@ -38,7 +32,7 @@ class _FakeGoTrueClient_0 extends _i1.SmartFake implements _i2.GoTrueClient {
 }
 
 class _FakeFunctionsClient_1 extends _i1.SmartFake
-    implements _i3.FunctionsClient {
+    implements _i2.FunctionsClient {
   _FakeFunctionsClient_1(
     Object parent,
     Invocation parentInvocation,
@@ -49,7 +43,7 @@ class _FakeFunctionsClient_1 extends _i1.SmartFake
 }
 
 class _FakeSupabaseStorageClient_2 extends _i1.SmartFake
-    implements _i4.SupabaseStorageClient {
+    implements _i2.SupabaseStorageClient {
   _FakeSupabaseStorageClient_2(
     Object parent,
     Invocation parentInvocation,
@@ -60,7 +54,7 @@ class _FakeSupabaseStorageClient_2 extends _i1.SmartFake
 }
 
 class _FakeRealtimeClient_3 extends _i1.SmartFake
-    implements _i5.RealtimeClient {
+    implements _i2.RealtimeClient {
   _FakeRealtimeClient_3(
     Object parent,
     Invocation parentInvocation,
@@ -71,7 +65,7 @@ class _FakeRealtimeClient_3 extends _i1.SmartFake
 }
 
 class _FakePostgrestClient_4 extends _i1.SmartFake
-    implements _i6.PostgrestClient {
+    implements _i2.PostgrestClient {
   _FakePostgrestClient_4(
     Object parent,
     Invocation parentInvocation,
@@ -82,7 +76,7 @@ class _FakePostgrestClient_4 extends _i1.SmartFake
 }
 
 class _FakeSupabaseQueryBuilder_5 extends _i1.SmartFake
-    implements _i7.SupabaseQueryBuilder {
+    implements _i2.SupabaseQueryBuilder {
   _FakeSupabaseQueryBuilder_5(
     Object parent,
     Invocation parentInvocation,
@@ -92,9 +86,9 @@ class _FakeSupabaseQueryBuilder_5 extends _i1.SmartFake
         );
 }
 
-class _FakePostgrestFilterBuilder_6<T> extends _i1.SmartFake
-    implements _i6.PostgrestFilterBuilder<T> {
-  _FakePostgrestFilterBuilder_6(
+class _FakeSupabaseQuerySchema_6 extends _i1.SmartFake
+    implements _i2.SupabaseQuerySchema {
+  _FakeSupabaseQuerySchema_6(
     Object parent,
     Invocation parentInvocation,
   ) : super(
@@ -103,9 +97,9 @@ class _FakePostgrestFilterBuilder_6<T> extends _i1.SmartFake
         );
 }
 
-class _FakeRealtimeChannel_7 extends _i1.SmartFake
-    implements _i5.RealtimeChannel {
-  _FakeRealtimeChannel_7(
+class _FakePostgrestFilterBuilder_7<T1> extends _i1.SmartFake
+    implements _i2.PostgrestFilterBuilder<T1> {
+  _FakePostgrestFilterBuilder_7(
     Object parent,
     Invocation parentInvocation,
   ) : super(
@@ -114,9 +108,20 @@ class _FakeRealtimeChannel_7 extends _i1.SmartFake
         );
 }
 
-class _FakeSupabaseClient_8 extends _i1.SmartFake
-    implements _i8.SupabaseClient {
-  _FakeSupabaseClient_8(
+class _FakeRealtimeChannel_8 extends _i1.SmartFake
+    implements _i2.RealtimeChannel {
+  _FakeRealtimeChannel_8(
+    Object parent,
+    Invocation parentInvocation,
+  ) : super(
+          parent,
+          parentInvocation,
+        );
+}
+
+class _FakeSupabaseClient_9 extends _i1.SmartFake
+    implements _i2.SupabaseClient {
+  _FakeSupabaseClient_9(
     Object parent,
     Invocation parentInvocation,
   ) : super(
@@ -128,63 +133,7 @@ class _FakeSupabaseClient_8 extends _i1.SmartFake
 /// A class which mocks [SupabaseClient].
 ///
 /// See the documentation for Mockito's code generation for more information.
-class MockSupabaseClient extends _i1.Mock implements _i8.SupabaseClient {
-  @override
-  String get supabaseUrl => (super.noSuchMethod(
-        Invocation.getter(#supabaseUrl),
-        returnValue: '',
-        returnValueForMissingStub: '',
-      ) as String);
-
-  @override
-  String get supabaseKey => (super.noSuchMethod(
-        Invocation.getter(#supabaseKey),
-        returnValue: '',
-        returnValueForMissingStub: '',
-      ) as String);
-
-  @override
-  String get schema => (super.noSuchMethod(
-        Invocation.getter(#schema),
-        returnValue: '',
-        returnValueForMissingStub: '',
-      ) as String);
-
-  @override
-  String get restUrl => (super.noSuchMethod(
-        Invocation.getter(#restUrl),
-        returnValue: '',
-        returnValueForMissingStub: '',
-      ) as String);
-
-  @override
-  String get realtimeUrl => (super.noSuchMethod(
-        Invocation.getter(#realtimeUrl),
-        returnValue: '',
-        returnValueForMissingStub: '',
-      ) as String);
-
-  @override
-  String get authUrl => (super.noSuchMethod(
-        Invocation.getter(#authUrl),
-        returnValue: '',
-        returnValueForMissingStub: '',
-      ) as String);
-
-  @override
-  String get storageUrl => (super.noSuchMethod(
-        Invocation.getter(#storageUrl),
-        returnValue: '',
-        returnValueForMissingStub: '',
-      ) as String);
-
-  @override
-  String get functionsUrl => (super.noSuchMethod(
-        Invocation.getter(#functionsUrl),
-        returnValue: '',
-        returnValueForMissingStub: '',
-      ) as String);
-
+class MockSupabaseClient extends _i1.Mock implements _i2.SupabaseClient {
   @override
   _i2.GoTrueClient get auth => (super.noSuchMethod(
         Invocation.getter(#auth),
@@ -208,7 +157,7 @@ class MockSupabaseClient extends _i1.Mock implements _i8.SupabaseClient {
       );
 
   @override
-  _i3.FunctionsClient get functions => (super.noSuchMethod(
+  _i2.FunctionsClient get functions => (super.noSuchMethod(
         Invocation.getter(#functions),
         returnValue: _FakeFunctionsClient_1(
           this,
@@ -218,10 +167,10 @@ class MockSupabaseClient extends _i1.Mock implements _i8.SupabaseClient {
           this,
           Invocation.getter(#functions),
         ),
-      ) as _i3.FunctionsClient);
+      ) as _i2.FunctionsClient);
 
   @override
-  set functions(_i3.FunctionsClient? _functions) => super.noSuchMethod(
+  set functions(_i2.FunctionsClient? _functions) => super.noSuchMethod(
         Invocation.setter(
           #functions,
           _functions,
@@ -230,7 +179,7 @@ class MockSupabaseClient extends _i1.Mock implements _i8.SupabaseClient {
       );
 
   @override
-  _i4.SupabaseStorageClient get storage => (super.noSuchMethod(
+  _i2.SupabaseStorageClient get storage => (super.noSuchMethod(
         Invocation.getter(#storage),
         returnValue: _FakeSupabaseStorageClient_2(
           this,
@@ -240,10 +189,10 @@ class MockSupabaseClient extends _i1.Mock implements _i8.SupabaseClient {
           this,
           Invocation.getter(#storage),
         ),
-      ) as _i4.SupabaseStorageClient);
+      ) as _i2.SupabaseStorageClient);
 
   @override
-  set storage(_i4.SupabaseStorageClient? _storage) => super.noSuchMethod(
+  set storage(_i2.SupabaseStorageClient? _storage) => super.noSuchMethod(
         Invocation.setter(
           #storage,
           _storage,
@@ -252,7 +201,7 @@ class MockSupabaseClient extends _i1.Mock implements _i8.SupabaseClient {
       );
 
   @override
-  _i5.RealtimeClient get realtime => (super.noSuchMethod(
+  _i2.RealtimeClient get realtime => (super.noSuchMethod(
         Invocation.getter(#realtime),
         returnValue: _FakeRealtimeClient_3(
           this,
@@ -262,10 +211,10 @@ class MockSupabaseClient extends _i1.Mock implements _i8.SupabaseClient {
           this,
           Invocation.getter(#realtime),
         ),
-      ) as _i5.RealtimeClient);
+      ) as _i2.RealtimeClient);
 
   @override
-  set realtime(_i5.RealtimeClient? _realtime) => super.noSuchMethod(
+  set realtime(_i2.RealtimeClient? _realtime) => super.noSuchMethod(
         Invocation.setter(
           #realtime,
           _realtime,
@@ -274,7 +223,7 @@ class MockSupabaseClient extends _i1.Mock implements _i8.SupabaseClient {
       );
 
   @override
-  _i6.PostgrestClient get rest => (super.noSuchMethod(
+  _i2.PostgrestClient get rest => (super.noSuchMethod(
         Invocation.getter(#rest),
         returnValue: _FakePostgrestClient_4(
           this,
@@ -284,10 +233,10 @@ class MockSupabaseClient extends _i1.Mock implements _i8.SupabaseClient {
           this,
           Invocation.getter(#rest),
         ),
-      ) as _i6.PostgrestClient);
+      ) as _i2.PostgrestClient);
 
   @override
-  set rest(_i6.PostgrestClient? _rest) => super.noSuchMethod(
+  set rest(_i2.PostgrestClient? _rest) => super.noSuchMethod(
         Invocation.setter(
           #rest,
           _rest,
@@ -312,7 +261,7 @@ class MockSupabaseClient extends _i1.Mock implements _i8.SupabaseClient {
       );
 
   @override
-  _i7.SupabaseQueryBuilder from(String? table) => (super.noSuchMethod(
+  _i2.SupabaseQueryBuilder from(String? table) => (super.noSuchMethod(
         Invocation.method(
           #from,
           [table],
@@ -331,73 +280,63 @@ class MockSupabaseClient extends _i1.Mock implements _i8.SupabaseClient {
             [table],
           ),
         ),
-      ) as _i7.SupabaseQueryBuilder);
+      ) as _i2.SupabaseQueryBuilder);
 
   @override
-  _i6.PostgrestClient useSchema(String? schema) => (super.noSuchMethod(
+  _i2.SupabaseQuerySchema schema(String? schema) => (super.noSuchMethod(
         Invocation.method(
-          #useSchema,
+          #schema,
           [schema],
         ),
-        returnValue: _FakePostgrestClient_4(
+        returnValue: _FakeSupabaseQuerySchema_6(
           this,
           Invocation.method(
-            #useSchema,
+            #schema,
             [schema],
           ),
         ),
-        returnValueForMissingStub: _FakePostgrestClient_4(
+        returnValueForMissingStub: _FakeSupabaseQuerySchema_6(
           this,
           Invocation.method(
-            #useSchema,
+            #schema,
             [schema],
           ),
         ),
-      ) as _i6.PostgrestClient);
+      ) as _i2.SupabaseQuerySchema);
 
   @override
-  _i6.PostgrestFilterBuilder<dynamic> rpc(
+  _i2.PostgrestFilterBuilder<T> rpc<T>(
     String? fn, {
     Map<String, dynamic>? params,
-    _i6.FetchOptions? options = const _i6.FetchOptions(),
   }) =>
       (super.noSuchMethod(
         Invocation.method(
           #rpc,
           [fn],
-          {
-            #params: params,
-            #options: options,
-          },
+          {#params: params},
         ),
-        returnValue: _FakePostgrestFilterBuilder_6<dynamic>(
+        returnValue: _FakePostgrestFilterBuilder_7<T>(
           this,
           Invocation.method(
             #rpc,
             [fn],
-            {
-              #params: params,
-              #options: options,
-            },
+            {#params: params},
           ),
         ),
-        returnValueForMissingStub: _FakePostgrestFilterBuilder_6<dynamic>(
+        returnValueForMissingStub: _FakePostgrestFilterBuilder_7<T>(
           this,
           Invocation.method(
             #rpc,
             [fn],
-            {
-              #params: params,
-              #options: options,
-            },
+            {#params: params},
           ),
         ),
-      ) as _i6.PostgrestFilterBuilder<dynamic>);
+      ) as _i2.PostgrestFilterBuilder<T>);
 
   @override
-  _i5.RealtimeChannel channel(
+  _i2.RealtimeChannel channel(
     String? name, {
-    _i5.RealtimeChannelConfig? opts = const _i5.RealtimeChannelConfig(),
+    _i2.RealtimeChannelConfig? opts = const _i2.RealtimeChannelConfig(),
   }) =>
       (super.noSuchMethod(
         Invocation.method(
@@ -405,7 +344,7 @@ class MockSupabaseClient extends _i1.Mock implements _i8.SupabaseClient {
           [name],
           {#opts: opts},
         ),
-        returnValue: _FakeRealtimeChannel_7(
+        returnValue: _FakeRealtimeChannel_8(
           this,
           Invocation.method(
             #channel,
@@ -413,7 +352,7 @@ class MockSupabaseClient extends _i1.Mock implements _i8.SupabaseClient {
             {#opts: opts},
           ),
         ),
-        returnValueForMissingStub: _FakeRealtimeChannel_7(
+        returnValueForMissingStub: _FakeRealtimeChannel_8(
           this,
           Invocation.method(
             #channel,
@@ -421,56 +360,56 @@ class MockSupabaseClient extends _i1.Mock implements _i8.SupabaseClient {
             {#opts: opts},
           ),
         ),
-      ) as _i5.RealtimeChannel);
+      ) as _i2.RealtimeChannel);
 
   @override
-  List<_i5.RealtimeChannel> getChannels() => (super.noSuchMethod(
+  List<_i2.RealtimeChannel> getChannels() => (super.noSuchMethod(
         Invocation.method(
           #getChannels,
           [],
         ),
-        returnValue: <_i5.RealtimeChannel>[],
-        returnValueForMissingStub: <_i5.RealtimeChannel>[],
-      ) as List<_i5.RealtimeChannel>);
+        returnValue: <_i2.RealtimeChannel>[],
+        returnValueForMissingStub: <_i2.RealtimeChannel>[],
+      ) as List<_i2.RealtimeChannel>);
 
   @override
-  _i9.Future<String> removeChannel(_i5.RealtimeChannel? channel) =>
+  _i3.Future<String> removeChannel(_i2.RealtimeChannel? channel) =>
       (super.noSuchMethod(
         Invocation.method(
           #removeChannel,
           [channel],
         ),
-        returnValue: _i9.Future<String>.value(''),
-        returnValueForMissingStub: _i9.Future<String>.value(''),
-      ) as _i9.Future<String>);
+        returnValue: _i3.Future<String>.value(''),
+        returnValueForMissingStub: _i3.Future<String>.value(''),
+      ) as _i3.Future<String>);
 
   @override
-  _i9.Future<List<String>> removeAllChannels() => (super.noSuchMethod(
+  _i3.Future<List<String>> removeAllChannels() => (super.noSuchMethod(
         Invocation.method(
           #removeAllChannels,
           [],
         ),
-        returnValue: _i9.Future<List<String>>.value(<String>[]),
-        returnValueForMissingStub: _i9.Future<List<String>>.value(<String>[]),
-      ) as _i9.Future<List<String>>);
+        returnValue: _i3.Future<List<String>>.value(<String>[]),
+        returnValueForMissingStub: _i3.Future<List<String>>.value(<String>[]),
+      ) as _i3.Future<List<String>>);
 
   @override
-  _i9.Future<void> dispose() => (super.noSuchMethod(
+  _i3.Future<void> dispose() => (super.noSuchMethod(
         Invocation.method(
           #dispose,
           [],
         ),
-        returnValue: _i9.Future<void>.value(),
-        returnValueForMissingStub: _i9.Future<void>.value(),
-      ) as _i9.Future<void>);
+        returnValue: _i3.Future<void>.value(),
+        returnValueForMissingStub: _i3.Future<void>.value(),
+      ) as _i3.Future<void>);
 }
 
 /// A class which mocks [SupabaseWrapper].
 ///
 /// See the documentation for Mockito's code generation for more information.
-class MockSupabaseWrapper extends _i1.Mock implements _i10.SupabaseWrapper {
+class MockSupabaseWrapper extends _i1.Mock implements _i4.SupabaseWrapper {
   @override
-  _i9.Future<_i8.SupabaseClient> initialize({
+  _i3.Future<_i2.SupabaseClient> initialize({
     required String? supabaseURL,
     required String? supabaseAnonKey,
   }) =>
@@ -483,7 +422,7 @@ class MockSupabaseWrapper extends _i1.Mock implements _i10.SupabaseWrapper {
             #supabaseAnonKey: supabaseAnonKey,
           },
         ),
-        returnValue: _i9.Future<_i8.SupabaseClient>.value(_FakeSupabaseClient_8(
+        returnValue: _i3.Future<_i2.SupabaseClient>.value(_FakeSupabaseClient_9(
           this,
           Invocation.method(
             #initialize,
@@ -495,7 +434,7 @@ class MockSupabaseWrapper extends _i1.Mock implements _i10.SupabaseWrapper {
           ),
         )),
         returnValueForMissingStub:
-            _i9.Future<_i8.SupabaseClient>.value(_FakeSupabaseClient_8(
+            _i3.Future<_i2.SupabaseClient>.value(_FakeSupabaseClient_9(
           this,
           Invocation.method(
             #initialize,
@@ -506,5 +445,5 @@ class MockSupabaseWrapper extends _i1.Mock implements _i10.SupabaseWrapper {
             },
           ),
         )),
-      ) as _i9.Future<_i8.SupabaseClient>);
+      ) as _i3.Future<_i2.SupabaseClient>);
 }
