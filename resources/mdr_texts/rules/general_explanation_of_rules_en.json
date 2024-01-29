@@ -553,5 +553,765 @@
         }
       ]
     }
+  ],
+  [
+    {
+      "header": {
+        "headline": "Rule 6",
+        "subHeadline": "Surgically invasive devices intended for transient use (<60 min)"
+      }
+    },
+    {
+      "content": [
+        {
+          "sectionHeadline": "General explanation of the rule"
+        },
+        {
+          "section": "This rule primarily covers three major groups of devices: devices that are used to create a conduit through the skin (e.g. needles, cannulae), surgical instruments (e.g. scalpels, saws) and various types of catheters, suckers, etc"
+        },
+        {
+          "paragraphHeadline": "Class"
+        },
+        {
+          "section": "IIa"
+        },
+        {
+          "section": "All surgically invasive1 devices intended for transient use are classified as class IIa"
+        },
+        {
+          "section": "unless they:"
+        },
+        {
+          "paragraphHeadline": "Examples"
+        },
+        {
+          "list": [
+            "Needles used for suturing",
+            "Needles or syringes",
+            "Lancets",
+            "Single use scalpels and single use scalpel blades",
+            "Surgical swabs",
+            "Surgical gloves",
+            "Swabs to sample exudates",
+            "Guidewires or catheters used outside the central circulatory system"
+          ]
+        },
+        {
+          "paragraphHeadline": "Class"
+        },
+        {
+          "section": "III"
+        },
+        {
+          "section": "- are intended specifically to control, diagnose, monitor or correct a defect of the heart or of the central circulatory system through direct contact with those parts of the body, in which case they are classified as class III;"
+        },
+        {
+          "paragraphHeadline": "Examples"
+        },
+        {
+          "list": [
+            "Cardiovascular catheters (e.g. angioplasty balloon catheters, stent delivery catheters/systems), including related guidewires, related introducers and dedicated disposable cardiovascular surgical instruments e.g. electrophysiological catheters, electrodes for electrophysiological diagnosis and ablation,",
+            "Catheters containing or incorporating sealed radioisotopes, where the radioactive isotope is not intended to be released into the body, if used in the central circulatory system",
+            "Distal protection devices"
+          ]
+        },
+        {
+          "paragraphHeadline": "Class"
+        },
+        {
+          "section": "I"
+        },
+        {
+          "section": "- are reusable surgical instruments, in which case they are classified as class I;"
+        },
+        {
+          "paragraphHeadline": "Examples"
+        },
+        {
+          "list": [
+            "Scalpels and scalpel handles",
+            "Reamers",
+            "Drill bits",
+            "Saws, that are not intended for connection to an active device",
+            "Retractors forceps, excavators and chisels",
+            "Sternum retractors for transient use",
+            "Staplers (outside the heart, central circulatory or central nervous system",
+            "Dental Osteotomes"
+          ]
+        },
+        {
+          "paragraphHeadline": "Class"
+        },
+        {
+          "section": "III"
+        },
+        {
+          "section": "- are intended specifically for use in direct contact with the heart or central circulatory system or the central nervous system, in which case they are classified as class III;"
+        },
+        {
+          "paragraphHeadline": "Examples"
+        },
+        {
+          "list": [
+            "Neuro-endoscopes",
+            "Brain spatulas",
+            "Direct stimulation cannulae",
+            "Spinal cord retractors",
+            "Spinal needles",
+            "Cranium guide for use in craniotomy",
+            "Dura mater protection; Bone punch for use on the cranium (Intended use: The dura mater protection is intended to protect the dura mater during surgical procedures. It has direct contact to the CNS. The bone punch can be used at the cranium. A direct contact to the CNS is possible during application.)",
+            "Peripherally inserted central catheter (PICC) line",
+            "Heart valve occluders, sizers and holders",
+            "Cardiovascular drainage cannula specifically intended to circulate blood whilst located in the heart or central vascular system",
+            "Cryo-ablation of the heart or spine",
+            "Appliers/Forceps for aneurysm clips"
+          ]
+        },
+        {
+          "paragraphHeadline": "Class"
+        },
+        {
+          "section": "IIb"
+        },
+        {
+          "section": "- are intended to supply energy in the form of ionising radiation in which case they are classified as class IIb;"
+        },
+        {
+          "section": "- or"
+        },
+        {
+          "paragraphHeadline": "Examples"
+        },
+        {
+          "list": [
+            "Catheters containing or incorporating sealed radioisotopes, where the radioactive isotope as such is not intended to be released into the body, excluding the central circulatory system"
+          ]
+        },
+        {
+          "paragraphHeadline": "Class"
+        },
+        {
+          "section": "IIb"
+        },
+        {
+          "section": "- have a biological effect or are wholly or mainly absorbed in which case they are classified as class IIb;"
+        },
+        {
+          "paragraphHeadline": "Examples"
+        },
+        {
+          "list": [
+            "Viscoelastic solution for ophthalmic surgery"
+          ]
+        },
+        {
+          "paragraphHeadline": "Class"
+        },
+        {
+          "section": "IIb"
+        },
+        {
+          "section": "- are intended to administer medicinal products by means of a delivery system, if such administration of a medicinal product is done in a manner that is potentially hazardous4 taking account of the mode of application, in which case they are classified as class IIb"
+        },
+        {
+          "paragraphHeadline": "Examples"
+        },
+        {
+          "list": [
+            "Refillable insulin pens",
+            "Analgesia pumps"
+          ]
+        },
+        {
+          "sectionHeadline": "Practical issues of classification"
+        },
+        {
+          "paragraphHeadline": "Note 1"
+        },
+        {
+          "section": "Terms such as ‘surgically invasive device’, ‘central circulatory system’, ‘central nervous system’ and ‘reusable surgical instruments’ are defined in Section 2 of Annex VIII to the MDR. In particular surgical instruments connected to an active device are not considered to be ‘reusable surgical instruments’."
+        },
+        {
+          "paragraphHeadline": "Note 2"
+        },
+        {
+          "section": "The expression ‘correct a defect’ does not cover auxiliary devices that are used in heart surgery procedures, e.g. clamps, aortic punch instruments. The first indent of this rule does not apply to aortic punches and similar cutting instruments which perform a function similar to that of a scalpel."
+        },
+        {
+          "paragraphHeadline": "Note 3"
+        },
+        {
+          "section": "‘Dedicated’ means that the intended purpose of the device or accessory is to specifically control, diagnose, monitor or correct a defect of the heart or of the central circulatory system."
+        },
+        {
+          "paragraphHeadline": "Note 4"
+        },
+        {
+          "section": "The concept of ‘potentially hazardous manner’ is related to the characteristics of the device and not to the competence of the user."
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "header": {
+        "headline": "Rule 7",
+        "subHeadline": "Surgically invasive devices intended for short-term use (> 60 min <30 days)"
+      }
+    },
+    {
+      "content": [
+        {
+          "sectionHeadline": "General explanation of the rule"
+        },
+        {
+          "section": "These are mostly devices used in the context of surgery or post-operative care (e.g. clamps, drains), infusion devices (e.g. cannulae, needles) and catheters of various types"
+        },
+        {
+          "paragraphHeadline": "Class"
+        },
+        {
+          "section": "IIa"
+        },
+        {
+          "section": "All surgically invasive devices intended for short-term use are classified as class IIa unless they:"
+        },
+        {
+          "paragraphHeadline": "Examples"
+        },
+        {
+          "list": [
+            "Clamps",
+            "Infusion cannulae",
+            "Skin closure devices",
+            "Temporary filling materials",
+            "Arthroscopy trocars",
+            "Insufflation gases for surgically invasive endoscopic procedures"
+          ]
+        },
+        {
+          "paragraphHeadline": "Class"
+        },
+        {
+          "section": "III"
+        },
+        {
+          "section": "are intended specifically to control, diagnose, monitor or correct a defect of the heart or of the central circulatory system through direct contact with those parts of the body, in which case they are classified as class III;"
+        },
+        {
+          "paragraphHeadline": "Examples"
+        },
+        {
+          "list": [
+            "Cardiovascular catheters",
+            "Cardiac output probes",
+            "Temporary pacemaker leads",
+            "Thoracic catheters intended to drain the heart, including the pericardium",
+            "Carotid artery shunts",
+            "Ablation catheter",
+            "Heart bypass cannula (aortic perfusion cannula and venous drainage cannula)",
+            "Peripherally inserted central catheter (PICC) line and central line"
+          ]
+        },
+        {
+          "paragraphHeadline": "Class"
+        },
+        {
+          "section": "III"
+        },
+        {
+          "section": "are intended specifically for use in direct contact with the heart or central circulatory system or the central nervous system, in which case they are classified as class III;"
+        },
+        {
+          "paragraphHeadline": "Examples"
+        },
+        {
+          "list": [
+            "Neurological catheters",
+            " Cortical electrodes",
+            "Central venous/vascular catheters"
+          ]
+        },
+        {
+          "paragraphHeadline": "Class"
+        },
+        {
+          "section": "IIb"
+        },
+        {
+          "section": "are intended to supply energy in the form of ionizing radiation in which case they are classified as class IIb;"
+        },
+        {
+          "paragraphHeadline": "Examples"
+        },
+        {
+          "list": [
+            "Brachytherapy devices"
+          ]
+        },
+        {
+          "paragraphHeadline": "Class"
+        },
+        {
+          "section": "III"
+        },
+        {
+          "section": "have a biological effect or are wholly or mainly absorbed in which case they are classified as class III;"
+        },
+        {
+          "paragraphHeadline": "Examples"
+        },
+        {
+          "list": [
+            "Absorbable sutures"
+          ]
+        },
+        {
+          "paragraphHeadline": "Class"
+        },
+        {
+          "section": "IIb"
+        },
+        {
+          "section": "are intended to undergo chemical change in the body in which case they are classified as class IIb, except if the devices are placed in the teeth; or."
+        },
+        {
+          "paragraphHeadline": "Examples"
+        },
+        {
+          "list": [
+            "Vascular closure devices",
+            "Haemostatic foams"
+          ]
+        },
+        {
+          "paragraphHeadline": "Class"
+        },
+        {
+          "section": "IIb"
+        },
+        {
+          "section": "are intended to administer medicines1, in which case they are classified as class IIb."
+        },
+        {
+          "paragraphHeadline": "Examples"
+        },
+        {
+          "list": [
+            "Temporal dialysis catheter, CVVH catheter"
+          ]
+        },
+        {
+          "sectionHeadline": "Practical issues of classification"
+        },
+        {
+          "paragraphHeadline": "Note 1"
+        },
+        {
+          "section": "Administration of medicinal products is more than just channelling, it implies also storage and/or control of the volume and rate of delivery. Implanted capsules for the slow release of medicines, placed on the market as a single integral product, are governed by Directive 2001/83/EC or Regulation (EC) No 726/2004."
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "header": {
+        "headline": "Rule 8",
+        "subHeadline": "Implantable devices and long-term surgically invasive devices (> 30 days)"
+      }
+    },
+    {
+      "content": [
+        {
+          "sectionHeadline": "General explanation of the rule"
+        },
+        {
+          "section": "These are mostly implants in the orthopaedic, dental, ophthalmic and cardiovascular fields as well as soft tissue implants such as implants used in plastic surgery."
+        },
+        {
+          "paragraphHeadline": "Class"
+        },
+        {
+          "section": "IIb"
+        },
+        {
+          "section": "All implantable devices and long-term surgically invasive devices are classified as class IIb"
+        },
+        {
+          "section": "unless they:"
+        },
+        {
+          "paragraphHeadline": "Examples"
+        },
+        {
+          "list": [
+            "Artificial ligaments for reinforcement. Dental implants and abutments",
+            "Shunts",
+            "Peripheral stents and peripheral valves",
+            "Plates",
+            "Intra-ocular lenses",
+            "Internal closure devices (including vascular closure devices)",
+            "Tissue augmentation implants (excluding breasts)",
+            "Peripheral vascular catheters for long-term use",
+            "Peripheral vascular grafts and stents",
+            "Penile implants",
+            "Non-absorbable sutures, non-biodegreable bone cements and maxillo-facial implants, viscoelastic surgical devices intended specifically for ophthalmic anterior segment surgery",
+            "Pedicle screws"
+          ]
+        },
+        {
+          "paragraphHeadline": "Class"
+        },
+        {
+          "section": "IIa"
+        },
+        {
+          "section": "- are intended to be placed in the teeth, in which case they are classified as class IIa;"
+        },
+        {
+          "paragraphHeadline": "Examples"
+        },
+        {
+          "list": [
+            "Bridges and crowns",
+            "Dental filling materials and pins",
+            "Dental alloys, ceramics and polymers"
+          ]
+        },
+        {
+          "paragraphHeadline": "Class"
+        },
+        {
+          "section": "III"
+        },
+        {
+          "section": "- are intended to be used in direct contact with the heart, the central circulatory system or the central nervous system, in which case they are classified as class III;"
+        },
+        {
+          "paragraphHeadline": "Examples"
+        },
+        {
+          "list": [
+            "Prosthetic heart valves",
+            "Aneurysm clips",
+            "Vascular prosthesis and stents",
+            "Central vascular catheters for long-term use",
+            "Spinal stents",
+            "CNS electrodes",
+            "Cardiovascular sutures",
+            "Permanent and retrievable vena cava filters",
+            "Septal occlusion devices",
+            "Intra-aortic balloon pumps",
+            "External left ventricular assisting devices"
+          ]
+        },
+        {
+          "paragraphHeadline": "Class"
+        },
+        {
+          "section": "III"
+        },
+        {
+          "section": "- have a biological effect or are wholly or mainly absorbed, in which case they are classified as class III;"
+        },
+        {
+          "paragraphHeadline": "Examples"
+        },
+        {
+          "list": [
+            "Long term absorbable sutures",
+            "Adhesives and implantable devices claimed to be bioactive through the attachment of surface coatings such as phosphoryl choline",
+            "Biodegrable Bone Cements",
+            "Elastoviscus fluids for joint movement(eg. hyaluronan of non-animal origin)"
+          ]
+        },
+        {
+          "paragraphHeadline": "Class"
+        },
+        {
+          "section": "III"
+        },
+        {
+          "section": "- are intended to undergo chemical change in the body in which case they are classified as class III, except if the devices are placed in the teeth"
+        },
+        {
+          "paragraphHeadline": "Class"
+        },
+        {
+          "section": "III"
+        },
+        {
+          "section": "- are intended to administer medicinal products, in which case they are classified as class III;"
+        },
+        {
+          "paragraphHeadline": "Examples"
+        },
+        {
+          "list": [
+            "Rechargeable non-active drug delivery systems",
+            "Peritoneal dialysis"
+          ]
+        },
+        {
+          "paragraphHeadline": "Class"
+        },
+        {
+          "section": "III"
+        },
+        {
+          "section": "- are active implantable devices or their accessories, in which cases they are classified as class III;"
+        },
+        {
+          "paragraphHeadline": "Examples"
+        },
+        {
+          "list": [
+            "Cochlear implants and accessories",
+            "Implantable cardiac pacemakers",
+            "Implantable cardioverter defibrillators (ICD)",
+            "Leads, electrodes, adaptors for pacemakers and implantable defibrillators",
+            "Implantable nerve stimulators",
+            "Implantable bladder stimulators",
+            "Implantable sphincter stimulators",
+            "Torque wrench for implantable pulse\ngenerator / implantable cardioverter\ndefibrillator",
+            "cables for programmer / pacing system\nanalyser",
+            "magnet for Implantable Pulse Generator /\nImplantable Cardioverter Generator",
+            "programmer or an external transmitter\nintended for activating or controlling the\nimplantable part of the device",
+            "implantable pacemaker leads"
+          ]
+        },
+        {
+          "paragraphHeadline": "Class"
+        },
+        {
+          "section": "III"
+        },
+        {
+          "section": "- are breast implants or surgical meshes, in which cases they are classified as class III;"
+        },
+        {
+          "paragraphHeadline": "Examples"
+        },
+        {
+          "list": [
+            "Breast implants",
+            "Breast tissue expanders",
+            "Surgical meshes for hernia repair",
+            "Tension free vaginal tape"
+          ]
+        },
+        {
+          "paragraphHeadline": "Class"
+        },
+        {
+          "section": "III"
+        },
+        {
+          "section": "- are total or partial joint replacements, in which case they are classified as class III, with\nthe exception of ancillary components such as screws, wedges, plates and instruments;\nor"
+        },
+        {
+          "paragraphHeadline": "Examples"
+        },
+        {
+          "list": [
+            "Hip, knee",
+            "Shoulder",
+            "Ankle"
+          ]
+        },
+        {
+          "paragraphHeadline": "Class"
+        },
+        {
+          "section": "III"
+        },
+        {
+          "section": "- are spinal disc replacement implants or are implantable devices that come into contact with\nthe spinal column, in which case they are classified as class III with the exception of\ncomponents such as screws, wedges, plates and instruments"
+        },
+        {
+          "paragraphHeadline": "Examples"
+        },
+        {
+          "list": [
+            "Spinal disc replacement implants",
+            "Spinal implants: hooks that fix the rod on the\nspinal column",
+            "Stems that are implantable in contact with the\nspinal column",
+            "Device placed in the disc space",
+            "Interbody fusion devices"
+          ]
+        },
+        {
+          "sectionHeadline": "Practical issues of classification"
+        },
+        {
+          "paragraphHeadline": "Note 1"
+        },
+        {
+          "section": "For closure of arteriotomies in the peripheral vascular system (refer to definition of central circulatory system)."
+        },
+        {
+          "paragraphHeadline": "Note 2"
+        },
+        {
+          "section": "These devices are implants because in normal conditions a significant amount of the substance remains at the surgical site after the\nprocedure. Rule 18 may also be relevant."
+        },
+        {
+          "paragraphHeadline": "Note 3"
+        },
+        {
+          "section": "Implants without bioactive coatings intended to secure teeth or prostheses to the maxillary or mandibular bones are in Class IIb\nfollowing the general rule."
+        },
+        {
+          "paragraphHeadline": "Note 4"
+        },
+        {
+          "section": "The clause about chemical change under this rule does not apply to products such as bone cements where the chemical change takes\nplace during the placement and does not continue in long term."
+        },
+        {
+          "paragraphHeadline": "Note 5"
+        },
+        {
+          "section": "Also non-implantable and non-active accessories to AIMDs should be classified as Class III under Rule 8."
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "header": {
+        "headline": "Rule 9",
+        "subHeadline": "Active therapeutic devices intended to administer or exchange energy1, as well as active devices\nintended to control/monitor/directly influence certain devices"
+      }
+    },
+    {
+      "content": [
+        {
+          "sectionHeadline": "General explanation of the rule"
+        },
+        {
+          "section": "This rule covers many different groups of devices, such as:"
+        },
+        {
+          "list": [
+            "electrical equipment used in surgery such as lasers and surgical generators;",
+            "stimulation devices;",
+            "devices intended to emit ionizing radiation for therapeutic purposes, including devices which control or monitor such devices, or which\ndirectly influence their performance;",
+            "devices intended for controlling, monitoring or directly influencing the performance of active implantable devices."
+          ]
+        },
+        {
+          "section": "Active implantable devices are covered by Rule 8."
+        },
+        {
+          "section": "Rule 22 may also apply to active therapeutic devices (Active therapeutic devices with an integrated or incorporated diagnostic function which significantly determines the patient management by the device,\nsuch as closed loop systems or automated external defibrillators, are classified as class III.)."
+        },
+        {
+          "paragraphHeadline": "Class"
+        },
+        {
+          "section": "IIa"
+        },
+        {
+          "section": "All active therapeutic devices intended to administer or exchange energy are classified as\nclass IIa"
+        },
+        {
+          "paragraphHeadline": "Examples"
+        },
+        {
+          "list": [
+            "Electrical and/or magnetic and electromagnetic\nenergy:\n  •muscle stimulators\n  •external bone growth stimulators\n  •TENS devices\n  •eye electromagnets\n  •electrical acupuncture",
+            "Thermal energy:\n  •heat exchangers, except the types described\nbelow",
+            "Mechanical energy:\n  •powered dermatomes\n  •powered drills\n  •dental hand pieces",
+            "Light:\n  •phototherapy for skin treatment and for\nneonatal care",
+            "Sound:\n  •external hearing aids",
+            "Ultrasound:\n  •equipment for physiotherapy",
+            "Sleep apnoea ventilators without monitoring function"
+          ]
+        },
+        {
+          "paragraphHeadline": "Class"
+        },
+        {
+          "section": "IIb"
+        },
+        {
+          "section": "unless their characteristics are such that they may administer energy to or exchange energy\nwith the human body in a potentially hazardous way, taking account of the nature, the\ndensity and site of application of the energy, in which case they are classified as class IIb."
+        },
+        {
+          "paragraphHeadline": "Examples"
+        },
+        {
+          "list": [
+            "Kinetic energy:\n  •lung ventilators",
+            "Thermal energy:\n  •incubators for babies\n  •blood warmers\n  •electrically powered heat exchangers (with\npatients incapable of reacting,\ncommunicating /or who are without a sense\nof feeling)",
+            "Electrical energy:\n  •high-frequency electrosurgical generators,\nand electrocautery equipment, including their\nelectrodes\n  •external pacemakers and external\ndefibrillators with no integrated or\nincorporated diagnostic function\n  •electroconvulsive therapy equipment)",
+            "Coherent light:\n  •surgical lasers",
+            "Ultrasound:\n  •lithotriptors, surgical ultrasound devices\n  •high-intensity focused ultrasound (HIFU)"
+          ]
+        },
+        {
+          "paragraphHeadline": "Class"
+        },
+        {
+          "section": "IIb"
+        },
+        {
+          "section": "All active devices intended to control or monitor the performance of active therapeutic class\nIIb devices, or intended directly to influence the performance of such devices are classified\nas class IIb."
+        },
+        {
+          "paragraphHeadline": "Examples"
+        },
+        {
+          "list": [
+            "External feedback systems for active therapeutic\ndevices"
+          ]
+        },
+        {
+          "paragraphHeadline": "Class"
+        },
+        {
+          "section": "IIb"
+        },
+        {
+          "section": "All active devices intended to emit ionizing radiation for therapeutic purposes, including\ndevices which control or monitor such devices, or which directly influence their performance,\nare classified as class IIb"
+        },
+        {
+          "paragraphHeadline": "Examples"
+        },
+        {
+          "list": [
+            "Brachytherapy therapy devices if the device also\ngenerates the radiation",
+            "Therapeutic cyclotrons and linear accelerators",
+            "Therapeutic X-ray sources"
+          ]
+        },
+        {
+          "paragraphHeadline": "Class"
+        },
+        {
+          "section": "III"
+        },
+        {
+          "section": "have a biological effect or are wholly or mainly absorbed in which case they are classified as class III;"
+        },
+        {
+          "paragraphHeadline": "Examples"
+        },
+        {
+          "list": [
+            "Absorbable sutures"
+          ]
+        },
+        {
+          "sectionHeadline": "Practical issues of classification"
+        },
+        {
+          "paragraphHeadline": "Note 1"
+        },
+        {
+          "section": "Administration of medicinal products is more than just channelling, it implies also storage and/or control of the volume and rate of delivery. Implanted capsules for the slow release of medicines, placed on the market as a single integral product, are governed by Directive 2001/83/EC or Regulation (EC) No 726/2004."
+        }
+      ]
+    }
   ]
 ]

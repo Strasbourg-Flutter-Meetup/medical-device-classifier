@@ -13,43 +13,51 @@ void main() {
   group('StateTemplate', () {
     test('props should return a list containing type and data', () {
       const state = StateTemplate<int>.initialized(data: 42);
-      expect(state.props, [StateTemplateType.initialized, 42]);
+      expect(state, equals(const InitializedRequestState<int>(data: 42)));
+      expect(state.props, equals([42]));
     });
 
     test('props should return a list containing type and null data', () {
       const state = StateTemplate<int>.initialized();
-      expect(state.props, [StateTemplateType.initialized, null]);
+      expect(state, equals(const InitializedRequestState<int>()));
+      expect(state.props, equals([null]));
     });
 
     test('props should return a list containing type and previousData', () {
       const state = StateTemplate<int>.loading(previousData: 42);
-      expect(state.props, [StateTemplateType.loading, 42]);
+      expect(state, equals(const LoadingRequestState<int>(previousData: 42)));
+      expect(state.props, equals([42]));
     });
 
     test('props should return a list containing type and null previousData',
         () {
       const state = StateTemplate<int>.loading();
-      expect(state.props, [StateTemplateType.loading, null]);
+      expect(state, equals(const LoadingRequestState<int>()));
+      expect(state.props, equals([null]));
     });
 
     test('props should return a list containing type and data', () {
       const state = StateTemplate<int>.loaded(data: 42);
-      expect(state.props, [StateTemplateType.loaded, 42]);
+      expect(state, equals(const LoadedRequestState<int>(data: 42)));
+      expect(state.props, equals([42]));
     });
 
     test('props should return a list containing type and null data', () {
       const state = StateTemplate<int>.loaded(data: null);
-      expect(state.props, [StateTemplateType.loaded, null]);
+      expect(state, equals(const LoadedRequestState<int>()));
+      expect(state.props, equals([null]));
     });
 
     test('props should return a list for initial state', () {
       const state = StateTemplate<int>.initial();
-      expect(state.props, [StateTemplateType.initial, null]);
+      expect(state, equals(const InitialRequestState<int>()));
+      expect(state.props, equals([null]));
     });
 
     test('props should return a list for error state', () {
       const state = StateTemplate<int>.error();
-      expect(state.props, [StateTemplateType.error, null]);
+      expect(state, equals(const ErrorRequestState<int>()));
+      expect(state.props, equals([null]));
     });
   });
 }

@@ -32,12 +32,12 @@ mixin ContentBuilderMixin<T> {
     ContentBuilder<T>? contentBuilder,
     Widget? widget,
   }) {
-    switch (state.type) {
-      case StateTemplateType.initial:
+    switch (state) {
+      case InitialRequestState():
         return _buildInitialContent();
-      case StateTemplateType.loading:
+      case LoadingRequestState():
         return _buildLoadingContent(state.data, contentBuilder, widget);
-      case StateTemplateType.error:
+      case ErrorRequestState():
         return _buildErrorContent();
       default:
         return _buildDefaultContent(state.data, contentBuilder, widget);
